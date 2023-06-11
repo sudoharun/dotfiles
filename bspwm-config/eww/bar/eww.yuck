@@ -1,0 +1,42 @@
+(deflisten active-ws `scripts/workspaces.sh`)
+(deflisten wn "scripts/window-name.sh")
+(deflisten wifi "scripts/wifi-icon.sh")
+(deflisten wifi-strength "scripts/wifi-percent.sh")
+(deflisten vol-icon "scripts/volume-icon.sh")
+(deflisten bat "scripts/battery.sh")
+(deflisten bat-lvl "scripts/bat-percent.sh")
+(defpoll voltt :interval "1s" "pamixer --get-volume-human")
+
+(defwidget workspaces []
+  (literal :content active-ws))
+
+(defwidget window-name []
+  (literal :content wn))
+
+(defwidget side []
+  (box :class "side"
+       :orientation "h"
+       :halign "end"
+       :space-evenly false
+    (literal :tooltip wifi-strength :content "wifi")
+    (literal :tooltip voltt :content "vol-icon")
+    (literal :tooltip bat-lvl :content "bat")))
+
+(defwidget bar []
+  (centerbox :orientation "h"
+    (workspaces)
+    (window-name)
+    (side)))
+
+(defwindow bar
+  :stacking "fg"
+  :windowtype "dock"
+  :wm-ignore false
+  :reserve (struts :distance "46px" :side "top")
+  :geometry (geometry
+              :x "0px"
+              :y "0px"
+              :width "100%"
+              :height "42px"
+              :anchor "top left")
+  (bar))

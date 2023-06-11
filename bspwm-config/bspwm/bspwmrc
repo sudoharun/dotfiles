@@ -1,0 +1,21 @@
+#!/bin/bash
+
+xsetroot -cursor_name left_ptr
+sxhkd &
+ 
+bspc config border_width	2
+bspc config window_gap		4
+ 
+bspc config split_ratio		0.5
+bspc config focus_follows_pointer	false
+bspc config pointer_modifier	mod4
+ 
+bspc config automatic_scheme	alternate
+
+bspc monitor -d 1 2 3 4 5
+
+# Autostart
+feh --bg-scale wallpaper.jpg
+picom --unredir-if-possible --config ~/.config/picom/picom.conf &
+eww daemon ; eww -c ~/.config/eww/bar open bar
+~/.config/bspwm/eww-bar-fullscreen.sh &

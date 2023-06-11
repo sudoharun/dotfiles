@@ -1,0 +1,27 @@
+* {
+  all: unset;
+  padding: 3px;
+  font-size: 14px;
+  color: #BBBBBB;
+}
+
+window {
+  background-color: transparent;
+}
+
+.active-ws {
+  font-family: "Noto Sans CJK JP";
+}
+
+.ws {
+  font-family: "Noto Sans CJK JP";
+  color: #505050;
+}
+
+.workspaces,
+.window-name,
+.side {
+  border: 1px solid #151515;
+  border-radius: 4px;
+  background-color: #151515;
+}
