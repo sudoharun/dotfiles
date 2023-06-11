@@ -1,4 +1,4 @@
-<h1>AwesomeWM Dotfiles</h1>
+<h1>BSPWM Dotfiles</h1>
 
 Stuff I use:
 <ul>
