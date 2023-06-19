@@ -1,29 +1,105 @@
-(deflisten active-ws `scripts/workspaces.sh`)
-(deflisten wn "scripts/window-name.sh")
-(deflisten wifi "scripts/wifi-icon.sh")
-(deflisten wifi-strength "scripts/wifi-percent.sh")
-(deflisten vol-icon "scripts/volume-icon.sh")
-(deflisten bat "scripts/battery.sh")
-(deflisten bat-lvl "scripts/bat-percent.sh")
-(defpoll voltt :interval "1s" "pamixer --get-volume-human")
+(defpoll w1 :interval "0.1s" "~/.config/eww/scripts/workspaces.sh w1")
+(defpoll w2 :interval "0.1s" "~/.config/eww/scripts/workspaces.sh w2")
+(defpoll w3 :interval "0.1s" "~/.config/eww/scripts/workspaces.sh w3")
+(defpoll w4 :interval "0.1s" "~/.config/eww/scripts/workspaces.sh w4")
+(defpoll w5 :interval "0.1s" "~/.config/eww/scripts/workspaces.sh w5")
+(defpoll wn :interval "0.1s" "~/.config/eww/scripts/window-name.sh")
+(defpoll wifi-icon :interval "10s" "~/.config/eww/scripts/wifi.sh icon")
+(defpoll wifi-strength :interval "10s" "~/.config/eww/scripts/wifi.sh percentage")
+(defpoll vol-icon :interval "1s" "~/.config/eww/scripts/volume.sh icon")
+(defpoll bat-icon :interval "1m" "~/.config/eww/scripts/battery.sh icon")
+(defpoll bat-lvl :interval "1m" "~/.config/eww/scripts/battery.sh level")
+(defpoll volume :interval "1s" "pamixer --get-volume-human")
+
+(defvar eww "eww -c ~/.config/eww/bar/")
+
+(defvar wifi-rev false)
+(defvar vol-rev false)
+(defvar bat-rev false)
 
 (defwidget workspaces []
-  (literal :content active-ws))
+  (box
+    :class "workspace"
+    :orientation "h"
+    :spacing 10
+    :space-evenly false
+    :halign "start"
+    :hexpand false
+    (label :class w1 :text "一")
+    (label :class w2 :text "二")
+    (label :class w3 :text "三")
+    (label :class w4 :text "四")
+    (label :class w5 :text "五")))
 
 (defwidget window-name []
-  (literal :content wn))
+  (box
+    :class "wn-wid"
+    (label :text wn)))
+
+(defwidget wifi []
+  (eventbox
+    :onhover "${eww} update wifi-rev=true"
+    :onhoverlost "${eww} update wifi-rev=false"
+    :class "wifi-wid"
+    (box 
+      :class "wifi-widget"
+      :space-evenly false
+      (label :class "wifi-str" :limit-width 12 :text wifi-icon)
+      (revealer
+        :transition "slideright"
+        :reveal wifi-rev
+        :duration "250ms"
+        (label :orientation "h" :text wifi-strength)))))
+
+(defwidget vol []
+  (eventbox
+    :onhover "${eww} update vol-rev=true"
+    :onhoverlost "${eww} update vol-rev=false"
+    :onclick "pamixer -t"
+    (box 
+      :class "vol-widget"
+      :space-evenly false
+      :limit-height 10
+      (label :class "vol" :limit-width 12 :text vol-icon)
+      (revealer
+        :transition "slideright"
+        :reveal vol-rev
+        :duration "250ms"
+        (label :orientation "h" :text volume)))))
+
+(defwidget bat []
+  (eventbox
+    :onhover "${eww} update bat-rev=true"
+    :onhoverlost "${eww} update bat-rev=false"
+    (box 
+      :class "bat-widget"
+      :space-evenly false
+      (label :class "bat" :text bat-icon)
+      (revealer
+        :transition "slideright"
+        :reveal bat-rev
+        :duration "250ms"
+        (label :text bat-lvl)))))
+
+(defwidget menu []
+  (box
+    :class "menu"
+    (button :class "menu-btn" :tooltip "toggle menu" :onclick "~/.config/eww/scripts/toggle-cc.sh" "󰊠")))
 
 (defwidget side []
   (box :class "side"
        :orientation "h"
        :halign "end"
+       :spacing 10
        :space-evenly false
-    (literal :tooltip wifi-strength :content "wifi")
-    (literal :tooltip voltt :content "vol-icon")
-    (literal :tooltip bat-lvl :content "bat")))
+    (wifi)
+    (vol)
+    (bat)
+    (menu)))
 
 (defwidget bar []
   (centerbox :orientation "h"
+    :class "bar"
     (workspaces)
     (window-name)
     (side)))
@@ -32,11 +108,11 @@
   :stacking "fg"
   :windowtype "dock"
   :wm-ignore false
-  :reserve (struts :distance "46px" :side "top")
+  :reserve (struts :distance "40px" :side "top")
   :geometry (geometry
               :x "0px"
               :y "0px"
               :width "100%"
-              :height "42px"
-              :anchor "top left")
+              :height "40px"
+              :anchor "top center")
   (bar))

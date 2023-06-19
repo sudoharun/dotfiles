@@ -1,27 +1,49 @@
 * {
-  all: unset;
-  padding: 3px;
   font-size: 14px;
-  color: #BBBBBB;
 }
 
-window {
-  background-color: transparent;
+.workspace {
+  font-family: "Noto Sans CJK JP";
+}
+
+.wifi-str {
+  padding-right: 12px;
 }
 
 .active-ws {
-  font-family: "Noto Sans CJK JP";
+  color: #F3F3F3;
 }
 
 .ws {
-  font-family: "Noto Sans CJK JP";
   color: #505050;
 }
 
-.workspaces,
-.window-name,
+window,
+.bar {
+  padding: 3px 6px;
+  background-color: transparent;
+}
+
+.workspace,
+.wn-wid,
 .side {
-  border: 1px solid #151515;
-  border-radius: 4px;
   background-color: #151515;
+  padding: 0px 8px;
+  border: 1px solid #26233a;
+  border-radius: 4px;
+}
+
+.bat {
+  padding-right: 3px;
+}
+
+.vol {
+  padding-right: 3px;
+}
+
+.menu,
+.menu-btn {
+  all: unset;
+  padding-right: 3px;
+  font-size: 20px;
 }

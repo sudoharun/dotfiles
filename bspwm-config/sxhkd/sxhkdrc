@@ -23,10 +23,10 @@ XF86PowerOff
   ~/.config/rofi/powermenu/type-2/powermenu.sh
 
 XF86AudioRaiseVolume
-  pamixer -i 5 #to increase 5%
+  pamixer -i 5
 
 XF86AudioLowerVolume
-  pamixer -d 5 #to decrease 5%
+  pamixer -d 5
 
 XF86AudioMute
   pamixer -t
@@ -72,3 +72,16 @@ alt + f
 
 alt + {a,s}
   bspc node -s {prev,next}.local
+
+# playerctl
+XF86AudioPlay
+  playerctl play
+
+XF86AudioPause
+  playerctl pause
+
+XF86AudioNext
+  playerctl next
+
+XF86AudioPrev
+  playerctl previous

@@ -15,7 +15,7 @@ bspc config automatic_scheme	alternate
 bspc monitor -d 1 2 3 4 5
 
 # Autostart
-feh --bg-scale wallpaper.jpg
+feh --bg-fill ~/.config/bspwm/wallpaper.jpg
 picom --unredir-if-possible --config ~/.config/picom/picom.conf &
 eww daemon ; eww -c ~/.config/eww/bar open bar
 ~/.config/bspwm/eww-bar-fullscreen.sh &

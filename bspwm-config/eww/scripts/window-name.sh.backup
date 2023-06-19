@@ -1,0 +1,15 @@
+#!/bin/bash
+name() {
+  winame=`xdotool getactivewindow getwindowname`
+  windowname=`echo ${winame::150}`
+  if [[ $winame == "" ]]; then
+    echo -e "(box :class \"window-name\" :orientation \"h\" :halign \"center\" (label :text \"Desktop\"))"
+  else
+    echo -e "(box :class \"window-name\" :orientation \"h\" :halign \"center\" (label :text \"$windowname\"))"
+  fi
+}
+
+while [[ true ]]; do
+  name
+  sleep 0.1
+done
