@@ -1,0 +1,12 @@
+# Custom Aliases
+alias convita='~/.config/scripts/ffmpeg.sh'
+alias myscrot='scrot ~/Pictures/Screenshots/%d%b::%H:%M:%S.png'
+
+# Adding stuff to path
+path+=('/home/harun/.local/bin/')
+path+=('/usr/lib/ccache/bin/')
+export PATH
+
+export TERMINAL='kitty'
+export EDITOR='nvim'
+
