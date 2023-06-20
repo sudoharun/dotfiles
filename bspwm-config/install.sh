@@ -28,14 +28,7 @@ chmod +x scripts/scrot.sh
 chmod +x wmstuff/minimizer.sh
 
 # Setup ohmyzsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Finish
-echo "Complete by setting up lightdm"
-echo "and installing zsh"
-echo " "
-echo "Please setup wine and other stuff such as steam and discord separately too"
+cd ~
+echo "Last step is setting up ohmyzsh"
 sleep 3
-echo "Rebooting..."
-sleep 2
-reboot
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
