@@ -26,8 +26,10 @@ chmod +x scripts/ffmpeg.sh
 chmod +x scripts/scrot.sh
 chmod +x wmstuff/minimizer.sh
 
+# Setup ohmyzsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Finish
-clear
 mpv ~/.config/assets/notifications/sfx/retro-game-notification.wav
 echo "Complete by setting up lightdm"
 echo "and installing zsh"
