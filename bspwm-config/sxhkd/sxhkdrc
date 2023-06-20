@@ -43,9 +43,9 @@ XF86MonBrightnessDown
 Print
   ~/.config/bspwm/scrot.sh
 
-# Spawn Firefox Developer Edition
+# Spawn Firefox
 mod4 + f
-  firefox-developer-edition
+  firefox
 
 # Spawn Rofi
 mod4 + r
