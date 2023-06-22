@@ -10,6 +10,10 @@ makepkg -si
 cd ~
 yay -S kitty zsh neovim firefox-developer-edition lightdm lightdm-webkit2-greeter lightdm-webkit-theme-litarvan lightdm-webkit2-theme-glorious ueberzug udisks2 unrar unzip ttf-jetbrains-mono-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd sof-firmware rofi rofi-emoji scrot dunst picom-jonaburg-git polkit-gnome ranger reflector-simple playerctl pavucontrol pamixer p7zip noto-fonts noto-fonts-cjk noto-fonts-emoji-apple neofetch mpv lxappearance-gtk3 iw htop gimp feh dragon-drop deluge-gtk discord ccache brillo alsa-firmware alsa-ucm-conf arandr bluez capitaine-cursors wmctrl zip upower ttf-roboto filezilla xdotool xorg-xprop xorg-xsetroot xdg-desktop-portal
 
+# Helps with screen tearing
+# Remove if this doesn't apply
+yay -S xf86-video-intel
+
 # Setup dotfiles
 mkdir ~/.config
 cd ~/dotfiles/bspwm-config
