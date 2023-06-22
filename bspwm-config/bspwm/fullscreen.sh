@@ -9,8 +9,9 @@ bspc subscribe node_state | while read -r _ _ _ _ state flag; do
     killall eww
     killall picom
   else
+    xrandr --output eDP1 --auto
     eww daemon
     eww -c ~/.config/eww/bar open bar
-    picom --unredir-if-possible --config ~/.config/picom/picom.conf &
+    picom &
   fi
 done &

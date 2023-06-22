@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export DESKTOP_SESSION="bspwm"
 xsetroot -cursor_name left_ptr
 sxhkd &
  
@@ -15,7 +16,10 @@ bspc config automatic_scheme	alternate
 bspc monitor -d 1 2 3 4 5
 
 # Autostart
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+dunst &
 feh --bg-fill ~/.config/bspwm/wallpaper.jpg
-picom --unredir-if-possible --config ~/.config/picom/picom.conf &
+picom &
 eww daemon ; eww -c ~/.config/eww/bar open bar
-~/.config/bspwm/eww-bar-fullscreen.sh &
+~/.config/bspwm/fullscreen.sh &
+
