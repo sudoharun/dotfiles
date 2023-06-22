@@ -30,6 +30,15 @@ chmod +x ranger/scope.sh
 chmod +x scripts/ffmpeg.sh
 chmod +x scripts/scrot.sh
 chmod +x wmstuff/minimizer.sh
+chmod +x eww/scripts/battery.sh
+chmod +x eww/scripts/bluetooth.sh
+chmod +x eww/scripts/kitty.sh
+chmod +x eww/scripts/toggle-cc.sh
+chmod +x eww/scripts/toggle-wifi.sh
+chmod +x eww/scripts/volume.sh
+chmod +x eww/scripts/wifi.sh
+chmod +x eww/scripts/window-name.sh
+chmod +x eww/scripts/workspaces.sh
 
 # Setup ohmyzsh
 cd ~
