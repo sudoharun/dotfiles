@@ -16,7 +16,12 @@ yay -S xf86-video-intel
 
 # Installing mantis gtk theme
 cd ~
-
+mkdir ~/.themes
+git clone https://github.com/mantissa-/mantis-theme.git
+cd mantis-theme
+mv Manti* ~/.themes
+cd ~
+rm -rf mantis-theme
 
 # Wine setup
 cd ~
