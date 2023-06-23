@@ -26,6 +26,7 @@ rm -rf mantis-theme
 # Wine setup
 cd ~
 yay -S wine-staging winetricks dxvk-bin
+sudo winetricks --self-update
 winetricks -q --force dotnet48
 winetricks -q d3dcompiler_47 corefonts
 winetricks -q vcrun2005
