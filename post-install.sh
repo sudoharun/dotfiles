@@ -19,6 +19,8 @@ echo " " >> ~/.zshrc
 # If terminal does not open in home directory
 echo "cd ~" >> ~/.zshrc
 
+# Source zshrc for changes to take effect in current session
+source ~/.zshrc
 
 # Prevent looooong application loading times
 systemctl mask --user --now xdg-desktop-portal.service
@@ -33,7 +35,8 @@ systemctl enable --now bluetooth
 # Installing custom rofi launchers
 cd ~
 git clone https://github.com/adi1090x/rofi.git
-~/rofi/setup.sh
-rm -r ~/rofi
+cd ~/rofi
+./setup.sh
+rm -rf ~/rofi
 
 startx
