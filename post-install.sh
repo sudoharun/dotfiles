@@ -2,6 +2,12 @@
 
 echo "exec bspwm" >> ~/.xinitrc
 
+# If terminal does not open in home directory
+echo "cd ~" >> ~/.zshrc
+
+# Adding custom aliases
+
+
 # Prevent looooong application loading times
 systemctl mask --user --now xdg-desktop-portal.service
 systemctl mask --user --now xdg-desktop-portal-gtk.service
