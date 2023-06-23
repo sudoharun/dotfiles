@@ -14,6 +14,16 @@ yay -S kitty zsh neovim firefox-developer-edition lightdm lightdm-webkit2-greete
 # Remove if this doesn't apply
 yay -S xf86-video-intel
 
+# Wine setup
+yay -S wine-staging winetricks dxvk-bin
+winetricks -q --force dotnet48
+winetricks -q d3dcompiler_47 corefonts
+winetricks -q vcrun2005
+winetricks -q d3dcompiler_43 d3dx11_42 d3dx11_43
+winetricks -q gfw msasn1 physx
+winetricks -q xact_x64 xact xinput
+WINEPREFIX=~/.wine setup_dxvk install
+
 # Setup dotfiles
 mkdir ~/.config
 cd ~/dotfiles/bspwm-config
@@ -39,6 +49,13 @@ chmod +x eww/scripts/volume.sh
 chmod +x eww/scripts/wifi.sh
 chmod +x eww/scripts/window-name.sh
 chmod +x eww/scripts/workspaces.sh
+chmod +x eww/bar/scripts/bat-percent.sh
+chmod +x eww/bar/scripts/battery.sh
+chmod +x eww/bar/scripts/volume-icon.sh
+chmod +x eww/bar/scripts/wifi-icon.sh
+chmod +x eww/bar/scripts/wifi-percent.sh
+chmod +x eww/bar/scripts/window-name.sh
+chmod +x eww/bar/scripts/workspaces.sh
 
 # Setup ohmyzsh
 cd ~
