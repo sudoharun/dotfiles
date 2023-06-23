@@ -4,9 +4,11 @@
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 cd ~
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup install nightly
 git clone https://github.com/elkowar/eww
-cd eww
+mv ~/eww ~/.eww
+cd ~/.eww
 cargo build --release --no-default-features --features x11
 cd target/release
 chmod +x ./eww
