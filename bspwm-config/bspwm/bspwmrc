@@ -1,6 +1,7 @@
 #!/bin/bash
 
-EWW='~/.eww/target/release/eww'
+EWW=$HOME/.eww/target/release/eww
+export XDG_CURRENT_DESKTOP='X-Generic'
 export DESKTOP_SESSION="bspwm"
 xsetroot -cursor_name left_ptr
 sxhkd &
@@ -24,3 +25,12 @@ picom &
 $EWW daemon ; $EWW -c ~/.config/eww/bar open bar
 ~/.config/bspwm/fullscreen.sh &
 
+# Adding custom resolutions
+xrandr --newmode "640x480_60.00"   23.75  640 664 720 800  480 483 487 500 -hsync +vsync
+xrandr --addmode eDP1 640x480_60.00
+
+xrandr --newmode "1280x720_60.00"   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync
+xrandr --addmode eDP1 1280x720_60.00
+
+xrandr --newmode "800x600_60.00"   38.25  800 832 912 1024  600 603 607 624 -hsync +vsync
+xrandr --addmode eDP1 800x600_60.00
