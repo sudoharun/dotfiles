@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export eww='~/.eww/target/release/eww'
+EWW='~/.eww/target/release/eww'
 export DESKTOP_SESSION="bspwm"
 xsetroot -cursor_name left_ptr
 sxhkd &
@@ -21,6 +21,6 @@ bspc monitor -d 1 2 3 4 5
 dunst &
 feh --bg-fill ~/.config/bspwm/wallpaper.jpg
 picom &
-$eww daemon ; $eww -c ~/.config/eww/bar open bar
+$EWW daemon ; $EWW -c ~/.config/eww/bar open bar
 ~/.config/bspwm/fullscreen.sh &
 
