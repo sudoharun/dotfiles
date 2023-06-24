@@ -1,8 +1,4 @@
 #!/bin/bash
-
-# Install rustup with the following command
-# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
 cd ~
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup install nightly
