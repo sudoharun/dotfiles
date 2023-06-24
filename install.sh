@@ -41,8 +41,9 @@ cd ~/dotfiles/bspwm-config
 mv * ~/.config/
 
 # Enabling execution permissions
-chmod +x eww.sh
-chmod +x post-install.sh
+cd ~
+chmod +x dotfiles/eww.sh
+chmod +x dotfiles/post-install.sh
 cd ~/.config
 chmod +x bspwm/bspwmrc
 chmod +x bspwm/fullscreen.sh
