@@ -60,6 +60,13 @@ chmod +x eww/bar/scripts/wifi-percent.sh
 chmod +x eww/bar/scripts/window-name.sh
 chmod +x eww/bar/scripts/workspaces.sh
 
+# Installing eww
+cd ~
+git clone https://aur.archlinux.org/eww-git.git
+mv ~/eww-git ~/.eww
+cd ~/.eww
+makepkg -si
+
 # Setup ohmyzsh
 cd ~
 cd ~
