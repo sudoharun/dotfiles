@@ -62,6 +62,10 @@ chmod +x eww/bar/scripts/workspaces.sh
 
 # Installing eww
 cd ~
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+rustup install nightly
+cd ~
 git clone https://aur.archlinux.org/eww-git.git
 mv ~/eww-git ~/.eww
 cd ~/.eww
