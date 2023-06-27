@@ -60,7 +60,7 @@ chmod +x eww/bar/scripts/wifi-percent.sh
 chmod +x eww/bar/scripts/window-name.sh
 chmod +x eww/bar/scripts/workspaces.sh
 
-# Installing eww
+# Installing eww and rust using rustup
 cd ~
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
