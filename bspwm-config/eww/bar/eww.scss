@@ -21,16 +21,22 @@
 window,
 .bar {
   padding: 3px 6px;
+  margin: 5px;
   background-color: transparent;
 }
 
 .workspace,
 .wn-wid,
-.side {
-  background-color: #151515;
+.side,
+.time,
+.date,
+.cpu,
+.memory {
+  background-color: #000000;
   padding: 0px 8px;
-  border: 1px solid #26233a;
-  border-radius: 4px;
+  margin: 0px 4px;
+  border: 1px solid #151515;
+  border-radius: 2px;
 }
 
 .bat {
@@ -41,9 +47,8 @@ window,
   padding-right: 3px;
 }
 
-.menu,
-.menu-btn {
+.bt,
+.bt-btn {
   all: unset;
   padding-right: 3px;
-  font-size: 20px;
 }

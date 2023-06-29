@@ -1,13 +1,11 @@
 #!/bin/bash
 
-EWW=$HOME/.eww/target/release/eww
-export XDG_CURRENT_DESKTOP='X-Generic'
 export DESKTOP_SESSION="bspwm"
 xsetroot -cursor_name left_ptr
 sxhkd &
  
-bspc config border_width	2
-bspc config window_gap		4
+bspc config border_width	4
+bspc config window_gap		12
  
 bspc config split_ratio		0.5
 bspc config focus_follows_pointer	false
@@ -16,14 +14,6 @@ bspc config pointer_modifier	mod4
 bspc config automatic_scheme	alternate
 
 bspc monitor -d 1 2 3 4 5
-
-# Autostart
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-dunst &
-feh --bg-fill ~/.config/bspwm/wallpaper.jpg
-picom &
-$EWW daemon ; $EWW -c ~/.config/eww/bar open bar
-~/.config/bspwm/fullscreen.sh &
 
 # Adding custom resolutions
 xrandr --newmode "640x480_60.00"   23.75  640 664 720 800  480 483 487 500 -hsync +vsync
@@ -34,3 +24,11 @@ xrandr --addmode eDP1 1280x720_60.00
 
 xrandr --newmode "800x600_60.00"   38.25  800 832 912 1024  600 603 607 624 -hsync +vsync
 xrandr --addmode eDP1 800x600_60.00
+
+# Autostart
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+dunst &
+feh --bg-fill ~/.config/bspwm/wallpaper.jpg
+picom &
+~/.config/bspwm/fullscreen.sh &
+eww daemon ; eww -c ~/.config/eww/bar/ open bar

@@ -10,12 +10,19 @@
 (defpoll bat-icon :interval "1m" "~/.config/eww/scripts/battery.sh icon")
 (defpoll bat-lvl :interval "1m" "~/.config/eww/scripts/battery.sh level")
 (defpoll volume :interval "1s" "pamixer --get-volume-human")
+(defpoll time :interval "1s" 'date "+%R"')
+(defpoll date :interval "1s" 'date "+%a %d %b"')
+(defpoll br-lvl :interval "1s" `~/.config/eww/scripts/brightness.sh`)
+(defpoll bt-icon :interval "1s" "~/.config/eww/scripts/bluetooth.sh")
+(defpoll cpu :interval "1s" "~/.config/eww/scripts/cpu.sh")
+(defpoll mem :interval "1s" "~/.config/eww/scripts/memory.sh")
 
 (defvar eww "eww -c ~/.config/eww/bar/")
 
 (defvar wifi-rev false)
 (defvar vol-rev false)
 (defvar bat-rev false)
+(defvar br-rev false)
 
 (defwidget workspaces []
   (box
@@ -30,6 +37,20 @@
     (label :class w3 :text "三")
     (label :class w4 :text "四")
     (label :class w5 :text "五")))
+
+(defwidget cpu []
+  (box
+    :class "cpu"
+    :orientation "h"
+    :halign "start"
+    (label :text "󰓅 ${cpu}")))
+
+(defwidget memory []
+  (box
+    :class "memory"
+    :orientation "h"
+    :halign "start"
+    (label :text "󰆼 ${mem}")))
 
 (defwidget window-name []
   (box
@@ -67,6 +88,21 @@
         :duration "250ms"
         (label :orientation "h" :text volume)))))
 
+(defwidget br []
+  (eventbox
+    :onhover "${eww} update br-rev=true"
+    :onhoverlost "${eww} update br-rev=false"
+    (box 
+      :class "br-widget"
+      :space-evenly false
+      :limit-height 10
+      (label :class "br" :limit-width 12 :text "󰃟 ")
+      (revealer
+        :transition "slideright"
+        :reveal br-rev
+        :duration "250ms"
+        (label :orientation "h" :text br-lvl)))))
+
 (defwidget bat []
   (eventbox
     :onhover "${eww} update bat-rev=true"
@@ -86,6 +122,25 @@
     :class "menu"
     (button :class "menu-btn" :tooltip "toggle menu" :onclick "~/.config/eww/scripts/toggle-cc.sh" "󰊠")))
 
+(defwidget bt []
+  (box
+    :class "bt"
+    (button :class "bt-btn" :tooltip "open bluetoothctl" :onclick "~/.config/eww/scripts/kitty.sh bluetoothctl" "")))
+
+(defwidget time []
+  (box
+    :class "time"
+    :orientation "h"
+    :halign "end"
+    (label :text "󰥔 ${time}")))
+
+(defwidget date []
+  (box
+    :class "date"
+    :orientation "h"
+    :halign "end"
+    (label :text "󰃭 ${date}")))
+
 (defwidget side []
   (box :class "side"
        :orientation "h"
@@ -94,15 +149,36 @@
        :space-evenly false
     (wifi)
     (vol)
+    (br)
     (bat)
-    (menu)))
+    (bt)))
+
+(defwidget left []
+  (box
+    :class "left"
+    :halign "start"
+    :spacing 0
+    :space-evenly false
+    (workspaces)
+    (cpu)
+    (memory)))
+
+(defwidget right []
+  (box
+    :class "right"
+    :halign "end"
+    :spacing 0
+    :space-evenly false
+    (date)
+    (time)
+    (side)))
 
 (defwidget bar []
   (centerbox :orientation "h"
     :class "bar"
-    (workspaces)
+    (left)
     (window-name)
-    (side)))
+    (right)))
 
 (defwindow bar
   :stacking "fg"
@@ -113,6 +189,6 @@
               :x "0px"
               :y "0px"
               :width "100%"
-              :height "40px"
+              :height "50px"
               :anchor "top center")
   (bar))
