@@ -2,6 +2,7 @@
 
 <div align="center">
   <img src="./images/screenshot1.png">
+  <img src="./images/screenshot2.png">
 </div>
 
 Stuff I use:
