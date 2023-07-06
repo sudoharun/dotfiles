@@ -55,6 +55,7 @@
 (defwidget window-name []
   (box
     :class "wn-wid"
+    :orientation "h"
     (label :text wn)))
 
 (defwidget wifi []
@@ -161,7 +162,8 @@
     :space-evenly false
     (workspaces)
     (cpu)
-    (memory)))
+    (memory)
+    (window-name)))
 
 (defwidget right []
   (box
@@ -173,11 +175,14 @@
     (time)
     (side)))
 
+(defwidget nothing []
+  (box :class "nothing"))
+
 (defwidget bar []
   (centerbox :orientation "h"
     :class "bar"
     (left)
-    (window-name)
+    (nothing)
     (right)))
 
 (defwindow bar
@@ -191,4 +196,4 @@
               :width "100%"
               :height "50px"
               :anchor "top center")
-  (bar))
+   (bar))
