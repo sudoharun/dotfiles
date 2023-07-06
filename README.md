@@ -1,5 +1,9 @@
 <h1>BSPWM Dotfiles</h1>
 
+<div align="center">
+  <img src="./images/screenshot1.png">
+</div>
+
 Stuff I use:
 <ul>
   <li><a href="https://github.com/adi1090x/rofi">Rofi Themes Collection</a></li>
