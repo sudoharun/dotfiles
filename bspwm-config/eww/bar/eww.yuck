@@ -196,4 +196,4 @@
               :width "100%"
               :height "50px"
               :anchor "top center")
-   (bar))
+  (bar))
