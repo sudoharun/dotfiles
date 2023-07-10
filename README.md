@@ -21,4 +21,6 @@ NOTE: Please do not use these dotfiles as they are unmaintained, abandoned and W
 
 <div align="center">
   <img src="./assets/hyprland1.png">
+  <img src="./assets/hyprland2.png">
+  <img src="./assets/hyprland3.png">
 </div><br>
