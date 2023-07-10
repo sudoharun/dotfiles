@@ -1,9 +1,8 @@
-# dotfiles
-by sudo-harun
+# dotfiles by sudo-harun 💪
 
-If you like these, please star!
+⭐ If you like these, please star! ⭐
 
-## <a href="https://github.com/sudo-harun/dotfiles/tree/bspwm">BSPWM config</a>
+## <a href="https://github.com/sudo-harun/dotfiles/tree/bspwm">BSPWM config ☺</a>
 
 <div align="center">
   <img src="./assets/bspwm1.png">
