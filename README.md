@@ -7,7 +7,11 @@
 <div align="center">
   <img src="./assets/bspwm1.png">
   <img src="./assets/bspwm2.png">
-  ./assets/bspwm-showcase.mp4
+  
+
+https://github.com/sudo-harun/dotfiles/assets/123123333/718a14ad-5208-47b4-b451-788fb79941d2
+
+
 </div><br>
 
 ## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config(!)</a>
