@@ -8,5 +8,5 @@ These are my dotfiles.
   <img src="./assets/screenshot2.png" alt="bspwm screenshot 2">
 </div>
 
-<h3><a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config (ABANDONED)</a></h3>
+<h2><a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config (ABANDONED)</a></h2>
 Please do not use this config as it is abandoned and still WIP.
