@@ -12,7 +12,7 @@
 https://github.com/sudo-harun/dotfiles/assets/123123333/2e4b16e2-0ccd-4ac5-a16a-b8ac67f11ad0
 
 
-(NOTE: Recording does not do picom and animations justice)
+(NOTE: Recording does NOT do picom and animations justice)
 </div><br>
 
 ## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config(!)</a>
