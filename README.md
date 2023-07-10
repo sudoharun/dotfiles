@@ -1,6 +1,8 @@
 <h1>sudo-harun's dotfiles</h1>
 
-<h3 style="font-size: 24px;">BSPWM config</h3>
+These are my dotfiles.
+
+<h2>BSPWM config</h2>
 <div align="center">
   <img src="./assets/screenshot1.png" alt="bspwm screenshot 1">
   <img src="./assets/screenshot2.png" alt="bspwm screenshot 2">
