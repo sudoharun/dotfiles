@@ -7,7 +7,7 @@
 <div align="center">
   <img src="./assets/bspwm1.png">
   <img src="./assets/bspwm2.png">
-  <a href="./assets/bspwm-showcase.mp4"></a>
+  <video autoplay><source src="./assets/bspwm-showcase.mp4" type="video/mp4"></source></video>
 </div><br>
 
 ## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config(!)</a>
