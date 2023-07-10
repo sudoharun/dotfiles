@@ -1,0 +1,201 @@
+(defpoll w1 :interval "0.1s" "./scripts/workspaces.sh w1")
+(defpoll w2 :interval "0.1s" "./scripts/workspaces.sh w2")
+(defpoll w3 :interval "0.1s" "./scripts/workspaces.sh w3")
+(defpoll w4 :interval "0.1s" "./scripts/workspaces.sh w4")
+(defpoll w5 :interval "0.1s" "./scripts/workspaces.sh w5")
+(defpoll wn :interval "0.1s" "./scripts/window-name.sh")
+(defpoll wifi-icon :interval "10s" "./scripts/wifi.sh icon")
+(defpoll wifi-strength :interval "10s" "./scripts/wifi.sh percentage")
+(defpoll vol-icon :interval "1s" "./scripts/volume.sh icon")
+(defpoll bat-icon :interval "1m" "./scripts/battery.sh icon")
+(defpoll bat-lvl :interval "1m" "./scripts/battery.sh level")
+(defpoll volume :interval "1s" "pamixer --get-volume-human")
+(defpoll time :interval "1s" 'date "+%R"')
+(defpoll date :interval "1s" 'date "+%a %d %b"')
+(defpoll br-lvl :interval "1s" `./scripts/brightness.sh`)
+(defpoll bt-icon :interval "1s" "./scripts/bluetooth.sh")
+(defpoll cpu :interval "1s" "./scripts/cpu.sh")
+(defpoll mem :interval "1s" "./scripts/memory.sh")
+
+(defvar eww "eww")
+
+(defvar wifi-rev false)
+(defvar vol-rev false)
+(defvar bat-rev false)
+(defvar br-rev false)
+
+(defwidget workspaces []
+  (box
+    :class "bar-workspace"
+    :orientation "h"
+    :spacing 10
+    :space-evenly false
+    :halign "start"
+    :hexpand false
+    (label :class w1 :text "一")
+    (label :class w2 :text "二")
+    (label :class w3 :text "三")
+    (label :class w4 :text "四")
+    (label :class w5 :text "五")))
+
+(defwidget cpu []
+  (box
+    :class "bar-cpu"
+    :orientation "h"
+    :halign "start"
+    (label :text "󰓅 ${cpu}")))
+
+(defwidget memory []
+  (box
+    :class "bar-memory"
+    :orientation "h"
+    :halign "start"
+    (label :text "󰆼 ${mem}")))
+
+(defwidget window-name []
+  (box
+    :class "bar-wn-wid"
+    :orientation "h"
+    :hexpand false
+    (label :text wn)))
+
+(defwidget wifi []
+  (eventbox
+    :onhover "${eww} update wifi-rev=true"
+    :onhoverlost "${eww} update wifi-rev=false"
+    :class "bar-wifi-wid"
+    (box 
+      :class "bar-wifi-widget"
+      :space-evenly false
+      (label :class "bar-wifi-str" :limit-width 12 :text wifi-icon)
+      (revealer
+        :transition "slideright"
+        :reveal wifi-rev
+        :duration "250ms"
+        (label :orientation "h" :text wifi-strength)))))
+
+(defwidget vol []
+  (eventbox
+    :onhover "${eww} update vol-rev=true"
+    :onhoverlost "${eww} update vol-rev=false"
+    :onclick "pamixer -t"
+    (box 
+      :class "bar-vol-widget"
+      :space-evenly false
+      :limit-height 10
+      (label :class "bar-vol" :limit-width 12 :text vol-icon)
+      (revealer
+        :transition "slideright"
+        :reveal vol-rev
+        :duration "250ms"
+        (label :orientation "h" :text volume)))))
+
+(defwidget br []
+  (eventbox
+    :onhover "${eww} update br-rev=true"
+    :onhoverlost "${eww} update br-rev=false"
+    (box 
+      :class "bar-br-widget"
+      :space-evenly false
+      :limit-height 10
+      (label :class "bar-br" :limit-width 12 :text "󰃟 ")
+      (revealer
+        :transition "slideright"
+        :reveal br-rev
+        :duration "250ms"
+        (label :orientation "h" :text br-lvl)))))
+
+(defwidget bat []
+  (eventbox
+    :onhover "${eww} update bat-rev=true"
+    :onhoverlost "${eww} update bat-rev=false"
+    (box 
+      :class "bar-bat-widget"
+      :space-evenly false
+      (label :class "bar-bat" :text bat-icon)
+      (revealer
+        :transition "slideright"
+        :reveal bat-rev
+        :duration "250ms"
+        (label :text bat-lvl)))))
+
+(defwidget menu []
+  (box
+    :class "bar-menu"
+    (button :class "menu-btn" :tooltip "toggle menu" :onclick "./scripts/toggle-cc.sh" "󰊠")))
+
+(defwidget bt []
+  (box
+    :class "bar-bt"
+    (button :class "bar-bt-btn" :tooltip "open bluetoothctl" :onclick "./scripts/kitty.sh bluetoothctl" "")))
+
+(defwidget time []
+  (box
+    :class "bar-time"
+    :orientation "h"
+    :halign "end"
+    (label :text "󰥔 ${time}")))
+
+(defwidget date []
+  (box
+    :class "bar-date"
+    :orientation "h"
+    :halign "end"
+    (label :text "󰃭 ${date}")))
+
+(defwidget side []
+  (box :class "bar-side"
+       :orientation "h"
+       :halign "end"
+       :spacing 10
+       :space-evenly false
+    (wifi)
+    (vol)
+    (br)
+    (bat)
+    (bt)))
+
+(defwidget left []
+  (box
+    :class "bar-left"
+    :halign "start"
+    :spacing 0
+    :space-evenly false
+    (workspaces)
+    (cpu)
+    (memory)
+    (window-name)))
+
+(defwidget right []
+  (box
+    :class "bar-right"
+    :halign "end"
+    :spacing 0
+    :space-evenly false
+    (date)
+    (time)
+    (side)))
+
+(defwidget nothing []
+  (box :class "nothing"))
+
+(defwidget bar []
+  (centerbox :orientation "h"
+    :class "bar"
+    (left)
+    (nothing)
+    (right)))
+
+(defwindow bar
+  :stacking "fg"
+  :windowtype "dock"
+  :monitor "0"
+  :wm-ignore false
+  :reserve (struts :distance "40px" :side "top")
+  :geometry (geometry
+              :x "0px"
+              :y "0px"
+              :width "100%"
+              :height "50px"
+              :anchor "top center")
+  (bar))

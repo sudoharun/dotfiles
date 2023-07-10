@@ -1,7 +1,7 @@
 #!/bin/bash
 name() {
-  winame=`xdotool getactivewindow getwindowname`
-  windowname=`echo ${winame::100}`
+  winame=`hyprctl activewindow | grep "title" | awk -F":" '{ print $2 }'`
+  windowname=`echo ${winame::125}`
   if [[ $winame == "" ]]; then
     echo "Desktop"
   else

@@ -9,51 +9,51 @@ occ5=`bspc query -D -d .occupied --names | grep -i '5'`
 
 w1() {
   if [[ $aw -eq 1 ]]; then
-    echo active-ws
+    echo bar-active-ws
   elif [[ $occ1 -eq 1 ]]; then
-    echo occupied-ws
+    echo bar-occupied-ws
   else
-    echo ws
+    echo bar-ws
   fi
 }
 
 w2() {
   if [[ $aw -eq 2 ]]; then
-    echo active-ws
+    echo bar-active-ws
   elif [[ $occ2 -eq 2 ]]; then
-    echo occupied-ws
+    echo bar-occupied-ws
   else
-    echo ws
+    echo bar-ws
   fi
 }
 
 w3() {
   if [[ $aw -eq 3 ]]; then
-    echo active-ws
+    echo bar-active-ws
   elif [[ $occ3 -eq 3 ]]; then
-    echo occupied-ws
+    echo bar-occupied-ws
   else
-    echo ws
+    echo bar-ws
   fi
 }
 
 w4() {
   if [[ $aw -eq 4 ]]; then
-    echo active-ws
+    echo bar-active-ws
   elif [[ $occ4 -eq 4 ]]; then
-    echo occupied-ws
+    echo bar-occupied-ws
   else
-    echo ws
+    echo bar-ws
   fi
 }
 
 w5() {
   if [[ $aw -eq 5 ]]; then
-    echo active-ws
+    echo bar-active-ws
   elif [[ $occ5 -eq 5 ]]; then
-    echo occupied-ws
+    echo bar-occupied-ws
   else
-    echo ws
+    echo bar-ws
   fi
 }
 

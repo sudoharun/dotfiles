@@ -1,0 +1,61 @@
+* {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+// Below is all styling for bar and bar widgets
+
+.bar-workspace {
+  font-family: "Noto Sans CJK JP";
+}
+
+.bar-wifi-str {
+  padding-right: 12px;
+}
+
+.bar-active-ws {
+  color: #FFFFFF;
+}
+
+.bar-occupied-ws {
+  color: #858585;
+}
+
+.bar-ws {
+  color: #252525;
+}
+
+window,
+.bar {
+  padding: 3px 6px;
+  margin: 5px;
+  background-color: transparent;
+}
+
+.bar-workspace,
+.bar-wn-wid,
+.bar-side,
+.bar-time,
+.bar-date,
+.bar-cpu,
+.bar-memory {
+  background-color: #000000;
+  padding: 0px 8px;
+  margin: 0px 4px;
+  border: 1px solid #5F5F5F;
+  border-radius: 2px;
+}
+
+.bar-bat {
+  padding-right: 3px;
+}
+
+.bar-vol {
+  padding-right: 3px;
+}
+
+.bar-bt,
+.bar-bt-btn {
+  all: unset;
+  padding-right: 3px;
+}
