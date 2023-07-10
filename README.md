@@ -2,7 +2,7 @@
 
 These are my dotfiles.
 
-<h2>BSPWM config</h2>
+<h2><a href="github.com/sudo-harun/dotfiles/tree/bspwm">BSPWM config</a></h2>
 <div align="center">
   <img src="./assets/screenshot1.png" alt="bspwm screenshot 1">
   <img src="./assets/screenshot2.png" alt="bspwm screenshot 2">
