@@ -9,4 +9,5 @@ These are my dotfiles.
 </div>
 
 <h2><a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config (ABANDONED)</a></h2>
-Please do not use this config as it is abandoned and still WIP.
+
+NOTE: Please do not use this config as it is abandoned and still WIP.
