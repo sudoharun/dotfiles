@@ -5,6 +5,8 @@
   <img src="./images/screenshot2.png">
 </div><br>
 
+NOTE: The install scripts are just for my hardware after a fresh arch install. Please do not use them unless you plan to modify them.<br>
+
 Stuff I use:
 <ul>
   <li><a href="https://github.com/adi1090x/rofi">Rofi Themes Collection</a></li>
