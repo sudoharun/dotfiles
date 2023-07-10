@@ -9,7 +9,7 @@
   <img src="./assets/bspwm2.png">
   
 
-https://github.com/sudo-harun/dotfiles/assets/123123333/718a14ad-5208-47b4-b451-788fb79941d2
+https://github.com/sudo-harun/dotfiles/assets/123123333/2e4b16e2-0ccd-4ac5-a16a-b8ac67f11ad0
 
 
 </div><br>
