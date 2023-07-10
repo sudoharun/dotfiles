@@ -4,4 +4,6 @@
 
 <h3>Installing Dependencies (Arch)</h3>
 
-```yay -S hyprland hyprpaper hyprshot nwg-look-bin```
+```
+yay -S hyprland hyprpaper hyprshot nwg-look-bin
+```
