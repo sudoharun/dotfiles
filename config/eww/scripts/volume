@@ -17,4 +17,11 @@ icon() {
 
 if [[ $1 == icon ]]; then
   icon
+elif [[ $1 == text ]]; then
+  lvl=`pamixer --get-volume-human`
+  if [[ "$lvl" == "$mute" ]]; then
+    echo "0%"
+  else
+    echo $lvl
+  fi
 fi

@@ -6,19 +6,19 @@ wf=`echo "$strength*100/70" | bc`
 
 icon() {
   if [[ $strength -eq 0 ]]; then
-    echo 󰤭 
+    echo "󰤭"
   elif [[ $strength -le 14 ]]; then
-    echo 󰤯 
+    echo "󰤯"
   elif [[ $strength -le 28 ]]; then 
-    echo 󰤟 
+    echo "󰤟" 
   elif [[ $strength -le 42 ]]; then
-    echo 󰤢 
+    echo "󰤢" 
   elif [[ $strength -le 56 ]]; then
-    echo 󰤥 
+    echo "󰤥" 
   elif [[ $strength -le 70 ]]; then
-    echo 󰤨 
+    echo "󰤨" 
   else
-    echo 󰤭 
+    echo "󰤭" 
   fi
 }
 

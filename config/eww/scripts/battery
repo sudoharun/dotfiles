@@ -9,22 +9,22 @@ icon() {
   state=`upower -d | grep "state" | awk -F":" 'NR==1{ print $2 }' | xargs`
   batlvl=`upower -d | grep "percentage" | awk -F":" 'NR==1{ print $2 }' | awk -F"%" '{ print $1 }' | xargs`
   if [ "$state" == "$nc" ]; then
-    echo " "
+    echo "󱐋"
   elif [ "$state" == "$dc" ]; then
-    echo " "
+    echo "󱐋"
   elif [ "$state" == "$batyes" ]; then
-    echo "󰂄"
+    echo "󱐋 "
   elif [ "$state" == "$batno" ]; then
     if [[ $batlvl -lt 20 ]]; then
-      echo "󰁻"
+      echo " "
     elif [[ $batlvl -lt 40 ]]; then
-      echo "󰁽"
+      echo " "
     elif [[ $batlvl -lt 60 ]]; then
-      echo "󰁿"
+      echo " "
     elif [[ $batlvl -lt 80 ]]; then
-      echo "󰂁"
+      echo " "
     elif [[ $batlvl -lt 100 ]]; then
-      echo "󰁹"
+      echo " "
     fi
   else
     echo "󰑓"

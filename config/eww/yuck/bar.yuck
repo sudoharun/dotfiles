@@ -1,26 +1,17 @@
-; (defpoll w1 :interval "0.1s" "./scripts/workspaces.sh w1")
-; (defpoll w2 :interval "0.1s" "./scripts/workspaces.sh w2")
-; (defpoll w3 :interval "0.1s" "./scripts/workspaces.sh w3")
-; (defpoll w4 :interval "0.1s" "./scripts/workspaces.sh w4")
-; (defpoll w5 :interval "0.1s" "./scripts/workspaces.sh w5")
-; (defpoll w6 :interval "0.1s" "./scripts/workspaces.sh w6")
-; (defpoll w7 :interval "0.1s" "./scripts/workspaces.sh w7")
-; (defpoll w8 :interval "0.1s" "./scripts/workspaces.sh w8")
-; (defpoll w9 :interval "0.1s" "./scripts/workspaces.sh w9")
-; (defpoll w10 :interval "0.1s" "./scripts/workspaces.sh w10")
-(defpoll wn :interval "0.25s" "./scripts/window-name.sh")
-(defpoll wifi-icon :interval "10s" "./scripts/wifi.sh icon")
-(defpoll wifi-strength :interval "10s" "./scripts/wifi.sh percentage")
-(defpoll vol-icon :interval "1s" "./scripts/volume.sh icon")
-(defpoll bat-icon :interval "1m" "./scripts/battery.sh icon")
-(defpoll bat-lvl :interval "1m" "./scripts/battery.sh level")
+(deflisten workspaces "./scripts/workspaces")
+(deflisten window :initial "..." "sh ./scripts/activewindowname")
+(defpoll wifi-icon :interval "10s" "./scripts/wifi icon")
+(defpoll wifi-strength :interval "10s" "./scripts/wifi percentage")
+(defpoll vol-icon :interval "1s" "./scripts/volume icon")
+(defpoll bat-icon :interval "1m" "./scripts/battery icon")
+(defpoll bat-lvl :interval "1m" "./scripts/battery level")
 (defpoll volume :interval "1s" "pamixer --get-volume-human")
 (defpoll time :interval "1s" 'date "+%R"')
 (defpoll date :interval "1s" 'date "+%a %d %b"')
-(defpoll br-lvl :interval "1s" `./scripts/brightness.sh`)
-(defpoll bt-icon :interval "1s" "./scripts/bluetooth.sh")
-(defpoll cpu :interval "1s" "./scripts/cpu.sh")
-(defpoll mem :interval "1s" "./scripts/memory.sh")
+(defpoll br-lvl :interval "1s" `./scripts/brightness`)
+(defpoll bt-icon :interval "1s" "./scripts/bluetooth")
+(defpoll cpu :interval "1s" "./scripts/cpu")
+(defpoll mem :interval "1s" "./scripts/memory")
 
 (defvar eww "$HOME/.eww-wayland/target/release/eww -c $HOME/.config/eww/wayland")
 
@@ -29,24 +20,8 @@
 (defvar bat-rev false)
 (defvar br-rev false)
 
-; (defwidget workspaces []
-;   (box
-;     :class "bar-workspace"
-;     :orientation "h"
-;     :spacing 10
-;     :space-evenly false
-;     :halign "start"
-;     :hexpand false
-;     (label :class w1 :text "一")
-;     (label :class w2 :text "二")
-;     (label :class w3 :text "三")
-;     (label :class w4 :text "四")
-;     (label :class w5 :text "五")
-;     (label :class w6 :text "六")
-;     (label :class w7 :text "七")
-;     (label :class w8 :text "八")
-;     (label :class w9 :text "九")
-;     (label :class w10 :text "十")))
+(defwidget workspaces []
+  (literal :content workspaces))
 
 (defwidget cpu []
   (box
@@ -62,12 +37,9 @@
     :halign "start"
     (label :text "󰆼 ${mem}")))
 
-(defwidget window-name []
-  (box
-    :class "bar-wn-wid"
-    :orientation "h"
-    :hexpand false
-    (label :text wn)))
+(defwidget window_w []
+  (box :class "window-name"
+    (label :text "${window}")))
 
 (defwidget wifi []
   (eventbox
@@ -171,10 +143,10 @@
     :halign "start"
     :spacing 0
     :space-evenly false
-;     (workspaces)
+    (workspaces)
     (cpu)
     (memory)
-    (window-name)))
+    (window_w)))
 
 (defwidget right []
   (box
