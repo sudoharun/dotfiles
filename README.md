@@ -20,6 +20,7 @@
 ## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config</a>
 
 ~~NOTE: Please do not use these dotfiles as they are unmaintained, abandoned and WIP, and I will get back to them in the future.~~
+
 I've switched to Hyprland and these dotfiles work fine now.
 
 <div align="center">
