@@ -1,1 +1,4 @@
+(defvar eww "$HOME/.eww-wayland/target/release/eww -c $HOME/.config/eww/wayland")
+
 (include "./yuck/vertical-bar.yuck")
+(include "./yuck/screenshot.yuck")

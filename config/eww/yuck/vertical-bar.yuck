@@ -11,7 +11,6 @@
 (defpoll br-lvl :interval "1s" `./scripts/brightness`)
 (defpoll bt-icon :interval "1s" "./scripts/bluetooth")
 
-(defvar eww "$HOME/.eww-wayland/target/release/eww -c $HOME/.config/eww/wayland")
 (defvar open-rofi "~/.config/rofi/launchers/type-2/launcher.sh")
 
 (defvar wifi-rev false)
@@ -87,7 +86,7 @@
   (box
     :orientation "v"
     :class "bar-bt"
-    (button :class "bar-bt-btn" :tooltip "open bluetoothctl" :onclick "./scripts/kitty bluetoothctl" "")))
+    (button :class "bar-bt-btn" :tooltip "open bluetoothctl" :onclick "./scripts/wezterm bluetoothctl" "")))
 
 (defwidget rofi []
   (box

@@ -1,0 +1,39 @@
+(defwidget entire_screen []
+  (box
+    :class "widget"
+    (button :class "button" :onclick "hyprshot -m output" "shoot")))
+
+(defwidget region []
+  (box
+    :class "widget"
+    (button :class "button" :onclick "hyprshot -m region" "region")))
+
+(defwidget three_seconds []
+  (box
+    :class "widget"
+    (button :class "button" :onclick "sleep 3 && hyprshot -m output" "3s")))
+
+(defwidget cancel []
+  (box
+    :class "cancel"))
+
+(defwidget main []
+  (box
+    :class "screenshooter_centerbox"
+    :space-evenly true
+    (entire_screen)
+    (region)
+    (three_seconds)))
+
+(defwindow screenshooter
+  :stacking "fg"
+  :monitor "0"
+  :exclusive false
+  :namespace "screenshooter"
+  :geometry (geometry
+    :x "50%"
+    :y "50%"
+    :width "30%"
+    :height "10%"
+    :anchor "center")
+  (main))

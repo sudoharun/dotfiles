@@ -2,7 +2,7 @@
 
 workspaces() {
   a=`hyprctl monitors | awk 'FNR == 7 { print $3 }'`
-  o=`hyprctl workspaces | awk '{ print $3 }' | egrep -o '[0-9]+'`
+  o=`hyprctl workspaces | awk '{ print $4 }' | egrep -o '[0-9]+'`
   
   w1=bar-ws
   w2=bar-ws

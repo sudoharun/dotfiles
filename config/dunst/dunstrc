@@ -30,10 +30,10 @@
     height = 200
 
     # Position the notification in the top right corner
-    origin = bottom-right
+    origin = top-right
 
     # Offset from the origin
-    offset = 12x12
+    offset = 24x24
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 1
@@ -73,7 +73,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 0
+    transparency = 50
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -92,10 +92,10 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 0
+    frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#F3F3F3"
+    frame_color = "#7d7d7d"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -295,7 +295,7 @@
     # * context_all: Open context menu for all notifications.
     # These values can be strung together for each mouse event, and
     # will be executed in sequence.
-    mouse_left_click = do_action, close_current
+    mouse_left_click = do_action, open_url, context, close_current
     mouse_middle_click = do_action, close_current
     mouse_right_click = close_all
 
@@ -313,14 +313,14 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#2E383C"
+    background = "#050505"
     foreground = "#F5F5F5"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#2E383C"
+    background = "#050505"
     foreground = "#F5F5F5"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
