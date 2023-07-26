@@ -49,13 +49,11 @@ chmod +x eww/scripts/volume
 chmod +x eww/scripts/wifi
 chmod +x eww/scripts/workspaces
 
-# Installing eww and rust using rustup
+# Installing rustup
 cd ~
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 rustup install nightly
-cd ~
-yay -S eww-wayland-git
 
 # Setup ohmyzsh
 cd ~
