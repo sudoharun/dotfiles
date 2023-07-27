@@ -9,7 +9,7 @@ I have since switched to Hyprland and these dotfiles should be fine now.
   <img src="./assets/hyprland2.png">
 </div>
 
-<h3>Installing Dependencies (Arch)</h3>
+### Installing Dependencies (Arch)
 
 ```
 yay -S hyprland hyprpaper hyprshot nwg-look-bin
