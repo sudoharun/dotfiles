@@ -1,8 +1,5 @@
 #!/bin/bash
 
-cd ~/dotfiles
-mv config/wezterm.lua ~/.wezterm.lua
-
 # Installing yay
 cd ~
 git clone https://aur.archlinux.org/yay.git
@@ -11,7 +8,7 @@ makepkg -si
 
 # Installing other packages
 cd ~
-yay -S hyprland qt5-wayland qt6-wayland linux-headers wezterm zsh neovim firefox-developer-edition udisks2 unrar unzip ttf-jetbrains-mono-nerd sof-firmware rofi rofi-emoji dunst polkit-gnome ranger reflector-simple playerctl pavucontrol pamixer p7zip noto-fonts noto-fonts-cjk noto-fonts-emoji-apple neofetch mpv iw htop gimp dragon-drop deluge-gtk webcord ccache brillo alsa-firmware alsa-ucm-conf bluez capitaine-cursors zip upower ttf-roboto filezilla xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-hyprland-git papirus-icon-theme swaylock wireless_tools wev nwg-look-bin openshot imv hyprpaper hyprshot dosfstools socat
+yay -S hyprland qt5-wayland qt6-wayland linux-headers wezterm zsh neovim firefox-developer-edition udisks2 unrar unzip ttf-jetbrains-mono-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd sof-firmware rofi rofi-emoji dunst polkit-gnome ranger reflector-simple playerctl pavucontrol pamixer p7zip noto-fonts noto-fonts-cjk noto-fonts-emoji-apple neofetch mpv iw htop gimp dragon-drop deluge-gtk webcord ccache brillo alsa-firmware alsa-ucm-conf bluez capitaine-cursors zip upower ttf-roboto filezilla xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-hyprland-git papirus-icon-theme swaylock wireless_tools wev nwg-look-bin openshot imv hyprpaper hyprshot dosfstools socat
 
 # Installing mantis gtk theme
 cd ~
@@ -21,6 +18,20 @@ cd mantis-theme
 mv Manti* ~/.themes
 cd ~
 rm -rf mantis-theme
+
+# Move WezTerm config to home dir
+cd ~/dotfiles
+mv config/wezterm.lua ~/.wezterm.lua
+
+# Installing eww
+cd ~
+git clone https://aur.archlinux.org/eww-git.git
+cd ~/dotfiles
+mv config/eww/PKGBUILD ~/eww-git/
+cd ~/eww-git
+makepkg -si
+cd ~
+mv eww-git ~/.eww
 
 # Setup dotfiles
 mkdir ~/.config
