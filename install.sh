@@ -23,12 +23,20 @@ rm -rf mantis-theme
 cd ~/dotfiles
 mv config/wezterm.lua ~/.wezterm.lua
 
+# Installing rustup
+cd ~
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+rustup install nightly
+
 # Installing eww
 cd ~
 git clone https://aur.archlinux.org/eww-git.git
 cd ~/dotfiles
 mv config/eww/PKGBUILD ~/eww-git/
 cd ~/eww-git
+curl -sS https://github.com/elkowar.gpg | gpg --import -i -
+curl -sS https://github.com/web-flow.gpg | gpg --import -i -
 makepkg -si
 cd ~
 mv eww-git ~/.eww
@@ -59,12 +67,6 @@ chmod +x eww/scripts/vertical-workspaces
 chmod +x eww/scripts/volume
 chmod +x eww/scripts/wifi
 chmod +x eww/scripts/workspaces
-
-# Installing rustup
-cd ~
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source "$HOME/.cargo/env"
-rustup install nightly
 
 # Setup ohmyzsh
 cd ~
