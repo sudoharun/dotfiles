@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Adding custom aliases and environment variables
 echo "# Custom Aliases" >> ~/.zshrc
