@@ -1,12 +1,17 @@
-# Hyprland config ~~(ABANDONED)~~
+# Hyprland config
 
-~~<b>NOTE: Please do not use these dotfiles. They are from an abandoned Hyprland config which I plan to come back to in the future.</b>~~
-
-I have since switched to Hyprland and these dotfiles should be fine now.
+## Horizontal Bar
 
 <div align="center">
-  <img src="./assets/hyprland1.png">
-  <img src="./assets/hyprland2.png">
+  <img src="./assets/hyprland-hori-bar-1.png">
+  <img src="./assets/hyprland-hori-bar-2.png">
+</div>
+
+## Vertical Bar
+
+<div align="center">
+  <img src="./assets/hyprland-vert-bar-1.png">
+  <img src="./assets/hyprland-vert-bar-2.png">
 </div>
 
 ### Installing Dependencies (Arch)
