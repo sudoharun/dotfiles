@@ -6,19 +6,17 @@ wf=`echo "$strength*100/70" | bc`
 
 icon() {
   if [[ $strength -eq 0 ]]; then
-    echo "󰤭"
-  elif [[ $strength -le 14 ]]; then
-    echo "󰤯"
-  elif [[ $strength -le 28 ]]; then 
-    echo "󰤟" 
-  elif [[ $strength -le 42 ]]; then
-    echo "󰤢" 
-  elif [[ $strength -le 56 ]]; then
-    echo "󰤥" 
-  elif [[ $strength -le 70 ]]; then
-    echo "󰤨" 
+    echo "./images/wifi-off.svg"
+  elif [[ $strength -le 25 ]]; then
+    echo "./images/wifi-none.svg"
+  elif [[ $strength -le 50 ]]; then 
+    echo "./images/wifi-low.svg"
+  elif [[ $strength -le 75 ]]; then
+    echo "./images/wifi-medium.svg"
+  elif [[ $strength -gt 75 ]]; then
+    echo "./images/wifi-high.svg"
   else
-    echo "󰤭" 
+    echo "./images/wifi-off.svg"
   fi
 }
 

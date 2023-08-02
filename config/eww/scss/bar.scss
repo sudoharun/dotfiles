@@ -1,61 +1,52 @@
 * {
-  font-size: 14px;
-  color: #FFFFFF;
+  font-family: "Roboto", "Iosevka Nerd Font", "Noto Sans CJK JP";
+  font-size: 22px;
 }
 
-// Below is all styling for bar and bar widgets
-
-.bar-workspace {
-  font-family: "Noto Sans CJK JP";
-}
-
-.bar-wifi-str {
-  padding-right: 12px;
-}
-
-.bar-active-ws {
-  color: #FFFFFF;
-}
-
-.bar-occupied-ws {
-  color: #858585;
-}
-
-.bar-ws {
-  color: #252525;
+window {
+  border: 0px solid #11111b;
+  border-radius: 8px;
 }
 
 window,
-.bar {
-  padding: 3px 6px;
+.bar-widget {
+  background-color: #1e1e2e;
+  padding: 3px;
+  margin: 4px;
+}
+
+.nothing,
+.bar-tray,
+.bar-time {
+  background-color: #313244;
+  border: 0px solid #000000;
+  border-radius: 8px;
+  padding: 5px;
   margin: 5px;
-  background-color: transparent;
 }
 
-.bar-workspace,
-.window-name,
-.bar-side,
-.bar-time,
-.bar-date,
-.bar-cpu,
-.bar-memory {
-  background-color: #000000;
+.bar-workspace {
+  background-color: #313244;
+  border: 0px solid #ffffff;
+  border-radius: 8px;
+  margin: 1px;
+  padding: 6px;
+}
+
+.bar-active-ws {
+  padding: 0px 4px;
+}
+
+.bar-occupied-ws {
+  padding: 0px 4px;
+  color: #505050;
+}
+
+.bar-text {
+  padding-right: 8px;
+  color: #94e2d5;
+}
+
+.bar-icon {
   padding: 0px 8px;
-  margin: 0px 4px;
-  border: 1px solid #5F5F5F;
-  border-radius: 2px;
-}
-
-.bar-bat {
-  padding-right: 3px;
-}
-
-.bar-vol {
-  padding-right: 3px;
-}
-
-.bar-bt,
-.bar-bt-btn {
-  all: unset;
-  padding-right: 3px;
 }

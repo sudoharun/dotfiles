@@ -1,4 +1,4 @@
 (defvar eww "eww")
 
-(include "./yuck/vertical-bar.yuck")
+(include "./yuck/bar.yuck")
 (include "./yuck/screenshot.yuck")

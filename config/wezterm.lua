@@ -13,13 +13,13 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = 'GitHub Dark'
+config.color_scheme = 'Catppuccin Mocha'
 config.enable_tab_bar = false
 
-config.font = wezterm.font 'JetBrainsMono Nerd Font'
+config.font = wezterm.font 'IosevkaTerm Nerd Font'
 config.font = wezterm.font_with_fallback {
   'Noto Sans CJK',
-  'matrix',
+  'JetBrainsMono Nerd Font',
 }
 config.font_size = 16
 

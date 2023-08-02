@@ -2,23 +2,27 @@
 
 lvlalt=`pamixer --get-volume-human | awk -F'%' '{ print $1 }'`
 zero="0%"
+half="50%"
+full="100%"
 mute="muted"
 
 icon() {
   lvl=`pamixer --get-volume-human`
   if [ "$lvl" == "$zero" ]; then
-    echo " "
+    echo "./images/volume-low.svg"
   elif [ "$lvl" == "$mute" ]; then
-    echo " "
+    echo "./images/volume-off.svg"
+  elif [ "$lvl" <= "$half" ]; then
+    echo "./images/volume-medium.svg"
   else
-    echo " "
+    echo "./images/volume-high.svg"
   fi
 }
 
 if [[ $1 == icon ]]; then
   icon
 elif [[ $1 == text ]]; then
-  lvl=`pamixer --get-volume-human`
+  lvl=`pamixer --get-volume-human | xargs`
   if [[ "$lvl" == "$mute" ]]; then
     echo "0%"
   else

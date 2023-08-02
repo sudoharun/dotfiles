@@ -15,17 +15,6 @@ workspaces() {
   w9=bar-ws
   w10=bar-ws
 
-  icon1=./images/1.svg
-  icon2=./images/2.svg
-  icon3=./images/3.svg
-  icon4=./images/4.svg
-  icon5=./images/5.svg
-  icon6=./images/6.svg
-  icon7=./images/7.svg
-  icon8=./images/8.svg
-  icon9=./images/9.svg
-  icon10=./images/0.svg
-
   for i in $o
   do
     eval "w$i=bar-occupied-ws";
@@ -33,47 +22,37 @@ workspaces() {
 
   if [[ $a -eq 1 ]]; then
     w1=bar-active-ws
-    icon1=./images/a1.svg
   elif [[ $a -eq 2 ]]; then
     w2=bar-active-ws
-    icon2=./images/a2.svg
   elif [[ $a -eq 3 ]]; then
     w3=bar-active-ws
-    icon3=./images/a3.svg
   elif [[ $a -eq 4 ]]; then
     w4=bar-active-ws
-    icon4=./images/a4.svg
   elif [[ $a -eq 5 ]]; then
     w5=bar-active-ws
-    icon5=./images/a5.svg
   elif [[ $a -eq 6 ]]; then
     w6=bar-active-ws
-    icon6=./images/a6.svg
   elif [[ $a -eq 7 ]]; then
     w7=bar-active-ws
-    icon7=./images/a7.svg
   elif [[ $a -eq 8 ]]; then
     w8=bar-active-ws
-    icon8=./images/a8.svg
   elif [[ $a -eq 9 ]]; then
     w9=bar-active-ws
-    icon9=./images/a9.svg
   elif [[ $a -eq 10 ]]; then
     w10=bar-active-ws
-    icon10=./images/a0.svg
   fi
  
+  l1="(label :class \"$w1\" :text \"一\")"
+  l2="(label :class \"$w2\" :text \"二\")"
+  l3="(label :class \"$w3\" :text \"三\")"
+  l4="(label :class \"$w4\" :text \"四\")"
+  l5="(label :class \"$w5\" :text \"五\")"
+  l6="(label :class \"$w6\" :text \"六\")"
+  l7="(label :class \"$w7\" :text \"七\")"
+  l8="(label :class \"$w8\" :text \"八\")"
+  l9="(label :class \"$w9\" :text \"九\")"
+  l10="(label :class \"$w10\" :text \"十\")"
 
-  l1="(image :class \"$w1\" :path \"$icon1\" :image-width \"24\" :image-height \"24\")"
-  l2="(image :class \"$w2\" :path \"$icon2\" :image-width \"24\" :image-height \"24\")"
-  l3="(image :class \"$w3\" :path \"$icon3\" :image-width \"24\" :image-height \"24\")"
-  l4="(image :class \"$w4\" :path \"$icon4\" :image-width \"24\" :image-height \"24\")"
-  l5="(image :class \"$w5\" :path \"$icon5\" :image-width \"24\" :image-height \"24\")"
-  l6="(image :class \"$w6\" :path \"$icon6\" :image-width \"24\" :image-height \"24\")"
-  l7="(image :class \"$w7\" :path \"$icon7\" :image-width \"24\" :image-height \"24\")"
-  l8="(image :class \"$w8\" :path \"$icon8\" :image-width \"24\" :image-height \"24\")"
-  l9="(image :class \"$w9\" :path \"$icon9\" :image-width \"24\" :image-height \"24\")"
-  l10="(image :class \"$w10\" :path \"$icon10\" :image-width \"24\" :image-height \"24\")"
 
 
   if [[ $w1 == 'bar-ws' ]]; then
