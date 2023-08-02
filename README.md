@@ -2,7 +2,7 @@
 
 ⭐ If you like these, please star! ⭐
 
-## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config</a>
+## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config (WIP)</a>
 
 <div align="center">
   <img src="./assets/hyprland1.png">
