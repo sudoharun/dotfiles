@@ -34,7 +34,7 @@
     :orientation "v"
     :class "bar-wifi-widget"
     :space-evenly false
-    (label :class "bar-wifi-str" :text wifi-icon :tooltip wifi-strength)))
+    (image :class "bar-icon bar-wifi-icon" :path wifi-icon :image-width "24" :image-height "24")))
 
 (defwidget vol []
   (eventbox
@@ -45,7 +45,7 @@
       :orientation "v"
       :class "bar-vol-widget"
       :space-evenly false
-      (label :class "bar-vol" :text vol-icon)
+      (image :class "bar-icon bar-vol-icon" :path vol-icon :image-width "24" :image-height "24")
       (revealer
         :transition "slideup"
         :reveal vol-rev
