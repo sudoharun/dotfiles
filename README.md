@@ -1,6 +1,7 @@
 # Hyprland config
 
 <div align="center">
-  <img src="./assets/hyprland-hori-bar-1.png">
-  <img src="./assets/hyprland-hori-bar-2.png">
+  <img src="./assets/hyprland1.png">
+  <img src="./assets/hyprland2.png">
+  <img src="./assets/hyprland3.png">
 </div>
