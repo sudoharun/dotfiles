@@ -1,3 +1,9 @@
 #!/bin/bash
 
-wezterm -e $1
+ccstate=`eww get control-rev`
+
+if [[ $ccstate == "true" ]]; then
+  wezterm -e $1 && eww -c ./control-center close-all && eww update control-rev=false
+else
+  wezterm -e $1
+fi

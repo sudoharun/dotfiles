@@ -1,0 +1,41 @@
+#!/bin/bash
+
+status=`playerctl status`
+meta=`playerctl metadata title`
+
+state(){
+  if [[ $status == "Playing" ]]; then
+    artUrl=`playerctl metadata | awk -F'artUrl' '{ print $2 }' | awk -F'file://' '{ print $2 }' | xargs`
+    cp $artUrl ./images/art.png
+    declare -i chars=0
+    for i in $meta
+      do
+        chars+=1
+    done
+    if [[ $chars > 25 ]]; then
+      echo "Playing: ${meta::25}..."
+    else
+      echo "Playing: $meta"
+    fi
+  elif [[ $status == "Paused" ]]; then
+    artUrl=`playerctl metadata | awk -F'artUrl' '{ print $2 }' | awk -F'file://' '{ print $2 }' | xargs`
+    cp $artUrl ./images/art.png
+    declare -i chars=0
+    for i in $meta
+      do
+        chars+=1
+    done
+    if [[ $chars > 25 ]]; then
+      echo "${meta::25}... (Paused)"
+    else
+      echo "$meta (Paused)"
+    fi
+  else
+    echo "Not Playing Anything"
+    cp ./images/random-colours.png ./images/art.png
+  fi
+}
+
+if [[ $1 == state ]]; then
+  state
+fi

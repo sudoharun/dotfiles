@@ -1,7 +1,7 @@
 #!/bin/bash
 
 strength=`iwconfig wlan0 | grep "Link Quality=" | awk -F'=' '{ print $2 }' | awk -F'/' '{ print $1 }'`
-
+state=`iwconfig wlan0 | grep ESSID | awk -F':' '{ print $2 }' | xargs`
 wf=`echo "$strength*100/70" | bc`
 
 icon() {
@@ -28,4 +28,10 @@ if [[ $1 == icon ]]; then
   icon
 elif [[ $1 == percentage ]]; then
   percentage
+elif [[ $1 == name ]]; then
+  if [[ $state == "off/any" ]]; then
+    echo "Disconnected"
+  else
+    iwconfig wlan0 | grep ESSID | awk -F'"' '{ print $2 }' | xargs
+  fi
 fi

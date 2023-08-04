@@ -1,49 +1,29 @@
-(deflisten workspaces "./scripts/workspaces")
-(defpoll wifi-icon :interval "10s" "./scripts/wifi icon")
-(defpoll wifi-strength :interval "10s" "./scripts/wifi percentage")
-(defpoll vol-icon :interval "1s" "./scripts/volume icon")
-(defpoll bat-icon :interval "1m" "./scripts/battery icon")
-(defpoll bat-lvl :interval "1m" "./scripts/battery level")
-(defpoll volume :interval "1s" "./scripts/volume text")
-(defpoll hours :interval "1s" 'date "+%H"')
-(defpoll mins :interval "1s" 'date "+%M"')
-(defpoll date :interval "1s" 'date "+%a %d %b"')
-(defpoll br-lvl :interval "1s" `./scripts/brightness`)
-(defpoll bt-icon :interval "1s" "./scripts/bluetooth")
-
-(defvar control-rev false)
-(defvar date-rev false)
-
 (defwidget tray []
   (eventbox
-    :onclick {control-rev ? "${eww} update control-rev=false" : "${eww} update control-rev=true"}
+    :onclick "./scripts/control-center"
     :class "bar-tray"
     :halign "end"
     :space-evenly false
     (box
-      (image :class "bar-icon bar-wifi-icon" :path wifi-icon :image-width "24" :image-height "24")
-      (image :class "bar-icon bar-vol-icon" :path vol-icon :image-width "24" :image-height "24")
-      (image :class "bar-icon bar-bat-icon" :path bat-icon :image-width "24" :image-height "24"))))
+      (image :class "bar-icon bar-wifi-icon" :path wifi-icon :image-width "24" :image-height "24" :tooltip wifi-strength)
+      (image :class "bar-icon bar-vol-icon" :path vol-icon :image-width "24" :image-height "24" :tooltip volume)
+      (image :class "bar-icon bar-bat-icon" :path bat-icon :image-width "28" :image-height "28" :tooltip bat-lvl)
+      (image :class "bar-icon bar-control-center-icon" :path "./images/control-center.svg" :image-width "26" :image-height "26"))))
 
 (defwidget workspaces []
   (literal :content workspaces))
 
 (defwidget time []
   (eventbox
-    :onhover "${eww} update date-rev=true"
-    :onhoverlost "${eww} update date-rev=false"
+    :onclick "./scripts/calendar"
     :class "bar-time"
     :halign "start"
     (box
       :spacing 0
       :space-evenly false
+      :tooltip date
       (image :class "bar-icon bar-clock-icon" :path "./images/clock.svg" :image-width "24" :image-height "24")
-      (label :class "bar-text" :text "${hours}󰇙${mins}")
-      (revealer
-        :transition "slideright"
-        :reveal date-rev
-        :duration "250ms"
-        (label :class "bar-text" :orientation "h" :text date)))))
+      (label :class "bar-text" :text "${hours}󰇙${mins}"))))
 
 (defwidget nothing []
   (box
@@ -62,11 +42,41 @@
   :stacking "fg"
   :monitor "0"
   :exclusive true
-  :namespace "test"
+  :namespace "bar"
   :geometry (geometry
               :x "0px"
               :y "12px"
               :width "98%"
               :height "50px"
-              :anchor "bottom center")
+              :anchor "top center")
   (bar))
+
+(defwidget date []
+  (box
+    :orientation "v"
+    :space-evenly false
+    :class "bar-date-widget"
+    (label :class "bar-cal-time" :text "${hours}󰇙${mins}")
+    (label :text "****************")
+    (label :class "bar-cal-date" :text date)))
+
+(defwidget cal []
+  (box
+    :class "bar-calendar"
+    :orientation "v"
+    (date)
+    (calendar
+      :day day
+      :year year)))
+
+(defwindow calendar
+  :monitor "0"
+  :namespace "calendar"
+  :geometry (geometry
+              :x "1%"
+              :y "4px"
+              :width "250px"
+              :height "150px"
+              :anchor "top left")
+  (cal))
+

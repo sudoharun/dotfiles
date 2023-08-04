@@ -1,10 +1,11 @@
 * {
-  font-family: "Roboto", "Iosevka Nerd Font", "Noto Sans CJK JP";
-  font-size: 22px;
+  all: unset;
+  font-family: "Iosevka Nerd Font", "Noto Sans CJK JP";
+  font-size: 16px;
 }
 
 window {
-  border: 0px solid #11111b;
+  border: 2px solid #313244;
   border-radius: 8px;
 }
 
@@ -31,22 +32,64 @@ window,
   border-radius: 8px;
   margin: 1px;
   padding: 6px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.bar-active-ws {
+.bar-active-ws,
+.bar-occupied-ws,
+.bar-ws {
   padding: 0px 4px;
-}
-
-.bar-occupied-ws {
-  padding: 0px 4px;
-  color: #505050;
 }
 
 .bar-text {
   padding-right: 8px;
-  color: #94e2d5;
+  margin-left: -2px;
+  color: #f5e0dc;
+  font-size: 22px;
 }
 
 .bar-icon {
   padding: 0px 8px;
 }
+
+.bar-calendar {
+  border: 2px solid #313244;
+  border-radius: 8px;
+}
+
+calendar {
+  border: 0px solid #313244;
+  border-radius: 8px;
+}
+
+calendar:selected {
+  background-color: #313244;
+}
+
+calendar.button {
+  background-color: transparent;
+  margin-top: 20px;
+}
+
+calendar:indeterminate {
+  color: #505050
+}
+
+.bar-cal-time {
+  padding-top: 20px;
+  font-size: 56px;
+}
+
+.bar-cal-date {
+  font-size: 18px;
+}
+
+.bar-date-widget {
+  background-image: url("images/cal-bg.svg");
+  background-color: #313244;
+  margin: 6px;
+  border: 0px solid #ffffff;
+  border-radius: 8px;
+}
+

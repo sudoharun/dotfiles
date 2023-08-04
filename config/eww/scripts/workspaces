@@ -15,52 +15,53 @@ workspaces() {
   w9=bar-ws
   w10=bar-ws
 
-  icon1=./images/1.svg
-  icon2=./images/2.svg
-  icon3=./images/3.svg
-  icon4=./images/4.svg
-  icon5=./images/5.svg
-  icon6=./images/6.svg
-  icon7=./images/7.svg
-  icon8=./images/8.svg
-  icon9=./images/9.svg
-  icon10=./images/0.svg
+  icon1=./images/diamond.svg
+  icon2=./images/diamond.svg
+  icon3=./images/diamond.svg
+  icon4=./images/diamond.svg
+  icon5=./images/diamond.svg
+  icon6=./images/diamond.svg
+  icon7=./images/diamond.svg
+  icon8=./images/diamond.svg
+  icon9=./images/diamond.svg
+  icon10=./images/diamond.svg
 
   for i in $o
   do
     eval "w$i=bar-occupied-ws";
+    eval "icon$i=./images/diamond-occupied.svg"
   done
 
   if [[ $a -eq 1 ]]; then
     w1=bar-active-ws
-    icon1=./images/a1.svg
+    icon1=./images/diamond-active.svg
   elif [[ $a -eq 2 ]]; then
     w2=bar-active-ws
-    icon2=./images/a2.svg
+    icon2=./images/diamond-active.svg
   elif [[ $a -eq 3 ]]; then
     w3=bar-active-ws
-    icon3=./images/a3.svg
+    icon3=./images/diamond-active.svg
   elif [[ $a -eq 4 ]]; then
     w4=bar-active-ws
-    icon4=./images/a4.svg
+    icon4=./images/diamond-active.svg
   elif [[ $a -eq 5 ]]; then
     w5=bar-active-ws
-    icon5=./images/a5.svg
+    icon5=./images/diamond-active.svg
   elif [[ $a -eq 6 ]]; then
     w6=bar-active-ws
-    icon6=./images/a6.svg
+    icon6=./images/diamond-active.svg
   elif [[ $a -eq 7 ]]; then
     w7=bar-active-ws
-    icon7=./images/a7.svg
+    icon7=./images/diamond-active.svg
   elif [[ $a -eq 8 ]]; then
     w8=bar-active-ws
-    icon8=./images/a8.svg
+    icon8=./images/diamond-active.svg
   elif [[ $a -eq 9 ]]; then
     w9=bar-active-ws
-    icon9=./images/a9.svg
+    icon9=./images/diamond-active.svg
   elif [[ $a -eq 10 ]]; then
     w10=bar-active-ws
-    icon10=./images/a0.svg
+    icon10=./images/diamond-active.svg
   fi
  
 
@@ -76,45 +77,45 @@ workspaces() {
   l10="(image :class \"$w10\" :path \"$icon10\" :image-width \"24\" :image-height \"24\")"
 
 
-  if [[ $w1 == 'bar-ws' ]]; then
-    l1=""
-  fi
+#   if [[ $w1 == 'bar-ws' ]]; then
+#     l1=""
+#   fi
 
-  if [[ $w2 == 'bar-ws' ]]; then
-    l2=""
-  fi
+#   if [[ $w2 == 'bar-ws' ]]; then
+#     l2=""
+#   fi
 
-  if [[ $w3 == 'bar-ws' ]]; then
-    l3=""
-  fi
+#   if [[ $w3 == 'bar-ws' ]]; then
+#     l3=""
+#   fi
 
-  if [[ $w4 == 'bar-ws' ]]; then
-    l4=""
-  fi
+#   if [[ $w4 == 'bar-ws' ]]; then
+#     l4=""
+#   fi
 
-  if [[ $w5 == 'bar-ws' ]]; then
-    l5=""
-  fi
+#   if [[ $w5 == 'bar-ws' ]]; then
+#     l5=""
+#   fi
 
-  if [[ $w6 == 'bar-ws' ]]; then
-    l6=""
-  fi
+#   if [[ $w6 == 'bar-ws' ]]; then
+#     l6=""
+#   fi
 
-  if [[ $w7 == 'bar-ws' ]]; then
-    l7=""
-  fi
+#   if [[ $w7 == 'bar-ws' ]]; then
+#     l7=""
+#   fi
 
-  if [[ $w8 == 'bar-ws' ]]; then
-    l8=""
-  fi
+#   if [[ $w8 == 'bar-ws' ]]; then
+#     l8=""
+#   fi
 
-  if [[ $w9 == 'bar-ws' ]]; then
-    l9=""
-  fi
+#   if [[ $w9 == 'bar-ws' ]]; then
+#     l9=""
+#   fi
 
-  if [[ $w10 == 'bar-ws' ]]; then
-    l10=""
-  fi
+#   if [[ $w10 == 'bar-ws' ]]; then
+#     l10=""
+#   fi
 
    echo "(box :class \"bar-workspace\" :orientation \"h\" :spacing 0 :space-evenly false :halign \"start\" :hexpand false $l1 $l2 $l3 $l4 $l5 $l6 $l7 $l8 $l9 $l10 )"
  

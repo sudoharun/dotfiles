@@ -1,3 +1,9 @@
 #!/bin/bash
+
 br=`brillo -G | awk -F"." '{ print $1 }'`
-echo "$br%"
+
+if [[ $1 == level ]]; then
+  echo "$br%"
+elif [[ $1 == number ]]; then
+  echo $br
+fi

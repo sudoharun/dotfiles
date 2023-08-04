@@ -1,0 +1,9 @@
+#!/bin/bash
+
+calstate=`eww get cal-rev`
+
+if [[ $calstate == true ]]; then
+  eww close calendar && eww update cal-rev=false
+else
+  eww open calendar && eww update cal-rev=true
+fi

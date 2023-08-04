@@ -28,4 +28,7 @@ elif [[ $1 == text ]]; then
   else
     echo $lvl
   fi
+elif [[ $1 == number ]]; then
+  num=`pamixer --get-volume-human | awk -F'%' '{ print $1 }' | xargs`
+  echo $num
 fi

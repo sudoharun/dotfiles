@@ -1,0 +1,174 @@
+(include "./variables.yuck")
+
+(defwidget wifi []
+  (eventbox
+    :onclick "../scripts/wezterm iwctl"
+    (box
+      :class "wifi-control"
+      :orientation "h"
+      :space-evenly false
+      (image :class "control-icon control-wifi-icon" :path wifi-icon :image-width "24" :image-height "24")
+      (label :class "control-wifi" :text wifi-essid))))
+
+(defwidget bluetooth []
+  (eventbox
+    :onclick "../scripts/wezterm bluetoothctl"
+    (box
+      :class "bluetooth-control"
+      :orientation "h"
+      :space-evenly false
+      (image :class "control-icon control-bt-icon" :path "./images/bluetooth.svg" :image-width "24" :image-height "24")
+      (label :text "bluetoothctl"))))
+
+(defwidget volume-scale []
+  (box
+    :class "control-volume-scale"
+    :orientation "h"
+    :vexpand true
+    (scale
+      :flipped true
+      :orientation "v"
+      :value vol-num
+      :draw-value true
+      :min 0
+      :max 101
+      :onchange "pamixer --set-volume {}")))
+
+(defwidget volume-widget []
+  (box
+    :class "control-volume"
+    :orientation "v"
+    :space-evenly false
+    (volume-scale)
+    (image :class "control-icon control-vol-icon" :path vol-icon :image-width "24" :image-height "24")))
+
+(defwidget brightness-scale []
+  (box
+    :class "control-brightness-scale"
+    :orientation "h"
+    :vexpand true
+    (scale
+      :flipped true
+      :orientation "v"
+      :value br-num
+      :draw-value true
+      :min 0
+      :max 101
+      :onchange "brillo -S {}")))
+
+(defwidget brightness-widget []
+  (box
+    :class "control-brightness"
+    :orientation "v"
+    :space-evenly false
+    (brightness-scale)
+    (image :class "control-icon control-br-icon" :path "./images/brightness.svg" :image-width "24" :image-height "24")))
+
+(defwidget controls []
+  (box
+    :class "control-controls"
+    :orientation "v"
+    (wifi)
+    (bluetooth)))
+
+(defwidget sliders []
+  (box
+    :class "control-sliders"
+    :orientation "h"
+    (volume-widget)
+    (brightness-widget)))
+
+(defwidget top-section []
+  (box
+    :class "control-top"
+    :orientation "h"
+    :space-evenly true
+    (controls)
+    (sliders)))
+
+(defwidget mid-section []
+  (box
+    :class "control-mid"
+    :spacing 0
+    :space-evenly true
+    :vexpand false
+    :hexpand false
+    (box
+      :orientation "v"
+      :class "circle"
+      (circular-progress
+        :value cpu
+        :start-at 75
+        :thickness 12
+        :clockwise true
+        (image :class "bar-icon-circle bar-ram-icon-circle" :path "./images/cpu.svg" :image-width "50" :image-height "50" :tooltip cpu)))
+    (box
+      :orientation "v"
+      :class "circle"
+      (circular-progress
+        :value mem
+        :start-at 75
+        :thickness 12
+        :clockwise true
+        (image :class "bar-icon-circle bar-ram-icon-circle" :path "./images/ram.svg" :image-width "50" :image-height "50" :tooltip mem)))
+    (box
+      :orientation "v"
+      :class "circle"
+      (circular-progress
+        :value bat-num
+        :start-at 75
+        :thickness 12
+        :clockwise true
+        (image :class "bar-icon-circle bar-bat-icon-circle" :path bat-icon :image-width "50" :image-height "50" :tooltip bat-lvl)))))
+
+(defwidget player []
+  (box
+    :class "control-player"
+    :hexpand true
+    (label :text playing)))
+
+(defwidget player-controls []
+  (box
+    :class "control-player-controls"
+    :orientation "v"
+    :limit-width 25
+    (eventbox
+      :onclick "playerctl previous"
+      (image :class "control-icon control-prev-icon" :path "./images/previous.svg" :image-width "30" :image-height "30"))
+    (eventbox
+      :onclick "playerctl play-pause"
+      (image :class "control-icon control-play-icon" :path "./images/play-pause.svg" :image-width "30" :image-height "30"))
+    (eventbox
+      :onclick "playerctl next"
+      (image :class "control-icon control-next-icon" :path "./images/next.svg" :image-width "30" :image-height "30"))
+    (eventbox
+      :onclick "playerctl shuffle toggle"
+      (image :class "control-icon control-shuffle-icon" :path "./images/shuffle.svg" :image-width "30" :image-height "30"))))
+
+(defwidget end-section []
+  (box
+    :space-evenly false
+    :class "control-end"
+    :orientation "h"
+    (player)
+    (player-controls)))
+
+(defwidget control-center []
+  (centerbox
+    :class "control-center"
+    :orientation "v"
+    :space-evenly false
+    (top-section)
+    (mid-section)
+    (end-section)))
+
+(defwindow control-center
+  :monitor "0"
+  :namespace "control-center"
+  :geometry (geometry
+              :x "1%"
+              :y "4px"
+              :width "400px"
+              :height "560px"
+              :anchor "top right")
+  (control-center))

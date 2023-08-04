@@ -61,10 +61,16 @@ class() {
   fi
 }
 
+number(){
+  echo -e `upower -d | grep "percentage" | awk -F":" 'NR==1{ print $2 }' | awk -F"%" '{ print $1 }' | xargs`
+}
+
 if [[ $1 == icon ]]; then
   icon
 elif [[ $1 == level ]]; then
   level
 elif [[ $1 == class ]]; then
   class
+elif [[ $1 == number ]]; then
+  number
 fi
