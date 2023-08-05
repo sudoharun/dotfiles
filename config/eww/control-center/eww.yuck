@@ -170,5 +170,5 @@
               :y "4px"
               :width "400px"
               :height "560px"
-              :anchor "top right")
+              :anchor "bottom right")
   (control-center))

@@ -5,29 +5,33 @@
 }
 
 window {
-  border: 2px solid #313244;
-  border-radius: 8px;
+  border: 0px solid rgba(80, 80, 80, 0.9);
+  border-radius: 12px;
   padding: 3px;
   margin: 4px;
 }
 
+tooltip.background {
+  background-color: rgba(0, 0, 0, 1.0);
+}
+
 .control-center {
-  background-color: #1e1e2e;
-  border: 2px solid #313244;
-  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 2px solid rgba(80, 80, 80, 0.5);
+  border-radius: 12px;
 }
 
 .control-end {
-  background-color: #1e1e2e;
-  border: 0px solid #313244;
-  border-radius: 8px;
+  background-color: transparent;
+  border: 0px solid rgba(80, 80, 80, 0.5);
+  border-radius: 12px;
   margin: 8px;
 }
 
 .control-mid {
-  background-color: #313244;
-  border: 0px solid #ffffff;
-  border-radius: 8px;
+  background-color: rgba(40, 40, 40, 0.5);
+  border: 0px solid rgba(80, 80, 80, 0.5);
+  border-radius: 12px;
   margin: 8px;
 }
 
@@ -44,10 +48,10 @@ button {
 .bluetooth-control,
 .control-volume,
 .control-brightness {
-  background-color: #313244;
+  background-color: rgba(40, 40, 40, 0.5);
   padding: 12px;
-  border: 0px solid #ffffff;
-  border-radius: 8px;
+  border: 0px solid rgba(80, 80, 80, 0.5);
+  border-radius: 12px;
   margin: 8px;
 }
 
@@ -61,13 +65,13 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #313244;
+  background-color: rgba(40, 40, 40, 0.5);
   padding: 1em 1em;
-  border: 0px solid #000000;
-  border-radius: 8px;
+  border: 0px solid rgba(80, 80, 80, 0.5);
+  border-radius: 12px;
   font-family: "Roboto";
   font-size: 18px;
-  text-shadow: 0px 0px 2 #313244;
+  text-shadow: 0px 0px 2 #000000, 0px 0px 2 #000000, 0px 0px 2 #252525, 0px 0px 2 #505050, 0px 0px 2 #252525;
 }
 
 .control-player-controls {
@@ -83,18 +87,13 @@ scale {
 }
 
 scale trough {
-  background-color: #1e1e2e;
+  background-color: rgba(80, 80, 80, 0.5);
   min-height: 10px;
   min-width: 24px;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
-.control-volume-scale scale trough highlight {
-  background-color: #cba6f7;
-  border-radius: 8px;
-}
-
-.control-brightness-scale scale trough highlight {
-  background-color: #f9e2af;
-  border-radius: 8px;
+scale trough highlight {
+  background-color: #f5f5f5;
+  border-radius: 12px;
 }

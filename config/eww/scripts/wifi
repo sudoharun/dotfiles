@@ -5,16 +5,19 @@ state=`iwconfig wlan0 | grep ESSID | awk -F':' '{ print $2 }' | xargs`
 wf=`echo "$strength*100/70" | bc`
 
 icon() {
-  if [[ $strength -eq 0 ]]; then
+  if [[ $wf -eq 0 ]]; then
     echo "./images/wifi-off.svg"
-  elif [[ $strength -le 25 ]]; then
-    echo "./images/wifi-none.svg"
-  elif [[ $strength -le 50 ]]; then 
-    echo "./images/wifi-low.svg"
-  elif [[ $strength -le 75 ]]; then
+  elif [[ $wf -le 30 ]]; then
+#   echo "./images/wifi-none.svg"
+    echo "./images/wifi-low"
+  elif [[ $wf -le 60 ]]; then
+#   echo "./images/wifi-low.svg"
     echo "./images/wifi-medium.svg"
-  elif [[ $strength -gt 75 ]]; then
+  elif [[ $wf -gt 60 ]]; then
+#   echo "./images/wifi-medium.svg"
     echo "./images/wifi-high.svg"
+# elif [[ $wf -gt 75 ]]; then
+#   echo "./images/wifi-high.svg"
   else
     echo "./images/wifi-off.svg"
   fi

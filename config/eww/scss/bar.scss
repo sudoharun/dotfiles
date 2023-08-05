@@ -5,47 +5,54 @@
 }
 
 window {
-  border: 2px solid #313244;
-  border-radius: 8px;
+  border: 2px solid #505050;
+  background-color: rgba(8, 8, 8, 1.0);
 }
 
 window,
 .bar-widget {
-  background-color: #1e1e2e;
+  border-radius: 12px;
   padding: 3px;
   margin: 4px;
+}
+
+tooltip.background {
+  background-color: rgba(0, 0, 0, 1.0);
 }
 
 .nothing,
 .bar-tray,
 .bar-time {
-  background-color: #313244;
-  border: 0px solid #000000;
-  border-radius: 8px;
+  background-color: rgba(40, 40, 40, 0.5);
+  border: 0px solid rgba(80, 80, 80, 0.5);
+  border-radius: 12px;
   padding: 5px;
-  margin: 5px;
+  margin: 2px;
 }
 
 .bar-workspace {
-  background-color: #313244;
-  border: 0px solid #ffffff;
-  border-radius: 8px;
+  background-color: rgba(40, 40, 40, 0.5);
+  border: 0px solid rgba(80, 80, 80, 0.5);
+  border-radius: 12px;
   margin: 1px;
   padding: 6px;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .bar-active-ws,
 .bar-occupied-ws,
 .bar-ws {
-  padding: 0px 4px;
+  padding: 0px 6px;
+  font-size: 20px;
+}
+
+.bar-occupied-ws {
+  color: rgba(80, 80, 80, 0.5);
 }
 
 .bar-text {
   padding-right: 8px;
   margin-left: -2px;
-  color: #f5e0dc;
+  color: #f5f5f5;
   font-size: 22px;
 }
 
@@ -53,18 +60,22 @@ window,
   padding: 0px 8px;
 }
 
+.bar-slide-text {
+  padding-right: 8px;
+}
+
 .bar-calendar {
-  border: 2px solid #313244;
-  border-radius: 8px;
+  border: 2px solid rgba(80, 80, 80, 0.5);
+  border-radius: 12px;
 }
 
 calendar {
-  border: 0px solid #313244;
-  border-radius: 8px;
+  border: 0px solid rgba(80, 80, 80, 0.5);
+  border-radius: 12px;
 }
 
 calendar:selected {
-  background-color: #313244;
+  background-color: rgba(80, 80, 80, 0.5);
 }
 
 calendar.button {
@@ -73,7 +84,11 @@ calendar.button {
 }
 
 calendar:indeterminate {
-  color: #505050
+  color: #505050;
+}
+
+.bar-cal-text {
+  color: #f5f5f5;
 }
 
 .bar-cal-time {
@@ -87,9 +102,26 @@ calendar:indeterminate {
 
 .bar-date-widget {
   background-image: url("images/cal-bg.svg");
-  background-color: #313244;
-  margin: 6px;
-  border: 0px solid #ffffff;
-  border-radius: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(80, 80, 80, 0.5);
+  margin: 12px;
+  border: 0px solid rgba(80, 80, 80, 0.5);
+  border-radius: 12px;
 }
 
+scale {
+  padding: 6px;
+}
+
+scale trough {
+  background-color: rgba(80, 80, 80, 0.5);
+  min-height: 12px;
+  min-width: 100px;
+  border-radius: 12px;
+}
+
+scale trough highlight {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+}

@@ -12,8 +12,8 @@ state(){
       do
         chars+=1
     done
-    if [[ $chars > 25 ]]; then
-      echo "Playing: ${meta::25}..."
+    if [[ $chars > 15 ]]; then
+      echo "Playing: ${meta::15}..."
     else
       echo "Playing: $meta"
     fi
@@ -25,8 +25,8 @@ state(){
       do
         chars+=1
     done
-    if [[ $chars > 25 ]]; then
-      echo "${meta::25}... (Paused)"
+    if [[ $chars > 15 ]]; then
+      echo "${meta::15}... (Paused)"
     else
       echo "$meta (Paused)"
     fi

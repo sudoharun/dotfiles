@@ -1,13 +1,70 @@
 (defwidget tray []
-  (eventbox
-    :onclick "./scripts/control-center"
+  (box
     :class "bar-tray"
     :halign "end"
     :space-evenly false
-    (box
-      (image :class "bar-icon bar-wifi-icon" :path wifi-icon :image-width "24" :image-height "24" :tooltip wifi-strength)
-      (image :class "bar-icon bar-vol-icon" :path vol-icon :image-width "24" :image-height "24" :tooltip volume)
-      (image :class "bar-icon bar-bat-icon" :path bat-icon :image-width "28" :image-height "28" :tooltip bat-lvl)
+    (eventbox
+      :onhover "${eww} update wifi-rev=true"
+      :onhoverlost "${eww} update wifi-rev=false"
+      (box
+        :spacing 0
+        :space-evenly false
+        (image :class "bar-icon bar-wifi-icon" :path wifi-icon :image-width "24" :image-height "24")
+        (revealer
+          :transition "slideleft"
+          :reveal wifi-rev
+          :duration "250ms"
+          (label :class "bar-slide-text" :text " ${wifi-essid} (${wifi-strength})"))))
+    (eventbox
+      :onhover "${eww} update vol-rev=true"
+      :onhoverlost "${eww} update vol-rev=false"
+      (box
+        :spacing 0
+        :space-evenly false
+        (image :class "bar-icon bar-vol-icon" :path vol-icon :image-width "24" :image-height "24")
+        (revealer
+          :transition "slideleft"
+          :reveal vol-rev
+          :duration "250ms"
+          (box
+            :orientation "h"
+            :hexpand false
+            :space-evenly false
+            (scale
+              :flipped false
+              :orientation "h"
+              :value vol-num
+              :draw-value false
+              :min 0
+              :max 101
+              :onchange "pamixer --set-volume {}")
+            (label :class "bar-slider-text" :text volume)))))
+    (eventbox
+      :onhover "${eww} update bat-rev=true"
+      :onhoverlost "${eww} update bat-rev=false"
+      (box
+        :spacing 0
+        :space-evenly false
+        (image :class "bar-icon bar-bat-icon" :path bat-icon :image-width "28" :image-height "28")
+        (revealer
+          :transition "slideleft"
+          :reveal bat-rev
+          :duration "250ms"
+          (box
+            :orientation "h"
+            :hexpand false
+            :space-evenly false
+            (scale
+              :flipped false
+              :orientation "h"
+              :value bat-num
+              :draw-value false
+              :min 0
+              :max 101)
+            (label :class "bar-slide-text" :text bat-lvl)))))
+    (eventbox
+      :onclick "./scripts/control-center"
+      :tooltip "open control center"
       (image :class "bar-icon bar-control-center-icon" :path "./images/control-center.svg" :image-width "26" :image-height "26"))))
 
 (defwidget workspaces []
@@ -16,14 +73,20 @@
 (defwidget time []
   (eventbox
     :onclick "./scripts/calendar"
+    :onhover "${eww} update date-rev=true"
+    :onhoverlost "${eww} update date-rev=false"
     :class "bar-time"
     :halign "start"
     (box
       :spacing 0
       :space-evenly false
-      :tooltip date
       (image :class "bar-icon bar-clock-icon" :path "./images/clock.svg" :image-width "24" :image-height "24")
-      (label :class "bar-text" :text "${hours}󰇙${mins}"))))
+      (label :class "bar-text" :text "${hours}󰇙${mins}")
+      (revealer
+        :transition "slideright"
+        :reveal date-rev
+        :duration "250ms"
+        (label :class "bar-slide-text" :text " | ${date}")))))
 
 (defwidget nothing []
   (box
@@ -48,7 +111,7 @@
               :y "12px"
               :width "98%"
               :height "50px"
-              :anchor "top center")
+              :anchor "bottom center")
   (bar))
 
 (defwidget date []
@@ -56,9 +119,9 @@
     :orientation "v"
     :space-evenly false
     :class "bar-date-widget"
-    (label :class "bar-cal-time" :text "${hours}󰇙${mins}")
-    (label :text "****************")
-    (label :class "bar-cal-date" :text date)))
+    (label :class "bar-cal-time bar-cal-text" :text "${hours}󰇙${mins}")
+    (label :class "bar-cal-text" :text "****************")
+    (label :class "bar-cal-date bar-cal-text" :text date)))
 
 (defwidget cal []
   (box
@@ -77,6 +140,6 @@
               :y "4px"
               :width "250px"
               :height "150px"
-              :anchor "top left")
+              :anchor "bottom left")
   (cal))
 
