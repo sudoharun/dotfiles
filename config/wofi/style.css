@@ -1,0 +1,33 @@
+* {
+  all: unset;
+  font-family: "Iosevka Nerd Font";
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+window {
+  background-color: rgba(8, 8, 8, 1.0);
+  padding: 12px;
+  margin: 12px;
+  border: 2px solid rgba(80, 80, 80, 0.5);
+}
+
+#entry {
+  color: #505050;
+  padding: 16px;
+}
+
+#entry:selected {
+  color: #f5f5f5;
+  padding: 20px;
+}
+
+#input {
+  padding: 12px;
+  margin: 6px;
+}
+
+image {
+  padding-left: 2px;
+  padding-right: 24px;
+}
