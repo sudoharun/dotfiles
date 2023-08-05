@@ -22,10 +22,3 @@ source ~/.zshrc
 # Bluetooth
 yay -S bluez bluez-tools bluez-utils
 systemctl enable --now bluetooth
-
-# Installing custom rofi launchers
-cd ~
-git clone https://github.com/adi1090x/rofi.git
-cd ~/rofi
-./setup.sh
-rm -rf ~/rofi
