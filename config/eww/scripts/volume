@@ -1,34 +1,38 @@
 #!/bin/bash
 
-lvlalt=`pamixer --get-volume-human | awk -F'%' '{ print $1 }'`
-zero="0%"
-half="50%"
-full="100%"
-mute="muted"
-
 icon() {
-  lvl=`pamixer --get-volume-human`
-  if [ "$lvl" == "$zero" ]; then
+  declare -i lvl=`pamixer --get-volume-human | awk -F'%' '{ print $1 }' | xargs`
+  if [[ $lvl -eq 0 ]]; then
     echo "./images/volume-low.svg"
-  elif [ "$lvl" == "$mute" ]; then
+  elif [[ $lvl -eq "muted" ]]; then
     echo "./images/volume-off.svg"
-  elif [ "$lvl" <= "$half" ]; then
+  elif [[ $lvl -le 50 ]]; then
     echo "./images/volume-medium.svg"
   else
     echo "./images/volume-high.svg"
   fi
 }
 
-if [[ $1 == icon ]]; then
-  icon
-elif [[ $1 == text ]]; then
-  lvl=`pamixer --get-volume-human | xargs`
-  if [[ "$lvl" == "$mute" ]]; then
-    echo "0%"
+level() {
+  level=`pamixer --get-volume-human | awk -F'%' '{ print $1 }' | xargs`
+  if [[ $level -eq "muted" ]]; then
+    echo "0"
   else
-    echo $lvl
+    echo $level
   fi
-elif [[ $1 == number ]]; then
-  num=`pamixer --get-volume-human | awk -F'%' '{ print $1 }' | xargs`
-  echo $num
+}
+
+widget() {
+  icon
+  level
+  echo "(box :spacing 0 :space-evenly false :class \"bar-volume-listener\" (image :class \"bar-icon bar-vol-icon\" :path \"$icon\" :image-width \"24\" :image-height \"24\") (revealer :transition \"slideleft\" :reveal vol-rev :duration \"250ms\" (box :orientation \"h\" :hexpand false :space-evenly false (scale :flipped false :orientation \"h\" :value \"$level\" :draw-value false :min 0 :max 101 :onchange \"pamixer --set-volume {}\") (label :class \"bar-slider-text\" :text \"$level%\"))))"
+}
+
+if [[ $1 == number ]]; then
+  level
+  pactl subscribe | grep --line-buffered "sink" | while read -r UNUSED_LINE; do
+    level
+  done
+elif [[ $1 == icon ]]; then
+  icon
 fi

@@ -38,7 +38,7 @@
               :min 0
               :max 101
               :onchange "pamixer --set-volume {}")
-            (label :class "bar-slider-text" :text volume)))))
+            (label :class "bar-slider-text" :text "${vol-num}%")))))
     (eventbox
       :onhover "${eww} update bat-rev=true"
       :onhoverlost "${eww} update bat-rev=false"
@@ -62,6 +62,30 @@
               :min 0
               :max 101)
             (label :class "bar-slide-text" :text bat-lvl)))))
+    (eventbox
+      :onhover "${eww} update br-rev=true"
+      :onhoverlost "${eww} update br-rev=false"
+      (box
+        :spacing 0
+        :space-evenly false
+        (image :class "bar-icon bar-br-icon" :path "./images/brightness.svg" :image-width "24" :image-height "24")
+        (revealer
+          :transition "slideleft"
+          :reveal br-rev
+          :duration "250ms"
+          (box
+            :orientation "h"
+            :hexpand false
+            :space-evenly false
+            (scale
+              :flipped false
+              :orientation "h"
+              :value br-num
+              :draw-value false
+              :min 0
+              :max 101
+              :onchange "brillo -S {}")
+            (label :class "bar-slider-text" :text br-lvl)))))
     (eventbox
       :onclick "./scripts/control-center"
       :tooltip "open control center"

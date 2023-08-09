@@ -1,0 +1,28 @@
+#!/bin/bash
+
+opt=`eww get power-option`
+
+lock="pwr-widget pwr-lock power-no"
+logout="pwr-widget pwr-logout power-no"
+reboot="pwr-widget pwr-reboot power-no"
+shutdown="pwr-widget pwr-shutdown power-no"
+
+if [[ $opt == "1" ]]; then
+  lock="pwr-widget pwr-lock power-yes"
+elif [[ $opt == "2" ]]; then
+  logout="pwr-widget pwr-logout power-yes"
+elif [[ $opt == "3" ]]; then
+  reboot="pwr-widget pwr-reboot power-yes"
+elif [[ $opt == "4" ]]; then
+  shutdown="pwr-widget pwr-shutdown power-yes"
+fi
+
+if [[ $1 == "lock" ]]; then
+  echo $lock
+elif [[ $1 == "logout" ]]; then
+  echo $logout
+elif [[ $1 == "reboot" ]]; then
+  echo $reboot
+elif [[ $1 == "shutdown" ]]; then
+  echo $shutdown
+fi

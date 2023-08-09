@@ -1,41 +1,45 @@
 #!/bin/bash
 
-status=`playerctl status`
-meta=`playerctl metadata title`
-
 state(){
+  status=`playerctl status`
+  meta=`playerctl metadata title`
+
   if [[ $status == "Playing" ]]; then
-    artUrl=`playerctl metadata | awk -F'artUrl' '{ print $2 }' | awk -F'file://' '{ print $2 }' | xargs`
-    cp $artUrl ./images/art.png
     declare -i chars=0
-    for i in $meta
-      do
-        chars+=1
+    for ((i=0;i<${#meta};i++)); do
+      chars+=1
     done
-    if [[ $chars > 15 ]]; then
-      echo "Playing: ${meta::15}..."
+    if [[ $chars > 20 ]]; then
+      echo "Playing: ${meta::20}..."
     else
       echo "Playing: $meta"
     fi
   elif [[ $status == "Paused" ]]; then
-    artUrl=`playerctl metadata | awk -F'artUrl' '{ print $2 }' | awk -F'file://' '{ print $2 }' | xargs`
-    cp $artUrl ./images/art.png
     declare -i chars=0
-    for i in $meta
-      do
-        chars+=1
+    for ((i=0;i<${#meta};i++)); do
+      chars+=1
     done
-    if [[ $chars > 15 ]]; then
-      echo "${meta::15}... (Paused)"
+    if [[ $chars > 20 ]]; then
+      echo "${meta::20}... (Paused)"
     else
       echo "$meta (Paused)"
     fi
   else
     echo "Not Playing Anything"
-    cp ./images/random-colours.png ./images/art.png
   fi
 }
 
 if [[ $1 == state ]]; then
-  state
+  while read -r line; do
+    state
+  done < <(playerctl --follow status || playerctl --follow metadata)
+elif [[ $1 == art ]]; then
+  while read -r line; do
+    art=`playerctl metadata | grep artUrl | awk -F'file://' '{ print $2 }' | xargs`
+    if [[ $art == "" ]]; then
+      echo "./images/random-colours.png"
+    else
+      echo $art
+    fi
+  done < <(playerctl --follow status || plarectl --follow metadata)
 fi

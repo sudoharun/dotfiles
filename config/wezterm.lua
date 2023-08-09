@@ -13,7 +13,7 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = 'Catppuccin Mocha'
+config.color_scheme = '3024 (dark) (terminal.sexy)'
 config.enable_tab_bar = false
 
 config.font = wezterm.font 'IosevkaTerm Nerd Font'
@@ -23,7 +23,7 @@ config.font = wezterm.font_with_fallback {
 }
 config.font_size = 16
 
-config.window_background_opacity = 0.75
+config.window_background_opacity = 0.9
 config.window_padding = {
   top = 12,
   bottom = 12,

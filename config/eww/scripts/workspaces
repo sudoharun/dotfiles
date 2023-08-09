@@ -1,8 +1,8 @@
 #!/bin/bash
 
 workspaces() {
-  a=`hyprctl monitors | awk 'FNR == 7 { print $3 }'`
-  o=`hyprctl workspaces | awk '{ print $4 }' | egrep -o '[0-9]+'`
+  a=`hyprctl monitors | grep active | awk '{ print $3 }'`
+  o=`hyprctl workspaces | grep workspace | awk '{ print $3 }'`
   
   w1=bar-ws
   w2=bar-ws

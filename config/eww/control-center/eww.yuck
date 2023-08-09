@@ -124,6 +124,7 @@
 (defwidget player []
   (box
     :class "control-player"
+    :style 'background-image: url("${art}")'
     :hexpand true
     (label :text playing)))
 

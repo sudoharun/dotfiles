@@ -1,0 +1,41 @@
+(defwidget lock []
+  (box
+    :class lock-class
+    (image :path "./images/lock.svg" :image-width 75 :image-height 75)))
+
+(defwidget logout []
+  (box
+    :class logout-class
+    (image :path "./images/logout.svg" :image-width 75 :image-height 75)))
+
+(defwidget reboot []
+  (box
+    :class reboot-class
+    (image :path "./images/reboot.svg" :image-width 75 :image-height 75)))
+
+(defwidget shutdown []
+  (box
+    :class shutdown-class
+    (image :path "./images/shutdown.svg" :image-width 75 :image-height 75)))
+
+(defwidget powermenu []
+  (box
+    :class "powermenu"
+    :spacing 10
+    :space-evenly true
+    :orientation "v"
+    (lock)
+    (logout)
+    (reboot)
+    (shutdown)))
+
+(defwindow powermenu
+  :monitor "0"
+  :namespace "powermenu"
+  :geometry (geometry
+              :x "0px"
+              :y "0px"
+              :width "125px"
+              :height "450px"
+              :anchor "right center")
+  (powermenu))
