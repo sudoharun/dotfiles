@@ -37,9 +37,6 @@ mv config/eww/PKGBUILD ~/eww-git/
 cd ~/eww-git
 curl -sS https://github.com/elkowar.gpg | gpg --import -i -
 curl -sS https://github.com/web-flow.gpg | gpg --import -i -
-makepkg -si
-cd ~
-mv eww-git ~/.eww
 
 # Setup dotfiles
 mkdir ~/.config
@@ -55,10 +52,14 @@ chmod +x hypr/autostart.sh
 chmod +x dunst/dunstrc
 chmod +x ranger/scope.sh
 chmod +x scripts/ffmpeg.sh
+chmod +x scripts/brightness.sh
+chmod +x scripts/powermenu.sh
 chmod +x eww/scripts/activewindowname
 chmod +x eww/scripts/bluetooth
 chmod +x eww/scripts/battery
 chmod +x eww/scripts/brightness
+chmod +x eww/scripts/calendar
+chmod +x eww/scripts/control-center
 chmod +x eww/scripts/cpu
 chmod +x eww/scripts/wezterm
 chmod +x eww/scripts/memory
@@ -67,6 +68,9 @@ chmod +x eww/scripts/vertical-workspaces
 chmod +x eww/scripts/volume
 chmod +x eww/scripts/wifi
 chmod +x eww/scripts/workspaces
+chmod +x eww/scripts/workspaces-kanji
+chmod +x eww/scripts/player
+chmod +x eww/scripts/powermenu
 
 # Setup ohmyzsh
 cd ~
