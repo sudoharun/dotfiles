@@ -1,9 +1,9 @@
 #!/bin/bash
 
-calstate=`eww get control-rev`
+ccstate=`eww -c ~/.config/eww/bar get control-rev`
 
-if [[ $calstate == true ]]; then
-  eww -c ./control-center close control-center && eww update control-rev=false
+if [[ $ccstate == true ]]; then
+  eww -c ~/.config/eww/control-center close control-center && eww -c ~/.config/eww/bar update control-rev=false
 else
-  eww -c ./control-center open control-center && eww update control-rev=true
+  eww -c ~/.config/eww/control-center open control-center && eww -c ~/.config/eww/bar update control-rev=true
 fi

@@ -1,15 +1,15 @@
 #!/bin/bash
 
 icon() {
-  declare -i lvl=`pamixer --get-volume-human | awk -F'%' '{ print $1 }' | xargs`
-  if [[ $lvl -eq 0 ]]; then
-    echo "./images/volume-low.svg"
-  elif [[ $lvl -eq "muted" ]]; then
-    echo "./images/volume-off.svg"
+  lvl=`pamixer --get-volume-human | awk -F'%' '{ print $1 }' | xargs`
+  if [[ $lvl == "muted" ]]; then
+    echo "../images/volume-off.svg"
+  elif [[ $lvl -eq 0 ]]; then
+    echo "../images/volume-low.svg"
   elif [[ $lvl -le 50 ]]; then
-    echo "./images/volume-medium.svg"
+    echo "../images/volume-medium.svg"
   else
-    echo "./images/volume-high.svg"
+    echo "../images/volume-high.svg"
   fi
 }
 
@@ -25,7 +25,7 @@ level() {
 widget() {
   icon
   level
-  echo "(box :spacing 0 :space-evenly false :class \"bar-volume-listener\" (image :class \"bar-icon bar-vol-icon\" :path \"$icon\" :image-width \"24\" :image-height \"24\") (revealer :transition \"slideleft\" :reveal vol-rev :duration \"250ms\" (box :orientation \"h\" :hexpand false :space-evenly false (scale :flipped false :orientation \"h\" :value \"$level\" :draw-value false :min 0 :max 101 :onchange \"pamixer --set-volume {}\") (label :class \"bar-slider-text\" :text \"$level%\"))))"
+  echo "(box :spacing 0 :space-evenly false :class \"volume-listener\" (image :class \"icon vol-icon\" :path \"$icon\" :image-width \"20\" :image-height \"20\") (revealer :transition \"slideleft\" :reveal vol-rev :duration \"250ms\" (box :orientation \"h\" :hexpand false :space-evenly false (scale :flipped false :orientation \"h\" :value \"$level\" :draw-value false :min 0 :max 101 :onchange \"pamixer --set-volume {}\") (label :class \"slider-text\" :text \"$level%\"))))"
 }
 
 if [[ $1 == number ]]; then

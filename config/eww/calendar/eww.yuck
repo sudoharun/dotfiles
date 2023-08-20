@@ -1,0 +1,31 @@
+(include "../variables.yuck")
+
+(defwidget date []
+  (box
+    :orientation "v"
+    :space-evenly false
+    :class "date-widget"
+    (label :class "time text" :text "${hours}󰇙${mins}")
+    (label :class "text" :text "****************")
+    (label :class "date text" :text date)))
+
+(defwidget cal []
+  (box
+    :class "calendar"
+    :orientation "v"
+    (date)
+    (calendar
+      :day day
+      :year year)))
+
+(defwindow calendar
+  :monitor "0"
+  :namespace "calendar"
+  :geometry (geometry
+              :x "8px"
+              :y "8px"
+              :width "250px"
+              :height "150px"
+              :anchor "top left")
+  (cal))
+

@@ -1,5 +1,0 @@
-(include "./yuck/variables.yuck")
-(include "./yuck/bar.yuck")
-(include "./yuck/screenshot.yuck")
-(include "./yuck/powermenu.yuck")
-(include "./yuck/desktop.yuck")

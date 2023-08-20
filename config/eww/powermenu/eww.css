@@ -1,0 +1,22 @@
+* {
+  all: unset;
+}
+
+.powermenu {
+  background-color: rgba(25, 25, 25, 1.0);
+  border-radius: 12px;
+}
+
+.pwr-widget {
+  border-radius: 12px;
+  padding: 12px;
+  margin: 12px;
+}
+
+.power-yes {
+  background-color: rgba(50, 50, 50, 0.75);
+}
+
+.power-no {
+  background-color: transparent;
+}

@@ -4,31 +4,24 @@
   font-size: 16px;
 }
 
-window {
-  border: 0px solid rgba(80, 80, 80, 0.9);
-  border-radius: 12px;
-  padding: 3px;
-  margin: 4px;
-}
-
 tooltip.background {
   background-color: rgba(0, 0, 0, 1.0);
 }
 
 .control-center {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(12, 12, 12, 1.0);
   border: 2px solid rgba(80, 80, 80, 0.5);
   border-radius: 12px;
 }
 
-.control-end {
+.end {
   background-color: transparent;
   border: 0px solid rgba(80, 80, 80, 0.5);
   border-radius: 12px;
   margin: 8px;
 }
 
-.control-mid {
+.mid {
   background-color: rgba(40, 40, 40, 0.5);
   border: 0px solid rgba(80, 80, 80, 0.5);
   border-radius: 12px;
@@ -44,10 +37,10 @@ button {
   font-size: 26px;
 }
 
-.wifi-control,
-.bluetooth-control,
-.control-volume,
-.control-brightness {
+.wifi,
+.bluetooth,
+.volume,
+.brightness {
   background-color: rgba(40, 40, 40, 0.5);
   padding: 12px;
   border: 0px solid rgba(80, 80, 80, 0.5);
@@ -55,29 +48,28 @@ button {
   margin: 8px;
 }
 
-.control-wifi-icon,
-.control-bt-icon {
+.wifi-icon,
+.bt-icon {
   padding-right: 12px;
 }
 
-.control-player {
+.player {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(40, 40, 40, 0.5);
   padding: 1em 1em;
-  border: 0px solid rgba(80, 80, 80, 0.5);
   border-radius: 12px;
   font-family: "Roboto";
   font-size: 18px;
   text-shadow: 0px 0px 2 #000000, 0px 0px 2 #000000, 0px 0px 2 #252525, 0px 0px 2 #505050, 0px 0px 2 #252525;
 }
 
-.control-player-controls {
+.player-controls {
   margin: 8px;
 }
 
-.bar-icon-circle {
+.icon-circle {
   margin: 20px;
 }
 

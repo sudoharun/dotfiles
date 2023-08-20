@@ -1,6 +1,8 @@
+(include "../variables.yuck")
+
 (defwidget tray []
   (box
-    :class "bar-tray"
+    :class "tray"
     :halign "end"
     :space-evenly false
     (eventbox
@@ -9,19 +11,19 @@
       (box
         :spacing 0
         :space-evenly false
-        (image :class "bar-icon bar-wifi-icon" :path wifi-icon :image-width "24" :image-height "24")
+        (image :class "icon wifi-icon" :path wifi-icon :image-width "24" :image-height "24")
         (revealer
           :transition "slideleft"
           :reveal wifi-rev
           :duration "250ms"
-          (label :class "bar-slide-text" :text " ${wifi-essid} (${wifi-strength})"))))
+          (label :class "slide-text" :text " ${wifi-essid} (${wifi-strength})"))))
     (eventbox
       :onhover "${eww} update vol-rev=true"
       :onhoverlost "${eww} update vol-rev=false"
       (box
         :spacing 0
         :space-evenly false
-        (image :class "bar-icon bar-vol-icon" :path vol-icon :image-width "24" :image-height "24")
+        (image :class "icon vol-icon" :path vol-icon :image-width "24" :image-height "24")
         (revealer
           :transition "slideleft"
           :reveal vol-rev
@@ -38,14 +40,14 @@
               :min 0
               :max 101
               :onchange "pamixer --set-volume {}")
-            (label :class "bar-slider-text" :text "${vol-num}%")))))
+            (label :class "slider-text" :text "${vol-num}%")))))
     (eventbox
       :onhover "${eww} update bat-rev=true"
       :onhoverlost "${eww} update bat-rev=false"
       (box
         :spacing 0
         :space-evenly false
-        (image :class "bar-icon bar-bat-icon" :path bat-icon :image-width "28" :image-height "28")
+        (image :class "icon bat-icon" :path bat-icon :image-width "28" :image-height "28")
         (revealer
           :transition "slideleft"
           :reveal bat-rev
@@ -61,14 +63,14 @@
               :draw-value false
               :min 0
               :max 101)
-            (label :class "bar-slide-text" :text bat-lvl)))))
+            (label :class "slide-text" :text bat-lvl)))))
     (eventbox
       :onhover "${eww} update br-rev=true"
       :onhoverlost "${eww} update br-rev=false"
       (box
         :spacing 0
         :space-evenly false
-        (image :class "bar-icon bar-br-icon" :path "./images/brightness.svg" :image-width "24" :image-height "24")
+        (image :class "icon br-icon" :path "../images/brightness.svg" :image-width "24" :image-height "24")
         (revealer
           :transition "slideleft"
           :reveal br-rev
@@ -85,42 +87,43 @@
               :min 0
               :max 101
               :onchange "brillo -S {}")
-            (label :class "bar-slider-text" :text br-lvl)))))
+            (label :class "slider-text" :text br-lvl)))))
     (eventbox
-      :onclick "./scripts/control-center"
+      :onclick "../scripts/control-center"
       :tooltip "open control center"
-      (image :class "bar-icon bar-control-center-icon" :path "./images/control-center.svg" :image-width "26" :image-height "26"))))
+      (image :class "icon control-center-icon" :path "../images/control-center.svg" :image-width "26" :image-height "26"))))
 
 (defwidget workspaces []
   (literal :content workspaces))
 
 (defwidget time []
-  (eventbox
-    :onclick "./scripts/calendar"
-    :onhover "${eww} update date-rev=true"
-    :onhoverlost "${eww} update date-rev=false"
-    :class "bar-time"
+  (box
+    :class "time"
     :halign "start"
-    (box
-      :spacing 0
-      :space-evenly false
-      (image :class "bar-icon bar-clock-icon" :path "./images/clock.svg" :image-width "24" :image-height "24")
-      (label :class "bar-text" :text "${hours}󰇙${mins}")
-      (revealer
-        :transition "slideright"
-        :reveal date-rev
-        :duration "250ms"
-        (label :class "bar-slide-text" :text " | ${date}")))))
+    (eventbox
+      :onclick "../scripts/calendar"
+      :onhover "${eww} update date-rev=true"
+      :onhoverlost "${eww} update date-rev=false"
+      (box
+        :spacing 0
+        :space-evenly false
+        (image :class "icon clock-icon" :path "../images/clock.svg" :image-width "24" :image-height "24")
+        (label :class "text" :text "${hours}󰇙${mins}")
+        (revealer
+          :transition "slideright"
+          :reveal date-rev
+          :duration "250ms"
+          (label :class "time-slide-text" :text "| ${date}"))))))
 
 (defwidget nothing []
   (box
     :class "nothing"
-    (label :class "bar-text" :text "nothing")))
+    (label :class "text" :text "nothing")))
 
 (defwidget bar []
   (centerbox
     :orientation "h"
-    :class "bar-widget"
+    :class "bar"
     (time)
     (workspaces)
     (tray)))
@@ -132,38 +135,8 @@
   :namespace "bar"
   :geometry (geometry
               :x "0px"
-              :y "12px"
-              :width "98%"
-              :height "50px"
-              :anchor "bottom center")
+              :y "0px"
+              :width "100%"
+              :height "0%"
+              :anchor "top center")
   (bar))
-
-(defwidget date []
-  (box
-    :orientation "v"
-    :space-evenly false
-    :class "bar-date-widget"
-    (label :class "bar-cal-time bar-cal-text" :text "${hours}󰇙${mins}")
-    (label :class "bar-cal-text" :text "****************")
-    (label :class "bar-cal-date bar-cal-text" :text date)))
-
-(defwidget cal []
-  (box
-    :class "bar-calendar"
-    :orientation "v"
-    (date)
-    (calendar
-      :day day
-      :year year)))
-
-(defwindow calendar
-  :monitor "0"
-  :namespace "calendar"
-  :geometry (geometry
-              :x "1%"
-              :y "4px"
-              :width "250px"
-              :height "150px"
-              :anchor "bottom left")
-  (cal))
-
