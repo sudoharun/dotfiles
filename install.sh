@@ -23,6 +23,10 @@ rm -rf mantis-theme
 cd ~/dotfiles
 mv config/wezterm.lua ~/.wezterm.lua
 
+# Install Alacritty themes
+mkdir -p ~/.config/alacritty/themes
+git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+
 # Installing rustup
 cd ~
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
