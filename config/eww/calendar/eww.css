@@ -14,15 +14,10 @@ tooltip.background {
   border-radius: 12px;
 }
 
-calendar {
-  border: 0px solid rgba(80, 80, 80, 0.5);
-  border-radius: 12px;
-}
-
 calendar:selected {
   all: unset;
   background-color: rgba(80, 80, 80, 0.5);
-  border-radius: 0px;
+  border-radius: 4px;
 }
 
 calendar.button {
@@ -59,3 +54,4 @@ calendar:indeterminate {
   border: 0px solid rgba(80, 80, 80, 0.5);
   border-radius: 12px;
 }
+

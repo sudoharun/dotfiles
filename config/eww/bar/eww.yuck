@@ -89,7 +89,7 @@
               :onchange "brillo -S {}")
             (label :class "slider-text" :text br-lvl)))))
     (eventbox
-      :onclick "../scripts/control-center"
+      :onclick "sh -c `../scripts/control-center`"
       :tooltip "open control center"
       (image :class "icon control-center-icon" :path "../images/control-center.svg" :image-width "26" :image-height "26"))))
 
@@ -101,7 +101,7 @@
     :class "time"
     :halign "start"
     (eventbox
-      :onclick "../scripts/calendar"
+      :onclick "sh -c `../scripts/calendar`"
       :onhover "${eww} update date-rev=true"
       :onhoverlost "${eww} update date-rev=false"
       (box

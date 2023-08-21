@@ -11,12 +11,21 @@
 
 (defwidget cal []
   (box
-    :class "calendar"
+    :class "cal"
     :orientation "v"
     (date)
     (calendar
       :day day
       :year year)))
+
+(defwidget main []
+  (box
+    :class "main"
+    (revealer
+      :transition "slidedown"
+      :reveal cal-anim
+      :duration "250ms"
+      (cal))))
 
 (defwindow calendar
   :monitor "0"
@@ -25,7 +34,7 @@
               :x "8px"
               :y "8px"
               :width "250px"
-              :height "150px"
+              :height "0%"
               :anchor "top left")
-  (cal))
+  (main))
 

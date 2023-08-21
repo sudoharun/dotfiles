@@ -34,6 +34,7 @@ if [[ $1 == "state" ]]; then
     state
   done < <(playerctl --follow status || playerctl --follow metadata)
 elif [[ $1 == "art" ]]; then
+  echo "../images/random-colours.png"
   while read -r line; do
     art=`playerctl metadata | grep artUrl | awk -F'file://' '{ print $2 }' | xargs`
     if [[ $art == "" ]]; then

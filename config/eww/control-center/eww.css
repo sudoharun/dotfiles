@@ -58,6 +58,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(40, 40, 40, 0.5);
+  min-height: 125px;
   padding: 1em 1em;
   border-radius: 12px;
   font-family: "Roboto";
@@ -79,7 +80,7 @@ scale {
 
 scale trough {
   background-color: rgba(80, 80, 80, 0.5);
-  min-height: 10px;
+  min-height: 100px;
   min-width: 24px;
   border-radius: 12px;
 }

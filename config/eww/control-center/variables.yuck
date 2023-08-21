@@ -20,4 +20,4 @@
 (defpoll year :interval "24h" "date '+%Y'")
 (defpoll cpu :interval "10s" `mpstat | grep -A 5 "%idle" | tail -n 1 | awk -F " " '{print 100 -  $ 12}'a`)
 (defpoll mem :interval "10s" "free | grep Mem | awk '{print $3/$2 * 100.0}'")
-
+(defvar control-anim false)

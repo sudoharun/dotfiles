@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
 ccstate=`eww -c ~/.config/eww/bar get control-rev`
 
 if [[ $ccstate == true ]]; then
-  eww -c ~/.config/eww/control-center close control-center && eww -c ~/.config/eww/bar update control-rev=false
+  eww -c ~/.config/eww/control-center update control-anim=false ; sleep 0.25 ; eww -c ~/.config/eww/control-center close control-center ; eww -c ~/.config/eww/bar update control-rev=false
 else
-  eww -c ~/.config/eww/control-center open control-center && eww -c ~/.config/eww/bar update control-rev=true
+  eww -c ~/.config/eww/control-center open control-center ; eww -c ~/.config/eww/bar update control-rev=true ; sleep 0.01 ; eww -c ~/.config/eww/control-center update control-anim=true
 fi

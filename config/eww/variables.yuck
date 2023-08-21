@@ -21,6 +21,7 @@
 (defpoll shutdown-class :interval "0.01s" "../scripts/powermenu shutdown")
 (defvar eww "eww -c ~/.config/eww/bar")
 (defvar control-rev false)
+(defvar cal-anim false)
 (defvar cal-rev false)
 (defvar date-rev false)
 (defvar wifi-rev false)
