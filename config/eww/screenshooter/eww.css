@@ -2,21 +2,22 @@
   all: unset;
 }
 
-.powermenu {
+.screenshooter {
   background-color: rgba(8, 8, 8, 1.0);
   /*border-radius: 12px;*/
 }
 
-.pwr-widget {
+.active,
+.inactive {
   /*border-radius: 12px;*/
   padding: 12px;
   margin: 12px;
 }
 
-.power-yes {
+.active {
   background-color: rgba(50, 50, 50, 0.75);
 }
 
-.power-no {
+.inactive {
   background-color: transparent;
 }

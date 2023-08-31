@@ -35,4 +35,7 @@ if [[ $1 == number ]]; then
   done
 elif [[ $1 == icon ]]; then
   icon
+  pactl subscribe | grep --line-buffered "sink" | while read -r UNUSED_LINE; do
+    icon
+  done
 fi

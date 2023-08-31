@@ -15,7 +15,7 @@
     :orientation "v"
     (date)
     (calendar
-      :day day
+      :day day-num
       :year year)))
 
 (defwidget main []

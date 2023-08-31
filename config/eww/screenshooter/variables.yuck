@@ -1,0 +1,5 @@
+(include "../variables.yuck")
+(defvar eww "eww -c ~/.config/eww/screenshooter")
+(defvar fullscreen-class "inactive")
+(defvar delay-class "inactive")
+(defvar advanced-class "inactive")

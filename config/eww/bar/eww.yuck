@@ -1,4 +1,4 @@
-(include "../variables.yuck")
+(include "./variables.yuck")
 
 (defwidget tray []
   (box
@@ -138,5 +138,5 @@
               :y "0px"
               :width "100%"
               :height "0%"
-              :anchor "top center")
+              :anchor "bottom center")
   (bar))

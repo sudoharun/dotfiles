@@ -1,0 +1,70 @@
+(include "./variables.yuck")
+
+(defwidget fullscreen []
+  (box
+    :class fullscreen-class
+    (eventbox
+      :onhover "${eww} update fullscreen-class=active"
+      :onhoverlost "${eww} update fullscreen-class=inactive"
+      :onclick 'alacritty -e `${eww} close screenshooter && grim -o eDP-1 && notify-send -a Screenshooter "Screenshot Taken!"`'
+      (box
+        :spacing 0
+        :space-evenly false
+        :orientation "v"
+        :valign "center"
+        :halign "center"
+        (image :path "../images/screenshot.svg" :image-width 75 :image-height 75)
+        (label :text "Fullscreen")))))
+
+(defwidget delay []
+  (box
+    :class delay-class
+    (eventbox
+      :onhover "${eww} update delay-class=active"
+      :onhoverlost "${eww} update delay-class=inactive"
+      :onclick 'alacritty -e `${eww} close screenshooter && sleep 3 && grim -o eDP-1 && notify-send -a Screenshooter "Screenshot Taken!"`'
+      (box
+        :spacing 0
+        :space-evenly false
+        :orientation "v"
+        :valign "center"
+        :halign "center"
+        (image :path "../images/alarm.svg" :image-width 75 :image-height 75)
+        (label :text "3s")))))
+
+(defwidget advanced []
+  (box
+    :class advanced-class
+    (eventbox
+      :onhover "${eww} update advanced-class=active"
+      :onhoverlost "${eww} update advanced-class=inactive"
+      :onclick 'alacritty -e `${eww} close screenshooter && grim -g "$(slurp)" && notify-send -a Screenshooter "Screenshot Taken!"`'
+      (box
+        :spacing 0
+        :space-evenly false
+        :orientation "v"
+        :valign "center"
+        :halign "center"
+        (image :path "../images/settings.svg" :image-width 75 :image-height 75)
+        (label :text "Advanced")))))
+
+(defwidget screenshooter []
+  (box
+    :class "screenshooter"
+    :spacing 10
+    :space-evenly true
+    :orientation "h"
+    (fullscreen)
+    (delay)
+    (advanced)))
+
+(defwindow screenshooter
+  :monitor "0"
+  :namespace "screenshooter"
+  :geometry (geometry
+              :x "0%"
+              :y "0px"
+              :width "0%"
+              :height "0%"
+              :anchor "center")
+  (screenshooter))

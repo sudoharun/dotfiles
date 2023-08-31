@@ -1,0 +1,4 @@
+(include "../variables.yuck")
+(deflisten workspaces "../scripts/kanjiworkspaces2")
+(defvar eww "eww -c ~/.config/eww/bar2")
+(defvar control-rev false)
