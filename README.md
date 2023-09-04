@@ -3,23 +3,19 @@
 ⭐ If you like these, please star! ⭐
 
 ## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config</a>
-
-<div align="center">
   
-  ### Desktop (bar made with eww)
-  <img src="./assets/hyprland1.png">
+### Desktop (bar made with eww)
+<img src="./assets/hyprland1.png" align="center">
 
-  ### Wofi
-  <img src="./assets/hyprland2.png">
+### Wofi
+<img src="./assets/hyprland2.png" align="center">
 
-  ### Screenshooter (made in eww)
-  <img src="./assets/hyprland3.png">
+### Screenshooter (made with eww)
+<img src="./assets/hyprland3.png" align="center">
 
-  ### Powermenu (made in eww)
-  <img src="./assets/hyprland4.png">
+### Powermenu (made with eww)
+<img src="./assets/hyprland4.png" align="center">
   
-</div><br>
-
 ## <a href="https://github.com/sudo-harun/dotfiles/tree/bspwm">BSPWM config</a>
 
 ### Vertical Bar
