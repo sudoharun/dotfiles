@@ -2,12 +2,19 @@
 
 ⭐ If you like these, please star! ⭐
 
-## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config (kinda WIP)</a>
+## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config</a>
 
 <div align="center">
+  ## Desktop (bar made with eww)
   <img src="./assets/hyprland1.png">
+
+  ## Wofi
   <img src="./assets/hyprland2.png">
+
+  ## Screenshooter (made in eww)
   <img src="./assets/hyprland3.png">
+
+  ## Powermenu (made in eww)
   <img src="./assets/hyprland4.png">
 </div><br>
 
