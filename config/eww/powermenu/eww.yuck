@@ -1,23 +1,23 @@
-(include "../variables.yuck")
+(include "./variables.yuck")
 
 (defwidget lock []
   (box
-    :class lock-class
+    :class {power-option == 1 ? "active widget" : "inactive widget"}
     (image :path "../images/lock.svg" :image-width 75 :image-height 75)))
 
 (defwidget logout []
   (box
-    :class logout-class
+    :class {power-option == 2 ? "active widget" : "inactive widget"}
     (image :path "../images/logout.svg" :image-width 75 :image-height 75)))
 
 (defwidget reboot []
   (box
-    :class reboot-class
+    :class {power-option == 3 ? "active widget" : "inactive widget"}
     (image :path "../images/reboot.svg" :image-width 75 :image-height 75)))
 
 (defwidget shutdown []
   (box
-    :class shutdown-class
+    :class {power-option == 4 ? "active widget" : "inactive widget"}
     (image :path "../images/shutdown.svg" :image-width 75 :image-height 75)))
 
 (defwidget powermenu []

@@ -29,7 +29,7 @@
       :spacing 0
       :space-evenly false
       (image :class "icon br-icon" :path "../images/brightness.svg" :image-width "20" :image-height "20")
-      (label :class "text vol-text" :text "${br-num}%"))
+      (label :class "text vol-text" :text "${br}%"))
     (box
       :class "tray-item control-center-item"
       (eventbox

@@ -1,0 +1,8 @@
+(include "../variables.yuck")
+(defvar eww "eww -c ~/.config/eww/control")
+(deflisten playing :initial "Not Playing Anything" "../scripts/player state")
+(deflisten art :initial '../images/random-colours.jpg' "../scripts/player art")
+(deflisten album :initial '../images/music.svg' "../scripts/player album")
+(defpoll cpu :interval "10s" `mpstat | grep -A 5 "%idle" | tail -n 1 | awk -F " " '{print 100 -  $ 12}'a`)
+(defpoll mem :interval "10s" "free | grep Mem | awk '{print $3/$2 * 100.0}'")
+(defvar br-change "echo 1 >> $HOME/.config/eww/files/brightness ; : > $HOME/.config/eww/files/brightness")

@@ -7,11 +7,11 @@
 }
 
 tooltip.background {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(16, 16, 16, 0.5);
 }
 
 .bar {
-  background-color: rgba(16, 16, 16, 1.0);
+  background-color: rgba(16, 16, 16, 0.5);
   /*background-color: transparent;*/
 }
 
@@ -44,7 +44,7 @@ tooltip.background {
 }
 
 .occupied-ws {
-  color: #505050 /* rgba(50, 50, 50, 0.5) */;
+  color: /*#505050*/ rgba(50, 50, 50, 0.75);
 }
 
 .active-ws,

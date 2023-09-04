@@ -1,5 +1,6 @@
 (include "../variables.yuck")
 (defvar eww "eww -c ~/.config/eww/screenshooter")
+(defvar location "~/Pictures/Screenshots/$(date '+%F_%H-%M-%S_grim.png')")
 (defvar fullscreen-class "inactive")
 (defvar delay-class "inactive")
 (defvar advanced-class "inactive")

@@ -6,7 +6,7 @@
     (eventbox
       :onhover "${eww} update fullscreen-class=active"
       :onhoverlost "${eww} update fullscreen-class=inactive"
-      :onclick 'alacritty -e `${eww} close screenshooter && grim -o eDP-1 && notify-send -a Screenshooter "Screenshot Taken!"`'
+      :onclick 'alacritty -e `hyprctl dispatch submap reset && ${eww} close screenshooter && ${eww} update fullscreen-class=inactive && sleep 1 && grim -o eDP-1 ${location} && notify-send -a Screenshooter "Screenshot Taken!"`'
       (box
         :spacing 0
         :space-evenly false
@@ -22,7 +22,7 @@
     (eventbox
       :onhover "${eww} update delay-class=active"
       :onhoverlost "${eww} update delay-class=inactive"
-      :onclick 'alacritty -e `${eww} close screenshooter && sleep 3 && grim -o eDP-1 && notify-send -a Screenshooter "Screenshot Taken!"`'
+      :onclick 'alacritty -e `hyprctl dispatch submap reset && ${eww} close screenshooter && ${eww} update delay-class=inactive && sleep 3 && grim -o eDP-1 ${location} && notify-send -a Screenshooter "Screenshot Taken!"`'
       (box
         :spacing 0
         :space-evenly false
@@ -38,15 +38,15 @@
     (eventbox
       :onhover "${eww} update advanced-class=active"
       :onhoverlost "${eww} update advanced-class=inactive"
-      :onclick 'alacritty -e `${eww} close screenshooter && grim -g "$(slurp)" && notify-send -a Screenshooter "Screenshot Taken!"`'
+      :onclick 'alacritty -e `hyprctl dispatch submap reset && ${eww} close screenshooter && ${eww} update advanced-class=inactive && grim -g "$(slurp)" ${location} && notify-send -a Screenshooter "Screenshot Taken!"`'
       (box
         :spacing 0
         :space-evenly false
         :orientation "v"
         :valign "center"
         :halign "center"
-        (image :path "../images/settings.svg" :image-width 75 :image-height 75)
-        (label :text "Advanced")))))
+        (image :path "../images/crop.svg" :image-width 75 :image-height 75)
+        (label :text "Region")))))
 
 (defwidget screenshooter []
   (box

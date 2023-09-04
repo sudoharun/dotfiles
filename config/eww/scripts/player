@@ -43,4 +43,14 @@ elif [[ $1 == "art" ]]; then
       echo $art
     fi
   done < <(playerctl --follow status || playerctl --follow metadata)
+elif [[ $1 == "album" ]]; then
+  echo "../images/music.svg"
+  while read -r line; do
+    album=`playerctl metadata | grep artUrl | awk -F'file://' '{ print $2 }' | xargs`
+    if [[ $album == "" ]]; then
+      echo "../images/music.svg"
+    else
+      echo $album
+    fi
+  done < <(playerctl --follow status || playerctl --follow metadata)
 fi
