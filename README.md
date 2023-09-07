@@ -15,18 +15,3 @@
 
 ### Powermenu (made with eww)
 <img src="./assets/hyprland4.png" align="center">
-  
-## <a href="https://github.com/sudo-harun/dotfiles/tree/bspwm">BSPWM config</a>
-
-### Vertical Bar
-<div align="center">
-  <img src="./assets/bspwm-vertical-bar-1.png">
-  <img src="./assets/bspwm-vertical-bar-2.png">
-</div><br>
-
-### Horizontal Bar
-<div align="center">
-  <img src="./assets/bspwm-horizontal-bar-1.png">
-  <img src="./assets/bspwm-horizontal-bar-2.png">
-</div><br>
-
