@@ -8,13 +8,13 @@
 ### Desktop (bar made with eww)
 <img src="./assets/gruvbox1.png" align="center">
 
-### Wofi
+### Control Center (made with eww)
 <img src="./assets/gruvbox2.png" align="center">
 
-### Screenshooter (made with eww)
+### Wofi
 <img src="./assets/gruvbox3.png" align="center">
 
-### Powermenu (made with eww)
+### Screenshooter (made with eww)
 <img src="./assets/gruvbox4.png" align="center">
 
 ### Powermenu (made with eww)
