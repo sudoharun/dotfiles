@@ -21,6 +21,7 @@
 <img src="./assets/gruvbox5.png" align="center">
 
 
+
 ## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">A Generic Hyprland Config</a>
 
 
