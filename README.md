@@ -2,8 +2,9 @@
 
 ⭐ If you like these, please star! ⭐
 
-## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">Hyprland config</a>
-  
+## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">A Generic Hyprland Config</a>
+
+
 ### Desktop (bar made with eww)
 <img src="./assets/hyprland1.png" align="center">
 
