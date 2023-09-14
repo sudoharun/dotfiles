@@ -4,64 +4,58 @@
   font-size: 14px;
   padding: 0px;
   margin: 0px;
+  color: #282828;
 }
 
-tooltip.background {
-  background-color: rgba(16, 16, 16, 0.5);
-}
+tooltip.background { background-color: #ebdbb2; }
 
-.bar {
-  background-color: rgba(16, 16, 16, 0.5);
-  /*background-color: transparent;*/
-}
+.bar { background-color: #282828; }
 
 .tray,
 .workspaces,
 .left {
   margin: 6px;
   padding: 6px;
-  /*border-radius: 8px;*/
   background-color: transparent;
-  /*background-color: rgba(50, 50, 50, 0.5);*/
 }
 
 .tray-item,
 .time,
 .date {
-  padding: 0px 6px;
+  margin: 0px 8px;
+  background-color: #ebdbb2;
 }
 
-.time {
-  padding-left: 0px;
-}
+.time { margin-left: 0px; }
 
 .control-center-item {
-  padding-right: 0px;
+  margin-right: 0px;
+  background-color: #a89984;
 }
 
 .active-ws {
   font-weight: bold;
+  color: #ebdbb2;
+  padding: 0px 8px;
 }
 
 .occupied-ws {
-  color: /*#505050*/ rgba(50, 50, 50, 0.75);
+  padding: 0px 8px;
+  color: rgba(235, 219, 178, 0.25);
 }
 
-.active-ws,
-.occupied-ws {
-  padding: 0px 4px;
-}
+.icon { padding: 6px 8px; }
 
-.icon {
-  padding: 0px 12px;
-  padding-right: 6px;
-}
+.text { padding: 4px 12px; }
 
-.clock-icon {
-  padding: 0px 6px;
-  padding-left: 4px;
-}
+.clock-icon { background-color: #458588; }
 
-.time-slide-text {
-  padding-left: 8px;
-}
+.date-icon { background-color: #689d6a; }
+
+.wifi-icon { background-color: #d65d0e; }
+
+.vol-icon { background-color: #d79921; }
+
+.bat-icon { background-color: #98971a; }
+
+.br-icon { background-color: #b16286; }

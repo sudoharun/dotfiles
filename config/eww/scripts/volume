@@ -1,15 +1,17 @@
 #!/bin/bash
 
+imgdir="images/gruvbox-dark"
+
 icon() {
   lvl=`pamixer --get-volume-human | awk -F'%' '{ print $1 }' | xargs`
   if [[ $lvl == "muted" ]]; then
-    echo "../images/volume-off.svg"
+    echo "../$imgdir/volume-off.svg"
   elif [[ $lvl -eq 0 ]]; then
-    echo "../images/volume-low.svg"
+    echo "../$imgdir/volume-low.svg"
   elif [[ $lvl -le 50 ]]; then
-    echo "../images/volume-medium.svg"
+    echo "../$imgdir/volume-medium.svg"
   else
-    echo "../images/volume-high.svg"
+    echo "../$imgdir/volume-high.svg"
   fi
 }
 

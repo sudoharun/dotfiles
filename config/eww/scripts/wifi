@@ -1,25 +1,27 @@
 #!/bin/bash
 
+imgdir="images/gruvbox-dark"
+
 strength=`iwconfig wlan0 | grep "Link Quality=" | awk -F'=' '{ print $2 }' | awk -F'/' '{ print $1 }'`
 state=`iwconfig wlan0 | grep ESSID | awk -F':' '{ print $2 }' | xargs`
 wf=`echo "$strength*100/70" | bc`
 
 icon() {
   if [[ $wf -eq 0 ]]; then
-    echo "../images/wifi-off.svg"
+    echo "../$imgdir/wifi-off.svg"
   elif [[ $wf -le 30 ]]; then
-#   echo "../images/wifi-none.svg"
-    echo "../images/wifi-low"
+#   echo "../$imgdir/wifi-none.svg"
+    echo "../$imgdir/wifi-low"
   elif [[ $wf -le 60 ]]; then
-#   echo "../images/wifi-low.svg"
-    echo "../images/wifi-medium.svg"
+#   echo "../$imgdir/wifi-low.svg"
+    echo "../$imgdir/wifi-medium.svg"
   elif [[ $wf -gt 60 ]]; then
-#   echo "../images/wifi-medium.svg"
-    echo "../images/wifi-high.svg"
+#   echo "../$imgdir/wifi-medium.svg"
+    echo "../$imgdir/wifi-high.svg"
 # elif [[ $wf -gt 75 ]]; then
-#   echo "../images/wifi-high.svg"
+#   echo "../$imgdir/wifi-high.svg"
   else
-    echo "../images/wifi-off.svg"
+    echo "../$imgdir/wifi-off.svg"
   fi
 }
 

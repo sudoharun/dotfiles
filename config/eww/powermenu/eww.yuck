@@ -3,22 +3,22 @@
 (defwidget lock []
   (box
     :class {power-option == 1 ? "active widget" : "inactive widget"}
-    (image :path "../images/lock.svg" :image-width 75 :image-height 75)))
+    (image :path "../${imgdir}/lock.svg" :image-width 75 :image-height 75)))
 
 (defwidget logout []
   (box
     :class {power-option == 2 ? "active widget" : "inactive widget"}
-    (image :path "../images/logout.svg" :image-width 75 :image-height 75)))
+    (image :path "../${imgdir}/logout.svg" :image-width 75 :image-height 75)))
 
 (defwidget reboot []
   (box
     :class {power-option == 3 ? "active widget" : "inactive widget"}
-    (image :path "../images/reboot.svg" :image-width 75 :image-height 75)))
+    (image :path "../${imgdir}/reboot.svg" :image-width 75 :image-height 75)))
 
 (defwidget shutdown []
   (box
     :class {power-option == 4 ? "active widget" : "inactive widget"}
-    (image :path "../images/shutdown.svg" :image-width 75 :image-height 75)))
+    (image :path "../${imgdir}/shutdown.svg" :image-width 75 :image-height 75)))
 
 (defwidget powermenu []
   (box

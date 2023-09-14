@@ -3,18 +3,16 @@
 }
 
 .powermenu {
-  background-color: rgba(16, 16, 16, 0.5);
-  border-radius: 6px;
+  background-color: #a89984;
+  border: 1px solid #282828;
 }
 
 .widget {
-  border-radius: 6px;
   padding: 12px;
-  margin: 12px;
 }
 
 .active {
-  background-color: rgba(50, 50, 50, 0.75);
+  background-color: #ebdbb2;
 }
 
 .inactive {

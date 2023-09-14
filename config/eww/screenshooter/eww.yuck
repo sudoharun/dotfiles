@@ -13,7 +13,7 @@
         :orientation "v"
         :valign "center"
         :halign "center"
-        (image :path "../images/screenshot.svg" :image-width 75 :image-height 75)
+        (image :path "../${imgdir}/screenshot.svg" :image-width 75 :image-height 75)
         (label :text "Fullscreen")))))
 
 (defwidget delay []
@@ -29,7 +29,7 @@
         :orientation "v"
         :valign "center"
         :halign "center"
-        (image :path "../images/alarm.svg" :image-width 75 :image-height 75)
+        (image :path "../${imgdir}/alarm.svg" :image-width 75 :image-height 75)
         (label :text "3s")))))
 
 (defwidget advanced []
@@ -45,7 +45,7 @@
         :orientation "v"
         :valign "center"
         :halign "center"
-        (image :path "../images/crop.svg" :image-width 75 :image-height 75)
+        (image :path "../${imgdir}/crop.svg" :image-width 75 :image-height 75)
         (label :text "Region")))))
 
 (defwidget screenshooter []

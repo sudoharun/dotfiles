@@ -1,5 +1,7 @@
 #!/bin/bash
 
+imgdir="images/gruvbox-dark"
+
 state(){
   status=`playerctl status`
   meta=`playerctl metadata title`
@@ -34,21 +36,21 @@ if [[ $1 == "state" ]]; then
     state
   done < <(playerctl --follow status || playerctl --follow metadata)
 elif [[ $1 == "art" ]]; then
-  echo "../images/random-colours.png"
+  echo "../$imgdir/random-colours.png"
   while read -r line; do
     art=`playerctl metadata | grep artUrl | awk -F'file://' '{ print $2 }' | xargs`
     if [[ $art == "" ]]; then
-      echo "../images/random-colours.png"
+      echo "../$imgdir/random-colours.png"
     else
       echo $art
     fi
   done < <(playerctl --follow status || playerctl --follow metadata)
 elif [[ $1 == "album" ]]; then
-  echo "../images/music.svg"
+  echo "../$imgdir/music.svg"
   while read -r line; do
     album=`playerctl metadata | grep artUrl | awk -F'file://' '{ print $2 }' | xargs`
     if [[ $album == "" ]]; then
-      echo "../images/music.svg"
+      echo "../$imgdir/music.svg"
     else
       echo $album
     fi

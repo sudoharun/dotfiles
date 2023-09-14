@@ -45,7 +45,7 @@ calendar:indeterminate {
 }
 
 .date-widget {
-  background-image: url("../images/cal-bg.jpg");
+  background-image: url("../images/white/cal-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
