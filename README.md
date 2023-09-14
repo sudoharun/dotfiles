@@ -25,13 +25,13 @@
 
 
 ### Desktop (bar made with eww)
-<img src="./assets/hyprland1.png" align="center">
+<img src="./assets/generic1.png" align="center">
 
 ### Wofi
-<img src="./assets/hyprland2.png" align="center">
+<img src="./assets/generic2.png" align="center">
 
 ### Screenshooter (made with eww)
-<img src="./assets/hyprland3.png" align="center">
+<img src="./assets/generic3.png" align="center">
 
 ### Powermenu (made with eww)
-<img src="./assets/hyprland4.png" align="center">
+<img src="./assets/generic4.png" align="center">
