@@ -1,4 +1,4 @@
-# dotfiles by sudo-harun
+# Hyprland Dotfiles by sudo-harun
 
 ⭐ If you like these, please star! ⭐
 
