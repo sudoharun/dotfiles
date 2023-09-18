@@ -22,7 +22,7 @@
 
 
 
-## <a href="https://github.com/sudo-harun/dotfiles/tree/hyprland">A Generic Hyprland Config</a>
+## <a href="https://github.com/sudo-harun/dotfiles/tree/generic">A Generic Hyprland Config</a>
 
 
 ### Desktop (bar made with eww)
