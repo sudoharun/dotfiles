@@ -36,3 +36,10 @@
 
 ### Powermenu (made with eww)
 <img src="./assets/generic4.png" align="center">
+
+
+## Other stuff I use
+To create custom themes, I use pywal and themix. You can install them with the commnad below:
+```
+yay -S python-pywal themix-full-git
+```
