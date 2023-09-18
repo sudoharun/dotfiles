@@ -39,7 +39,7 @@
 
 
 ## Other stuff I use
-To create custom themes, I use pywal and themix. You can install them with the commnad below:
+To create custom themes, I use pywal and themix. You can install them with the command below (Arch Linux only using yay):
 ```
 yay -S python-pywal themix-full-git
 ```
