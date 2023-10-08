@@ -1,6 +1,6 @@
 #!/bin/bash
 
-opt=`eww get power-option`
+opt=`eww -c ~/.config/eww/powermenu get power-option`
 
 if [[ $opt == "1" ]]; then
 # swaylock -S --clock --effect-pixelate 64 
