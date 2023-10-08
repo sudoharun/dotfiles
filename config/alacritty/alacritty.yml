@@ -1,0 +1,13 @@
+window:
+  padding:
+    x: 8
+    y: 8
+
+font:
+  size: 16
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Regular
+
+import:
+  - ~/.config/alacritty/themes/themes/hyper.yaml
