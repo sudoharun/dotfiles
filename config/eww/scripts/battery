@@ -25,7 +25,7 @@ icon() {
       echo "../$imgdir/battery-60.svg"
     elif [[ $batlvl -lt 80 ]]; then
       echo "../$imgdir/battery-80.svg"
-    elif [[ $batlvl -lt 100 ]]; then
+    elif [[ $batlvl -le 100 ]]; then
       echo "../$imgdir/battery-100.svg"
     fi
   else
@@ -55,7 +55,7 @@ class() {
       echo "bat-discharging"
     elif [[ $batlvl -lt 80 ]]; then
       echo "bat-discharging"
-    elif [[ $batlvl -lt 100 ]]; then
+    elif [[ $batlvl -le 100 ]]; then
       echo "bat-discharging"
     fi
   else
