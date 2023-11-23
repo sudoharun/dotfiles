@@ -2,6 +2,12 @@
 
 ⭐ If you like these, please star! ⭐
 
+## <a href="https://github.com/sudo-harun/dotfiles/tree/retroesque">Retro-esque: Another Hyprland Config</a>
+### Still WIP!
+
+### Desktop (All eww)
+<div align="center">![retroesque desktop](./assets/retroesque1.png) </div>
+
 ## <a href="https://github.com/sudo-harun/dotfiles/tree/gruvbox">Another Gruvbox Hyprland Config</a>
 
 
