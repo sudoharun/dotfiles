@@ -9,7 +9,7 @@ echo "path+=('/home/harun/.local/bin/')" >> ~/.zshrc # Edit this line for your u
 echo "path+=('/usr/lib/ccache/bin/')" >> ~/.zshrc
 echo "export PATH" >> ~/.zshrc
 echo " " >> ~/.zshrc
-echo "export TERMINAL='wezterm'" >> ~/.zshrc
+echo "export TERMINAL='alacritty'" >> ~/.zshrc
 echo "export EDITOR='nvim'" >> ~/.zshrc
 echo " " >> ~/.zshrc
 
@@ -21,4 +21,7 @@ source ~/.zshrc
 
 # Bluetooth
 yay -S bluez bluez-tools bluez-utils
-systemctl enable --now bluetooth
+sudo systemctl enable --now bluetooth
+
+# Pywal
+wal -b 121212 -i "/home/$USER/.config/hypr/flowerz.jpg"

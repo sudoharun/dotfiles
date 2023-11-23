@@ -1,0 +1,61 @@
+.bar { 
+  background-color: $bg-color;
+  padding: 8px;
+}
+
+.tray-item,
+.date {
+  color: $fg-color;
+  padding: 0px 12px;
+  border-left: 2px solid rgba($fg-color, 0.05);
+}
+
+.wifi { border: 0px; }
+
+.workspaces {
+  border-radius: $rad;
+}
+
+.time,
+.time-pak {
+  color: $fg-color;
+  padding: 0px 12px;
+}
+
+.active-ws,
+.occupied-ws,
+.ws {
+  margin: 8px;
+  border-radius: $rad;
+}
+
+.active-ws {
+  background-color: $accent-color;
+  padding: 0px 40px;
+}
+
+.ws {
+  background-color: rgba($fg-color, 0.075);
+  padding: 0px 8px;
+}
+
+.occupied-ws {
+  background-color: rgba($accent-color, 0.25);
+  padding: 0px 20px;
+}
+
+.icon { padding: 0px 4px; }
+
+.corners-left {
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: -12px -12px 0px 0px $bg-color;
+}
+
+.corners-right {
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 12px -12px 0px 0px $bg-color;
+}

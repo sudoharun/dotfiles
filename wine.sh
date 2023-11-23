@@ -10,7 +10,7 @@ sleep 3
 clear
 
 cd ~
-yay -S wine-staging winetricks dxvk-bin
+yay -S wine-staging winetricks dxvk-bin lib32-gnutls lib32-libxcomposite lib32-mesa lib32-vkd3d lib32-libva lib32-vulkan-icd-loader lib32-vulkan-intel lib32-vulkan-mesa-layers samba
 sudo winetricks --self-update
 winetricks -q --force dotnet48
 winetricks -q d3dcompiler_47 corefonts

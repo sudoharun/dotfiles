@@ -1,0 +1,105 @@
+#!/bin/bash
+
+workspaces() {
+  a=`hyprctl monitors | grep active | awk '{ print $3 }'`
+  o=`hyprctl workspaces | grep workspace | awk '{ print $3 }'`
+  
+  w1=ws
+  w2=ws
+  w3=ws
+  w4=ws
+  w5=ws
+  w6=ws
+  w7=ws
+  w8=ws
+  w9=ws
+  w10=ws
+
+  for i in $o
+  do
+    eval "w$i=occupied-ws";
+  done
+
+  if [[ $a -eq 1 ]]; then
+    w1=active-ws
+  elif [[ $a -eq 2 ]]; then
+    w2=active-ws
+  elif [[ $a -eq 3 ]]; then
+    w3=active-ws
+  elif [[ $a -eq 4 ]]; then
+    w4=active-ws
+  elif [[ $a -eq 5 ]]; then
+    w5=active-ws
+  elif [[ $a -eq 6 ]]; then
+    w6=active-ws
+  elif [[ $a -eq 7 ]]; then
+    w7=active-ws
+  elif [[ $a -eq 8 ]]; then
+    w8=active-ws
+  elif [[ $a -eq 9 ]]; then
+    w9=active-ws
+  elif [[ $a -eq 10 ]]; then
+    w10=active-ws
+  fi
+ 
+  l1="(label :class \"$w1\" :text \"1\")"
+  l2="(label :class \"$w2\" :text \"2\")"
+  l3="(label :class \"$w3\" :text \"3\")"
+  l4="(label :class \"$w4\" :text \"4\")"
+  l5="(label :class \"$w5\" :text \"5\")"
+  l6="(label :class \"$w6\" :text \"6\")"
+  l7="(label :class \"$w7\" :text \"7\")"
+  l8="(label :class \"$w8\" :text \"8\")"
+  l9="(label :class \"$w9\" :text \"9\")"
+  l10="(label :class \"$w10\" :text \"10\")"
+
+
+
+  if [[ $w1 == 'ws' ]]; then
+    l1=""
+  fi
+
+  if [[ $w2 == 'ws' ]]; then
+    l2=""
+  fi
+
+  if [[ $w3 == 'ws' ]]; then
+    l3=""
+  fi
+
+  if [[ $w4 == 'ws' ]]; then
+    l4=""
+  fi
+
+  if [[ $w5 == 'ws' ]]; then
+    l5=""
+  fi
+
+  if [[ $w6 == 'ws' ]]; then
+    l6=""
+  fi
+
+  if [[ $w7 == 'ws' ]]; then
+    l7=""
+  fi
+
+  if [[ $w8 == 'ws' ]]; then
+    l8=""
+  fi
+
+  if [[ $w9 == 'ws' ]]; then
+    l9=""
+  fi
+
+  if [[ $w10 == 'ws' ]]; then
+    l10=""
+  fi
+
+  echo "(box :space-evenly false :spacing 0 :vexpand true :hexpand false $l1 $l2 $l3 $l4 $l5 $l6 $l7 $l8 $l9 $l10)"
+ 
+}
+
+workspaces
+socat -U - UNIX-CONNECT:/tmp/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock | while read -r _ ; do
+  workspaces
+done

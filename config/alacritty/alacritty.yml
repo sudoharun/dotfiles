@@ -1,13 +1,20 @@
 window:
   padding:
-    x: 8
-    y: 8
+    x: 16
+    y: 16
+
+  opacity: 1.0
 
 font:
   size: 16
   normal:
-    family: JetBrainsMono Nerd Font
+    family: IosevkaTerm NF
     style: Regular
 
+colors:
+  primary:
+    background: '0x121212'
+    foreground: '0xf5f5f5'
+
 import:
-  - ~/.config/alacritty/themes/themes/hyper.yaml
+ - /home/harun/.cache/wal/colors-alacritty.yml

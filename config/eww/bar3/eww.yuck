@@ -1,0 +1,129 @@
+(include "./variables.yuck")
+
+(defwidget tray []
+  (box
+    :class "tray"
+    :halign "end"
+    :space-evenly false
+    (box
+      :class "tray-item wifi"
+      :spacing 0
+      :space-evenly false
+      (image :class "icon wifi-icon" :path wifi-icon :image-height "20")
+      (label :class "text wifi-text" :text wifi-strength))
+    (box
+      :class "tray-item vol"
+      :spacing 0
+      :space-evenly false
+      (image :class "icon vol-icon" :path vol-icon :image-height "20")
+      (label :class "text vol-text" :text "${vol-num}%"))
+    (box
+      :class "tray-item bat"
+      :spacing 0
+      :space-evenly false
+      (image :class "icon bat-icon" :path bat-icon :image-height "26")
+      (label :class "text bat-text" :text "${bat-num}%"))
+    (box
+      :class "tray-item br"
+      :spacing 0
+      :space-evenly false
+      (image :class "icon br-icon" :path "../images/brightness.svg" :image-height "20")
+      (label :class "text vol-text" :text "${br}%"))
+    ))
+
+(defwidget workspaces []
+  (box
+    :class "workspaces"
+    :halign "start"
+    :hexpand false
+    (literal :content numworkspaces)))
+
+(defwidget time []
+  (box
+    :class "time"
+    :visible {uk}
+    :space-evenly false
+    :spacing 0
+    (label :class "text" :text "")
+    (image :class "icon clock-icon" :path "../images/clock.svg" :image-width "20" :image-height "20")
+    (label :class "text" :text "${hours}󰇙${mins}")))
+
+(defwidget time-pak []
+  (box
+    :class "time-pak"
+    :visible {!uk}
+    :spacing 0
+    :space-evenly false
+    (label :class "text" :text "")
+    (image :class "icon clock-icon" :path "../images/clock.svg" :image-width "20" :image-height "20")
+    (label :class "text" :text "${(hours+5)}󰇙${mins}")))
+
+(defwidget date []
+  (box
+    :class "date"
+    :halign "start" 
+    :spacing 0
+    :space-evenly false
+    (image :class "icon date-icon" :path "../images/calendar.svg" :image-width "20" :image-height "20")
+    (label :class "text" :text "${day} ${day-num} ${month}, ${year}")))
+
+(defwidget left []
+  (box
+    :class "left"
+    :halign "start"
+    :space-evenly false
+    :spacing 0
+    (eventbox
+      :halign "center"
+      :valign "center"
+      :onclick {uk ? "${eww} update uk=false" : "${eww} update uk=true"}
+      (box
+        (time)
+        (time-pak)))
+    (date)))
+
+(defwidget bar []
+  (centerbox
+    :orientation "h"
+    :class "bar"
+    (left)
+    (workspaces)
+    (tray)))
+
+(defwindow bar
+  :stacking "fg"
+  :monitor "0"
+  :exclusive true
+  :namespace "bar"
+  :geometry (geometry
+              :x "0px"
+              :y "0%"
+              :width "100%"
+              :height "0%"
+              :anchor "top center")
+  (bar))
+
+(defwidget corners []
+  (box
+    :class "corners-box"
+    (box
+      :class "corners-left"
+      :hexpand false
+      :halign "start")
+    (box
+      :class "corners-right"
+      :hexpand false
+      :halign "end")))
+
+(defwindow corners
+  :stacking "fg"
+  :monitor "0"
+  :exclusive false
+  :namespace "corners"
+  :geometry (geometry
+              :x "0px"
+              :y "0px"
+              :width "100%"
+              :height "0%"
+              :anchor "top center")
+  (corners))

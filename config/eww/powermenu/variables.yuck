@@ -1,6 +1,2 @@
 (include "../variables.yuck")
-(defpoll lock-class :interval "0.01s" "../scripts/powermenu lock")
-(defpoll logout-class :interval "0.01s" "../scripts/powermenu logout")
-(defpoll reboot-class :interval "0.01s" "../scripts/powermenu reboot")
-(defpoll shutdown-class :interval "0.01s" "../scripts/powermenu shutdown")
 (defvar power-option 1)

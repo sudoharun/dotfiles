@@ -1,0 +1,17 @@
+$bg-color: #121212;
+$fg-color: #bacee2;
+$accent-color: #e2e4e7;
+$rad: 4px;
+
+// Empty workspaces
+// @import "pillws";
+
+// Numbered workspaces
+@import "numws";
+
+* {
+  font-family: "IosevkaTerm NF", "Noto Sans CJK JP";
+  font-size: 14px;
+  background-color: transparent;
+}
+
