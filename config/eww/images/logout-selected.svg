@@ -4,8 +4,8 @@
 <path d="M256 0.0104065H0V256.01H256V0.0104065Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_1_2)">
-<path d="M160 42.6771H53.3333V192.011C53.3333 203.792 62.8846 213.344 74.6666 213.344H160" stroke="#F5F5F5" stroke-width="21.3333" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M170.667 160.011L202.667 128.011M202.667 128.011L170.667 96.0105M202.667 128.011H96" stroke="#F5F5F5" stroke-width="21.3333" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M160 42.6771H53.3333V192.011C53.3333 203.792 62.8846 213.344 74.6666 213.344H160" stroke="#121212" stroke-width="21.3333" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M170.667 160.011L202.667 128.011M202.667 128.011L170.667 96.0105M202.667 128.011H96" stroke="#121212" stroke-width="21.3333" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </g>
 <defs>

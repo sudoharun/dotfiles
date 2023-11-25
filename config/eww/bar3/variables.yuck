@@ -1,8 +1,0 @@
-(include "../variables.yuck")
-;(deflisten activewindowicon "../scripts/activewindowicon")
-;(deflisten activewindowname "../scripts/activewindowname")
-;(deflisten kanjiworkspaces "../scripts/kanjiworkspaces")
-;(deflisten emptyworkspaces "../scripts/emptyworkspaces")
-(deflisten numworkspaces "../scripts/numworkspaces")
-(defvar eww "eww -c ~/.config/eww/bar3")
-(defvar uk true)

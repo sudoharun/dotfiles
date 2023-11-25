@@ -1,6 +1,6 @@
 $bg-color: #121212;
-$fg-color: #bacee2;
-$accent-color: #e2e4e7;
+$fg-color: #c5cdda;
+$accent-color: #dfc7ab;
 $rad: 4px;
 
 // Empty workspaces
@@ -10,7 +10,8 @@ $rad: 4px;
 @import "numws";
 
 * {
-  font-family: "IosevkaTerm NF", "Noto Sans CJK JP";
+  font-family: "IBM Plex Sans", "Noto Sans CJK JP";
+  font-weight: bold;
   font-size: 14px;
   background-color: transparent;
 }

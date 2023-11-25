@@ -1,18 +1,1 @@
-#!/bin/bash
-
-# brillo -G | awk -F'.' '{ print $1 }' | xargs
-# ls ~/.config/eww/files/brightness.txt | entr brillo -G | awk -F'.' '{ print $1 }' | xargs
-
-# while read -r line; do
-#   br=`brillo -G | awk -F'.' '{ print $1 }' | xargs`
-#   echo $br
-# done < <(ls ~/.config/eww/files/brightness.txt | entr echo "")
-
-# brillo -G | awk -F'.' '{ print $1 }'
-# while [[ 1 ]]; do
-#   inotifywait -e modify ~/.config/eww/files/brightness.txt
-#   brillo -G | awk -F'.' '{ print $1 }'
-# done
-
-watchexec -w ~/.config/eww/files/brightness sh -c "brillo -G | cut -d '.' -f1"
-
+watchexec -w /home/$USER/.config/eww/files/brightness sh -c "brillo -G | cut -d '.' -f1"

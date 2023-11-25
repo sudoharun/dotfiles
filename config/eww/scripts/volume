@@ -3,13 +3,13 @@
 icon() {
   lvl=`pamixer --get-volume-human | awk -F'%' '{ print $1 }' | xargs`
   if [[ $lvl == "muted" ]]; then
-    echo "../images/volume-off.svg"
+    echo "images/volume-off.svg"
   elif [[ $lvl -eq 0 ]]; then
-    echo "../images/volume-low.svg"
+    echo "images/volume-low.svg"
   elif [[ $lvl -le 50 ]]; then
-    echo "../images/volume-medium.svg"
+    echo "images/volume-medium.svg"
   else
-    echo "../images/volume-high.svg"
+    echo "images/volume-high.svg"
   fi
 }
 

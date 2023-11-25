@@ -1,6 +1,6 @@
 .bar { 
   background-color: $bg-color;
-  padding: 8px;
+  padding: 12px 8px;
 }
 
 .tray-item,
@@ -31,13 +31,30 @@
 
 .active-ws {
   color: $bg-color;
-  background-color: $accent-color;
+  background: linear-gradient(90deg, $fg-color, $accent-color);
   padding: 0px 40px;
 }
 
 .occupied-ws {
   background-color: rgba($accent-color, 0.25);
   padding: 0px 20px;
+}
+
+.pwr-widget,
+.ss-widget {
+  border-radius: $rad;
+}
+
+.pwr-active,
+.ss-active {
+  color: $bg-color;
+  background: linear-gradient(90deg, $fg-color, $accent-color);
+  padding: 0px 20px;
+}
+
+.pwr-inactive,
+.ss-inactive {
+  background-color: transparent;
 }
 
 .icon { padding: 0px 4px; }
