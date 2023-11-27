@@ -42,22 +42,11 @@
 (defwidget time []
   (box
     :class "time"
-    :visible {uk}
     :space-evenly false
     :spacing 0
     (label :class "text" :text "")
     (image :class "icon clock-icon" :path "images/clock.svg" :image-width "20" :image-height "20")
     (label :class "text" :text "${hours}󰇙${mins}")))
-
-(defwidget time-pak []
-  (box
-    :class "time-pak"
-    :visible {!uk}
-    :spacing 0
-    :space-evenly false
-    (label :class "text" :text "")
-    (image :class "icon clock-icon" :path "images/clock.svg" :image-width "20" :image-height "20")
-    (label :class "text" :text "${(hours+5)}󰇙${mins}")))
 
 (defwidget date []
   (box
@@ -74,13 +63,7 @@
     :halign "start"
     :space-evenly false
     :spacing 0
-    (eventbox
-      :halign "center"
-      :valign "center"
-      :onclick {uk ? "eww update uk=false" : "eww update uk=true"}
-      (box
-        (time)
-        (time-pak)))
+    (time)
     (date)))
 
 (defwidget lock []

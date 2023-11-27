@@ -14,7 +14,6 @@
 (defpoll month :interval "3h" "date '+%b'")
 (defpoll year :interval "24h" "date '+%Y'")
 (deflisten numworkspaces "scripts/numworkspaces")
-(defvar uk true)
 (defvar center-option "workspaces")
 (defvar screenshot-option 1)
 (defvar power-option 1)
