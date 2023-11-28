@@ -8,7 +8,7 @@ makepkg -si
 
 # Installing other packages
 cd ~
-yay -S hyprland qt5-wayland qt6-wayland linux-headers alacritty zsh neovim firefox-developer-edition udisks2 unrar unzip ttf-jetbrains-mono-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd sof-firmware wofi wofi-emoji dunst polkit-gnome ranger reflector-simple playerctl pavucontrol pamixer p7zip noto-fonts noto-fonts-cjk ttf-apple-emoji neofetch mpv iw pinta dragon-drop deluge-gtk armcord-bin ccache brillo alsa-firmware alsa-ucm-conf bluez capitaine-cursors zip upower ttf-roboto filezilla xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-hyprland papirus-icon-theme swaylock-effects-git wireless_tools wev nwg-look-bin blender imv grim slurp dosfstools socat bc sysstat btop ueberzugpp swaybg waypaper-git jq eww-wayland python-pywal
+yay -S hyprland qt5-wayland qt6-wayland linux-headers alacritty zsh neovim firefox-developer-edition udisks2 unrar unzip ttf-jetbrains-mono-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd sof-firmware wofi wofi-emoji dunst polkit-gnome ranger reflector-simple playerctl pavucontrol pamixer p7zip noto-fonts noto-fonts-cjk ttf-apple-emoji neofetch mpv iw pinta dragon-drop deluge-gtk armcord-bin ccache brillo alsa-firmware alsa-ucm-conf bluez capitaine-cursors zip upower ttf-roboto filezilla xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-hyprland papirus-icon-theme swaylock-effects-git wireless_tools wev nwg-look-bin footage imv grim slurp dosfstools socat bc sysstat btop ueberzugpp swaybg waypaper-git jq eww-wayland python-pywal
 
 # Installing mantis gtk theme
 cd ~
