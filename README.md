@@ -6,7 +6,7 @@
 ### Still WIP!
 
 ### Desktop (All eww)
-<div align="center">![retroesque desktop](./assets/retroesque1.png) </div>
+<img src="./assets/retroesque1.png" align="center">
 
 ## <a href="https://github.com/sudo-harun/dotfiles/tree/gruvbox">Another Gruvbox Hyprland Config</a>
 
