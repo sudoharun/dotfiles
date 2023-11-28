@@ -34,9 +34,9 @@
 (defwidget workspaces []
   (box
     :class "workspaces"
-    :halign "start"
+    :halign "center"
     :hexpand false
-    :visible {center-option == "workspaces" ? true : false}
+    ; :visible {center-option == "workspaces" ? true : false}
     (literal :content numworkspaces)))
 
 (defwidget time []
@@ -73,7 +73,11 @@
     :spacing 10
     :space-evenly false
     (image :path {power-option == 1 ? "images/lock-selected.svg" : "images/lock.svg"} :image-width 20 :image-height 20)
-    (label :visible {power-option == 1 ? true : false} :text "Lock")))
+    (revealer
+      :transition "slideright"
+      :reveal {power-reveal == 1 ? true : false}
+      :duration "250ms"
+    (label :text "Lock"))))
 
 (defwidget logout []
   (box
@@ -82,7 +86,11 @@
     :spacing 10
     :space-evenly false
     (image :path {power-option == 2 ? "images/logout-selected.svg" : "images/logout.svg"} :image-width 20 :image-height 20)
-    (label :visible {power-option == 2 ? true : false} :text "Logout")))
+    (revealer
+      :transition "slideright"
+      :reveal {power-reveal == 2 ? true : false}
+      :duration "250ms"
+    (label :text "Logout"))))
 
 (defwidget reboot []
   (box
@@ -91,7 +99,11 @@
     :spacing 10
     :space-evenly false
     (image :path {power-option == 3 ? "images/reboot-selected.svg" : "images/reboot.svg"} :image-width 20 :image-height 20)
-    (label :visible {power-option == 3 ? true : false} :text "Reboot")))
+    (revealer
+      :transition "slideright"
+      :reveal {power-reveal == 3 ? true : false}
+      :duration "250ms"
+    (label :text "Reboot"))))
 
 (defwidget shutdown []
   (box
@@ -100,7 +112,11 @@
     :spacing 10
     :space-evenly false
     (image :path {power-option == 4 ? "images/shutdown-selected.svg" : "images/shutdown.svg"} :image-width 20 :image-height 20)
-    (label :visible {power-option == 4 ? true : false} :text "Shutdown")))
+    (revealer
+      :transition "slideright"
+      :reveal {power-reveal == 4 ? true : false}
+      :duration "250ms"
+    (label :text "Shutdown"))))
 
 (defwidget powermenu []
   (box
@@ -108,7 +124,6 @@
     :spacing 25
     :space-evenly false
     :orientation "h"
-    :visible {center-option == "powermenu" ? true : false}
     (lock)
     (logout)
     (reboot)
@@ -121,7 +136,11 @@
     :space-evenly false
     :orientation "h"
     (image :path {screenshot-option == 1 ? "images/screenshot-selected.svg" : "images/screenshot.svg"} :image-width 20 :image-height 20)
-    (label :visible {screenshot-option == 1 ? true : false} :text "Fullscreen")))
+    (revealer
+      :transition "slideright"
+      :reveal {screenshot-reveal == 1 ? true : false}
+      :duration "250ms"
+      (label :text "Fullscreen"))))
 
 (defwidget delay []
   (box
@@ -130,7 +149,11 @@
     :space-evenly false
     :orientation "h"
     (image :path {screenshot-option == 2 ? "images/alarm-selected.svg" : "images/alarm.svg"} :image-width 20 :image-height 20)
-    (label :visible {screenshot-option == 2 ? true : false} :text "3s")))
+    (revealer
+      :transition "slideright"
+      :reveal {screenshot-reveal == 2 ? true : false}
+      :duration "250ms"
+      (label :text "3s"))))
 
 (defwidget region []
   (box
@@ -139,7 +162,11 @@
     :space-evenly false
     :orientation "h"
     (image :path {screenshot-option == 3 ? "images/crop-selected.svg" : "images/crop.svg"} :image-width 20 :image-height 20)
-    (label :visible {screenshot-option == 3 ? true : false} :text "Region")))
+    (revealer
+      :transition "slideright"
+      :reveal {screenshot-reveal == 3 ? true : false}
+      :duration "250ms"
+      (label :text "Region"))))
 
 (defwidget screenshooter []
   (box
@@ -147,18 +174,35 @@
     :spacing 25
     :space-evenly false
     :orientation "h"
-    :visible {center-option == "screenshooter" ? true : false}
     (fullscreen)
     (delay)
     (region)))
 
 (defwidget center []
   (box
-    :spacing 25
+    :spacing 0
     :space-evenly false
-    (workspaces)
-    (screenshooter)
-    (powermenu)))
+    (box
+      :visible {center-option == "screenshooter" ? true : false}
+      (revealer
+        :transition "crossfade"
+        :reveal {reveal-option == "screenshooter" ? true : false}
+        :duration "500ms"
+        (screenshooter)))
+    (box
+      :visible {center-option == "workspaces" ? true : false}
+      (revealer
+        :transition "crossfade"
+        :reveal {reveal-option == "workspaces" ? true : false}
+        :duration "500ms"
+        (workspaces)))
+    (box
+      :visible {center-option == "powermenu" ? true : false}
+      (revealer
+        :transition "crossfade"
+        :reveal {reveal-option == "powermenu" ? true : false}
+        :duration "500ms"
+        (powermenu)))))
 
 (defwidget bar []
   (centerbox
