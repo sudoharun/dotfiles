@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 24x24
+    offset = 12x12
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 1
@@ -95,7 +95,7 @@
     frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#7d7d7d"
+    frame_color = "#505050"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -123,7 +123,7 @@
 
     ### Text ###
 
-    font = "JetBrainsMono Nerd Font 10"
+    font = "IBM Plex Sans 10"
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -250,7 +250,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 6
+    corner_radius = 12
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -313,14 +313,14 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#050505"
+    background = "#121212"
     foreground = "#F5F5F5"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#050505"
+    background = "#121212"
     foreground = "#F5F5F5"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
@@ -336,7 +336,7 @@
 
 [play_sound]
     summary = "*"
-    script = ~/.config/dunst/alert.sh
+    script = ~/.config/dunst/alert
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
