@@ -5,7 +5,7 @@ echo "# Custom Aliases" >> ~/.zshrc
 echo "alias convita='~/.config/scripts/ffmpeg.sh'" >> ~/.zshrc
 echo " " >> ~/.zshrc
 echo "# Adding stuff to path" >> ~/.zshrc
-echo "path+=('/home/harun/.local/bin/')" >> ~/.zshrc # Edit this line for your user
+echo "path+=('$HOME/.local/bin/')" >> ~/.zshrc # Edit this line for your user
 echo "path+=('/usr/lib/ccache/bin/')" >> ~/.zshrc
 echo "export PATH" >> ~/.zshrc
 echo " " >> ~/.zshrc
