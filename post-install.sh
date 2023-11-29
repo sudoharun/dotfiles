@@ -20,7 +20,7 @@ echo "cd ~" >> ~/.zshrc
 source ~/.zshrc
 
 # Bluetooth
-yay -S bluez bluez-tools bluez-utils
+yay -S --noconfirm bluez bluez-tools bluez-utils
 sudo systemctl enable --now bluetooth
 
 # Pywal
