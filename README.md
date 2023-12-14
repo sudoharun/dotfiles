@@ -1,7 +1,7 @@
 # Retro-esque, a Hyprland config
 
-### Still WIP!
-
 <div align="center">
   <img src="./assets/hyprland1.png">
+  <img src="./assets/hyprland2.png">
+  <img src="./assets/hyprland3.png">
 </div>
