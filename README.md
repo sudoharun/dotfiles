@@ -9,10 +9,10 @@
 <img src="./assets/retroesque1.png" align="center">
 
 ### Screenshooter (embedded into the bar)
-<img src="./assets/retroesque1.png" align="center">
+<img src="./assets/retroesque2.png" align="center">
 
 ### Powermenu (embedded into the bar)
-<img src="./assets/retroesque1.png" align="center">
+<img src="./assets/retroesque3.png" align="center">
 
 
 
