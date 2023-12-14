@@ -3,10 +3,18 @@
 ⭐ If you like these, please star! ⭐
 
 ## <a href="https://github.com/sudo-harun/dotfiles/tree/retroesque">Retro-esque: Another Hyprland Config</a>
-### Still WIP!
+
 
 ### Desktop (All eww)
 <img src="./assets/retroesque1.png" align="center">
+
+### Screenshooter (embedded into the bar)
+<img src="./assets/retroesque1.png" align="center">
+
+### Powermenu (embedded into the bar)
+<img src="./assets/retroesque1.png" align="center">
+
+
 
 ## <a href="https://github.com/sudo-harun/dotfiles/tree/gruvbox">Another Gruvbox Hyprland Config</a>
 
