@@ -19,6 +19,10 @@ echo "cd ~" >> ~/.zshrc
 # Source zshrc for changes to take effect in current session
 source ~/.zshrc
 
+# ~/.zlogin for automatically starting Hyprland after TTY login
+cd ~
+mv dotfiles/.zlogin $HOME/
+
 # Bluetooth
 yay -S --noconfirm bluez bluez-tools bluez-utils
 sudo systemctl enable --now bluetooth
