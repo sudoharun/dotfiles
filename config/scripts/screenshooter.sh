@@ -10,7 +10,7 @@ elif [[ $opt == "2" ]]; then
   hyprctl dispatch submap reset && sleep 3 && grim -o eDP-1 $location && notify-send -a Screenshooter "Screenshot Taken!"
 elif [[ $opt == "3" ]]; then
   eww update screenshot-option=1
-  hyprctl dispatch submap reset && grim -g $(slurp) $location && notify-send -a Screenshooter "Screenshot Taken!"
+  hyprctl dispatch submap reset && grim -g "$(slurp)" $location && notify-send -a Screenshooter "Screenshot Taken!"
 else
   notify-send "Screenshooter has encountered a problem!"
   eww update screenshot-option=1
