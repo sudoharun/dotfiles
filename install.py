@@ -276,3 +276,5 @@ print("\n\nThis last step will set up ohmyzsh. Follow the onscreen instructions 
 print("Please reboot once this step has completed.")
 sleep(8)
 os.system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"')
+print("\nIf you can see this, that means that this is great! I can reboot for you! Bye!")
+sleep(5)
