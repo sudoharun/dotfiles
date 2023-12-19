@@ -8,7 +8,9 @@
 
 ## How to install
 First update your system:
-```sudo pacman -Syu```
+```
+sudo pacman -Syu
+```
 
 Then you can do the following:
 ```
