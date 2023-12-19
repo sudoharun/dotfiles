@@ -1,4 +1,5 @@
 import os
+import subprocess
 from time import sleep
 
 packages = [
@@ -93,20 +94,9 @@ os.system("sudo pacman -Syy &>> /dev/null")
 sleep(1)
 print("Done.\n\n")
 
-# Install git
-print("Installing git...")
-is_git = int(os.system("pacman -Q | grep git | wc -l"))
-if is_git != 0:
-    print("'git' already installed. Skipping...")
-    sleep(2)
-else:
-    os.system("sudo pacman -S --noconfirm git &>> /dev/null")
-    sleep(1)
-    print("Done.\n\n")
-
 # Install yay AUR helper
 print("Installing yay...")
-is_yay = os.system("pacman -Q | grep yay | wc -l")
+is_yay = int(subprocess.run("pacman -Q | grep yay | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
 if is_yay != 0:
     print("'yay' already installed. Skipping...")
     sleep(2)
@@ -121,7 +111,7 @@ else:
 print("Installing required packages (this may take a while)...")
 for pkg in packages:
     try:
-        is_pkg = os.system(f"yay -Q | grep {pkg} | wc -l")
+        is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
         if is_pkg != 0:
             print(f"'{pkg}' already installed. Skipping...")
             sleep(2)
@@ -139,7 +129,7 @@ while True:
     if audio_opt == "y":
         for pkg in audio:
             try:
-                is_pkg = os.system(f"yay -Q | grep {pkg} | wc -l")
+                is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
                 if is_pkg != 0:
                     print(f"'{pkg}' already installed. Skipping...")
                     sleep(2)
@@ -184,7 +174,7 @@ while True:
     if optional_opt == "y":
         for pkg in optional:
             try:
-                is_pkg = os.system(f"yay -Q | grep {pkg} | wc -l")
+                is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
                 if is_pkg != 0:
                     print(f"'{pkg}' already installed. Skipping...")
                     sleep(2)
