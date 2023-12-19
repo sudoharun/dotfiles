@@ -127,9 +127,10 @@ for pkg in packages:
 
 # Installing audio tools
 while True:
-    audio_opt = input("\n\nWould you like to install audio tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package").lower()
+    audio_opt = input("\n\nWould you like to install audio tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
+    print()
     if audio_opt == "y":
-        print(f"\nInstalling '{pkg}'...")
+        print(f"Installing '{pkg}'...")
         for pkg in audio:
             try:
                 is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
@@ -173,10 +174,11 @@ while True:
 
 # Installing optional packages
 while True:
-    optional_opt = input("\n\nWould you like to install optional packages? [Y]es | [N]o | [S]ee what they are | [O]mit a package").lower()
+    optional_opt = input("\n\nWould you like to install optional packages? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
+    print()
     if optional_opt == "y":
         for pkg in optional:
-            print(f"\nInstalling '{pkg}'...")
+            print(f"Installing '{pkg}'...")
             try:
                 is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
                 if is_pkg != 0:
