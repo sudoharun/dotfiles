@@ -89,7 +89,7 @@ sleep(2)
 os.system("cd ~")
 
 # Update pacman databases
-print("Updating databases...")
+print("\n\nUpdating databases...")
 os.system("sudo pacman -Syy &>> /dev/null")
 sleep(1)
 print("Done.\n\n")
@@ -109,6 +109,7 @@ else:
 
 # Install packages
 print("Installing required packages (this may take a while)...")
+sleep(2)
 for pkg in packages:
     try:
         is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
