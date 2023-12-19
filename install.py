@@ -48,6 +48,7 @@ packages = [
     "wofi-emoji",
     "pfetch",
     "btop",
+    "rustup",
     "eww-wayland",
     "python-pywal",
     "swaybg",
@@ -58,8 +59,7 @@ packages = [
     "papirus-icon-theme",
     "swaylock-effects-git",
     "nwg-look-bin",
-    "imv",
-    "rustup"
+    "imv"
 ]
 
 audio = [
@@ -261,6 +261,8 @@ os.system("chmod +x ~/.config/eww/scripts/kanjiworkspaces")
 os.system("chmod +x ~/.config/eww/scripts/numworkspaces")
 os.system("chmod +x ~/.config/eww/scripts/volume")
 os.system("chmod +x ~/.config/eww/scripts/wifi")
+sleep(1)
+print("Done.")
 sleep(2)
 
 # Removing unnecessary/unused dependencies
