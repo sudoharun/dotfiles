@@ -111,13 +111,13 @@ else:
 print("Installing required packages (this may take a while)...")
 sleep(2)
 for pkg in packages:
+    print(f"Installing '{pkg}'...")
     try:
         is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
         if is_pkg != 0:
             print(f"'{pkg}' already installed. Skipping...")
             sleep(1)
         else:
-            print(f"Installing '{pkg}'...")
             os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
             sleep(0.5)
             print(f"Successfully installed '{pkg}'!")
@@ -129,6 +129,7 @@ for pkg in packages:
 while True:
     audio_opt = input("\n\nWould you like to install audio tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package").lower()
     if audio_opt == "y":
+        print(f"Installing '{pkg}'...")
         for pkg in audio:
             try:
                 is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
@@ -136,7 +137,6 @@ while True:
                     print(f"'{pkg}' already installed. Skipping...")
                     sleep(2)
                 else:
-                    print(f"Installing '{pkg}'...")
                     os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
                     sleep(0.5)
                     print(f"Successfully installed '{pkg}'!")
@@ -176,13 +176,13 @@ while True:
     optional_opt = input("\n\nWould you like to install optional packages? [Y]es | [N]o | [S]ee what they are | [O]mit a package").lower()
     if optional_opt == "y":
         for pkg in optional:
+            print(f"Installing '{pkg}'...")
             try:
                 is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
                 if is_pkg != 0:
                     print(f"'{pkg}' already installed. Skipping...")
                     sleep(2)
                 else:
-                    print(f"Installing '{pkg}'...")
                     os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
                     sleep(0.5)
                     print(f"Successfully installed '{pkg}'!")
