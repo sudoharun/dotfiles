@@ -154,7 +154,7 @@ while True:
         print("The audio tools include:")
         for pkg in audio:
             print(f" - {pkg}")
-        sleep(5)
+        sleep(2)
     elif audio_opt == "o":
         print("Please enter 1 package to omit:")
         i = 1
@@ -201,7 +201,7 @@ while True:
         print("The optional packages include:")
         for pkg in optional:
             print(f" - {pkg}")
-        sleep(5)
+        sleep(2)
     elif optional_opt == "o":
         print("Please enter 1 package to omit:")
         i = 1
