@@ -98,7 +98,7 @@ print("Done.\n\n")
 print("Installing yay...")
 is_yay = int(subprocess.run("pacman -Q | grep yay | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
 if is_yay != 0:
-    print("'yay' already installed. Skipping...")
+    print("'yay' already installed. Skipping...\n\n")
     sleep(2)
 else:
     os.system("git clone https://aur.archlinux.org/yay.git &>> /dev/null")
@@ -114,7 +114,7 @@ for pkg in packages:
         is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
         if is_pkg != 0:
             print(f"'{pkg}' already installed. Skipping...")
-            sleep(2)
+            sleep(1)
         else:
             os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
             sleep(0.5)
