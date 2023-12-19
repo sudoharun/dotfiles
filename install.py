@@ -135,8 +135,8 @@ for pkg in packages:
 
 # Installing audio tools
 while True:
-    audio-opt = input("\n\nWould you like to install audio tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package").lower()
-    if audio-opt == "y":
+    audio_opt = input("\n\nWould you like to install audio tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package").lower()
+    if audio_opt == "y":
         for pkg in audio:
             try:
                 is_pkg = os.system(f"yay -Q | grep {pkg} | wc -l")
@@ -152,24 +152,24 @@ while True:
                 print("Continuing...")
                 sleep(2)
         break
-    elif audio-opt == "n":
+    elif audio_opt == "n":
         print("Continuing...\n")
         sleep(2)
         break
-    elif audio-opt == "s":
+    elif audio_opt == "s":
         print("The audio tools include:")
         for pkg in audio:
             print(f" - {pkg}")
         sleep(5)
-    elif audio-opt == "o":
+    elif audio_opt == "o":
         print("Please enter 1 package to omit:")
         i = 1
         for pkg in audio:
             print(f" - {i}: {pkg}")
             i+=1
         try:
-            om-audio-opt = input(">> ")
-            audio.pop(om-audio-opt-1)
+            om_audio_opt = input(">> ")
+            audio.pop(om_audio_opt-1)
         except:
             print("Something went wrong!")
             print("Continuing...")
@@ -180,8 +180,8 @@ while True:
 
 # Installing optional packages
 while True:
-    optional-opt = input("\n\nWould you like to install optional packages? [Y]es | [N]o | [S]ee what they are | [O]mit a package").lower()
-    if optional-opt == "y":
+    optional_opt = input("\n\nWould you like to install optional packages? [Y]es | [N]o | [S]ee what they are | [O]mit a package").lower()
+    if optional_opt == "y":
         for pkg in optional:
             try:
                 is_pkg = os.system(f"yay -Q | grep {pkg} | wc -l")
@@ -197,24 +197,24 @@ while True:
                 print("Continuing...")
                 sleep(2)
         break
-    elif optional-opt == "n":
+    elif optional_opt == "n":
         print("Continuing...\n")
         sleep(2)
         break
-    elif optional-opt == "s":
+    elif optional_opt == "s":
         print("The optional packages include:")
         for pkg in optional:
             print(f" - {pkg}")
         sleep(5)
-    elif optional-opt == "o":
+    elif optional_opt == "o":
         print("Please enter 1 package to omit:")
         i = 1
         for pkg in optional:
             print(f" - {i}: {pkg}")
             i+=1
         try:
-            om-optional-opt = input(">> ")
-            optional.pop(om-optional-opt-1)
+            om_optional_opt = input(">> ")
+            optional.pop(om_optional_opt-1)
         except:
             print("Something went wrong!")
             print("Continuing...")
