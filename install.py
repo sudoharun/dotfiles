@@ -117,6 +117,7 @@ for pkg in packages:
             print(f"'{pkg}' already installed. Skipping...")
             sleep(1)
         else:
+            print(f"Installing '{pkg}'...")
             os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
             sleep(0.5)
             print(f"Successfully installed '{pkg}'!")
@@ -135,6 +136,7 @@ while True:
                     print(f"'{pkg}' already installed. Skipping...")
                     sleep(2)
                 else:
+                    print(f"Installing '{pkg}'...")
                     os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
                     sleep(0.5)
                     print(f"Successfully installed '{pkg}'!")
@@ -180,6 +182,7 @@ while True:
                     print(f"'{pkg}' already installed. Skipping...")
                     sleep(2)
                 else:
+                    print(f"Installing '{pkg}'...")
                     os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
                     sleep(0.5)
                     print(f"Successfully installed '{pkg}'!")
@@ -260,7 +263,7 @@ sleep(2)
 
 # Removing unnecessary/unused dependencies
 print("\nRemoving unnecessary/unused dependencies...")
-os.system("yay -Rns $(pacman -Qdtq) &>> /dev/null")
+os.system("yay -Rns --noconfirm $(pacman -Qdtq) &>> /dev/null")
 sleep(2)
 
 # Setup ohmyzsh
