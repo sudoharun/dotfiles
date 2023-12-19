@@ -82,7 +82,7 @@ optional = [
 # Warning
 os.system("clear")
 print("This script is designed to run after a fresh, minimal install of Arch Linux.\nRun at your own risk!\nYou should also make sure your system is updated.")
-print("\n(Also, if a package takes long to install,\ndon't worry, just be a bit patient.\nIt's probably just a rust package compiling, such as eww.)")
+print("\n(Also, if a package takes long to install,\n don't worry, just be a bit patient.\n It's probably just a rust package compiling, such as eww.)")
 start = input("\nContinue? [Y/n]: ")
 if start == "n":
     exit()
