@@ -239,8 +239,7 @@ sleep(2)
 # Copying dotfiles
 print("\nCopying dotfiles...")
 os.system("mkdir ~/.config")
-os.system("cd ~/dotfiles/config")
-os.system("cp -r * ~/.config &>> /dev/null")
+os.system("cp -r ~/dotfiles/config/* ~/.config &>> /dev/null")
 sleep(2)
 
 # Enabling script execution permissions
