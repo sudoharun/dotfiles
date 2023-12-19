@@ -161,7 +161,7 @@ while True:
             print(f" - {i}: {pkg}")
             i+=1
         try:
-            om_audio_opt = input(">> ")
+            om_audio_opt = int(input(">> "))
             audio.pop(om_audio_opt-1)
         except:
             print("Something went wrong!")
@@ -207,7 +207,7 @@ while True:
             print(f" - {i}: {pkg}")
             i+=1
         try:
-            om_optional_opt = input(">> ")
+            om_optional_opt = int(input(">> "))
             optional.pop(om_optional_opt-1)
         except:
             print("Something went wrong!")
