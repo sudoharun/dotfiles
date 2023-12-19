@@ -264,10 +264,11 @@ sleep(2)
 # Removing unnecessary/unused dependencies
 print("\nRemoving unnecessary/unused dependencies...")
 os.system("yay -Rns --noconfirm $(pacman -Qdtq) &>> /dev/null")
+print("Done.")
 sleep(2)
 
 # Setup ohmyzsh
-print("\nThis last step will set up ohmyzsh. Follow the onscreen instructions if any appear.")
+print("\n\nThis last step will set up ohmyzsh. Follow the onscreen instructions if any appear.")
 print("Please reboot once this step has completed.")
 sleep(8)
 os.system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"')
