@@ -8,11 +8,13 @@
 
 ## How to install
 First update your system:
-```sudo pacman -Syu```
+```
+sudo pacman -Syu
+```
 
 Then you can do the following:
 ```
-sudo pacman -Sy python git
+sudo pacman -S python git
 git clone -b retroesque https://github.com/sudo-harun/dotfiles.git
 cd dotfiles
 python install.py
