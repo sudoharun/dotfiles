@@ -2,6 +2,8 @@ import os
 import subprocess
 from time import sleep
 
+home = str(subprocess.run("echo $HOME", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout).strip()
+
 packages = [
     "hyprland",
     "qt5-wayland",
@@ -88,7 +90,7 @@ if start == "n":
     exit()
 sleep(2)
 
-os.system("cd ~")
+os.chdir(home)
 
 # Update pacman databases
 print("\n\nUpdating databases...")
@@ -104,10 +106,12 @@ if is_yay != 0:
     sleep(2)
 else:
     os.system("git clone https://aur.archlinux.org/yay.git &>> /dev/null")
-    os.system("cd yay")
+    os.chdir("yay")
     os.system("makepkg -si --noconfirm &>> /dev/null")
     sleep(1)
     print("Done.\n\n")
+
+os.chdir(home)
 
 # Install packages
 print("Installing required packages (this may take a while)...")
@@ -226,11 +230,11 @@ print("\nMaking Gtk themes folder...")
 os.system("mkdir -p ~/.local/share/themes")
 sleep(2)
 print("Installing and copying mantis Gtk theme to themes folder...")
-os.system("cd ~")
+os.chdir(home)
 os.system("git clone https://github.com/mantissa-/mantis-theme.git &>> /dev/null")
-os.system("cd mantis-theme")
+os.chdir("mantis-theme")
 os.system("cp -r Manti* ~/.local/share/themes &>> /dev/null")
-os.system("cd ~")
+os.chdir(home)
 sleep(2)
 print("Removing mantis theme folder from home directory...")
 os.system("rm -rf mantis-theme")
@@ -244,23 +248,23 @@ sleep(2)
 
 # Enabling script execution permissions
 print("\nEnabling script execution permissions...")
-os.system("cd ~")
-os.system("chmod +x ~/dotfiles/wine.sh")
-os.system("chmod +x ~/dotfiles/post-install.sh")
-os.system("chmod +x ~/.config/dunst/dunstrc")
-os.system("chmod +x ~/.config/dunst/alert")
-os.system("chmod +x ~/.config/ranger/scope.sh")
-os.system("chmod +x ~/.config/scripts/ffmpeg.sh")
-os.system("chmod +x ~/.config/scripts/brightness.sh")
-os.system("chmod +x ~/.config/scripts/powermenu.sh")
-os.system("chmod +x ~/.config/eww/scripts/alacritty")
-os.system("chmod +x ~/.config/eww/scripts/battery")
-os.system("chmod +x ~/.config/eww/scripts/brightness")
-os.system("chmod +x ~/.config/eww/scripts/emptyworkspaces")
-os.system("chmod +x ~/.config/eww/scripts/kanjiworkspaces")
-os.system("chmod +x ~/.config/eww/scripts/numworkspaces")
-os.system("chmod +x ~/.config/eww/scripts/volume")
-os.system("chmod +x ~/.config/eww/scripts/wifi")
+os.chdir(home)
+os.system("chmod +x dotfiles/wine.sh")
+os.system("chmod +x dotfiles/post-install.sh")
+os.system("chmod +x .config/dunst/dunstrc")
+os.system("chmod +x .config/dunst/alert")
+os.system("chmod +x .config/ranger/scope.sh")
+os.system("chmod +x .config/scripts/ffmpeg.sh")
+os.system("chmod +x .config/scripts/brightness.sh")
+os.system("chmod +x .config/scripts/powermenu.sh")
+os.system("chmod +x .config/eww/scripts/alacritty")
+os.system("chmod +x .config/eww/scripts/battery")
+os.system("chmod +x .config/eww/scripts/brightness")
+os.system("chmod +x .config/eww/scripts/emptyworkspaces")
+os.system("chmod +x .config/eww/scripts/kanjiworkspaces")
+os.system("chmod +x .config/eww/scripts/numworkspaces")
+os.system("chmod +x .config/eww/scripts/volume")
+os.system("chmod +x .config/eww/scripts/wifi")
 sleep(1)
 print("Done.")
 sleep(2)
@@ -274,7 +278,8 @@ sleep(2)
 # Setup ohmyzsh
 print("\n\nThis last step will set up ohmyzsh. Follow the onscreen instructions if any appear.")
 print("Please reboot once this step has completed.")
-sleep(8)
+sleep(2)
+input("(Press enter to continue)")
 os.system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"')
 print("\nIf you can see this, that means that this is great! I can reboot for you! Bye!")
 sleep(5)
