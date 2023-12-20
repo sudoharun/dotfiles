@@ -73,6 +73,12 @@ audio = [
     "alsa-ucm-conf"
 ]
 
+power_management = [
+    "powertop",
+    "auto-cpufreq",
+    "tlp"
+]
+
 optional = [
     "dosfstools",
     "filezilla",
@@ -160,7 +166,7 @@ while True:
         print("The audio tools include:")
         for pkg in audio:
             print(f" - {pkg}")
-        sleep(2)
+        sleep(1)
     elif audio_opt == "o":
         print("Please enter 1 package to omit:")
         i = 1
@@ -170,6 +176,53 @@ while True:
         try:
             om_audio_opt = int(input(">> "))
             audio.pop(om_audio_opt-1)
+        except:
+            print("Something went wrong!")
+            print("Continuing...")
+            sleep(2)
+    else:
+        print("Please enter a valid answer.\n")
+        sleep(2)
+
+# Installing (laptop) power management tools
+while True:
+    audio_opt = input("\n\nWould you like to install (laptop) power management tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
+    print()
+    if power_opt == "y":
+        print(f"Installing '{pkg}'...")
+        for pkg in power_management:
+            try:
+                is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
+                if is_pkg != 0:
+                    print(f"'{pkg}' already installed. Skipping...")
+                    sleep(2)
+                else:
+                    os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
+                    sleep(0.5)
+                    print(f"Successfully installed '{pkg}'!")
+            except:
+                print(f"There was an error installing '{pkg}'!")
+                print("Continuing...")
+                sleep(2)
+        break
+    elif power_opt == "n":
+        print("Continuing...\n")
+        sleep(2)
+        break
+    elif power_opt == "s":
+        print("The power management tools include:")
+        for pkg in audio:
+            print(f" - {pkg}")
+        sleep(1)
+    elif power_opt == "o":
+        print("Please enter 1 package to omit:")
+        i = 1
+        for pkg in power_management:
+            print(f" - {i}: {pkg}")
+            i+=1
+        try:
+            om_power_opt = int(input(">> "))
+            power_management.pop(om_power_opt-1)
         except:
             print("Something went wrong!")
             print("Continuing...")
@@ -207,7 +260,7 @@ while True:
         print("The optional packages include:")
         for pkg in optional:
             print(f" - {pkg}")
-        sleep(2)
+        sleep(1)
     elif optional_opt == "o":
         print("Please enter 1 package to omit:")
         i = 1
