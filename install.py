@@ -186,7 +186,7 @@ while True:
 
 # Installing (laptop) power management tools
 while True:
-    audio_opt = input("\n\nWould you like to install (laptop) power management tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
+    power_opt = input("\n\nWould you like to install (laptop) power management tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
     print()
     if power_opt == "y":
         print(f"Installing '{pkg}'...")
