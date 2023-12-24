@@ -385,7 +385,9 @@ os.system(f'wal -b 121212 -i "{home}/.config/hypr/flowerz.jpg"')
 
 last_opt = input("Would you like to reboot (recommended) or start Hyprland? [R/h] ").lower()
 print(f"Remember to manually set your wallpaper with waypaper when starting Hyprland! (Located in {home}/.config/hypr named flowerz.jpg)")
-sleep(5)
+print("Also, you need to set Gtk theme to Mantis (any), icons to Papirus and font to IBM Plex Sans Regular manually with nwg-look-bin")
+sleep(2)
+input("(Press enter to continue)")
 if last_opt != "r":
     os.system("Hyprland")
 else:
