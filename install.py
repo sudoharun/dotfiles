@@ -374,6 +374,7 @@ bt_opt = input("Would you like to install Bluetooth tools (bluez)? [Y/n] ").lowe
 if bt_opt != "n":
     os.system("yay -S --noconfirm bluez bluez-tools bluez-utils &>> /dev/null")
     os.system("sudo systemctl enable --now bluetooth")
+    print("Done.")
 
 print("\n\nThis next step will setup NVChad. Just press enter when the prompt shows up, then type ':q' to quit neovim.")
 sleep(5)
@@ -382,6 +383,9 @@ os.system("mv ~/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua")
 
 # pywal
 os.system(f'wal -b 121212 -i "{home}/.config/hypr/flowerz.jpg"')
+
+# Add user to video group to be able to change brightness
+os.system("sudo usermod -aG video $USER")
 
 last_opt = input("Would you like to reboot (recommended) or start Hyprland? [R/h] ").lower()
 print(f"Remember to manually set your wallpaper with waypaper when starting Hyprland! (Located in {home}/.config/hypr named flowerz.jpg)")

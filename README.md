@@ -19,3 +19,5 @@ git clone -b retroesque https://github.com/sudo-harun/dotfiles.git
 cd dotfiles
 python install.py
 ```
+
+To show the shutdown menu in the bar when pressing the power button, you need to edit `/etc/systemd/logind.conf`. You need to edit the line `#HandlePowerKey=poweroff` to `HandlePowerKey=ignore`. The change will take effect after a reboot.
