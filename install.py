@@ -304,6 +304,11 @@ os.system("cp ~/dotfiles/config/chadrc.lua ~")
 os.system("cp -r ~/dotfiles/config/* ~/.config &>> /dev/null")
 sleep(2)
 
+# convita
+convita_opt = input("\n\nWould you like to keep a script that converts mp4 files for PSVita consoles? [y/N] ").lower()
+if convita_opt != "y":
+    os.system("rm -r ~/.config/scripts/ffmpeg.sh")
+
 # Enabling script execution permissions
 print("\nEnabling script execution permissions...")
 os.chdir(home)
@@ -312,7 +317,8 @@ os.system("chmod +x dotfiles/post-install.sh")
 os.system("chmod +x .config/dunst/dunstrc")
 os.system("chmod +x .config/dunst/alert")
 os.system("chmod +x .config/ranger/scope.sh")
-os.system("chmod +x .config/scripts/ffmpeg.sh")
+if convita_opt != "y":
+    os.system("chmod +x .config/scripts/ffmpeg.sh")
 os.system("chmod +x .config/scripts/brightness.sh")
 os.system("chmod +x .config/scripts/powermenu.sh")
 os.system("chmod +x .config/eww/scripts/alacritty")
@@ -348,8 +354,9 @@ if zsh_opt != "n":
         f.write("")
         f.write("# Custom Aliases")
         f.write("")
-        f.write("alias convita='~/.config/scripts/ffmpeg.sh'")
-        f.write("")
+        if convita_opt != "y":
+            f.write("alias convita='~/.config/scripts/ffmpeg.sh'")
+            f.write("")
         f.write("")
         f.write("# Adding stuff to path")
         f.write("")
@@ -368,6 +375,8 @@ if zsh_opt != "n":
         f.write("cd ~")
         f.write("")
         f.write("pfetch")
+else:
+    os.system("rm -f ~/zlogin")
 
 os.system("clear")
 
@@ -384,6 +393,8 @@ if nvchad_opt != "n":
     sleep(5)
     os.system("git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim")
     os.system("mv ~/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua")
+else:
+    os.system("rm -f ~/chadrc.lua")
 
 # pywal
 os.system(f'wal -b 121212 -i "{home}/.config/hypr/flowerz.jpg"')
