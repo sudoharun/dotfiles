@@ -61,7 +61,8 @@ packages = [
     "papirus-icon-theme",
     "swaylock-effects-git",
     "nwg-look-bin",
-    "imv"
+    "imv",
+    "wl-clipboard"
 ]
 
 audio = [
@@ -298,6 +299,8 @@ sleep(2)
 # Copying dotfiles
 print("\nCopying dotfiles...")
 os.system("mkdir ~/.config &>> /dev/null")
+os.system("cp ~/dotfiles/config/zlogin ~")
+os.system("cp ~/dotfiles/config/chadrc.lua ~")
 os.system("cp -r ~/dotfiles/config/* ~/.config &>> /dev/null")
 sleep(2)
 
@@ -331,11 +334,48 @@ print("Done.")
 sleep(2)
 
 # Setup ohmyzsh
-print("\n\nThis last step will set up ohmyzsh. Follow the onscreen instructions if any appear.")
-print("Please reboot once this step has completed.")
-sleep(2)
+print("\n\nThis next step will set up ohmyzsh. Follow the onscreen instructions if any appear.")
 input("(Press enter to continue)")
+os.system("clear")
 os.system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
-print("\nIf you can see this, that means that this is great! I can reboot for you! Bye!")
+os.system("mv ~/zlogin ~/.zlogin")
+
+# Append stuff to ~/.zshrc
+with open(f"{home}/.zshrc", "a") as f:
+    f.write("")
+    f.write("# Custom Aliases")
+    f.write("alias convita='~/.config/scripts/ffmpeg.sh'")
+    f.write("")
+    f.write("# Adding stuff to path")
+    f.write("path+=('$HOME/.local/bin/')")
+    f.write("path+=('/usr/lib/ccache/bin/')")
+    f.write("export PATH")
+    f.write("")
+    f.write("export TERMINAL='alacritty'")
+    f.write("export editor='nvim'")
+    f.write("")
+    f.write("cd ~")
+    f.write("pfetch")
+
+os.system("clear")
+
+# Bluetooth
+bt_opt = input("Would you like to install Bluetooth tools (bluez)? [Y/n] ").lower()
+if bt_opt != "n":
+    os.system("yay -S --noconfirm bluez bluez-tools bluez-utils &>> /dev/null")
+    os.system("sudo systemctl enable --now bluetooth")
+
+print("\n\nThis next step will setup NVChad. Just press enter when the prompt shows up, then type ':q' to quit neovim.")
+os.system("git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim")
+os.system("mv ~/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua")
+
+# pywal
+os.system(f'wal -b 121212 -i "{home}/.config/hypr/flowerz.jpg"')
+
+last_opt = input("Would you like to reboot (recommended) or start Hyprland? [R/h] ").lower()
+print("Remember to manually set your wallpaper with waypaper when starting Hyprland!")
 sleep(5)
-os.system("reboot")
+if last_opt != "r":
+    os.system("Hyprland")
+else:
+    os.system("reboot")
