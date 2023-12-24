@@ -20,4 +20,6 @@ cd dotfiles
 python install.py
 ```
 
-To show the shutdown menu in the bar when pressing the power button, you need to edit `/etc/systemd/logind.conf`. You need to edit the line `#HandlePowerKey=poweroff` to `HandlePowerKey=ignore`. The change will take effect after a reboot.
+To show the shutdown menu in the bar when pressing the power button, you need to edit `/etc/systemd/logind.conf`. You need to uncomment and edit the line `#HandlePowerKey=poweroff` to `HandlePowerKey=ignore`. The change will take effect after a reboot.
+
+To show colours when using `yay` or `pacman` commands, you need to edit `/etc/pacman.conf`. Uncomment the line `#Color` to `Color`.
