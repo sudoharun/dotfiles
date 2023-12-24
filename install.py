@@ -80,6 +80,7 @@ power_management = [
 ]
 
 optional = [
+    "downgrade",
     "dosfstools",
     "filezilla",
     "pinta",
