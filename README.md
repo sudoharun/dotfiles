@@ -6,6 +6,20 @@
   <img src="./assets/hyprland3.png">
 </div>
 
+## Keybindings
+
+- `Super + Enter` = Open Alacritty terminal
+- `Super + F` = Open Firefox Developer Edition
+- `Super + Q` = Kill active application
+- `Super + R` = Open wofi (application launcher)
+- `Super + E` = Open wofi-emoji (emoji selector)
+- `Super + Tab` = Switch application
+- `Super + Escape` = Toggle fullscreen for active application
+- `Alt + F` = Toggle floating
+- `Super + M` = Exit Hyprland
+- `Print` = Open screenshot menu in bar (arrow keys to change selection, `Enter` to enter selection, `Escape` to quit)
+- `XF86PowerOff` = Open power menu in bar (arrow keys to change selection, `Enter` to enter selection, `Escape` to quit)
+
 ## How to install
 
 Before starting, I would like to mention that `install.sh` and `post-install.sh` are deprecated in favour of `install.py`.
