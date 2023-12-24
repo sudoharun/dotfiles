@@ -333,39 +333,41 @@ os.system("yay -Rns --noconfirm $(pacman -Qdtq) &>> /dev/null")
 print("Done.")
 sleep(2)
 
-# Setup ohmyzsh
-print("\n\nThis next step will set up ohmyzsh. Follow the onscreen instructions if any appear.")
-input("(Press enter to continue)")
-os.system("clear")
-os.system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
-os.system("mv ~/zlogin ~/.zlogin")
-
-# Append stuff to ~/.zshrc
-with open(f"{home}/.zshrc", "a") as f:
-    f.write("")
-    f.write("")
-    f.write("# Custom Aliases")
-    f.write("")
-    f.write("alias convita='~/.config/scripts/ffmpeg.sh'")
-    f.write("")
-    f.write("")
-    f.write("# Adding stuff to path")
-    f.write("")
-    f.write("path+=('$HOME/.local/bin/')")
-    f.write("")
-    f.write("path+=('/usr/lib/ccache/bin/')")
-    f.write("")
-    f.write("export PATH")
-    f.write("")
-    f.write("")
-    f.write("export TERMINAL='alacritty'")
-    f.write("")
-    f.write("export editor='nvim'")
-    f.write("")
-    f.write("")
-    f.write("cd ~")
-    f.write("")
-    f.write("pfetch")
+# Setup oh-my-zsh
+zsh_opt = input("\n\nWould you like to set up oh-my-zsh? [Y/n] ").lower()
+if zsh_opt != "n":
+    print("\n\nThis next step will set up ohmyzsh. Follow the onscreen instructions if any appear.")
+    input("(Press enter to continue)")
+    os.system("clear")
+    os.system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
+    os.system("mv ~/zlogin ~/.zlogin")
+    
+    # Append stuff to ~/.zshrc
+    with open(f"{home}/.zshrc", "a") as f:
+        f.write("")
+        f.write("")
+        f.write("# Custom Aliases")
+        f.write("")
+        f.write("alias convita='~/.config/scripts/ffmpeg.sh'")
+        f.write("")
+        f.write("")
+        f.write("# Adding stuff to path")
+        f.write("")
+        f.write("path+=('$HOME/.local/bin/')")
+        f.write("")
+        f.write("path+=('/usr/lib/ccache/bin/')")
+        f.write("")
+        f.write("export PATH")
+        f.write("")
+        f.write("")
+        f.write("export TERMINAL='alacritty'")
+        f.write("")
+        f.write("export editor='nvim'")
+        f.write("")
+        f.write("")
+        f.write("cd ~")
+        f.write("")
+        f.write("pfetch")
 
 os.system("clear")
 
@@ -376,16 +378,20 @@ if bt_opt != "n":
     os.system("sudo systemctl enable --now bluetooth")
     print("Done.")
 
-print("\n\nThis next step will setup NVChad. Just press enter when the prompt shows up, then type ':q' to quit neovim.")
-sleep(5)
-os.system("git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim")
-os.system("mv ~/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua")
+nvchad_opt = input("\n\nWould you like to set up NVChad? [Y/n] ").lower()
+if nvchad_opt != "n":
+    print("\n\nThis next step will setup NVChad. Just press enter when the prompt shows up, then type ':q' to quit neovim.")
+    sleep(5)
+    os.system("git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim")
+    os.system("mv ~/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua")
 
 # pywal
 os.system(f'wal -b 121212 -i "{home}/.config/hypr/flowerz.jpg"')
 
 # Add user to video group to be able to change brightness
 os.system("sudo usermod -aG video $USER")
+
+os.system("clear")
 
 last_opt = input("Would you like to reboot (recommended) or start Hyprland? [R/h] ").lower()
 print(f"Remember to manually set your wallpaper with waypaper when starting Hyprland! (Located in {home}/.config/hypr named flowerz.jpg)")
