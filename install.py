@@ -384,7 +384,7 @@ os.system("mv ~/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua")
 os.system(f'wal -b 121212 -i "{home}/.config/hypr/flowerz.jpg"')
 
 last_opt = input("Would you like to reboot (recommended) or start Hyprland? [R/h] ").lower()
-print("Remember to manually set your wallpaper with waypaper when starting Hyprland!")
+print(f"Remember to manually set your wallpaper with waypaper when starting Hyprland! (Located in {home}/.config/hypr named flowerz.jpg)")
 sleep(5)
 if last_opt != "r":
     os.system("Hyprland")
