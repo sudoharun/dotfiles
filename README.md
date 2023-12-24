@@ -27,7 +27,7 @@ Before starting, I would like to mention that `install.sh` and `post-install.sh`
 ### Arch Linux installation
 Because I am lazy, I just use the `archinstall` script. Here is how I do it on my laptop:
 
-After plugging in my usb with the Arch Linux ISO and booting into the Arch installer, I connect to wifi using `iwctl`
+After plugging in my usb with the Arch Linux ISO and booting into the Arch installer, I connect to wifi using `iwctl` (not necessary if on ethernet)
 ```
 $ iwctl
 [iwctl] station wlan0 scan
