@@ -366,6 +366,7 @@ if bt_opt != "n":
     os.system("sudo systemctl enable --now bluetooth")
 
 print("\n\nThis next step will setup NVChad. Just press enter when the prompt shows up, then type ':q' to quit neovim.")
+sleep(5)
 os.system("git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim")
 os.system("mv ~/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua")
 
