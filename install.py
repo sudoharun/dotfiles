@@ -106,7 +106,7 @@ print("Done.\n\n")
 
 # Install yay AUR helper
 print("Installing yay...")
-is_yay = int(subprocess.run("pacman -Q | grep yay | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
+is_yay = int(subprocess.run("pacman -Q | grep -w yay | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
 if is_yay != 0:
     print("'yay' already installed. Skipping...\n\n")
     sleep(2)
@@ -114,6 +114,7 @@ else:
     os.system("git clone https://aur.archlinux.org/yay.git &>> /dev/null")
     os.chdir("yay")
     os.system("makepkg -si --noconfirm &>> /dev/null")
+    os.system("rm -rf ~/yay")
     sleep(1)
     print("Done.\n\n")
 
@@ -125,7 +126,7 @@ sleep(2)
 for pkg in packages:
     print(f"\nInstalling '{pkg}'...")
     try:
-        is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
+        is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
         if is_pkg != 0:
             print(f"'{pkg}' already installed. Skipping...")
             sleep(1)
@@ -145,7 +146,7 @@ while True:
         print(f"Installing '{pkg}'...")
         for pkg in audio:
             try:
-                is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
+                is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
                 if is_pkg != 0:
                     print(f"'{pkg}' already installed. Skipping...")
                     sleep(2)
@@ -192,7 +193,7 @@ while True:
         print(f"Installing '{pkg}'...")
         for pkg in power_management:
             try:
-                is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
+                is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
                 if is_pkg != 0:
                     print(f"'{pkg}' already installed. Skipping...")
                     sleep(2)
@@ -211,7 +212,7 @@ while True:
         break
     elif power_opt == "s":
         print("The power management tools include:")
-        for pkg in audio:
+        for pkg in power_management:
             print(f" - {pkg}")
         sleep(1)
     elif power_opt == "o":
@@ -239,7 +240,7 @@ while True:
         for pkg in optional:
             print(f"Installing '{pkg}'...")
             try:
-                is_pkg = int(subprocess.run(f"yay -Q | grep {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
+                is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
                 if is_pkg != 0:
                     print(f"'{pkg}' already installed. Skipping...")
                     sleep(2)
@@ -295,7 +296,7 @@ sleep(2)
 
 # Copying dotfiles
 print("\nCopying dotfiles...")
-os.system("mkdir ~/.config")
+os.system("mkdir ~/.config &>> /dev/null")
 os.system("cp -r ~/dotfiles/config/* ~/.config &>> /dev/null")
 sleep(2)
 
