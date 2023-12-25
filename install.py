@@ -301,10 +301,22 @@ sleep(2)
 # Copying dotfiles
 print("\nCopying dotfiles...")
 os.system("mkdir ~/.config &>> /dev/null")
+os.system("cp ~/dotfiles/config/gtkrc-2.0 ~/.gtkrc-2.0")
 os.system("cp ~/dotfiles/config/zlogin ~")
 os.system("cp ~/dotfiles/config/chadrc.lua ~")
 os.system("cp -r ~/dotfiles/config/* ~/.config &>> /dev/null")
 sleep(2)
+
+# Fix waypaper config
+edited = []
+with open(f"{home}/.config/waypaper/config.ini", "r") as f:
+    for word in f.readlines():
+        edited.append(word.replace("REPLACE", home))
+    f.close()
+with open(f"{home}/.config/waypaper/config.ini", "w") as f:
+    for line in edited:
+        f.writelines(line)
+    f.close()
 
 # convita
 convita_opt = input("\n\nWould you like to keep a script that converts mp4 files for PSVita consoles? [y/N] ").lower()
