@@ -1,6 +1,6 @@
 import os
 import subprocess
-from time import sleep
+from time import sleep, perf_counter
 
 home = str(subprocess.run("echo $HOME", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout).strip()
 
@@ -88,6 +88,8 @@ optional = [
     "deluge-gtk",
     "armcord-bin"
 ]
+
+start = int(perf_counter())
 
 # Warning
 os.system("clear")
@@ -403,10 +405,12 @@ os.system(f'wal -b 121212 -i "{home}/.config/hypr/flowerz.jpg"')
 os.system("sudo usermod -aG video $USER")
 
 os.system("clear")
+end = int(perf_counter())
 
 last_opt = input("Would you like to reboot (recommended) or start Hyprland? [R/h] ").lower()
 print(f"Remember to manually set your wallpaper with waypaper when starting Hyprland! (Located in {home}/.config/hypr named flowerz.jpg)")
 print("Also, you need to set Gtk theme to Mantis (any), icons to Papirus and font to IBM Plex Sans Regular manually with nwg-look-bin")
+print(f"(By the way, the installation process took {end-start} seconds, or {(end-start)/60} minutes.)")
 sleep(2)
 input("(Press enter to continue)")
 if last_opt != "r":
