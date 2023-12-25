@@ -408,7 +408,7 @@ end = int(perf_counter())
 
 last_opt = input("Would you like to reboot (recommended) or start Hyprland? [R/h] ").lower()
 print(f"Remember to manually set your wallpaper with waypaper when starting Hyprland! (Located in {home}/.config/hypr named flowerz.jpg)")
-print("Also, you need to set Gtk theme to Mantis (any), icons to Papirus and font to IBM Plex Sans Regular manually with nwg-look-bin")
+print("Also, you need to set Gtk theme to Mantis (any), icons to Papirus and font to IBM Plex Sans Regular manually with nwg-look-bin if it is not done automatically")
 print(f"(By the way, the installation process took {str(end-start)} seconds, or {str((end-start)/60)} minutes.)")
 sleep(2)
 input("(Press enter to continue)")
