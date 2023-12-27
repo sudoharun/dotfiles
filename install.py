@@ -37,6 +37,7 @@ packages = [
     "alacritty",
     "noto-fonts",
     "noto-fonts-cjk",
+    "ttf-roboto",
     "ttf-ibm-plex",
     "ttf-ibmplex-mono-nerd",
     "ttf-iosevka-nerd",
