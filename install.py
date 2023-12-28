@@ -312,11 +312,11 @@ sleep(2)
 edited = []
 with open(f"{home}/.config/waypaper/config.ini", "r") as f:
     for word in f.readlines():
-        edited.append(word.replace("REPLACE", home))
+        edited.append(word.replace("REPLACE",home))
     f.close()
 with open(f"{home}/.config/waypaper/config.ini", "w") as f:
-    for line in edited:
-        f.writelines(line)
+    for word in edited:
+        f.write(word)
     f.close()
 
 # convita
