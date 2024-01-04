@@ -350,7 +350,7 @@ sleep(2)
 
 # Removing unnecessary/unused dependencies
 print("\nRemoving unnecessary/unused dependencies...")
-os.system("yay -Rns --noconfirm $(pacman -Qdtq) &>> /dev/null")
+os.system("yay -Rns --noconfirm $(yay -Qdtq) &>> /dev/null")
 print("Done.")
 sleep(2)
 
