@@ -393,7 +393,7 @@ nvchad_opt = input("\n\nWould you like to set up NVChad? [Y/n] ").lower()
 if nvchad_opt != "n":
     print("\n\nThis next step will setup NVChad. Just press enter when the prompt shows up, then type ':q' to quit neovim.")
     sleep(5)
-    os.system("git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim")
+    os.system("git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim && echo 0 &>> /dev/null")
     os.system("mv ~/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua")
 else:
     os.system("rm -f ~/chadrc.lua")
