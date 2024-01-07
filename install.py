@@ -68,6 +68,9 @@ packages = [
 
 audio = [
     "pipewire",
+    "pipewire-pulse",
+    "pipewire-jack",
+    "pipewire-alsa",
     "sof-firmware",
     "pavucontrol",
     "pamixer",
