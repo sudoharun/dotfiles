@@ -372,8 +372,6 @@ if zsh_opt != "n":
     # Append stuff to ~/.zshrc
     with open(f"{home}/.zshrc", "a") as f:
         f.write("\n\n# Custom Aliases")
-        if convita_opt == "y":
-            f.write("\nalias convita='~/.config/scripts/ffmpeg.sh'")
         f.write("\n\n# Adding stuff to path")
         f.write("\npath+=('$HOME/.local/bin/')")
         f.write("\npath+=('/usr/lib/ccache/bin/')")
