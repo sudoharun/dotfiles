@@ -34,6 +34,7 @@ def vid_append(vids_mkv, vids_mp4):
             os.system(f"ffmpeg -i \"{key[:-1]}ep{key[-1]}.mkv\" -codec copy \"{key[:-1]}ep{key[-1]}.mp4\"")
             os.system(f"rm -f {key}{value}")
             os.system(f"rm -f \"{key[:-1]}ep{key[-1]}.mkv\"")
+            os.system(f"rm -f \"{key[:-1]}{key[-1]}.mkv\"")
     for i in vids_mp4:
         for key,value in i.items():
             print(f"{key[-1]}, {key[:-1]}ep{key[-1]}.mp4")
