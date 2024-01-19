@@ -373,7 +373,7 @@ if zsh_opt != "n":
     with open(f"{home}/.zshrc", "a") as f:
         f.write("\n\n# Custom Aliases")
         f.write("\n\n# Adding stuff to path")
-        f.write("\npath+=('$HOME/.local/bin/')")
+        f.write("\npath+=(f'{home}/.local/bin/')")
         f.write("\npath+=('/usr/lib/ccache/bin/')")
         f.write("\nexport PATH")
         f.write("\n\nexport TERMINAL='alacritty'")
