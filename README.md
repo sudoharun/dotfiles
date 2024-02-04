@@ -22,7 +22,7 @@
 
 ## How to install
 
-Before starting, I would like to mention that `install.sh` and `post-install.sh` are deprecated in favour of `install.py`.
+-Before starting, I would like to mention that `install.sh` and `post-install.sh` are deprecated in favour of `install.py`-
 
 ### Arch Linux installation
 Because I am lazy, I just use the `archinstall` script. Here is how I do it on my laptop:
