@@ -1,0 +1,85 @@
+.bar { 
+  background-color: $bg-color;
+  padding: 12px 8px;
+}
+
+.tray-item,
+.date {
+  color: $fg-color;
+  padding: 0px 12px;
+  border-left: 2px solid rgba($fg-color, 0.1);
+}
+
+.wifi { border: 0px; }
+
+.workspaces {
+  border-radius: $rad;
+}
+
+.time,
+.time-pak {
+  color: $fg-color;
+  padding: 0px 12px;
+}
+
+.occupied-monitor-ws,
+.active-monitor-ws,
+.occupied-ws {
+  margin: 0px 8px;
+  border-radius: $rad;
+}
+
+.active-monitor-ws {
+  color: $bg-color;
+  background: linear-gradient(90deg, $fg-color, $accent-color);
+  padding: 0px 40px;
+}
+
+.occupied-monitor-ws {
+  color: $bg-color;
+  background-color: rgba($accent-color, 0.5);
+  padding: 0px 40px;
+}
+
+.occupied-ws {
+  background-color: rgba($accent-color, 0.25);
+  padding: 0px 20px;
+}
+
+.ws-separator {
+  border-right: 2px solid rgba($fg-color, 0.1);
+  margin: 0px 4px;
+}
+
+.pwr-widget,
+.ss-widget {
+  border-radius: $rad;
+}
+
+.pwr-active,
+.ss-active {
+  color: $bg-color;
+  background: linear-gradient(90deg, $fg-color, $accent-color);
+  padding: 0px 20px;
+}
+
+.pwr-inactive,
+.ss-inactive {
+  background-color: transparent;
+}
+
+.icon { padding: 0px 4px; }
+
+.corners-left {
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: -12px -12px 0px 0px $bg-color;
+}
+
+.corners-right {
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 12px -12px 0px 0px $bg-color;
+}

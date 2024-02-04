@@ -90,6 +90,7 @@ optional = [
     "filezilla",
     "pinta",
     "deluge-gtk",
+    "handbrake",
     "armcord-bin"
 ]
 
@@ -322,23 +323,13 @@ with open(f"{home}/.config/waypaper/config.ini", "w") as f:
         f.write(word)
     f.close()
 
-# convita
-convita_opt = input("\n\nWould you like to keep a script that converts mp4 files for PSVita consoles? [y/N] ").lower()
-if convita_opt != "y":
-    os.system("rm -r ~/.config/scripts/convita")
-
 # Enabling script execution permissions
 print("\nEnabling script execution permissions...")
 os.chdir(home)
 os.system("chmod +x dotfiles/wine.sh")
-os.system("chmod +x dotfiles/post-install.sh")
 os.system("chmod +x .config/dunst/dunstrc")
 os.system("chmod +x .config/dunst/alert")
 os.system("chmod +x .config/ranger/scope.sh")
-if convita_opt == "y":
-    os.system("chmod +x .config/scripts/convita")
-    os.system("mkdir -p $HOME/.local/bin")
-    os.system("mv .config/scripts/convita $HOME/.local/bin/")
 os.system("chmod +x .config/scripts/brightness.sh")
 os.system("chmod +x .config/scripts/powermenu.sh")
 os.system("chmod +x .config/eww/scripts/alacritty")
