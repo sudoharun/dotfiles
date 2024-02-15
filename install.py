@@ -34,14 +34,13 @@ packages = [
     "watchexec",
     "jq",
     "wev",
-    "alacritty",
+    "foot",
     "noto-fonts",
     "noto-fonts-cjk",
     "ttf-roboto",
     "ttf-ibm-plex",
-    "ttf-ibmplex-mono-nerd",
-    "ttf-iosevka-nerd",
-    "ttf-iosevkaterm-nerd",
+    "ttf-iosevka",
+    "ttf-iosevka-term",
     "ttf-apple-emoji",
     "dunst",
     "ranger",
@@ -367,7 +366,7 @@ if zsh_opt != "n":
         f.write("\npath+=(f'{home}/.local/bin/')")
         f.write("\npath+=('/usr/lib/ccache/bin/')")
         f.write("\nexport PATH")
-        f.write("\n\nexport TERMINAL='alacritty'")
+        f.write("\n\nexport TERMINAL='foot'")
         f.write("\nexport editor='nvim'")
         f.write("\n\ncd ~")
         f.write("\npfetch")
