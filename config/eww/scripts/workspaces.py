@@ -35,7 +35,7 @@ def main():
 
     for i in range(len(monitor_groups_id)):
         for j in range(len(monitor_groups_id[i])):
-            widget_str = widget_str + f"(label :class \"{monitor_groups[i][j]}\" :text \"{monitor_groups_id[i][j]}\")"
+            widget_str = widget_str + f"(eventbox :onclick \"hyprctl dispatch workspace {monitor_groups_id[i][j]}\" (label :class \"{monitor_groups[i][j]}\" :text \"{monitor_groups_id[i][j]}\"))"
         if i != len(monitor_groups_id)-1:
             widget_str = widget_str + f"(box :class \"ws-separator\")"
     widget_str = widget_str + ")"
