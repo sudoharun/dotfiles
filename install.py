@@ -23,7 +23,6 @@ packages = [
     "zsh",
     "neovim",
     "polkit-gnome",
-    "xdg-desktop-portal",
     "xdg-desktop-portal-hyprland",
     "xdg-desktop-portal-gtk",
     "grim",
@@ -35,6 +34,7 @@ packages = [
     "jq",
     "wev",
     "foot",
+    "foot-terminfo",
     "noto-fonts",
     "noto-fonts-cjk",
     "ttf-roboto",
@@ -61,6 +61,7 @@ packages = [
     "papirus-icon-theme",
     "swaylock-effects-git",
     "nwg-look-bin",
+    "qt5ct",
     "imv",
     "wl-clipboard"
 ]
@@ -93,7 +94,7 @@ optional = [
     "armcord-bin"
 ]
 
-start = int(perf_counter())
+start_time = int(perf_counter())
 
 # Warning
 os.system("clear")
@@ -290,6 +291,7 @@ while True:
 # Gtk theme
 print("\nMaking Gtk themes folder...")
 os.system("mkdir -p ~/.local/share/themes")
+os.system("cp -r ~/dotfiles/themes/Triple12 ~/.local/share/themes/")
 sleep(2)
 print("Installing and copying mantis Gtk theme to themes folder...")
 os.chdir(home)
@@ -301,12 +303,26 @@ sleep(2)
 print("Removing mantis theme folder from home directory...")
 os.system("rm -rf mantis-theme")
 sleep(2)
+print("\nSetting theme...")
+os.system("gsettings set org.gnome.desktop.interface gtk-theme \"Triple12\"")
+sleep(2)
+print("\nSetting cursor theme...")
+os.system("gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors'")
+sleep(2)
+print("\nSetting icon theme...")
+os.system("gsettings set org.gnome.desktop.interface icon-theme \"Papirus Dark\"")
+sleep(2)
+print("\nSettings fonts...")
+os.system("gsettings set org.gnome.desktop.interface document-font-name \"IBM Plex Sans 11\"")
+os.system("gsettings set org.gnome.desktop.interface font-name \"IBM Plex Sans 11\"")
+os.system("gsettings set org.gnome.desktop.interface monospace-font-name \"IBM Plex Mono 11\"")
+os.system("gsettings set org.gnome.nautilus.desktop font \"IBM Plex Sans 11\"")
+sleep(2)
 
 # Copying dotfiles
 print("\nCopying dotfiles...")
 os.system("mkdir ~/.config &>> /dev/null")
-os.system("cp ~/dotfiles/config/gtkrc-2.0 ~/.gtkrc-2.0")
-os.system("cp ~/dotfiles/config/zlogin ~")
+os.system("cp ~/dotfiles/home/zlogin ~")
 os.system("cp ~/dotfiles/config/chadrc.lua ~")
 os.system("cp -r ~/dotfiles/config/* ~/.config &>> /dev/null")
 sleep(2)
@@ -363,7 +379,7 @@ if zsh_opt != "n":
     with open(f"{home}/.zshrc", "a") as f:
         f.write("\n\n# Custom Aliases")
         f.write("\n\n# Adding stuff to path")
-        f.write("\npath+=(f'{home}/.local/bin/')")
+        f.write(f"\npath+=(f'{home}/.local/bin/')")
         f.write("\npath+=('/usr/lib/ccache/bin/')")
         f.write("\nexport PATH")
         f.write("\n\nexport TERMINAL='foot'")
@@ -398,12 +414,11 @@ os.system(f'wal -b 121212 -i "{home}/.config/hypr/flowerz.jpg"')
 os.system("sudo usermod -aG video $USER")
 
 os.system("clear")
-end = int(perf_counter())
+end_time = int(perf_counter())
 
 last_opt = input("Would you like to reboot (recommended) or start Hyprland? [R/h] ").lower()
 print(f"Remember to manually set your wallpaper with waypaper when starting Hyprland! (Located in {home}/.config/hypr named flowerz.jpg)")
-print("Also, you need to set Gtk theme to Mantis (any), icons to Papirus and font to IBM Plex Sans Regular manually with nwg-look-bin if it is not done automatically")
-print(f"(By the way, the installation process took {str(end-start)} seconds, or {str((end-start)/60)} minutes.)")
+print(f"(By the way, the installation process took {end_time - start_time} seconds, or {(end_time - start_time)/60} minutes.)")
 sleep(2)
 input("(Press enter to continue)")
 if last_opt != "r":

@@ -3,8 +3,8 @@
 opt=`eww get power-option`
 
 if [[ $opt == "1" ]]; then
-# swaylock -S --clock --effect-pixelate 64 
-  swaylock -S --clock --effect-blur 12x12 # --indicator-y-position 810
+  swaylock -S --indicator --clock --effect-pixelate 64 --effect-compose "50%,65%;10%x10%;center;/home/harun/.config/eww/images/lock.svg"
+# swaylock -S --clock --indicator --effect-blur 12x12 --effect-compose "50%,65%;10%x10%;center;/home/harun/.config/eww/images/lock.svg"
 elif [[ $opt == "2" ]]; then
   eww update power-option=1
   pkill Hyprland
