@@ -51,7 +51,7 @@ packages = [
     "pfetch",
     "btop",
     "rustup",
-    "eww-wayland",
+    "eww",
     "python-pywal",
     "swaybg",
     "waypaper-git",
