@@ -1,9 +1,0 @@
-#!/bin/sh
-
-ccstate=`eww get control-rev`
-
-if [[ $ccstate == "true" ]]; then
-  alacritty -e $1 && eww -c ~/.config/eww/control-center close-all && eww update control-rev=false
-else
-  alacritty -e $1
-fi
