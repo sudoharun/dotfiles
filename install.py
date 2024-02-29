@@ -23,7 +23,7 @@ packages = [
     "zsh",
     "neovim",
     "polkit-gnome",
-    "xdg-desktop-portal-hyprland",
+    "xdg-desktop-portal-hyprland-git",
     "xdg-desktop-portal-gtk",
     "grim",
     "slurp",
@@ -53,13 +53,13 @@ packages = [
     "rustup",
     "eww",
     "python-pywal",
-    "swaybg",
     "waypaper-git",
     "firefox-developer-edition",
     "mpv",
     "capitaine-cursors",
     "papirus-icon-theme",
-    "swaylock-effects-git",
+    "hyprlock",
+    "hypridle",
     "nwg-look-bin",
     "qt5ct",
     "imv",
@@ -345,14 +345,11 @@ os.system("chmod +x dotfiles/wine.sh")
 os.system("chmod +x .config/dunst/dunstrc")
 os.system("chmod +x .config/dunst/alert")
 os.system("chmod +x .config/ranger/scope.sh")
-os.system("chmod +x .config/scripts/brightness.sh")
-os.system("chmod +x .config/scripts/powermenu.sh")
-os.system("chmod +x .config/eww/scripts/alacritty")
+os.system("chmod +x .config/scripts/powermenu")
+os.system("chmod +x .config/scripts/screenshooter")
 os.system("chmod +x .config/eww/scripts/battery")
 os.system("chmod +x .config/eww/scripts/brightness")
-os.system("chmod +x .config/eww/scripts/emptyworkspaces")
-os.system("chmod +x .config/eww/scripts/kanjiworkspaces")
-os.system("chmod +x .config/eww/scripts/numworkspaces")
+os.system("chmod +x .config/eww/scripts/workspaces")
 os.system("chmod +x .config/eww/scripts/volume")
 os.system("chmod +x .config/eww/scripts/wifi")
 sleep(1)

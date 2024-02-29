@@ -1,0 +1,14 @@
+#/usr/bin/python
+
+from subprocess import Popen, run, PIPE
+from time import sleep
+
+pgrep = run("pgrep hyprlock", shell=True, stdout=PIPE, stderr=PIPE, text=True).stdout.strip()
+if len(pgrep) == 0:
+    Popen(["hyprlock", "&"], stdout=PIPE)
+    sleep(3)
+    run(["hyprctl", "dispatch", "dpms", "off"], stdout=PIPE)
+    print("\n\n\n\nMade a new hyprlock instance\n\n\n\n")
+else:
+    run(["hyprctl", "dispatch", "dpms", "off"], stdout=PIPE)
+    print("\n\n\n\nOnly turned dpms off\n\n\n\n")
