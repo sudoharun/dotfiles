@@ -54,7 +54,7 @@ packages = [
     "eww",
     "python-pywal",
     "waypaper-git",
-    "firefox-developer-edition",
+    "floorp-bin",
     "mpv",
     "capitaine-cursors",
     "papirus-icon-theme",
