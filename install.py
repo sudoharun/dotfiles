@@ -43,7 +43,7 @@ packages = [
     "ttf-iosevka-term",
     "ttf-apple-emoji",
     "dunst",
-    "ranger",
+    "ranger-git",
     "dragon-drop",
     "ueberzugpp",
     "wofi",
