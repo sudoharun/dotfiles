@@ -5,7 +5,7 @@ from time import sleep, perf_counter
 home = str(subprocess.run("echo $HOME", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout).strip()
 
 packages = [
-    "hyprland",
+    "hyprland-git",
     "qt5-wayland",
     "qt6-wayland",
     "linux-headers",
@@ -58,6 +58,8 @@ packages = [
     "mpv",
     "capitaine-cursors",
     "papirus-icon-theme",
+    "hyprlang-git",
+    "hyprcursor-git",
     "hyprlock-git",
     "hypridle-git",
     "nwg-look-bin",
