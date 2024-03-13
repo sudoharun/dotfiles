@@ -1,0 +1,7 @@
+# Theme created from Bibata, see https://github.com/ful1e5/Bibata_Cursor
+# License: GPLv3
+ 
+name = Bibata Modern Classic
+description = Converted Bibata Modern Classic to Hyprcursors, in SVG.
+version = 0.1
+cursors_directory = hyprcursors

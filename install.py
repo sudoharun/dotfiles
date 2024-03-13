@@ -3,6 +3,7 @@ import subprocess
 from time import sleep, perf_counter
 
 home = str(subprocess.run("echo $HOME", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout).strip()
+dots_dir = os.getcwd().strip()
 
 packages = [
     "hyprland-git",
@@ -39,13 +40,12 @@ packages = [
     "noto-fonts-cjk",
     "ttf-roboto",
     "ttf-ibm-plex",
-    "ttf-iosevka",
+    "ttf-fantasque-nerd",
     "ttf-iosevka-term",
     "ttf-apple-emoji",
     "dunst",
     "ranger-git",
     "dragon-drop",
-    "ueberzugpp",
     "wofi",
     "wofi-emoji",
     "pfetch",
@@ -56,7 +56,7 @@ packages = [
     "waypaper-git",
     "floorp-bin",
     "mpv",
-    "capitaine-cursors",
+    "bibata-cursor-theme-bin",
     "papirus-icon-theme",
     "hyprlang-git",
     "hyprcursor-git",
@@ -90,7 +90,7 @@ optional = [
     "downgrade",
     "dosfstools",
     "filezilla",
-    "pinta",
+    "gimp",
     "deluge-gtk",
     "handbrake",
     "armcord-bin"
@@ -105,7 +105,6 @@ print("\n(Also, if a package takes long to install,\n don't worry, just be a bit
 start = input("\nContinue? [Y/n]: ")
 if start == "n":
     exit()
-sleep(2)
 
 os.chdir(home)
 
@@ -120,7 +119,6 @@ print("Installing yay...")
 is_yay = int(subprocess.run("pacman -Q | grep -w yay | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
 if is_yay != 0:
     print("'yay' already installed. Skipping...\n\n")
-    sleep(2)
 else:
     os.system("git clone https://aur.archlinux.org/yay.git &>> /dev/null")
     os.chdir("yay")
@@ -133,7 +131,6 @@ os.chdir(home)
 
 # Install packages
 print("Installing required packages (this may take a while)...")
-sleep(2)
 for pkg in packages:
     print(f"\nInstalling '{pkg}'...")
     try:
@@ -160,7 +157,6 @@ while True:
                 is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
                 if is_pkg != 0:
                     print(f"'{pkg}' already installed. Skipping...")
-                    sleep(2)
                 else:
                     os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
                     sleep(0.5)
@@ -168,11 +164,9 @@ while True:
             except:
                 print(f"There was an error installing '{pkg}'!")
                 print("Continuing...")
-                sleep(2)
         break
     elif audio_opt == "n":
         print("Continuing...\n")
-        sleep(2)
         break
     elif audio_opt == "s":
         print("The audio tools include:")
@@ -191,10 +185,8 @@ while True:
         except:
             print("Something went wrong!")
             print("Continuing...")
-            sleep(2)
     else:
         print("Please enter a valid answer.\n")
-        sleep(2)
 
 # Installing (laptop) power management tools
 while True:
@@ -207,7 +199,6 @@ while True:
                 is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
                 if is_pkg != 0:
                     print(f"'{pkg}' already installed. Skipping...")
-                    sleep(2)
                 else:
                     os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
                     sleep(0.5)
@@ -215,11 +206,9 @@ while True:
             except:
                 print(f"There was an error installing '{pkg}'!")
                 print("Continuing...")
-                sleep(2)
         break
     elif power_opt == "n":
         print("Continuing...\n")
-        sleep(2)
         break
     elif power_opt == "s":
         print("The power management tools include:")
@@ -238,10 +227,8 @@ while True:
         except:
             print("Something went wrong!")
             print("Continuing...")
-            sleep(2)
     else:
         print("Please enter a valid answer.\n")
-        sleep(2)
 
 # Installing optional packages
 while True:
@@ -254,7 +241,6 @@ while True:
                 is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
                 if is_pkg != 0:
                     print(f"'{pkg}' already installed. Skipping...")
-                    sleep(2)
                 else:
                     os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
                     sleep(0.5)
@@ -262,11 +248,9 @@ while True:
             except:
                 print(f"There was an error installing '{pkg}'!")
                 print("Continuing...")
-                sleep(2)
         break
     elif optional_opt == "n":
         print("Continuing...\n")
-        sleep(2)
         break
     elif optional_opt == "s":
         print("The optional packages include:")
@@ -285,49 +269,35 @@ while True:
         except:
             print("Something went wrong!")
             print("Continuing...")
-            sleep(2)
     else:
         print("Please enter a valid answer.\n")
-        sleep(2)
 
 # Gtk theme
 print("\nMaking Gtk themes folder...")
 os.system("mkdir -p ~/.local/share/themes")
-os.system("cp -r ~/dotfiles/themes/Triple12 ~/.local/share/themes/")
-sleep(2)
-print("Installing and copying mantis Gtk theme to themes folder...")
+os.system("mkdir -p ~/.local/share/icons")
+os.system(f"cp -r {dots_dir}/themes/* ~/.local/share/themes/")
+os.system(f"cp -r {dots_dir}/icons/* ~/.local/share/icons/")
 os.chdir(home)
-os.system("git clone https://github.com/mantissa-/mantis-theme.git &>> /dev/null")
-os.chdir("mantis-theme")
-os.system("cp -r Manti* ~/.local/share/themes &>> /dev/null")
-os.chdir(home)
-sleep(2)
-print("Removing mantis theme folder from home directory...")
-os.system("rm -rf mantis-theme")
-sleep(2)
 print("\nSetting theme...")
 os.system("gsettings set org.gnome.desktop.interface gtk-theme \"Triple12\"")
-sleep(2)
 print("\nSetting cursor theme...")
-os.system("gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors'")
-sleep(2)
+os.system("gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'")
 print("\nSetting icon theme...")
-os.system("gsettings set org.gnome.desktop.interface icon-theme \"Papirus Dark\"")
-sleep(2)
+os.system("gsettings set org.gnome.desktop.interface icon-theme \"Triple12Papirus\"")
 print("\nSettings fonts...")
 os.system("gsettings set org.gnome.desktop.interface document-font-name \"IBM Plex Sans 11\"")
 os.system("gsettings set org.gnome.desktop.interface font-name \"IBM Plex Sans 11\"")
 os.system("gsettings set org.gnome.desktop.interface monospace-font-name \"IBM Plex Mono 11\"")
 os.system("gsettings set org.gnome.nautilus.desktop font \"IBM Plex Sans 11\"")
-sleep(2)
 
 # Copying dotfiles
 print("\nCopying dotfiles...")
 os.system("mkdir ~/.config &>> /dev/null")
-os.system("cp ~/dotfiles/home/zlogin ~")
-os.system("cp ~/dotfiles/config/chadrc.lua ~")
-os.system("cp -r ~/dotfiles/config/* ~/.config &>> /dev/null")
-sleep(2)
+os.system(f"cp {dots_dir}/home/zlogin ~")
+os.system(f"cp {dots_dir}/config/chadrc.lua ~")
+os.system(f"cp {dots_dir}/config/plugins.lua ~")
+os.system(f"cp -r {dots_dir}/config/* ~/.config &>> /dev/null")
 
 # Fix waypaper config
 edited = []
@@ -355,15 +325,12 @@ os.system("chmod +x .config/eww/scripts/workspaces")
 os.system("chmod +x .config/eww/scripts/volume")
 os.system("chmod +x .config/eww/scripts/wifi")
 os.system("chmod +x .config/hypr/idler")
-sleep(1)
 print("Done.")
-sleep(2)
 
 # Removing unnecessary/unused dependencies
 print("\nRemoving unnecessary/unused dependencies...")
 os.system("yay -Rns --noconfirm $(yay -Qdtq) &>> /dev/null")
 print("Done.")
-sleep(2)
 
 # Setup oh-my-zsh
 zsh_opt = input("\n\nWould you like to set up oh-my-zsh? [Y/n] ").lower()
@@ -378,8 +345,9 @@ if zsh_opt != "n":
     # Append stuff to ~/.zshrc
     with open(f"{home}/.zshrc", "a") as f:
         f.write("\n\n# Custom Aliases")
+        f.write("\nalias xtmapper='~/wayland-getevent/client | sudo waydroid shell -- sh /sdcard/Android/data/xtr.keymapper/files/xtMapper.sh --wayland-client'")
         f.write("\n\n# Adding stuff to path")
-        f.write(f"\npath+=(f'{home}/.local/bin/')")
+        f.write(f"\npath+=('{home}/.local/bin/')")
         f.write("\npath+=('/usr/lib/ccache/bin/')")
         f.write("\nexport PATH")
         f.write("\n\nexport TERMINAL='foot'")
@@ -404,6 +372,9 @@ if nvchad_opt != "n":
     sleep(5)
     os.system("git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim && echo 0 &>> /dev/null")
     os.system("mv ~/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua")
+    os.system("mv ~/plugins.lua ~/.config/nvim/lua/custom/plugins.lua")
+    with open("~/.config/nvim/lua/custom/chadrc.lua", "w") as f:
+        f.close()
 else:
     os.system("rm -f ~/chadrc.lua")
 
@@ -417,9 +388,8 @@ os.system("clear")
 end_time = int(perf_counter())
 
 last_opt = input("Would you like to reboot (recommended) or start Hyprland? [R/h] ").lower()
-print(f"Remember to manually set your wallpaper with waypaper when starting Hyprland! (Located in {home}/.config/hypr named flowerz.jpg)")
+# print(f"Remember to manually set your wallpaper with waypaper when starting Hyprland! (Located in {home}/.config/hypr named flowerz.jpg)")
 print(f"(By the way, the installation process took {end_time - start_time} seconds, or {(end_time - start_time)/60} minutes.)")
-sleep(2)
 input("(Press enter to continue)")
 if last_opt != "r":
     os.system("Hyprland")

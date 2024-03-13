@@ -1,6 +1,6 @@
 .bar { 
   background-color: $bg-color;
-  padding: 12px 8px;
+  padding: 12px 0px;
 }
 
 .tray-item,
@@ -31,7 +31,8 @@
 
 .active-monitor-ws {
   color: $bg-color;
-  background: linear-gradient(90deg, $fg-color, $accent-color);
+  //background: linear-gradient(90deg, $fg-color, $accent-color);
+  background-color: $accent-color;
   padding: 0px 40px;
 }
 
