@@ -1,0 +1,441 @@
+[LOG] Executing /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+[LOG] Process Created with pid 254920
+[LOG] Executing hyprpm reload -n
+[LOG] Process Created with pid 254924
+[LOG] Executing hypridle
+[LOG] Process Created with pid 254926
+[LOG] Executing tail -f /tmp/hypr/3e67ee0f5f66c74c0a0bd4f797361fd100c2e2d2_1710433933/hyprland.log &> ~/.config/hypr/$(date '+%F_%H-%M-%S_log.txt')
+[LOG] Process Created with pid 254929
+[LOG] ApplyConfigToKeyboard for "power-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5736e29a8690's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "video-bus", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5736e2a195e0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Video Bus"
+[LOG] ApplyConfigToKeyboard for "power-button-1", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5736e29bf7a0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "sleep-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5736e2b41370's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Sleep Button"
+[LOG] ApplyConfigToKeyboard for "at-translated-set-2-keyboard", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5736e2b2f1c0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "AT Translated Set 2 keyboard"
+[LOG] ApplyConfigToKeyboard for "hp-wmi-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5736e2c0c280's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "HP WMI hotkeys"
+[LOG] ApplyConfigToKeyboard for "wireless-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5736e2c70a80's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Wireless hotkeys"
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-touchpad, sens 0.00
+[LOG] Applying monitor rule for eDP-1
+[LOG] Not applying a new rule to eDP-1 because it's already applied!
+[LOG] [hookSystem] New hook event registered: render
+[wlr] [render/swapchain.c:106] Allocating new swapchain buffer
+[wlr] [render/allocator/gbm.c:144] Allocated 1920x1080 GBM buffer with format XR24 (0x34325258), modifier Y_TILED_CCS (0x0100000000000004)
+[LOG] CRenderbuffer: wlr_egl_create_image_from_dmabuf found at 74b1cef40e30
+[LOG] Registered signal for owner 5736e29cfa40: 5736e2ca0b48 -> 5736e29cfa48 (owner: CRenderbuffer)
+[LOG] Monitor eDP-1 -> destroyed all render data
+[LOG] Shaders initialized successfully.
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] [hookSystem] New hook event registered: tick
+[LOG] Registered signal for owner 5736e31af1c0: 5736e2cc3068 -> 5736e31af1c8 (owner: CRenderbuffer)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e3333900 (res 0x5736e3333cf0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e2d161d0 (res 0x5736e2d165c0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e3333d80 (res 0x5736e3334170)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e3334200 (res 0x5736e33345f0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33a3010 (res 0x5736e33a3400)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33a35b0 (res 0x5736e33a39a0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33b1250 (res 0x5736e33b1640)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5736e33b17d0 (res 0x5736e33b10d0)
+[LOG] Registered signal for owner 5736e33b18f0: 5736e33b1528 -> 5736e33b1d28 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e33b18f0: 5736e33b1898 -> 5736e33b1bf0 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e33b18f0: 5736e33b1538 -> 5736e33b1c58 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e33b18f0: 5736e33b1548 -> 5736e33b1cc0 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e3247de0: 5736e33b18a8 -> 5736e3247f60 (owner: CPopup Head)
+[LOG] LayerSurface 5736e33b17d0 (namespace swww layer 0) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5736e33b1250 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5736e33b1250 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e338f080 (res 0x5736e338f470)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5736e338f500 (res 0x5736e338f620)
+[LOG] Registered signal for owner 5736e338f6b0: 5736e338f358 -> 5736e338fae8 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e338f6b0: 5736e338f5c8 -> 5736e338f9b0 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e338f6b0: 5736e338f368 -> 5736e338fa18 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e338f6b0: 5736e338f378 -> 5736e338fa80 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e31d9430: 5736e338f5d8 -> 5736e31d95b0 (owner: CPopup Head)
+[LOG] LayerSurface 5736e338f500 (namespace bar layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5736e338f080 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5736e338f080 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e338fcd0 (res 0x5736e33900c0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5736e33b2010 (res 0x5736e33b2130)
+[LOG] Registered signal for owner 5736e33b21c0: 5736e338ffa8 -> 5736e33b25f8 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e33b21c0: 5736e33b20d8 -> 5736e33b24c0 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e33b21c0: 5736e338ffb8 -> 5736e33b2528 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e33b21c0: 5736e338ffc8 -> 5736e33b2590 (owner: layerSurface)
+[LOG] Registered signal for owner 5736d78c2a10: 5736e33b20e8 -> 5736d78c2b90 (owner: CPopup Head)
+[LOG] LayerSurface 5736e33b2010 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5736e338fcd0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5736e338fcd0 in setPreferredTransformForSurface
+[LOG] LayerSurface 5736e338f500 mapped
+[LOG] Registered signal for owner 5736e338f890: 5736e338f398 -> 5736e338f8d8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5736e338f890: 5736e338f358 -> 5736e338f940 (owner: CWLSurface)
+[LOG] CWLSurface 5736e338f890 called init()
+[LOG] [hookSystem] New hook event registered: openLayer
+[LOG] LayerSurface 5736e33b2010 mapped
+[LOG] Registered signal for owner 5736e33b23a0: 5736e338ffe8 -> 5736e33b23e8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5736e33b23a0: 5736e338ffa8 -> 5736e33b2450 (owner: CWLSurface)
+[LOG] CWLSurface 5736e33b23a0 called init()
+[LOG] Socket2 accepted a new client at FD 68
+[LOG] [hookSystem] New hook event registered: keyPress
+[LOG] LayerSurface 5736e33b17d0 mapped
+[LOG] Registered signal for owner 5736e33b1ad0: 5736e33b1568 -> 5736e33b1b18 (owner: CWLSurface)
+[LOG] Registered signal for owner 5736e33b1ad0: 5736e33b1528 -> 5736e33b1b80 (owner: CWLSurface)
+[LOG] CWLSurface 5736e33b1ad0 called init()
+[LOG] Keybind triggered, calling dispatcher (64, , 53)
+[LOG] [hookSystem] New hook event registered: workspace
+[LOG] [hookSystem] New hook event registered: mouseMove
+[LOG] Destroying workspace ID 1
+[LOG] [hookSystem] New hook event registered: destroyWorkspace
+[LOG] Keybind triggered, calling dispatcher (64, , 114)
+[LOG] Executing wofi -i -t foot
+[LOG] Process Created with pid 255194
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e338bb00 (res 0x5736e338bef0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33b3720 (res 0x5736e33b3b10)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33b3f90 (res 0x5736e33b4380)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5736e33b9d00 (res 0x5736e33b9e20)
+[LOG] New LayerSurface has no preferred monitor. Assigning Monitor eDP-1
+[LOG] Registered signal for owner 5736e338bf80: 5736e33b4268 -> 5736e338c3b8 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e338bf80: 5736e33b9dc8 -> 5736e338c280 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e338bf80: 5736e33b4278 -> 5736e338c2e8 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e338bf80: 5736e33b4288 -> 5736e338c350 (owner: layerSurface)
+[LOG] Registered signal for owner 5736e338c5a0: 5736e33b9dd8 -> 5736e338c720 (owner: CPopup Head)
+[LOG] LayerSurface 5736e33b9d00 (namespace wofi layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5736e33b3f90 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5736e33b3f90 in setPreferredTransformForSurface
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5736e33b3f90 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5736e33b3f90 in setPreferredTransformForSurface
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 5736e3246d30: 5736e338ccd8 -> 5736e3246d48 (owner: textInput)
+[LOG] Registered signal for owner 5736e3246d30: 5736e338cce8 -> 5736e3246e18 (owner: textInput)
+[LOG] Registered signal for owner 5736e3246d30: 5736e338ccf8 -> 5736e3246db0 (owner: textInput)
+[LOG] Registered signal for owner 5736e3246d30: 5736e338cd08 -> 5736e3246e80 (owner: textInput)
+[LOG] LayerSurface 5736e33b9d00 mapped
+[LOG] Registered signal for owner 5736e338c160: 5736e33b42a8 -> 5736e338c1a8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5736e338c160: 5736e33b4268 -> 5736e338c210 (owner: CWLSurface)
+[LOG] CWLSurface 5736e338c160 called init()
+[LOG] Set keyboard focus to surface 5736e33b3f90
+[LOG] cursorImage request: surface 5736e33b3720
+[LOG] Registered signal for owner 5736d7990668: 5736e33b3a38 -> 5736d79906b0 (owner: CWLSurface)
+[LOG] Registered signal for owner 5736d7990668: 5736e33b39f8 -> 5736d7990718 (owner: CWLSurface)
+[LOG] CWLSurface 5736d7990668 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5736d79906d8 -> 5736d79906d0, CWLSurface removed.
+[LOG] Callback 5736d7990740 -> 5736d7990738, CWLSurface removed.
+[LOG] CWLSurface 5736d7990668 called destroy()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] LayerSurface 5736e33b9d00 unmapped
+[LOG] [hookSystem] New hook event registered: closeLayer
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5736e338c1d0 -> 5736e338c1c8, CWLSurface removed.
+[LOG] Callback 5736e338c238 -> 5736e338c230, CWLSurface removed.
+[LOG] CWLSurface 5736e338c160 called destroy()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] LayerSurface 5736e33b9d00 destroyed
+[LOG] Callback 5736e338c748 -> 5736e338c740, CPopup Head removed.
+[LOG] Callback 5736e338c3e0 -> 5736e338c3d8, layerSurface removed.
+[LOG] Callback 5736e338c2a8 -> 5736e338c2a0, layerSurface removed.
+[LOG] Callback 5736e338c310 -> 5736e338c308, layerSurface removed.
+[LOG] Callback 5736e338c378 -> 5736e338c370, layerSurface removed.
+[LOG] FractionalScaleManager bound successfully!
+[LOG] TextInputV1Manager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33bb750 (res 0x5736e33bbb40)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33be0e0 (res 0x5736e33be4d0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33bbbd0 (res 0x5736e33bbfc0)
+[LOG] Cleanup: destroyed a layersurface
+[wlr] [xwayland/server.c:107] Starting Xwayland on :0
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e338b400 (res 0x5736e2d170a0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5736e33bb190 (res 0x5736e33bb2e0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5736e33be710: 5736e338b6e8 -> 5736e33be778 (owner: XDG Window)
+[LOG] Registered signal for owner 5736e33be710: 5736e33bb238 -> 5736e33be848 (owner: XDG Window)
+[LOG] Registered signal for owner 5736e33be710: 5736e338b6d8 -> 5736e33be710 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5736e338c1c0 (res 0x5736e338c2b0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5736e33bb190
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 5736e33be710: title: ""]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33bc0e0 (res 0x5736e33bc4d0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33c4cc0 (res 0x5736e33c50b0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33c5260 (res 0x5736e33c5650)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5736e33d0890 (res 0x5736e33d09e0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5736e33ce7f0: 5736e33bc3c8 -> 5736e33ce858 (owner: XDG Window)
+[LOG] Registered signal for owner 5736e33ce7f0: 5736e33d0938 -> 5736e33ce928 (owner: XDG Window)
+[LOG] Registered signal for owner 5736e33ce7f0: 5736e33bc3b8 -> 5736e33ce7f0 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5736e33cfc60 (res 0x5736e33cfd50)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5736e33d0890
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 5736e33ce7f0: title: ""]
+[LOG] [Window 5736e33ce7f0: title: "", class: ] destroyed, queueing.
+[LOG] Callback 5736e33ce818 -> 5736e33ce810, XDG Window removed.
+[LOG] Callback 5736e33ce880 -> 5736e33ce878, XDG Window removed.
+[LOG] Callback 5736e33ce950 -> 5736e33ce948, XDG Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Unmapped [Window 5736e33ce7f0: title: ""] removed instantly
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33cef90 (res 0x5736e33cf380)
+[wlr] [xwayland/server.c:272] Xserver is ready
+[wlr] [xwayland/xwm.c:1964] xfixes version: 6.0
+[wlr] [xwayland/xwm.c:1985] xres version: 1.2
+[LOG] cursorImage request: surface 0
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5736e33d0250 (res 0x5736e33d0640)
+[LOG] Activate request for surface at 5736e338b400
+[LOG] Activate request for surface at 5736e338b400
+[LOG] Activate request for surface at 5736e33bc0e0
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[LOG] Registered signal for owner 5736e33be710: 5736e33db4e0 -> 5736e33becc0 (owner: Toplevel)
+[LOG] Registered signal for owner 5736e33be710: 5736e33db4f0 -> 5736e33bed28 (owner: Toplevel)
+[LOG] Registered signal for owner 5736e33be710: 5736e33db500 -> 5736e33bec58 (owner: Toplevel)
+[LOG] Registered signal for owner 5736e33bef30: 5736e338b718 -> 5736e33bef78 (owner: CWLSurface)
+[LOG] Registered signal for owner 5736e33bef30: 5736e338b6d8 -> 5736e33befe0 (owner: CWLSurface)
+[LOG] CWLSurface 5736e33bef30 called init()
+[LOG] Registered signal for owner 5736e33be710: 5736e338b6f8 -> 5736e33be7e0 (owner: CWindow)
+[LOG] Registered signal for owner 5736e2b22500: 5736e338b708 -> 5736e2b225d0 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5736e338c5a0: 5736e33bb258 -> 5736e338c720 (owner: CPopup Head)
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 5736e338b400, with [Window 5736e33be710: title: "ArmCord"]
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] [hookSystem] New hook event registered: activeWindow
+[LOG] Registered signal for owner 5736e33be710: 5736e338c0d8 -> 5736e33be8b0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5736e33be710: 5736e338c068 -> 5736e33beab8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5736e33be710: 5736e338c088 -> 5736e33bea50 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5736e33be710: 5736e338c098 -> 5736e33be9e8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5736e33be710: 5736e338c0a8 -> 5736e33beb20 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5736e33be710: 5736e338c078 -> 5736e33be980 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5736e33be710: 5736e33bb278 -> 5736e33beec8 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] cursorImage request: surface 5736e33bb750
+[LOG] Registered signal for owner 5736d7990668: 5736e33bba68 -> 5736d79906b0 (owner: CWLSurface)
+[LOG] Registered signal for owner 5736d7990668: 5736e33bba28 -> 5736d7990718 (owner: CWLSurface)
+[LOG] CWLSurface 5736d7990668 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[LOG] Keybind triggered, calling dispatcher (0, , 269025026)
+[LOG] Executing brillo -A 5 ; echo 1 >> /home/harun/.config/eww/files/brightness ; : > /home/harun/.config/eww/files/brightness
+[LOG] Process Created with pid 255403
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] Keybind triggered, calling dispatcher (0, , 269025027)
+[LOG] Executing brillo -U 5 ; echo 1 >> /home/harun/.config/eww/files/brightness ; : > /home/harun/.config/eww/files/brightness
+[LOG] Process Created with pid 255415
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5736e33e2300 (res 0x5736e338d420)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5736e33e2450: 5736e33bc3c8 -> 5736e33e24b8 (owner: XDG Window)
+[LOG] Registered signal for owner 5736e33e2450: 5736e33e23a8 -> 5736e33e2588 (owner: XDG Window)
+[LOG] Registered signal for owner 5736e33e2450: 5736e33bc3b8 -> 5736e33e2450 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5736e33e10d0 (res 0x5736e33e11c0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5736e33e2300
+[LOG] Searching for matching rules for ArmCord (title: Discord - ArmCord)
+[LOG] Layout predicts size [Vector2D: x: 960, y: 1030] for [Window 5736e33e2450: title: ""]
+[LOG] Activate request for surface at 5736e33bc0e0
+[LOG] Activate request for surface at 5736e33bc0e0
+[LOG] [Window 5736e33be710: title: "ArmCord", class: ArmCord] unmapped
+[LOG] Unregistered late callbacks XDG
+[LOG] Callback 5736e33be8d8 -> 5736e33be8d0, XDG Window Late removed.
+[LOG] Callback 5736e33beae0 -> 5736e33bead8, XDG Window Late removed.
+[LOG] Callback 5736e33bea78 -> 5736e33bea70, XDG Window Late removed.
+[LOG] Callback 5736e33bea10 -> 5736e33bea08, XDG Window Late removed.
+[LOG] Callback 5736e33beb48 -> 5736e33beb40, XDG Window Late removed.
+[LOG] Callback 5736e33be9a8 -> 5736e33be9a0, XDG Window Late removed.
+[LOG] Callback 5736e33beef0 -> 5736e33beee8, XDG Window Late removed.
+[LOG] Framebuffer created, status 36053
+[LOG] Removing last node (dwindle)
+[LOG] On closed window, new focused candidate is [Window nullptr]
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5736e33bece8 -> 5736e33bece0, Toplevel removed.
+[LOG] Callback 5736e33bec80 -> 5736e33bec78, Toplevel removed.
+[LOG] Callback 5736e33bed50 -> 5736e33bed48, Toplevel removed.
+[LOG] Callback 5736e33befa0 -> 5736e33bef98, CWLSurface removed.
+[LOG] Callback 5736e33bf008 -> 5736e33bf000, CWLSurface removed.
+[LOG] CWLSurface 5736e33bef30 called destroy()
+[LOG] Callback 5736e33be808 -> 5736e33be800, CWindow removed.
+[LOG] Callback 5736e2b225f8 -> 5736e2b225f0, CSubsurface Head removed.
+[LOG] Callback 5736e338c748 -> 5736e338c740, CPopup Head removed.
+[LOG] [Window 5736e33be710: title: "ArmCord", class: ] destroyed, queueing.
+[LOG] Callback 5736e33be738 -> 5736e33be730, XDG Window removed.
+[LOG] Callback 5736e33be7a0 -> 5736e33be798, XDG Window removed.
+[LOG] Callback 5736e33be870 -> 5736e33be868, XDG Window removed.
+[ERR] onWindowRemovedTiling node null?
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1280x1536
+[LOG] Registered signal for owner 5736e33e2450: 5736e338a6c0 -> 5736e33e2a00 (owner: Toplevel)
+[LOG] Registered signal for owner 5736e33e2450: 5736e338a6d0 -> 5736e33e2a68 (owner: Toplevel)
+[LOG] Registered signal for owner 5736e33e2450: 5736e338a6e0 -> 5736e33e2998 (owner: Toplevel)
+[LOG] Registered signal for owner 5736e33e2c70: 5736e33bc3f8 -> 5736e33e2cb8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5736e33e2c70: 5736e33bc3b8 -> 5736e33e2d20 (owner: CWLSurface)
+[LOG] CWLSurface 5736e33e2c70 called init()
+[LOG] Registered signal for owner 5736e33e2450: 5736e33bc3d8 -> 5736e33e2520 (owner: CWindow)
+[LOG] Registered signal for owner 5736e2b22500: 5736e33bc3e8 -> 5736e2b225d0 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5736e338c5a0: 5736e33e23c8 -> 5736e338c720 (owner: CPopup Head)
+[LOG] Searching for matching rules for ArmCord (title: Discord - ArmCord)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 5736e33bc0e0, with [Window 5736e33e2450: title: "Discord - ArmCord"]
+[LOG] Searching for matching rules for ArmCord (title: Discord - ArmCord)
+[LOG] Registered signal for owner 5736e33e2450: 5736e33e0ef8 -> 5736e33e25f0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5736e33e2450: 5736e33e0e88 -> 5736e33e27f8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5736e33e2450: 5736e33e0ea8 -> 5736e33e2790 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5736e33e2450: 5736e33e0eb8 -> 5736e33e2728 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5736e33e2450: 5736e33e0ec8 -> 5736e33e2860 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5736e33e2450: 5736e33e0e98 -> 5736e33e26c0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5736e33e2450: 5736e33e23e8 -> 5736e33e2c08 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for ArmCord (title: Discord - ArmCord)
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[LOG] [hookSystem] New hook event registered: windowTitle
+[LOG] Searching for matching rules for ArmCord (title: Discord | Friends)
+[LOG] Window 5736e33e2450 set title to Discord | Friends
+[LOG] Searching for matching rules for ArmCord (title: Friends - ArmCord)
+[LOG] Window 5736e33e2450 set title to Friends - ArmCord
+[LOG] Cleanup: destroyed a window
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [hookSystem] New hook event registered: mouseButton
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | Voice Chat | Pro Grammars)
+[LOG] Window 5736e33e2450 set title to Discord | Voice Chat | Pro Grammars
+[LOG] Searching for matching rules for ArmCord (title: Voice Chat - ArmCord)
+[LOG] Window 5736e33e2450 set title to Voice Chat - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] New idle inhibitor registered
+[LOG] Registered signal for owner 5736e338a8e0: 5736e33cff38 -> 5736e338a8f0 (owner: IdleInhibitor)
+[LOG] IdleInhibitor got window [Window 5736e33e2450: title: "Voice Chat - ArmCord"]
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] New idle inhibitor registered
+[LOG] Registered signal for owner 5736e33d1c40: 5736e3330bc8 -> 5736e33d1c50 (owner: IdleInhibitor)
+[LOG] IdleInhibitor got window [Window 5736e33e2450: title: "Voice Chat - ArmCord"]
+[LOG] Callback 5736e338a918 -> 5736e338a910, IdleInhibitor removed.
+[LOG] Destroyed an idleinhibitor
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5736e33d1c78 -> 5736e33d1c70, IdleInhibitor removed.
+[LOG] Destroyed an idleinhibitor
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5736e33bb750
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] New idle inhibitor registered
+[LOG] Registered signal for owner 5736e33d3940: 5736e33b54e8 -> 5736e33d3950 (owner: IdleInhibitor)
+[LOG] IdleInhibitor got window [Window 5736e33e2450: title: "Voice Chat - ArmCord"]
+[LOG] Keybind triggered, calling dispatcher (0, , 269025066)
+[LOG] Executing eww update center-option="powermenu" ; hyprctl dispatch submap powermenu ; eww update reveal-option="powermenu" ; eww update power-reveal=1
+[LOG] Process Created with pid 255951
+[LOG] Changed keybind submap to powermenu
+[LOG] [hookSystem] New hook event registered: submap
+[LOG] Hyprctl: dispatcher submap : powermenu
+[LOG] Keybind triggered, calling dispatcher (0, , 65363)
+[LOG] Executing declare -i val=`eww get power-option` ; eww update power-option=$(( val < 4 ? val + 1 : val )) ; eww update power-reveal=$(( val < 4 ? val + 1 : val ))
+[LOG] Process Created with pid 255960
+[LOG] Keybind triggered, calling dispatcher (0, , 65363)
+[LOG] Executing declare -i val=`eww get power-option` ; eww update power-option=$(( val < 4 ? val + 1 : val )) ; eww update power-reveal=$(( val < 4 ? val + 1 : val ))
+[LOG] Process Created with pid 256024
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Executing eww update power-reveal=0
+[LOG] Process Created with pid 256037
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Executing /home/harun/.config/scripts/powermenu
+[LOG] Process Created with pid 256039
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Executing eww update center-option="workspaces" ; eww update reveal-option="workspaces"
+[LOG] Process Created with pid 256041
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Reset active submap to the default one.
