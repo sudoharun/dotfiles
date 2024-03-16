@@ -6,7 +6,6 @@ home = str(subprocess.run("echo $HOME", shell=True, stdout=subprocess.PIPE, stde
 dots_dir = os.getcwd().strip()
 
 packages = [
-    "hyprland-git",
     "qt5-wayland",
     "qt6-wayland",
     "linux-headers",
@@ -24,7 +23,6 @@ packages = [
     "zsh",
     "neovim",
     "polkit-gnome",
-    "xdg-desktop-portal-hyprland-git",
     "xdg-desktop-portal-gtk",
     "grim",
     "slurp",
@@ -60,6 +58,8 @@ packages = [
     "papirus-icon-theme",
     "hyprlang-git",
     "hyprcursor-git",
+    "xdg-desktop-portal-hyprland-git",
+    "hyprland-git",
     "hyprlock-git",
     "hypridle-git",
     "nwg-look-bin",
@@ -370,10 +370,10 @@ nvchad_opt = input("\n\nWould you like to set up NVChad? [Y/n] ").lower()
 if nvchad_opt != "n":
     print("\n\nThis next step will setup NVChad. Just press enter when the prompt shows up, then type ':q' to quit neovim.")
     sleep(5)
-    os.system("git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim && echo 0 &>> /dev/null")
-    os.system("mv ~/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua")
-    os.system("mv ~/plugins.lua ~/.config/nvim/lua/custom/plugins.lua")
-    with open("~/.config/nvim/lua/custom/chadrc.lua", "w") as f:
+    os.system("git clone https://github.com/NvChad/starter ~/.config/nvim --depth 1 && nvim && echo 0 &>> /dev/null")
+    os.system("mv ~/chadrc.lua ~/.config/nvim/lua/chadrc.lua")
+    os.system("mv ~/plugins.lua ~/.config/nvim/lua/plugins.lua")
+    with open("~/.config/nvim/lua/chadrc.lua", "a") as f:
         f.close()
 else:
     os.system("rm -f ~/chadrc.lua")
@@ -389,9 +389,9 @@ end_time = int(perf_counter())
 
 last_opt = input("Would you like to reboot (recommended) or start Hyprland? [R/h] ").lower()
 # print(f"Remember to manually set your wallpaper with waypaper when starting Hyprland! (Located in {home}/.config/hypr named flowerz.jpg)")
-print(f"(By the way, the installation process took {end_time - start_time} seconds, or {(end_time - start_time)/60} minutes.)")
-input("(Press enter to continue)")
-if last_opt != "r":
+# print(f"(By the way, the installation process took {end_time - start_time} seconds, or {(end_time - start_time)/60} minutes.)")
+# input("(Press enter to continue)")
+if last_opt == "h":
     os.system("Hyprland")
 else:
     os.system("reboot")
