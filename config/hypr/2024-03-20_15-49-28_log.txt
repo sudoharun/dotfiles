@@ -1,0 +1,1520 @@
+[LOG] Executing hyprpm reload -n
+[LOG] Process Created with pid 220320
+[LOG] Executing hypridle
+[LOG] Process Created with pid 220322
+[LOG] Executing tail -f /tmp/hypr/9ddf1b105e1b63a77b851af5e541a9412b0e0928_1710949766/hyprland.log &> ~/.config/hypr/$(date '+%F_%H-%M-%S_log.txt')
+[LOG] Process Created with pid 220325
+[LOG] Executing foot bash -c "sudo /usr/bin/powertop --auto-tune"
+[LOG] Process Created with pid 220328
+[LOG] ApplyConfigToKeyboard for "power-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e8a0372e0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "video-bus", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e8a0484e0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Video Bus"
+[LOG] ApplyConfigToKeyboard for "power-button-1", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e8a067ed0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "sleep-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e8a04c480's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Sleep Button"
+[LOG] ApplyConfigToKeyboard for "at-translated-set-2-keyboard", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e7f6e0d60's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "AT Translated Set 2 keyboard"
+[LOG] ApplyConfigToKeyboard for "hp-wmi-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e8a2af130's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "HP WMI hotkeys"
+[LOG] ApplyConfigToKeyboard for "wireless-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e8a313620's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Wireless hotkeys"
+[LOG] Applied config to mouse corsair-corsair-gaming-harpoon-rgb-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-touchpad, sens 0.00
+[LOG] Applying monitor rule for eDP-1
+[LOG] Not applying a new rule to eDP-1 because it's already applied!
+[LOG] [hookSystem] New hook event registered: render
+[wlr] [render/swapchain.c:106] Allocating new swapchain buffer
+[wlr] [render/allocator/gbm.c:144] Allocated 1920x1080 GBM buffer with format XR24 (0x34325258), modifier Y_TILED_CCS (0x0100000000000004)
+[LOG] CRenderbuffer: wlr_egl_create_image_from_dmabuf found at 7c731d795ee0
+[LOG] Registered signal for owner 5b5e8a238b30: 5b5e8a2cb768 -> 5b5e8a238b38 (owner: CRenderbuffer)
+[LOG] Monitor eDP-1 -> destroyed all render data
+[LOG] Shaders initialized successfully.
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] [hookSystem] New hook event registered: tick
+[LOG] Registered signal for owner 5b5e8a8521a0: 5b5e8a365e58 -> 5b5e8a8521a8 (owner: CRenderbuffer)
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 5b5e8a87c9d0: 5b5e8a87c978 -> 5b5e8a87c9e8 (owner: textInput)
+[LOG] Registered signal for owner 5b5e8a87c9d0: 5b5e8a87c988 -> 5b5e8a87cab8 (owner: textInput)
+[LOG] Registered signal for owner 5b5e8a87c9d0: 5b5e8a87c998 -> 5b5e8a87ca50 (owner: textInput)
+[LOG] Registered signal for owner 5b5e8a87c9d0: 5b5e8a87c9a8 -> 5b5e8a87cb20 (owner: textInput)
+[LOG] FractionalScaleManager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a9dbf20 (res 0x5b5e8a9d8ec0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a9d7580 (res 0x5b5e8a9d7970)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5b5e8a9d92f0 (res 0x5b5e8a9d9440)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a9d7868 -> 5b5e8a9dca58 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a9d9398 -> 5b5e8a9dcb28 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a9d7858 -> 5b5e8a9dc9f0 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5b5e8a9d6fb0 (res 0x5b5e8a9d70a0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5b5e8a9d92f0
+[LOG] Searching for matching rules for foot (title: )
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 5b5e8a9dc9f0: title: ""]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a9d7ac0 (res 0x5b5e8a9d7eb0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a3b2c30 (res 0x5b5e8a3b3020)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa362b0 (res 0x5b5e8a3b3140)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa37bb0 (res 0x5b5e8aa37fa0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa38150 (res 0x5b5e8aa38540)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa396e0 (res 0x5b5e8aa39ad0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa39c80 (res 0x5b5e8aa3a070)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa4da30 -> 5b5e8a9dcfa0 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa4da40 -> 5b5e8a9dd008 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa4da50 -> 5b5e8a9dcf38 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8a9dd210: 5b5e8a9d7898 -> 5b5e8a9dd258 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a9dd210: 5b5e8a9d7858 -> 5b5e8a9dd2c0 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a9dd210 called init()
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a9d7878 -> 5b5e8a9dcac0 (owner: CWindow)
+[LOG] Registered signal for owner 5b5e8a22b030: 5b5e8a9d7888 -> 5b5e8a22b100 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5b5e8a2342e0: 5b5e8a9d7dd8 -> 5b5e8a234328 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a2342e0: 5b5e8a9d7d98 -> 5b5e8a234390 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a2342e0 called init()
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8a9d7d98 -> 5b5e8a234138 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8a9d7fd0 -> 5b5e8a2340d0 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8a9d7dc8 -> 5b5e8a2341a0 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8a9d7da8 -> 5b5e8a234208 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8a9d7db8 -> 5b5e8a234270 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e7ef51740: 5b5e8a9d93b8 -> 5b5e7ef518c0 (owner: CPopup Head)
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 5b5e8a9d7580, with [Window 5b5e8a9dc9f0: title: "foot"]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] [hookSystem] New hook event registered: activeWindow
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a9d6508 -> 5b5e8a9dcb90 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a9d6498 -> 5b5e8a9dcd98 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a9d64b8 -> 5b5e8a9dcd30 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a9d64c8 -> 5b5e8a9dccc8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a9d64d8 -> 5b5e8a9dce00 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a9d64a8 -> 5b5e8a9dcc60 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a9d93d8 -> 5b5e8a9dd1a8 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 20.00000], window size: [1880.00000, 1040.00000]
+[LOG] Searching for matching rules for foot (title: foot)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa35e20 (res 0x5b5e8aa36210)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa4dda0 (res 0x5b5e8aa4dec0)
+[LOG] Registered signal for owner 5b5e8aa4df50: 5b5e8aa360f8 -> 5b5e8aa4e388 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa4df50: 5b5e8aa4de68 -> 5b5e8aa4e250 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa4df50: 5b5e8aa36108 -> 5b5e8aa4e2b8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa4df50: 5b5e8aa36118 -> 5b5e8aa4e320 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a0908b0: 5b5e8aa4de78 -> 5b5e8a090a30 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa4dda0 (namespace swww layer 0) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa35e20 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa35e20 in setPreferredTransformForSurface
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa362b0 (res 0x5b5e8a9d71d0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8a9dc880 (res 0x5b5e8a9dde80)
+[LOG] Registered signal for owner 5b5e8a852670: 5b5e8aa36588 -> 5b5e8a852aa8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852670: 5b5e8a9dc948 -> 5b5e8a852970 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852670: 5b5e8aa36598 -> 5b5e8a8529d8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852670: 5b5e8aa365a8 -> 5b5e8a852a40 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a89fba0: 5b5e8a9dc958 -> 5b5e8a89fd20 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8a9dc880 (namespace bar layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa362b0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa362b0 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a3b26e0 (res 0x5b5e8a9de270)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8a3b23a0 (res 0x5b5e8a9d7320)
+[LOG] Registered signal for owner 5b5e8a852c90: 5b5e8a3b29b8 -> 5b5e8a8530c8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852c90: 5b5e8a3b2468 -> 5b5e8a852f90 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852c90: 5b5e8a3b29c8 -> 5b5e8a852ff8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852c90: 5b5e8a3b29d8 -> 5b5e8a853060 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa55d00: 5b5e8a3b2478 -> 5b5e8aa55e80 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8a3b23a0 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8a3b26e0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8a3b26e0 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa56100 (res 0x5b5e8a9d9140)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8a9d5e20 (res 0x5b5e8a86cff0)
+[LOG] Registered signal for owner 5b5e8a8532b0: 5b5e8aa563d8 -> 5b5e8a8536e8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a8532b0: 5b5e8a9d5ee8 -> 5b5e8a8535b0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a8532b0: 5b5e8aa563e8 -> 5b5e8a853618 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a8532b0: 5b5e8aa563f8 -> 5b5e8a853680 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa57500: 5b5e8a9d5ef8 -> 5b5e8aa57680 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8a9d5e20 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa56100 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa56100 in setPreferredTransformForSurface
+[LOG] LayerSurface 5b5e8a9dc880 mapped
+[LOG] Registered signal for owner 5b5e8a852850: 5b5e8aa365c8 -> 5b5e8a852898 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a852850: 5b5e8aa36588 -> 5b5e8a852900 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a852850 called init()
+[LOG] [hookSystem] New hook event registered: openLayer
+[LOG] LayerSurface 5b5e8a3b23a0 mapped
+[LOG] Registered signal for owner 5b5e8a852e70: 5b5e8a3b29f8 -> 5b5e8a852eb8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a852e70: 5b5e8a3b29b8 -> 5b5e8a852f20 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a852e70 called init()
+[LOG] LayerSurface 5b5e8a9d5e20 mapped
+[LOG] Registered signal for owner 5b5e8a853490: 5b5e8aa56418 -> 5b5e8a8534d8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a853490: 5b5e8aa563d8 -> 5b5e8a853540 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a853490 called init()
+[LOG] Socket2 accepted a new client at FD 71
+[LOG] LayerSurface 5b5e8aa4dda0 mapped
+[LOG] Registered signal for owner 5b5e8aa4e130: 5b5e8aa36138 -> 5b5e8aa4e178 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa4e130: 5b5e8aa360f8 -> 5b5e8aa4e1e0 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa4e130 called init()
+[LOG] [hookSystem] New hook event registered: keyPress
+[LOG] [Window 5b5e8a9dc9f0: title: "foot", class: foot] unmapped
+[LOG] Unregistered late callbacks XDG
+[LOG] Callback 5b5e8a9dcbb8 -> 5b5e8a9dcbb0, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dcdc0 -> 5b5e8a9dcdb8, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dcd58 -> 5b5e8a9dcd50, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dccf0 -> 5b5e8a9dcce8, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dce28 -> 5b5e8a9dce20, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dcc88 -> 5b5e8a9dcc80, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dd1d0 -> 5b5e8a9dd1c8, XDG Window Late removed.
+[LOG] Framebuffer created, status 36053
+[LOG] Removing last node (dwindle)
+[LOG] On closed window, new focused candidate is [Window nullptr]
+[LOG] [hookSystem] New hook event registered: mouseMove
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5b5e8a9dcfc8 -> 5b5e8a9dcfc0, Toplevel removed.
+[LOG] Callback 5b5e8a9dcf60 -> 5b5e8a9dcf58, Toplevel removed.
+[LOG] Callback 5b5e8a9dd030 -> 5b5e8a9dd028, Toplevel removed.
+[LOG] Callback 5b5e8a9dd280 -> 5b5e8a9dd278, CWLSurface removed.
+[LOG] Callback 5b5e8a9dd2e8 -> 5b5e8a9dd2e0, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a9dd210 called destroy()
+[LOG] Callback 5b5e8a9dcae8 -> 5b5e8a9dcae0, CWindow removed.
+[LOG] Callback 5b5e8a22b128 -> 5b5e8a22b120, CSubsurface Head removed.
+[LOG] Callback 5b5e8a2341c8 -> 5b5e8a2341c0, CSubsurface removed.
+[LOG] Callback 5b5e8a234160 -> 5b5e8a234158, CSubsurface removed.
+[LOG] Callback 5b5e8a2340f8 -> 5b5e8a2340f0, CSubsurface removed.
+[LOG] Callback 5b5e8a234350 -> 5b5e8a234348, CWLSurface removed.
+[LOG] Callback 5b5e8a2343b8 -> 5b5e8a2343b0, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a2342e0 called destroy()
+[LOG] Callback 5b5e8a234298 -> 5b5e8a234290, CSubsurface removed.
+[LOG] Callback 5b5e8a234230 -> 5b5e8a234228, CSubsurface removed.
+[LOG] Callback 5b5e7ef518e8 -> 5b5e7ef518e0, CPopup Head removed.
+[LOG] [Window 5b5e8a9dc9f0: title: "foot", class: ] destroyed, queueing.
+[LOG] Callback 5b5e8a9dca18 -> 5b5e8a9dca10, XDG Window removed.
+[LOG] Callback 5b5e8a9dca80 -> 5b5e8a9dca78, XDG Window removed.
+[LOG] Callback 5b5e8a9dcb50 -> 5b5e8a9dcb48, XDG Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Cleanup: destroyed a window
+[LOG] Keybind triggered, calling dispatcher (64, , 65293)
+[LOG] Executing foot
+[LOG] Process Created with pid 220807
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 5b5e8a9d8640: 5b5e8a87c748 -> 5b5e8a9d8658 (owner: textInput)
+[LOG] Registered signal for owner 5b5e8a9d8640: 5b5e8a87c758 -> 5b5e8a9d8728 (owner: textInput)
+[LOG] Registered signal for owner 5b5e8a9d8640: 5b5e8a87c768 -> 5b5e8a9d86c0 (owner: textInput)
+[LOG] Registered signal for owner 5b5e8a9d8640: 5b5e8a87c778 -> 5b5e8a9d8790 (owner: textInput)
+[LOG] FractionalScaleManager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa5fdb0 (res 0x5b5e8aa5f2e0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a3b9f00 (res 0x5b5e8aa4cd80)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5b5e8aa5f870 (res 0x5b5e8aa530f0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a3ba1e8 -> 5b5e8a9dca58 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa5f918 -> 5b5e8a9dcb28 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a3ba1d8 -> 5b5e8a9dc9f0 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5b5e8a9d3450 (res 0x5b5e8a9d3540)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5b5e8aa5f870
+[LOG] Searching for matching rules for foot (title: )
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 5b5e8a9dc9f0: title: ""]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a9dbf20 (res 0x5b5e8a9dc310)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a87be00 -> 5b5e8a9dcfa0 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a87be10 -> 5b5e8a9dd008 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a87be20 -> 5b5e8a9dcf38 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8a9dd210: 5b5e8a3ba218 -> 5b5e8a9dd258 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a9dd210: 5b5e8a3ba1d8 -> 5b5e8a9dd2c0 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a9dd210 called init()
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a3ba1f8 -> 5b5e8a9dcac0 (owner: CWindow)
+[LOG] Registered signal for owner 5b5e8a22b030: 5b5e8a3ba208 -> 5b5e8a22b100 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5b5e8a2342e0: 5b5e8a9dc238 -> 5b5e8a234328 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a2342e0: 5b5e8a9dc1f8 -> 5b5e8a234390 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a2342e0 called init()
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8a9dc1f8 -> 5b5e8a234138 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8a9d3660 -> 5b5e8a2340d0 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8a9dc228 -> 5b5e8a2341a0 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8a9dc208 -> 5b5e8a234208 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8a9dc218 -> 5b5e8a234270 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e7ef51740: 5b5e8aa5f938 -> 5b5e7ef518c0 (owner: CPopup Head)
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 5b5e8a3b9f00, with [Window 5b5e8a9dc9f0: title: "foot"]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa60548 -> 5b5e8a9dcb90 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa604d8 -> 5b5e8a9dcd98 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa604f8 -> 5b5e8a9dcd30 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa60508 -> 5b5e8a9dccc8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa60518 -> 5b5e8a9dce00 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa604e8 -> 5b5e8a9dcc60 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa5f958 -> 5b5e8a9dd1a8 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 20.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [hookSystem] New hook event registered: windowTitle
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~)
+[LOG] Window 5b5e8a9dc9f0 set title to harun@archlinux:~
+[LOG] Searching for matching rules for foot (title: nvim ~/.config/eww/_styling.scss)
+[LOG] Window 5b5e8a9dc9f0 set title to nvim ~/.config/eww/_styling.scss
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [hookSystem] New hook event registered: mouseAxis
+[LOG] [hookSystem] New hook event registered: mouseButton
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_data_control_v1.c:50] Ignoring duplicate MIME type offer text/plain
+[wlr] [types/wlr_data_control_v1.c:50] Ignoring duplicate MIME type offer text/plain
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa624b0 (res 0x5b5e8a9dc7a0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa36dc0 (res 0x5b5e8a9de030)
+[LOG] Registered signal for owner 5b5e8aa62fe0: 5b5e8aa62788 -> 5b5e8aa63418 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa62fe0: 5b5e8aa36e88 -> 5b5e8aa632e0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa62fe0: 5b5e8aa62798 -> 5b5e8aa63348 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa62fe0: 5b5e8aa627a8 -> 5b5e8aa633b0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa564f0: 5b5e8aa36e98 -> 5b5e8aa56670 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa36dc0 (namespace bar layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa624b0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa624b0 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa64860 (res 0x5b5e8aa64c50)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa62c50 (res 0x5b5e8aa4ebb0)
+[LOG] Registered signal for owner 5b5e8aa69890: 5b5e8aa64b38 -> 5b5e8aa69cc8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69890: 5b5e8aa62d18 -> 5b5e8aa69b90 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69890: 5b5e8aa64b48 -> 5b5e8aa69bf8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69890: 5b5e8aa64b58 -> 5b5e8aa69c60 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69eb0: 5b5e8aa62d28 -> 5b5e8aa6a030 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa62c50 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa64860 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa64860 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a9d7ac0 (res 0x5b5e8aa62f20)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa61130 (res 0x5b5e8aa61250)
+[LOG] Registered signal for owner 5b5e8aa64ce0: 5b5e8a9d7d98 -> 5b5e8aa65118 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa64ce0: 5b5e8aa611f8 -> 5b5e8aa64fe0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa64ce0: 5b5e8a9d7da8 -> 5b5e8aa65048 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa64ce0: 5b5e8a9d7db8 -> 5b5e8aa650b0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69090: 5b5e8aa61208 -> 5b5e8aa69210 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa61130 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8a9d7ac0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8a9d7ac0 in setPreferredTransformForSurface
+[LOG] LayerSurface 5b5e8a9dc880 unmapped
+[LOG] [hookSystem] New hook event registered: closeLayer
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8a8528c0 -> 5b5e8a8528b8, CWLSurface removed.
+[LOG] Callback 5b5e8a852928 -> 5b5e8a852920, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a852850 called destroy()
+[LOG] LayerSurface 5b5e8a9dc880 destroyed
+[LOG] Callback 5b5e8a89fd48 -> 5b5e8a89fd40, CPopup Head removed.
+[LOG] Callback 5b5e8a852ad0 -> 5b5e8a852ac8, layerSurface removed.
+[LOG] Callback 5b5e8a852998 -> 5b5e8a852990, layerSurface removed.
+[LOG] Callback 5b5e8a852a00 -> 5b5e8a8529f8, layerSurface removed.
+[LOG] Callback 5b5e8a852a68 -> 5b5e8a852a60, layerSurface removed.
+[LOG] LayerSurface 5b5e8a3b23a0 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8a852ee0 -> 5b5e8a852ed8, CWLSurface removed.
+[LOG] Callback 5b5e8a852f48 -> 5b5e8a852f40, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a852e70 called destroy()
+[LOG] LayerSurface 5b5e8a3b23a0 destroyed
+[LOG] Callback 5b5e8aa55ea8 -> 5b5e8aa55ea0, CPopup Head removed.
+[LOG] Callback 5b5e8a8530f0 -> 5b5e8a8530e8, layerSurface removed.
+[LOG] Callback 5b5e8a852fb8 -> 5b5e8a852fb0, layerSurface removed.
+[LOG] Callback 5b5e8a853020 -> 5b5e8a853018, layerSurface removed.
+[LOG] Callback 5b5e8a853088 -> 5b5e8a853080, layerSurface removed.
+[LOG] LayerSurface 5b5e8a9d5e20 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8a853500 -> 5b5e8a8534f8, CWLSurface removed.
+[LOG] Callback 5b5e8a853568 -> 5b5e8a853560, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a853490 called destroy()
+[LOG] LayerSurface 5b5e8a9d5e20 destroyed
+[LOG] Callback 5b5e8aa576a8 -> 5b5e8aa576a0, CPopup Head removed.
+[LOG] Callback 5b5e8a853710 -> 5b5e8a853708, layerSurface removed.
+[LOG] Callback 5b5e8a8535d8 -> 5b5e8a8535d0, layerSurface removed.
+[LOG] Callback 5b5e8a853640 -> 5b5e8a853638, layerSurface removed.
+[LOG] Callback 5b5e8a8536a8 -> 5b5e8a8536a0, layerSurface removed.
+[LOG] LayerSurface 5b5e8aa36dc0 mapped
+[LOG] Registered signal for owner 5b5e8aa631c0: 5b5e8aa627c8 -> 5b5e8aa63208 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa631c0: 5b5e8aa62788 -> 5b5e8aa63270 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa631c0 called init()
+[LOG] LayerSurface 5b5e8aa62c50 mapped
+[LOG] Registered signal for owner 5b5e8aa69a70: 5b5e8aa64b78 -> 5b5e8aa69ab8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa69a70: 5b5e8aa64b38 -> 5b5e8aa69b20 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa69a70 called init()
+[LOG] LayerSurface 5b5e8aa61130 mapped
+[LOG] Registered signal for owner 5b5e8aa64ec0: 5b5e8a9d7dd8 -> 5b5e8aa64f08 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa64ec0: 5b5e8a9d7d98 -> 5b5e8aa64f70 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa64ec0 called init()
+[LOG] Socket2 accepted a new client at FD 80
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~)
+[LOG] Window 5b5e8a9dc9f0 set title to harun@archlinux:~
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa689c0 (res 0x5b5e8a86f320)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8a3b23a0 (res 0x5b5e8a9de880)
+[LOG] Registered signal for owner 5b5e8aa67310: 5b5e8aa68c98 -> 5b5e8aa67748 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa67310: 5b5e8a3b2468 -> 5b5e8aa67610 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa67310: 5b5e8aa68ca8 -> 5b5e8aa67678 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa67310: 5b5e8aa68cb8 -> 5b5e8aa676e0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa57500: 5b5e8a3b2478 -> 5b5e8aa57680 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8a3b23a0 (namespace bar layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa689c0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa689c0 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa67930 (res 0x5b5e8aa67d20)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa63db0 (res 0x5b5e8aa34420)
+[LOG] Registered signal for owner 5b5e8a852670: 5b5e8aa67c08 -> 5b5e8a852aa8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852670: 5b5e8aa63e78 -> 5b5e8a852970 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852670: 5b5e8aa67c18 -> 5b5e8a8529d8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852670: 5b5e8aa67c28 -> 5b5e8a852a40 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa55d00: 5b5e8aa63e88 -> 5b5e8aa55e80 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa63db0 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa67930 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa67930 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a3b26e0 (res 0x5b5e8a3b2ad0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa63890 (res 0x5b5e8aa60630)
+[LOG] Registered signal for owner 5b5e8a852c90: 5b5e8a3b29b8 -> 5b5e8a8530c8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852c90: 5b5e8aa63958 -> 5b5e8a852f90 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852c90: 5b5e8a3b29c8 -> 5b5e8a852ff8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852c90: 5b5e8a3b29d8 -> 5b5e8a853060 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a89fba0: 5b5e8aa63968 -> 5b5e8a89fd20 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa63890 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8a3b26e0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8a3b26e0 in setPreferredTransformForSurface
+[LOG] LayerSurface 5b5e8aa36dc0 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa63230 -> 5b5e8aa63228, CWLSurface removed.
+[LOG] Callback 5b5e8aa63298 -> 5b5e8aa63290, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa631c0 called destroy()
+[LOG] LayerSurface 5b5e8aa36dc0 destroyed
+[LOG] Callback 5b5e8aa56698 -> 5b5e8aa56690, CPopup Head removed.
+[LOG] Callback 5b5e8aa63440 -> 5b5e8aa63438, layerSurface removed.
+[LOG] Callback 5b5e8aa63308 -> 5b5e8aa63300, layerSurface removed.
+[LOG] Callback 5b5e8aa63370 -> 5b5e8aa63368, layerSurface removed.
+[LOG] Callback 5b5e8aa633d8 -> 5b5e8aa633d0, layerSurface removed.
+[LOG] LayerSurface 5b5e8aa62c50 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa69ae0 -> 5b5e8aa69ad8, CWLSurface removed.
+[LOG] Callback 5b5e8aa69b48 -> 5b5e8aa69b40, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa69a70 called destroy()
+[LOG] LayerSurface 5b5e8aa62c50 destroyed
+[LOG] Callback 5b5e8aa6a058 -> 5b5e8aa6a050, CPopup Head removed.
+[LOG] Callback 5b5e8aa69cf0 -> 5b5e8aa69ce8, layerSurface removed.
+[LOG] Callback 5b5e8aa69bb8 -> 5b5e8aa69bb0, layerSurface removed.
+[LOG] Callback 5b5e8aa69c20 -> 5b5e8aa69c18, layerSurface removed.
+[LOG] Callback 5b5e8aa69c88 -> 5b5e8aa69c80, layerSurface removed.
+[LOG] LayerSurface 5b5e8aa61130 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa64f30 -> 5b5e8aa64f28, CWLSurface removed.
+[LOG] Callback 5b5e8aa64f98 -> 5b5e8aa64f90, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa64ec0 called destroy()
+[LOG] LayerSurface 5b5e8aa61130 destroyed
+[LOG] Callback 5b5e8aa69238 -> 5b5e8aa69230, CPopup Head removed.
+[LOG] Callback 5b5e8aa65140 -> 5b5e8aa65138, layerSurface removed.
+[LOG] Callback 5b5e8aa65008 -> 5b5e8aa65000, layerSurface removed.
+[LOG] Callback 5b5e8aa65070 -> 5b5e8aa65068, layerSurface removed.
+[LOG] Callback 5b5e8aa650d8 -> 5b5e8aa650d0, layerSurface removed.
+[LOG] LayerSurface 5b5e8a3b23a0 mapped
+[LOG] Registered signal for owner 5b5e8aa674f0: 5b5e8aa68cd8 -> 5b5e8aa67538 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa674f0: 5b5e8aa68c98 -> 5b5e8aa675a0 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa674f0 called init()
+[LOG] LayerSurface 5b5e8aa63db0 mapped
+[LOG] Registered signal for owner 5b5e8a852850: 5b5e8aa67c48 -> 5b5e8a852898 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a852850: 5b5e8aa67c08 -> 5b5e8a852900 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a852850 called init()
+[LOG] LayerSurface 5b5e8aa63890 mapped
+[LOG] Registered signal for owner 5b5e8a852e70: 5b5e8a3b29f8 -> 5b5e8a852eb8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a852e70: 5b5e8a3b29b8 -> 5b5e8a852f20 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a852e70 called init()
+[LOG] Socket2 accepted a new client at FD 73
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Searching for matching rules for foot (title: nvim ~/.config/eww/eww.yuck)
+[LOG] Window 5b5e8a9dc9f0 set title to nvim ~/.config/eww/eww.yuck
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa68550 (res 0x5b5e8aa52ce0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa62c50 (res 0x5b5e8aa57c40)
+[LOG] Registered signal for owner 5b5e8aa62390: 5b5e8aa68828 -> 5b5e8aa627c8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa62390: 5b5e8aa62d18 -> 5b5e8aa62690 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa62390: 5b5e8aa68838 -> 5b5e8aa626f8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa62390: 5b5e8aa68848 -> 5b5e8aa62760 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69090: 5b5e8aa62d28 -> 5b5e8aa69210 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa62c50 (namespace bar layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa68550 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa68550 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a8532b0 (res 0x5b5e8a8555c0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa563a0 (res 0x5b5e8aa61d60)
+[LOG] Registered signal for owner 5b5e8aa62fb0: 5b5e8a853588 -> 5b5e8aa633e8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa62fb0: 5b5e8aa56468 -> 5b5e8aa632b0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa62fb0: 5b5e8a853598 -> 5b5e8aa63318 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa62fb0: 5b5e8a8535a8 -> 5b5e8aa63380 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69eb0: 5b5e8aa56478 -> 5b5e8aa6a030 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa563a0 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8a8532b0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8a8532b0 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa66a80 (res 0x5b5e8aa61cd0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8a9d5e20 (res 0x5b5e8a03b9d0)
+[LOG] Registered signal for owner 5b5e8aa69490: 5b5e8aa66d58 -> 5b5e8aa698c8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69490: 5b5e8a9d5ee8 -> 5b5e8aa69790 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69490: 5b5e8aa66d68 -> 5b5e8aa697f8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69490: 5b5e8aa66d78 -> 5b5e8aa69860 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa564f0: 5b5e8a9d5ef8 -> 5b5e8aa56670 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8a9d5e20 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa66a80 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa66a80 in setPreferredTransformForSurface
+[LOG] LayerSurface 5b5e8a3b23a0 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa67560 -> 5b5e8aa67558, CWLSurface removed.
+[LOG] Callback 5b5e8aa675c8 -> 5b5e8aa675c0, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa674f0 called destroy()
+[LOG] LayerSurface 5b5e8a3b23a0 destroyed
+[LOG] Callback 5b5e8aa576a8 -> 5b5e8aa576a0, CPopup Head removed.
+[LOG] Callback 5b5e8aa67770 -> 5b5e8aa67768, layerSurface removed.
+[LOG] Callback 5b5e8aa67638 -> 5b5e8aa67630, layerSurface removed.
+[LOG] Callback 5b5e8aa676a0 -> 5b5e8aa67698, layerSurface removed.
+[LOG] Callback 5b5e8aa67708 -> 5b5e8aa67700, layerSurface removed.
+[LOG] LayerSurface 5b5e8aa63db0 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8a8528c0 -> 5b5e8a8528b8, CWLSurface removed.
+[LOG] Callback 5b5e8a852928 -> 5b5e8a852920, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a852850 called destroy()
+[LOG] LayerSurface 5b5e8aa63db0 destroyed
+[LOG] Callback 5b5e8aa55ea8 -> 5b5e8aa55ea0, CPopup Head removed.
+[LOG] Callback 5b5e8a852ad0 -> 5b5e8a852ac8, layerSurface removed.
+[LOG] Callback 5b5e8a852998 -> 5b5e8a852990, layerSurface removed.
+[LOG] Callback 5b5e8a852a00 -> 5b5e8a8529f8, layerSurface removed.
+[LOG] Callback 5b5e8a852a68 -> 5b5e8a852a60, layerSurface removed.
+[LOG] LayerSurface 5b5e8aa63890 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8a852ee0 -> 5b5e8a852ed8, CWLSurface removed.
+[LOG] Callback 5b5e8a852f48 -> 5b5e8a852f40, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a852e70 called destroy()
+[LOG] LayerSurface 5b5e8aa63890 destroyed
+[LOG] Callback 5b5e8a89fd48 -> 5b5e8a89fd40, CPopup Head removed.
+[LOG] Callback 5b5e8a8530f0 -> 5b5e8a8530e8, layerSurface removed.
+[LOG] Callback 5b5e8a852fb8 -> 5b5e8a852fb0, layerSurface removed.
+[LOG] Callback 5b5e8a853020 -> 5b5e8a853018, layerSurface removed.
+[LOG] Callback 5b5e8a853088 -> 5b5e8a853080, layerSurface removed.
+[LOG] LayerSurface 5b5e8aa62c50 mapped
+[LOG] Registered signal for owner 5b5e8aa62570: 5b5e8aa68868 -> 5b5e8aa625b8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa62570: 5b5e8aa68828 -> 5b5e8aa62620 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa62570 called init()
+[LOG] LayerSurface 5b5e8aa563a0 mapped
+[LOG] Registered signal for owner 5b5e8aa63190: 5b5e8a8535c8 -> 5b5e8aa631d8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa63190: 5b5e8a853588 -> 5b5e8aa63240 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa63190 called init()
+[LOG] LayerSurface 5b5e8a9d5e20 mapped
+[LOG] Registered signal for owner 5b5e8aa69670: 5b5e8aa66d98 -> 5b5e8aa696b8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa69670: 5b5e8aa66d58 -> 5b5e8aa69720 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa69670 called init()
+[LOG] Socket2 accepted a new client at FD 70
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Keybind triggered, calling dispatcher (64, , 50)
+[LOG] [hookSystem] New hook event registered: workspace
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 65293)
+[LOG] Executing foot
+[LOG] Process Created with pid 223072
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 5b5e89bd8e80: 5b5e8a87c368 -> 5b5e89bd8e98 (owner: textInput)
+[LOG] Registered signal for owner 5b5e89bd8e80: 5b5e8a87c378 -> 5b5e89bd8f68 (owner: textInput)
+[LOG] Registered signal for owner 5b5e89bd8e80: 5b5e8a87c388 -> 5b5e89bd8f00 (owner: textInput)
+[LOG] Registered signal for owner 5b5e89bd8e80: 5b5e8a87c398 -> 5b5e89bd8fd0 (owner: textInput)
+[LOG] FractionalScaleManager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa362b0 (res 0x5b5e8aa63ff0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa5e590 (res 0x5b5e8aa6a810)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5b5e8aa56ef0 (res 0x5b5e8a3b23a0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa5e878 -> 5b5e8aa73cf8 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa56f98 -> 5b5e8aa73dc8 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa5e868 -> 5b5e8aa73c90 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5b5e8aa63db0 (res 0x5b5e8aa68e30)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5b5e8aa56ef0
+[LOG] Searching for matching rules for foot (title: )
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 5b5e8aa73c90: title: ""]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a854cf0 (res 0x5b5e8a8550e0)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa66120 -> 5b5e8aa74240 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa66130 -> 5b5e8aa742a8 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa66140 -> 5b5e8aa741d8 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8aa744b0: 5b5e8aa5e8a8 -> 5b5e8aa744f8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa744b0: 5b5e8aa5e868 -> 5b5e8aa74560 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa744b0 called init()
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa5e888 -> 5b5e8aa73d60 (owner: CWindow)
+[LOG] Registered signal for owner 5b5e8a1ee5f0: 5b5e8aa5e898 -> 5b5e8a1ee6c0 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5b5e8a188630: 5b5e8a855008 -> 5b5e8a188678 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a188630: 5b5e8a854fc8 -> 5b5e8a1886e0 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a188630 called init()
+[LOG] Registered signal for owner 5b5e8a188420: 5b5e8a854fc8 -> 5b5e8a188488 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a188420: 5b5e8aa68f50 -> 5b5e8a188420 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a188420: 5b5e8a854ff8 -> 5b5e8a1884f0 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a188420: 5b5e8a854fd8 -> 5b5e8a188558 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a188420: 5b5e8a854fe8 -> 5b5e8a1885c0 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a89fba0: 5b5e8aa56fb8 -> 5b5e8a89fd20 (owner: CPopup Head)
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 5b5e8aa5e590, with [Window 5b5e8aa73c90: title: "foot"]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa69e38 -> 5b5e8aa73e30 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa69dc8 -> 5b5e8aa74038 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa69de8 -> 5b5e8aa73fd0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa69df8 -> 5b5e8aa73f68 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa69e08 -> 5b5e8aa740a0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa69dd8 -> 5b5e8aa73f00 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa73c90: 5b5e8aa56fd8 -> 5b5e8aa74448 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 20.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~)
+[LOG] Window 5b5e8aa73c90 set title to harun@archlinux:~
+[LOG] Searching for matching rules for foot (title: sudo powertop)
+[LOG] Window 5b5e8aa73c90 set title to sudo powertop
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~)
+[LOG] Window 5b5e8aa73c90 set title to harun@archlinux:~
+[LOG] Keybind triggered, calling dispatcher (64, , 113)
+[LOG] [Window 5b5e8aa73c90: title: "harun@archlinux:~", class: foot] unmapped
+[LOG] Unregistered late callbacks XDG
+[LOG] Callback 5b5e8aa73e58 -> 5b5e8aa73e50, XDG Window Late removed.
+[LOG] Callback 5b5e8aa74060 -> 5b5e8aa74058, XDG Window Late removed.
+[LOG] Callback 5b5e8aa73ff8 -> 5b5e8aa73ff0, XDG Window Late removed.
+[LOG] Callback 5b5e8aa73f90 -> 5b5e8aa73f88, XDG Window Late removed.
+[LOG] Callback 5b5e8aa740c8 -> 5b5e8aa740c0, XDG Window Late removed.
+[LOG] Callback 5b5e8aa73f28 -> 5b5e8aa73f20, XDG Window Late removed.
+[LOG] Callback 5b5e8aa74470 -> 5b5e8aa74468, XDG Window Late removed.
+[LOG] Framebuffer created, status 36053
+[LOG] Removing last node (dwindle)
+[LOG] On closed window, new focused candidate is [Window nullptr]
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5b5e8aa74268 -> 5b5e8aa74260, Toplevel removed.
+[LOG] Callback 5b5e8aa74200 -> 5b5e8aa741f8, Toplevel removed.
+[LOG] Callback 5b5e8aa742d0 -> 5b5e8aa742c8, Toplevel removed.
+[LOG] Callback 5b5e8aa74520 -> 5b5e8aa74518, CWLSurface removed.
+[LOG] Callback 5b5e8aa74588 -> 5b5e8aa74580, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa744b0 called destroy()
+[LOG] Callback 5b5e8aa73d88 -> 5b5e8aa73d80, CWindow removed.
+[LOG] Callback 5b5e8a1ee6e8 -> 5b5e8a1ee6e0, CSubsurface Head removed.
+[LOG] Callback 5b5e8a188518 -> 5b5e8a188510, CSubsurface removed.
+[LOG] Callback 5b5e8a1884b0 -> 5b5e8a1884a8, CSubsurface removed.
+[LOG] Callback 5b5e8a188448 -> 5b5e8a188440, CSubsurface removed.
+[LOG] Callback 5b5e8a1886a0 -> 5b5e8a188698, CWLSurface removed.
+[LOG] Callback 5b5e8a188708 -> 5b5e8a188700, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a188630 called destroy()
+[LOG] Callback 5b5e8a1885e8 -> 5b5e8a1885e0, CSubsurface removed.
+[LOG] Callback 5b5e8a188580 -> 5b5e8a188578, CSubsurface removed.
+[LOG] Callback 5b5e8a89fd48 -> 5b5e8a89fd40, CPopup Head removed.
+[LOG] [Window 5b5e8aa73c90: title: "harun@archlinux:~", class: ] destroyed, queueing.
+[LOG] Callback 5b5e8aa73cb8 -> 5b5e8aa73cb0, XDG Window removed.
+[LOG] Callback 5b5e8aa73d20 -> 5b5e8aa73d18, XDG Window removed.
+[LOG] Callback 5b5e8aa73df0 -> 5b5e8aa73de8, XDG Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Keybind triggered, calling dispatcher (64, , 49)
+[LOG] Set keyboard focus to surface 5b5e8a3b9f00, with [Window 5b5e8a9dc9f0: title: "nvim ~/.config/eww/eww.yuck"]
+[LOG] Searching for matching rules for foot (title: nvim ~/.config/eww/eww.yuck)
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Destroying workspace ID 2
+[LOG] [hookSystem] New hook event registered: destroyWorkspace
+[LOG] Cleanup: destroyed a window
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa362b0 (res 0x5b5e8a9dde80)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa63db0 (res 0x5b5e7f015760)
+[LOG] Registered signal for owner 5b5e8aa67e30: 5b5e8aa36588 -> 5b5e8aa68268 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa67e30: 5b5e8aa63e78 -> 5b5e8aa68130 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa67e30: 5b5e8aa36598 -> 5b5e8aa68198 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa67e30: 5b5e8aa365a8 -> 5b5e8aa68200 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a89fba0: 5b5e8aa63e88 -> 5b5e8a89fd20 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa63db0 (namespace bar layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa362b0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa362b0 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa66e70 (res 0x5b5e8a3b17c0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8a86f320 (res 0x5b5e8a87cdf0)
+[LOG] Registered signal for owner 5b5e8aa675b0: 5b5e8aa67148 -> 5b5e8aa679e8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa675b0: 5b5e8a86f3e8 -> 5b5e8aa678b0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa675b0: 5b5e8aa67158 -> 5b5e8aa67918 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa675b0: 5b5e8aa67168 -> 5b5e8aa67980 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa55d00: 5b5e8a86f3f8 -> 5b5e8aa55e80 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8a86f320 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa66e70 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa66e70 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa61df0 (res 0x5b5e8aa608a0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa5ecc0 (res 0x5b5e8a87cb90)
+[LOG] Registered signal for owner 5b5e8a852880: 5b5e8aa620c8 -> 5b5e8a852cb8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852880: 5b5e8aa5ed88 -> 5b5e8a852b80 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852880: 5b5e8aa620d8 -> 5b5e8a852be8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852880: 5b5e8aa620e8 -> 5b5e8a852c50 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa57500: 5b5e8aa5ed98 -> 5b5e8aa57680 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa5ecc0 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa61df0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa61df0 in setPreferredTransformForSurface
+[LOG] LayerSurface 5b5e8aa62c50 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa625e0 -> 5b5e8aa625d8, CWLSurface removed.
+[LOG] Callback 5b5e8aa62648 -> 5b5e8aa62640, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa62570 called destroy()
+[LOG] LayerSurface 5b5e8aa62c50 destroyed
+[LOG] Callback 5b5e8aa69238 -> 5b5e8aa69230, CPopup Head removed.
+[LOG] Callback 5b5e8aa627f0 -> 5b5e8aa627e8, layerSurface removed.
+[LOG] Callback 5b5e8aa626b8 -> 5b5e8aa626b0, layerSurface removed.
+[LOG] Callback 5b5e8aa62720 -> 5b5e8aa62718, layerSurface removed.
+[LOG] Callback 5b5e8aa62788 -> 5b5e8aa62780, layerSurface removed.
+[LOG] LayerSurface 5b5e8aa563a0 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa63200 -> 5b5e8aa631f8, CWLSurface removed.
+[LOG] Callback 5b5e8aa63268 -> 5b5e8aa63260, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa63190 called destroy()
+[LOG] LayerSurface 5b5e8aa563a0 destroyed
+[LOG] Callback 5b5e8aa6a058 -> 5b5e8aa6a050, CPopup Head removed.
+[LOG] Callback 5b5e8aa63410 -> 5b5e8aa63408, layerSurface removed.
+[LOG] Callback 5b5e8aa632d8 -> 5b5e8aa632d0, layerSurface removed.
+[LOG] Callback 5b5e8aa63340 -> 5b5e8aa63338, layerSurface removed.
+[LOG] Callback 5b5e8aa633a8 -> 5b5e8aa633a0, layerSurface removed.
+[LOG] LayerSurface 5b5e8a9d5e20 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa696e0 -> 5b5e8aa696d8, CWLSurface removed.
+[LOG] Callback 5b5e8aa69748 -> 5b5e8aa69740, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa69670 called destroy()
+[LOG] LayerSurface 5b5e8a9d5e20 destroyed
+[LOG] Callback 5b5e8aa56698 -> 5b5e8aa56690, CPopup Head removed.
+[LOG] Callback 5b5e8aa698f0 -> 5b5e8aa698e8, layerSurface removed.
+[LOG] Callback 5b5e8aa697b8 -> 5b5e8aa697b0, layerSurface removed.
+[LOG] Callback 5b5e8aa69820 -> 5b5e8aa69818, layerSurface removed.
+[LOG] Callback 5b5e8aa69888 -> 5b5e8aa69880, layerSurface removed.
+[LOG] LayerSurface 5b5e8aa63db0 mapped
+[LOG] Registered signal for owner 5b5e8aa68010: 5b5e8aa365c8 -> 5b5e8aa68058 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa68010: 5b5e8aa36588 -> 5b5e8aa680c0 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa68010 called init()
+[LOG] LayerSurface 5b5e8a86f320 mapped
+[LOG] Registered signal for owner 5b5e8aa67790: 5b5e8aa67188 -> 5b5e8aa677d8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa67790: 5b5e8aa67148 -> 5b5e8aa67840 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa67790 called init()
+[LOG] LayerSurface 5b5e8aa5ecc0 mapped
+[LOG] Registered signal for owner 5b5e8a852a60: 5b5e8aa62108 -> 5b5e8a852aa8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a852a60: 5b5e8aa620c8 -> 5b5e8a852b10 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a852a60 called init()
+[LOG] Socket2 accepted a new client at FD 80
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a3b26e0 (res 0x5b5e8a8564b0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8a3b23a0 (res 0x5b5e8a3b2ad0)
+[LOG] Registered signal for owner 5b5e8aa69490: 5b5e8a3b29b8 -> 5b5e8aa698c8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69490: 5b5e8a3b2468 -> 5b5e8aa69790 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69490: 5b5e8a3b29c8 -> 5b5e8aa697f8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69490: 5b5e8a3b29d8 -> 5b5e8aa69860 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa564f0: 5b5e8a3b2478 -> 5b5e8aa56670 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8a3b23a0 (namespace bar layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8a3b26e0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8a3b26e0 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a8532b0 (res 0x5b5e8a8536a0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8a854b00 (res 0x5b5e8a86ec90)
+[LOG] Registered signal for owner 5b5e8aa65ca0: 5b5e8a853588 -> 5b5e8aa660d8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa65ca0: 5b5e8a854bc8 -> 5b5e8aa65fa0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa65ca0: 5b5e8a853598 -> 5b5e8aa66008 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa65ca0: 5b5e8a8535a8 -> 5b5e8aa66070 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69eb0: 5b5e8a854bd8 -> 5b5e8aa6a030 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8a854b00 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8a8532b0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8a8532b0 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa68450 (res 0x5b5e8aa68840)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa64b00 (res 0x5b5e8a862f90)
+[LOG] Registered signal for owner 5b5e8aa622c0: 5b5e8aa68728 -> 5b5e8aa626f8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa622c0: 5b5e8aa64bc8 -> 5b5e8aa625c0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa622c0: 5b5e8aa68738 -> 5b5e8aa62628 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa622c0: 5b5e8aa68748 -> 5b5e8aa62690 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69090: 5b5e8aa64bd8 -> 5b5e8aa69210 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa64b00 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa68450 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa68450 in setPreferredTransformForSurface
+[LOG] LayerSurface 5b5e8aa63db0 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa68080 -> 5b5e8aa68078, CWLSurface removed.
+[LOG] Callback 5b5e8aa680e8 -> 5b5e8aa680e0, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa68010 called destroy()
+[LOG] LayerSurface 5b5e8aa63db0 destroyed
+[LOG] Callback 5b5e8a89fd48 -> 5b5e8a89fd40, CPopup Head removed.
+[LOG] Callback 5b5e8aa68290 -> 5b5e8aa68288, layerSurface removed.
+[LOG] Callback 5b5e8aa68158 -> 5b5e8aa68150, layerSurface removed.
+[LOG] Callback 5b5e8aa681c0 -> 5b5e8aa681b8, layerSurface removed.
+[LOG] Callback 5b5e8aa68228 -> 5b5e8aa68220, layerSurface removed.
+[LOG] LayerSurface 5b5e8a86f320 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa67800 -> 5b5e8aa677f8, CWLSurface removed.
+[LOG] Callback 5b5e8aa67868 -> 5b5e8aa67860, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa67790 called destroy()
+[LOG] LayerSurface 5b5e8a86f320 destroyed
+[LOG] Callback 5b5e8aa55ea8 -> 5b5e8aa55ea0, CPopup Head removed.
+[LOG] Callback 5b5e8aa67a10 -> 5b5e8aa67a08, layerSurface removed.
+[LOG] Callback 5b5e8aa678d8 -> 5b5e8aa678d0, layerSurface removed.
+[LOG] Callback 5b5e8aa67940 -> 5b5e8aa67938, layerSurface removed.
+[LOG] Callback 5b5e8aa679a8 -> 5b5e8aa679a0, layerSurface removed.
+[LOG] LayerSurface 5b5e8aa5ecc0 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8a852ad0 -> 5b5e8a852ac8, CWLSurface removed.
+[LOG] Callback 5b5e8a852b38 -> 5b5e8a852b30, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a852a60 called destroy()
+[LOG] LayerSurface 5b5e8aa5ecc0 destroyed
+[LOG] Callback 5b5e8aa576a8 -> 5b5e8aa576a0, CPopup Head removed.
+[LOG] Callback 5b5e8a852ce0 -> 5b5e8a852cd8, layerSurface removed.
+[LOG] Callback 5b5e8a852ba8 -> 5b5e8a852ba0, layerSurface removed.
+[LOG] Callback 5b5e8a852c10 -> 5b5e8a852c08, layerSurface removed.
+[LOG] Callback 5b5e8a852c78 -> 5b5e8a852c70, layerSurface removed.
+[LOG] LayerSurface 5b5e8a3b23a0 mapped
+[LOG] Registered signal for owner 5b5e8aa69670: 5b5e8a3b29f8 -> 5b5e8aa696b8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa69670: 5b5e8a3b29b8 -> 5b5e8aa69720 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa69670 called init()
+[LOG] LayerSurface 5b5e8a854b00 mapped
+[LOG] Registered signal for owner 5b5e8aa65e80: 5b5e8a8535c8 -> 5b5e8aa65ec8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa65e80: 5b5e8a853588 -> 5b5e8aa65f30 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa65e80 called init()
+[LOG] LayerSurface 5b5e8aa64b00 mapped
+[LOG] Registered signal for owner 5b5e8aa624a0: 5b5e8aa68768 -> 5b5e8aa624e8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa624a0: 5b5e8aa68728 -> 5b5e8aa62550 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa624a0 called init()
+[LOG] Socket2 accepted a new client at FD 73
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~)
+[LOG] Window 5b5e8a9dc9f0 set title to harun@archlinux:~
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa658b0 (res 0x5b5e8a909f90)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa63db0 (res 0x5b5e8aa60d00)
+[LOG] Registered signal for owner 5b5e8aa67e30: 5b5e8aa65b88 -> 5b5e8aa68268 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa67e30: 5b5e8aa63e78 -> 5b5e8aa68130 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa67e30: 5b5e8aa65b98 -> 5b5e8aa68198 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa67e30: 5b5e8aa65ba8 -> 5b5e8aa68200 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa57500: 5b5e8aa63e88 -> 5b5e8aa57680 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa63db0 (namespace bar layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa658b0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa658b0 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa362b0 (res 0x5b5e8a9d71d0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8a853730 (res 0x5b5e8a9de270)
+[LOG] Registered signal for owner 5b5e8a852880: 5b5e8aa36588 -> 5b5e8a852cb8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852880: 5b5e8a8537f8 -> 5b5e8a852b80 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852880: 5b5e8aa36598 -> 5b5e8a852be8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a852880: 5b5e8aa365a8 -> 5b5e8a852c50 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa55d00: 5b5e8a853808 -> 5b5e8aa55e80 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8a853730 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa362b0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa362b0 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa670f0 (res 0x5b5e8a9dea10)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8a87c2a0 (res 0x5b5e8aa34420)
+[LOG] Registered signal for owner 5b5e8aa5e590: 5b5e8aa673c8 -> 5b5e8aa5e9c8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa5e590: 5b5e8a87c368 -> 5b5e8aa5e890 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa5e590: 5b5e8aa673d8 -> 5b5e8aa5e8f8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa5e590: 5b5e8aa673e8 -> 5b5e8aa5e960 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a89fba0: 5b5e8a87c378 -> 5b5e8a89fd20 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8a87c2a0 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa670f0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa670f0 in setPreferredTransformForSurface
+[LOG] LayerSurface 5b5e8a3b23a0 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa696e0 -> 5b5e8aa696d8, CWLSurface removed.
+[LOG] Callback 5b5e8aa69748 -> 5b5e8aa69740, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa69670 called destroy()
+[LOG] LayerSurface 5b5e8a3b23a0 destroyed
+[LOG] Callback 5b5e8aa56698 -> 5b5e8aa56690, CPopup Head removed.
+[LOG] Callback 5b5e8aa698f0 -> 5b5e8aa698e8, layerSurface removed.
+[LOG] Callback 5b5e8aa697b8 -> 5b5e8aa697b0, layerSurface removed.
+[LOG] Callback 5b5e8aa69820 -> 5b5e8aa69818, layerSurface removed.
+[LOG] Callback 5b5e8aa69888 -> 5b5e8aa69880, layerSurface removed.
+[LOG] LayerSurface 5b5e8a854b00 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa65ef0 -> 5b5e8aa65ee8, CWLSurface removed.
+[LOG] Callback 5b5e8aa65f58 -> 5b5e8aa65f50, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa65e80 called destroy()
+[LOG] LayerSurface 5b5e8a854b00 destroyed
+[LOG] Callback 5b5e8aa6a058 -> 5b5e8aa6a050, CPopup Head removed.
+[LOG] Callback 5b5e8aa66100 -> 5b5e8aa660f8, layerSurface removed.
+[LOG] Callback 5b5e8aa65fc8 -> 5b5e8aa65fc0, layerSurface removed.
+[LOG] Callback 5b5e8aa66030 -> 5b5e8aa66028, layerSurface removed.
+[LOG] Callback 5b5e8aa66098 -> 5b5e8aa66090, layerSurface removed.
+[LOG] LayerSurface 5b5e8aa64b00 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa62510 -> 5b5e8aa62508, CWLSurface removed.
+[LOG] Callback 5b5e8aa62578 -> 5b5e8aa62570, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa624a0 called destroy()
+[LOG] LayerSurface 5b5e8aa64b00 destroyed
+[LOG] Callback 5b5e8aa69238 -> 5b5e8aa69230, CPopup Head removed.
+[LOG] Callback 5b5e8aa62720 -> 5b5e8aa62718, layerSurface removed.
+[LOG] Callback 5b5e8aa625e8 -> 5b5e8aa625e0, layerSurface removed.
+[LOG] Callback 5b5e8aa62650 -> 5b5e8aa62648, layerSurface removed.
+[LOG] Callback 5b5e8aa626b8 -> 5b5e8aa626b0, layerSurface removed.
+[LOG] LayerSurface 5b5e8aa63db0 mapped
+[LOG] Registered signal for owner 5b5e8aa68010: 5b5e8aa65bc8 -> 5b5e8aa68058 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa68010: 5b5e8aa65b88 -> 5b5e8aa680c0 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa68010 called init()
+[LOG] LayerSurface 5b5e8a853730 mapped
+[LOG] Registered signal for owner 5b5e8a852a60: 5b5e8aa365c8 -> 5b5e8a852aa8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a852a60: 5b5e8aa36588 -> 5b5e8a852b10 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a852a60 called init()
+[LOG] LayerSurface 5b5e8a87c2a0 mapped
+[LOG] Registered signal for owner 5b5e8aa5e770: 5b5e8aa67408 -> 5b5e8aa5e7b8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa5e770: 5b5e8aa673c8 -> 5b5e8aa5e820 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa5e770 called init()
+[LOG] Socket2 accepted a new client at FD 80
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Searching for matching rules for foot (title: nvim ~/.config/eww/_styling.scss)
+[LOG] Window 5b5e8a9dc9f0 set title to nvim ~/.config/eww/_styling.scss
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~)
+[LOG] Window 5b5e8a9dc9f0 set title to harun@archlinux:~
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa56100 (res 0x5b5e8a86ec90)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa57050 (res 0x5b5e8a862c40)
+[LOG] Registered signal for owner 5b5e8aa622c0: 5b5e8aa563d8 -> 5b5e8aa626f8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa622c0: 5b5e8aa57118 -> 5b5e8aa625c0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa622c0: 5b5e8aa563e8 -> 5b5e8aa62628 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa622c0: 5b5e8aa563f8 -> 5b5e8aa62690 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69090: 5b5e8aa57128 -> 5b5e8aa69210 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa57050 (namespace bar layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa56100 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa56100 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa63270 (res 0x5b5e8aa5ec90)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa64b00 (res 0x5b5e7f015760)
+[LOG] Registered signal for owner 5b5e8aa69490: 5b5e8aa63548 -> 5b5e8aa698c8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69490: 5b5e8aa64bc8 -> 5b5e8aa69790 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69490: 5b5e8aa63558 -> 5b5e8aa697f8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69490: 5b5e8aa63568 -> 5b5e8aa69860 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa69eb0: 5b5e8aa64bd8 -> 5b5e8aa6a030 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa64b00 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa63270 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa63270 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa61db0 (res 0x5b5e8a9d9220)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa68f70 (res 0x5b5e8a855ee0)
+[LOG] Registered signal for owner 5b5e8aa65ca0: 5b5e8aa62088 -> 5b5e8aa660d8 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa65ca0: 5b5e8aa69038 -> 5b5e8aa65fa0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa65ca0: 5b5e8aa62098 -> 5b5e8aa66008 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa65ca0: 5b5e8aa620a8 -> 5b5e8aa66070 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8aa564f0: 5b5e8aa69048 -> 5b5e8aa56670 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa68f70 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8aa61db0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8aa61db0 in setPreferredTransformForSurface
+[LOG] LayerSurface 5b5e8aa63db0 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa68080 -> 5b5e8aa68078, CWLSurface removed.
+[LOG] Callback 5b5e8aa680e8 -> 5b5e8aa680e0, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa68010 called destroy()
+[LOG] LayerSurface 5b5e8aa63db0 destroyed
+[LOG] Callback 5b5e8aa576a8 -> 5b5e8aa576a0, CPopup Head removed.
+[LOG] Callback 5b5e8aa68290 -> 5b5e8aa68288, layerSurface removed.
+[LOG] Callback 5b5e8aa68158 -> 5b5e8aa68150, layerSurface removed.
+[LOG] Callback 5b5e8aa681c0 -> 5b5e8aa681b8, layerSurface removed.
+[LOG] Callback 5b5e8aa68228 -> 5b5e8aa68220, layerSurface removed.
+[LOG] LayerSurface 5b5e8a853730 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8a852ad0 -> 5b5e8a852ac8, CWLSurface removed.
+[LOG] Callback 5b5e8a852b38 -> 5b5e8a852b30, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a852a60 called destroy()
+[LOG] LayerSurface 5b5e8a853730 destroyed
+[LOG] Callback 5b5e8aa55ea8 -> 5b5e8aa55ea0, CPopup Head removed.
+[LOG] Callback 5b5e8a852ce0 -> 5b5e8a852cd8, layerSurface removed.
+[LOG] Callback 5b5e8a852ba8 -> 5b5e8a852ba0, layerSurface removed.
+[LOG] Callback 5b5e8a852c10 -> 5b5e8a852c08, layerSurface removed.
+[LOG] Callback 5b5e8a852c78 -> 5b5e8a852c70, layerSurface removed.
+[LOG] LayerSurface 5b5e8a87c2a0 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8aa5e7e0 -> 5b5e8aa5e7d8, CWLSurface removed.
+[LOG] Callback 5b5e8aa5e848 -> 5b5e8aa5e840, CWLSurface removed.
+[LOG] CWLSurface 5b5e8aa5e770 called destroy()
+[LOG] LayerSurface 5b5e8a87c2a0 destroyed
+[LOG] Callback 5b5e8a89fd48 -> 5b5e8a89fd40, CPopup Head removed.
+[LOG] Callback 5b5e8aa5e9f0 -> 5b5e8aa5e9e8, layerSurface removed.
+[LOG] Callback 5b5e8aa5e8b8 -> 5b5e8aa5e8b0, layerSurface removed.
+[LOG] Callback 5b5e8aa5e920 -> 5b5e8aa5e918, layerSurface removed.
+[LOG] Callback 5b5e8aa5e988 -> 5b5e8aa5e980, layerSurface removed.
+[LOG] LayerSurface 5b5e8aa57050 mapped
+[LOG] Registered signal for owner 5b5e8aa624a0: 5b5e8aa56418 -> 5b5e8aa624e8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa624a0: 5b5e8aa563d8 -> 5b5e8aa62550 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa624a0 called init()
+[LOG] LayerSurface 5b5e8aa64b00 mapped
+[LOG] Registered signal for owner 5b5e8aa69670: 5b5e8aa63588 -> 5b5e8aa696b8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa69670: 5b5e8aa63548 -> 5b5e8aa69720 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa69670 called init()
+[LOG] LayerSurface 5b5e8aa68f70 mapped
+[LOG] Registered signal for owner 5b5e8aa65e80: 5b5e8aa620c8 -> 5b5e8aa65ec8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa65e80: 5b5e8aa62088 -> 5b5e8aa65f30 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa65e80 called init()
+[LOG] Socket2 accepted a new client at FD 73
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Cleanup: destroyed a layersurface
+[LOG] Keybind triggered, calling dispatcher (64, , 113)
+[LOG] [Window 5b5e8a9dc9f0: title: "harun@archlinux:~", class: foot] unmapped
+[LOG] Unregistered late callbacks XDG
+[LOG] Callback 5b5e8a9dcbb8 -> 5b5e8a9dcbb0, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dcdc0 -> 5b5e8a9dcdb8, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dcd58 -> 5b5e8a9dcd50, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dccf0 -> 5b5e8a9dcce8, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dce28 -> 5b5e8a9dce20, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dcc88 -> 5b5e8a9dcc80, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dd1d0 -> 5b5e8a9dd1c8, XDG Window Late removed.
+[LOG] Framebuffer created, status 36053
+[LOG] Removing last node (dwindle)
+[LOG] On closed window, new focused candidate is [Window nullptr]
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5b5e8a9dcfc8 -> 5b5e8a9dcfc0, Toplevel removed.
+[LOG] Callback 5b5e8a9dcf60 -> 5b5e8a9dcf58, Toplevel removed.
+[LOG] Callback 5b5e8a9dd030 -> 5b5e8a9dd028, Toplevel removed.
+[LOG] Callback 5b5e8a9dd280 -> 5b5e8a9dd278, CWLSurface removed.
+[LOG] Callback 5b5e8a9dd2e8 -> 5b5e8a9dd2e0, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a9dd210 called destroy()
+[LOG] Callback 5b5e8a9dcae8 -> 5b5e8a9dcae0, CWindow removed.
+[LOG] Callback 5b5e8a22b128 -> 5b5e8a22b120, CSubsurface Head removed.
+[LOG] Callback 5b5e8a2341c8 -> 5b5e8a2341c0, CSubsurface removed.
+[LOG] Callback 5b5e8a234160 -> 5b5e8a234158, CSubsurface removed.
+[LOG] Callback 5b5e8a2340f8 -> 5b5e8a2340f0, CSubsurface removed.
+[LOG] Callback 5b5e8a234350 -> 5b5e8a234348, CWLSurface removed.
+[LOG] Callback 5b5e8a2343b8 -> 5b5e8a2343b0, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a2342e0 called destroy()
+[LOG] Callback 5b5e8a234298 -> 5b5e8a234290, CSubsurface removed.
+[LOG] Callback 5b5e8a234230 -> 5b5e8a234228, CSubsurface removed.
+[LOG] Callback 5b5e7ef518e8 -> 5b5e7ef518e0, CPopup Head removed.
+[LOG] [Window 5b5e8a9dc9f0: title: "harun@archlinux:~", class: ] destroyed, queueing.
+[LOG] Callback 5b5e8a9dca18 -> 5b5e8a9dca10, XDG Window removed.
+[LOG] Callback 5b5e8a9dca80 -> 5b5e8a9dca78, XDG Window removed.
+[LOG] Callback 5b5e8a9dcb50 -> 5b5e8a9dcb48, XDG Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Cleanup: destroyed a window
+[LOG] Keybind triggered, calling dispatcher (64, , 52)
+[LOG] Destroying workspace ID 1
+[LOG] Keybind triggered, calling dispatcher (64, , 53)
+[LOG] Destroying workspace ID 4
+[LOG] Keybind triggered, calling dispatcher (64, , 114)
+[LOG] Executing wofi -i -t foot
+[LOG] Process Created with pid 225094
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa5fdb0 (res 0x5b5e8aa5f510)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a3b9f00 (res 0x5b5e8aa57ad0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a855f70 (res 0x5b5e8a854a50)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5b5e8aa4cd80 (res 0x5b5e8a86ed80)
+[LOG] New LayerSurface has no preferred monitor. Assigning Monitor eDP-1
+[LOG] Registered signal for owner 5b5e8a855820: 5b5e8a856248 -> 5b5e8a855c58 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a855820: 5b5e8aa4ce48 -> 5b5e8a855b20 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a855820: 5b5e8a856258 -> 5b5e8a855b88 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e8a855820: 5b5e8a856268 -> 5b5e8a855bf0 (owner: layerSurface)
+[LOG] Registered signal for owner 5b5e7ef51740: 5b5e8aa4ce58 -> 5b5e7ef518c0 (owner: CPopup Head)
+[LOG] LayerSurface 5b5e8aa4cd80 (namespace wofi layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8a855f70 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8a855f70 in setPreferredTransformForSurface
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5b5e8a855f70 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5b5e8a855f70 in setPreferredTransformForSurface
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 5b5e8a8ae1f0: 5b5e8a9de0f8 -> 5b5e8a8ae208 (owner: textInput)
+[LOG] Registered signal for owner 5b5e8a8ae1f0: 5b5e8a9de108 -> 5b5e8a8ae2d8 (owner: textInput)
+[LOG] Registered signal for owner 5b5e8a8ae1f0: 5b5e8a9de118 -> 5b5e8a8ae270 (owner: textInput)
+[LOG] Registered signal for owner 5b5e8a8ae1f0: 5b5e8a9de128 -> 5b5e8a8ae340 (owner: textInput)
+[LOG] LayerSurface 5b5e8aa4cd80 mapped
+[LOG] Registered signal for owner 5b5e8a855a00: 5b5e8a856288 -> 5b5e8a855a48 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a855a00: 5b5e8a856248 -> 5b5e8a855ab0 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a855a00 called init()
+[LOG] Set keyboard focus to surface 5b5e8a855f70
+[LOG] LayerSurface 5b5e8aa4cd80 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5b5e8a855a70 -> 5b5e8a855a68, CWLSurface removed.
+[LOG] Callback 5b5e8a855ad8 -> 5b5e8a855ad0, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a855a00 called destroy()
+[LOG] LayerSurface 5b5e8aa4cd80 destroyed
+[LOG] Callback 5b5e7ef518e8 -> 5b5e7ef518e0, CPopup Head removed.
+[LOG] Callback 5b5e8a855c80 -> 5b5e8a855c78, layerSurface removed.
+[LOG] Callback 5b5e8a855b48 -> 5b5e8a855b40, layerSurface removed.
+[LOG] Callback 5b5e8a855bb0 -> 5b5e8a855ba8, layerSurface removed.
+[LOG] Callback 5b5e8a855c18 -> 5b5e8a855c10, layerSurface removed.
+[LOG] FractionalScaleManager bound successfully!
+[LOG] TextInputV1Manager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa5fdb0 (res 0x5b5e8aa4e9a0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a3b9f00 (res 0x5b5e8a853650)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a855f70 (res 0x5b5e8aa5e320)
+[LOG] Cleanup: destroyed a layersurface
+[wlr] [xwayland/server.c:107] Starting Xwayland on :0
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a854c30 (res 0x5b5e8a855740)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5b5e8aa648f0 (res 0x5b5e8aa64a40)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a854f18 -> 5b5e8a9dca58 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa64998 -> 5b5e8a9dcb28 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a854f08 -> 5b5e8a9dc9f0 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5b5e8a9d7e50 (res 0x5b5e8a9d7f40)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5b5e8aa648f0
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 5b5e8a9dc9f0: title: ""]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa62e00 (res 0x5b5e8aa6a540)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5b5e8a9d7580 (res 0x5b5e8a9d76d0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5b5e8aa7b420: 5b5e8aa630e8 -> 5b5e8aa7b488 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8aa7b420: 5b5e8a9d7628 -> 5b5e8aa7b558 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8aa7b420: 5b5e8aa630d8 -> 5b5e8aa7b420 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5b5e8a855820 (res 0x5b5e8a855910)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5b5e8a9d7580
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 5b5e8aa7b420: title: ""]
+[LOG] [Window 5b5e8aa7b420: title: "", class: ] destroyed, queueing.
+[LOG] Callback 5b5e8aa7b448 -> 5b5e8aa7b440, XDG Window removed.
+[LOG] Callback 5b5e8aa7b4b0 -> 5b5e8aa7b4a8, XDG Window removed.
+[LOG] Callback 5b5e8aa7b580 -> 5b5e8aa7b578, XDG Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Unmapped [Window 5b5e8aa7b420: title: ""] removed instantly
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8a852850 (res 0x5b5e8a852c40)
+[wlr] [xwayland/server.c:272] Xserver is ready
+[wlr] [xwayland/xwm.c:1964] xfixes version: 6.0
+[wlr] [xwayland/xwm.c:1985] xres version: 1.2
+[wlr] [xwayland/selection/incoming.c:482] XCB_XFIXES_SELECTION_NOTIFY (selection=269, owner=2097153)
+[LOG] cursorImage request: surface 0
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa682c0 (res 0x5b5e8aa686b0)
+[LOG] Activate request for surface at 5b5e8a854c30
+[LOG] Activate request for surface at 5b5e8a854c30
+[LOG] Activate request for surface at 5b5e8aa62e00
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a86f3a0 -> 5b5e8a9dcfa0 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a86f3b0 -> 5b5e8a9dd008 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a86f3c0 -> 5b5e8a9dcf38 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8a9dd210: 5b5e8a854f48 -> 5b5e8a9dd258 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a9dd210: 5b5e8a854f08 -> 5b5e8a9dd2c0 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a9dd210 called init()
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8a854f28 -> 5b5e8a9dcac0 (owner: CWindow)
+[LOG] Registered signal for owner 5b5e8a22b030: 5b5e8a854f38 -> 5b5e8a22b100 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5b5e7ef51740: 5b5e8aa649b8 -> 5b5e7ef518c0 (owner: CPopup Head)
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 5b5e8a854c30, with [Window 5b5e8a9dc9f0: title: "ArmCord"]
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa67b78 -> 5b5e8a9dcb90 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa67b08 -> 5b5e8a9dcd98 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa67b28 -> 5b5e8a9dcd30 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa67b38 -> 5b5e8a9dccc8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa67b48 -> 5b5e8a9dce00 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa67b18 -> 5b5e8a9dcc60 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8a9dc9f0: 5b5e8aa649d8 -> 5b5e8a9dd1a8 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 20.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[LOG] Registered signal for owner 5b5e7f01e4a0: 5b5e8aa600c8 -> 5b5e7f01e4e8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e7f01e4a0: 5b5e8aa60088 -> 5b5e7f01e550 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e7f01e4a0 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5b5e8aa7d2d0 (res 0x5b5e8aa6f420)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa630e8 -> 5b5e8aa887e8 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa7d378 -> 5b5e8aa888b8 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa630d8 -> 5b5e8aa88780 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5b5e8aa64ea0 (res 0x5b5e8aa64f90)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5b5e8aa7d2d0
+[LOG] Searching for matching rules for ArmCord (title: Discord)
+[LOG] Layout predicts size [Vector2D: x: 960, y: 1030] for [Window 5b5e8aa88780: title: ""]
+[LOG] Activate request for surface at 5b5e8aa62e00
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[LOG] Activate request for surface at 5b5e8aa62e00
+[LOG] [Window 5b5e8a9dc9f0: title: "ArmCord", class: ArmCord] unmapped
+[LOG] Unregistered late callbacks XDG
+[LOG] Callback 5b5e8a9dcbb8 -> 5b5e8a9dcbb0, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dcdc0 -> 5b5e8a9dcdb8, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dcd58 -> 5b5e8a9dcd50, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dccf0 -> 5b5e8a9dcce8, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dce28 -> 5b5e8a9dce20, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dcc88 -> 5b5e8a9dcc80, XDG Window Late removed.
+[LOG] Callback 5b5e8a9dd1d0 -> 5b5e8a9dd1c8, XDG Window Late removed.
+[LOG] Framebuffer created, status 36053
+[LOG] Removing last node (dwindle)
+[LOG] On closed window, new focused candidate is [Window nullptr]
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5b5e8a9dcfc8 -> 5b5e8a9dcfc0, Toplevel removed.
+[LOG] Callback 5b5e8a9dcf60 -> 5b5e8a9dcf58, Toplevel removed.
+[LOG] Callback 5b5e8a9dd030 -> 5b5e8a9dd028, Toplevel removed.
+[LOG] Callback 5b5e8a9dd280 -> 5b5e8a9dd278, CWLSurface removed.
+[LOG] Callback 5b5e8a9dd2e8 -> 5b5e8a9dd2e0, CWLSurface removed.
+[LOG] CWLSurface 5b5e8a9dd210 called destroy()
+[LOG] Callback 5b5e8a9dcae8 -> 5b5e8a9dcae0, CWindow removed.
+[LOG] Callback 5b5e8a22b128 -> 5b5e8a22b120, CSubsurface Head removed.
+[LOG] Callback 5b5e7ef518e8 -> 5b5e7ef518e0, CPopup Head removed.
+[LOG] [Window 5b5e8a9dc9f0: title: "ArmCord", class: ] destroyed, queueing.
+[LOG] Callback 5b5e8a9dca18 -> 5b5e8a9dca10, XDG Window removed.
+[LOG] Callback 5b5e8a9dca80 -> 5b5e8a9dca78, XDG Window removed.
+[LOG] Callback 5b5e8a9dcb50 -> 5b5e8a9dcb48, XDG Window removed.
+[ERR] onWindowRemovedTiling node null?
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1280x1536
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa65c00 -> 5b5e8aa88d30 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa65c10 -> 5b5e8aa88d98 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa65c20 -> 5b5e8aa88cc8 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8aa88fa0: 5b5e8aa63118 -> 5b5e8aa88fe8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa88fa0: 5b5e8aa630d8 -> 5b5e8aa89050 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa88fa0 called init()
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa630f8 -> 5b5e8aa88850 (owner: CWindow)
+[LOG] Registered signal for owner 5b5e8a22b030: 5b5e8aa63108 -> 5b5e8a22b100 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5b5e7ef51740: 5b5e8aa7d398 -> 5b5e7ef518c0 (owner: CPopup Head)
+[LOG] Searching for matching rules for ArmCord (title: Discord)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 5b5e8aa62e00, with [Window 5b5e8aa88780: title: "Discord"]
+[LOG] Searching for matching rules for ArmCord (title: Discord)
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa7c6d8 -> 5b5e8aa88920 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa7c668 -> 5b5e8aa88b28 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa7c688 -> 5b5e8aa88ac0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa7c698 -> 5b5e8aa88a58 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa7c6a8 -> 5b5e8aa88b90 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa7c678 -> 5b5e8aa889f0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa88780: 5b5e8aa7d3b8 -> 5b5e8aa88f38 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 20.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for ArmCord (title: Discord)
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[LOG] Cleanup: destroyed a window
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] Searching for matching rules for ArmCord (title: Loading - ArmCord)
+[LOG] Window 5b5e8aa88780 set title to Loading - ArmCord
+[LOG] Searching for matching rules for ArmCord (title: Discord - ArmCord)
+[LOG] Window 5b5e8aa88780 set title to Discord - ArmCord
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] Searching for matching rules for ArmCord (title: Discord | Friends)
+[LOG] Window 5b5e8aa88780 set title to Discord | Friends
+[LOG] Searching for matching rules for ArmCord (title: Friends - ArmCord)
+[LOG] Window 5b5e8aa88780 set title to Friends - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | #showcase | r/unixporn)
+[LOG] Window 5b5e8aa88780 set title to Discord | #showcase | r/unixporn
+[wlr] [xwayland/server.c:214] Restarting Xwayland (lazy)
+[LOG] Searching for matching rules for ArmCord (title: #showcase - ArmCord)
+[LOG] Window 5b5e8aa88780 set title to #showcase - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | #hyprland-issues | Hyprland Cathedral)
+[LOG] Window 5b5e8aa88780 set title to Discord | #hyprland-issues | Hyprland Cathedral
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Window 5b5e8aa88780 set title to #hyprland-issues - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | Friends)
+[LOG] Window 5b5e8aa88780 set title to Discord | Friends
+[LOG] Searching for matching rules for ArmCord (title: Friends - ArmCord)
+[LOG] Window 5b5e8aa88780 set title to Friends - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5b5e8aa5fdb0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 50)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 65293)
+[LOG] Executing foot
+[LOG] Process Created with pid 225939
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 5b5e8a8a8ea0: 5b5e8aa5e608 -> 5b5e8a8a8eb8 (owner: textInput)
+[LOG] Registered signal for owner 5b5e8a8a8ea0: 5b5e8aa5e618 -> 5b5e8a8a8f88 (owner: textInput)
+[LOG] Registered signal for owner 5b5e8a8a8ea0: 5b5e8aa5e628 -> 5b5e8a8a8f20 (owner: textInput)
+[LOG] Registered signal for owner 5b5e8a8a8ea0: 5b5e8aa5e638 -> 5b5e8a8a8ff0 (owner: textInput)
+[LOG] FractionalScaleManager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa7bd10 (res 0x5b5e8aa7c100)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa7c190 (res 0x5b5e8aa64980)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5b5e8a854f50 (res 0x5b5e8a8550a0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8aa7c478 -> 5b5e8aa7d498 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8a854ff8 -> 5b5e8aa7d568 (owner: XDG Window)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8aa7c468 -> 5b5e8aa7d430 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5b5e8a9dda00 (res 0x5b5e8a9ddaf0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5b5e8a854f50
+[LOG] Searching for matching rules for foot (title: )
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 5b5e8aa7d430: title: ""]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5b5e8aa7e7b0 (res 0x5b5e8aa7eba0)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8a9dcee0 -> 5b5e8aa7d9e0 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8a9dcef0 -> 5b5e8aa7da48 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8a9dcf00 -> 5b5e8aa7d978 (owner: Toplevel)
+[LOG] Registered signal for owner 5b5e8aa7dc50: 5b5e8aa7c4a8 -> 5b5e8aa7dc98 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8aa7dc50: 5b5e8aa7c468 -> 5b5e8aa7dd00 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8aa7dc50 called init()
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8aa7c488 -> 5b5e8aa7d500 (owner: CWindow)
+[LOG] Registered signal for owner 5b5e8a050eb0: 5b5e8aa7c498 -> 5b5e8a050f80 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5b5e8a2342e0: 5b5e8aa7eac8 -> 5b5e8a234328 (owner: CWLSurface)
+[LOG] Registered signal for owner 5b5e8a2342e0: 5b5e8aa7ea88 -> 5b5e8a234390 (owner: CWLSurface)
+[LOG] CWLSurface 5b5e8a2342e0 called init()
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8aa7ea88 -> 5b5e8a234138 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8a9ddc10 -> 5b5e8a2340d0 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8aa7eab8 -> 5b5e8a2341a0 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8aa7ea98 -> 5b5e8a234208 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8a2340d0: 5b5e8aa7eaa8 -> 5b5e8a234270 (owner: CSubsurface)
+[LOG] Registered signal for owner 5b5e8aa55d00: 5b5e8a855018 -> 5b5e8aa55e80 (owner: CPopup Head)
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 5b5e8aa7c190, with [Window 5b5e8aa7d430: title: "foot"]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8aa6a408 -> 5b5e8aa7d5d0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8aa6a398 -> 5b5e8aa7d7d8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8aa6a3b8 -> 5b5e8aa7d770 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8aa6a3c8 -> 5b5e8aa7d708 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8aa6a3d8 -> 5b5e8aa7d840 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8aa6a3a8 -> 5b5e8aa7d6a0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5b5e8aa7d430: 5b5e8a855038 -> 5b5e8aa7dbe8 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 20.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] cursorImage request: shape 9
+[LOG] Callback 5b5e7f01e510 -> 5b5e7f01e508, CWLSurface removed.
+[LOG] Callback 5b5e7f01e578 -> 5b5e7f01e570, CWLSurface removed.
+[LOG] CWLSurface 5b5e7f01e4a0 called destroy()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~
+[LOG] Searching for matching rules for foot (title: cd dotfiles)
+[LOG] Window 5b5e8aa7d430 set title to cd dotfiles
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/dotfiles)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~/dotfiles
+[LOG] Searching for matching rules for foot (title: git pull)
+[LOG] Window 5b5e8aa7d430 set title to git pull
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/dotfiles)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~/dotfiles
+[LOG] Searching for matching rules for foot (title: cp -r ~/.config/eww ./config/)
+[LOG] Window 5b5e8aa7d430 set title to cp -r ~/.config/eww ./config/
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/dotfiles)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~/dotfiles
+[LOG] Searching for matching rules for foot (title: cp -r ~/.config/hypr ./config)
+[LOG] Window 5b5e8aa7d430 set title to cp -r ~/.config/hypr ./config
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/dotfiles)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~/dotfiles
+[LOG] Searching for matching rules for foot (title: cd ~/.config)
+[LOG] Window 5b5e8aa7d430 set title to cd ~/.config
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/.config)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~/.config
+[LOG] Searching for matching rules for foot (title: ls --color=tty)
+[LOG] Window 5b5e8aa7d430 set title to ls --color=tty
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/.config)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~/.config
+[LOG] Searching for matching rules for foot (title: ls --color=tty ./eww/scripts)
+[LOG] Window 5b5e8aa7d430 set title to ls --color=tty ./eww/scripts
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/.config)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~/.config
+[LOG] Searching for matching rules for foot (title: cp scripts/* eww/scripts)
+[LOG] Window 5b5e8aa7d430 set title to cp scripts/* eww/scripts
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/.config)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~/.config
+[LOG] Searching for matching rules for foot (title: nvim hypr/hyprland.conf)
+[LOG] Window 5b5e8aa7d430 set title to nvim hypr/hyprland.conf
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/.config)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~/.config
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 30.71µs. Estimated average calc time: 0.08µs.
+[LOG] Using config: /home/harun/.config/hypr/hyprland.conf
+[LOG] ApplyConfigToKeyboard for "power-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e8a0372e0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "video-bus", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e8a0484e0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Video Bus"
+[LOG] ApplyConfigToKeyboard for "power-button-1", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e8a067ed0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "sleep-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e8a04c480's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Sleep Button"
+[LOG] ApplyConfigToKeyboard for "at-translated-set-2-keyboard", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e7f6e0d60's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "AT Translated Set 2 keyboard"
+[LOG] ApplyConfigToKeyboard for "hp-wmi-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e8a2af130's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "HP WMI hotkeys"
+[LOG] ApplyConfigToKeyboard for "wireless-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5b5e8a313620's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Wireless hotkeys"
+[LOG] Applied config to mouse corsair-corsair-gaming-harpoon-rgb-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-touchpad, sens 0.00
+[LOG] Applying monitor rule for eDP-1
+[LOG] Not applying a new rule to eDP-1 because it's already applied!
+[LOG] Searching for matching rules for ArmCord (title: Friends - ArmCord)
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/.config)
+[LOG] Searching for matching rules for foot (title: rm -rf scripts)
+[LOG] Window 5b5e8aa7d430 set title to rm -rf scripts
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/.config)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~/.config
+[LOG] Keybind triggered, calling dispatcher (0, , 269025066)
+[LOG] Executing eww update center-option="powermenu" ; hyprctl dispatch submap powermenu ; eww update reveal-option="powermenu" ; eww update power-reveal=1
+[LOG] Process Created with pid 227912
+[LOG] Changed keybind submap to powermenu
+[LOG] [hookSystem] New hook event registered: submap
+[LOG] Hyprctl: dispatcher submap : powermenu
+[LOG] Keybind triggered, calling dispatcher (0, , 65363)
+[LOG] Executing declare -i val=`eww get power-option` ; eww update power-option=$(( val < 5 ? val + 1 : val )) ; eww update power-reveal=$(( val < 5 ? val + 1 : val ))
+[LOG] Process Created with pid 227921
+[LOG] Keybind triggered, calling dispatcher (0, , 65363)
+[LOG] Executing declare -i val=`eww get power-option` ; eww update power-option=$(( val < 5 ? val + 1 : val )) ; eww update power-reveal=$(( val < 5 ? val + 1 : val ))
+[LOG] Process Created with pid 227926
+[LOG] Keybind triggered, calling dispatcher (0, , 65361)
+[LOG] Executing declare -i val=`eww get power-option` ; eww update power-option=$(( val > 1 ? val - 1 : val )) ; eww update power-reveal=$(( val > 1 ? val - 1 : val ))
+[LOG] Process Created with pid 227930
+[LOG] Keybind triggered, calling dispatcher (0, , 65361)
+[LOG] Executing declare -i val=`eww get power-option` ; eww update power-option=$(( val > 1 ? val - 1 : val )) ; eww update power-reveal=$(( val > 1 ? val - 1 : val ))
+[LOG] Process Created with pid 227934
+[LOG] Keybind triggered, calling dispatcher (0, , 65307)
+[LOG] Executing eww update power-option=1 ; eww update power-reveal=0
+[LOG] Process Created with pid 227939
+[LOG] Keybind triggered, calling dispatcher (0, , 65307)
+[LOG] Executing eww update center-option="workspaces" ; eww update reveal-option="workspaces"
+[LOG] Process Created with pid 227941
+[LOG] Keybind triggered, calling dispatcher (0, , 65307)
+[LOG] Reset active submap to the default one.
+[LOG] Searching for matching rules for foot (title: cd ~/dotfiles)
+[LOG] Window 5b5e8aa7d430 set title to cd ~/dotfiles
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/dotfiles)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~/dotfiles
+[LOG] Searching for matching rules for foot (title: cp -r ~/.config/eww ./config/)
+[LOG] Window 5b5e8aa7d430 set title to cp -r ~/.config/eww ./config/
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~/dotfiles)
+[LOG] Window 5b5e8aa7d430 set title to harun@archlinux:~/dotfiles
+[LOG] Searching for matching rules for foot (title: cp -r ~/.config/hypr ./config)
+[LOG] Window 5b5e8aa7d430 set title to cp -r ~/.config/hypr ./config

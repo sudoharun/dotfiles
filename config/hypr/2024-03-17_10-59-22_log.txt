@@ -1,0 +1,361 @@
+[LOG] Executing /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+[LOG] Process Created with pid 820
+[LOG] Executing hyprpm reload -n
+[LOG] Process Created with pid 824
+[LOG] Executing hypridle
+[LOG] Process Created with pid 827
+[LOG] Executing tail -f /tmp/hypr/e68c07d8096ee5f83e29508c8762279ab80a924b_1710673160/hyprland.log &> ~/.config/hypr/$(date '+%F_%H-%M-%S_log.txt')
+[LOG] Process Created with pid 830
+[LOG] ApplyConfigToKeyboard for "power-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 62698e67ed60's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "video-bus", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 62698e6950e0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Video Bus"
+[LOG] ApplyConfigToKeyboard for "power-button-1", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 62698e7ae230's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "sleep-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 62698e813620's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Sleep Button"
+[LOG] ApplyConfigToKeyboard for "at-translated-set-2-keyboard", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 62698e800e10's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "AT Translated Set 2 keyboard"
+[LOG] ApplyConfigToKeyboard for "hp-wmi-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 62698e8deb30's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "HP WMI hotkeys"
+[LOG] ApplyConfigToKeyboard for "wireless-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 62698e9438b0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Wireless hotkeys"
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-touchpad, sens 0.00
+[LOG] Applying monitor rule for eDP-1
+[LOG] Not applying a new rule to eDP-1 because it's already applied!
+[LOG] [hookSystem] New hook event registered: render
+[wlr] [render/swapchain.c:106] Allocating new swapchain buffer
+[wlr] [render/allocator/gbm.c:144] Allocated 1920x1080 GBM buffer with format XR24 (0x34325258), modifier Y_TILED_CCS (0x0100000000000004)
+[LOG] CRenderbuffer: wlr_egl_create_image_from_dmabuf found at 7046f860cee0
+[LOG] Registered signal for owner 62698e9863e0: 62698e94b9c8 -> 62698e9863e8 (owner: CRenderbuffer)
+[LOG] Monitor eDP-1 -> destroyed all render data
+[LOG] Shaders initialized successfully.
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] [hookSystem] New hook event registered: tick
+[LOG] Registered signal for owner 62698eedddc0: 62698e996038 -> 62698eedddc8 (owner: CRenderbuffer)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698f0ed9e0 (res 0x62698f0eddd0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698e9e3170 (res 0x62698e9e3560)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698f0f0600 (res 0x62698f0f09f0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698f0f0ba0 (res 0x62698f0f0f90)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698f0f2170 (res 0x62698f0f2560)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698f0f2710 (res 0x62698f0f2b00)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698e9e3710 (res 0x62698e9e3b00)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x62698f0f0020 (res 0x62698f0f0140)
+[LOG] Registered signal for owner 62698f0f01d0: 62698e9e39e8 -> 62698f0f0608 (owner: layerSurface)
+[LOG] Registered signal for owner 62698f0f01d0: 62698f0f00e8 -> 62698f0f04d0 (owner: layerSurface)
+[LOG] Registered signal for owner 62698f0f01d0: 62698e9e39f8 -> 62698f0f0538 (owner: layerSurface)
+[LOG] Registered signal for owner 62698f0f01d0: 62698e9e3a08 -> 62698f0f05a0 (owner: layerSurface)
+[LOG] Registered signal for owner 62698ef9eff0: 62698f0f00f8 -> 62698ef9f170 (owner: CPopup Head)
+[LOG] LayerSurface 62698f0f0020 (namespace bar layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 62698e9e3710 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 62698e9e3710 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698f0f07f0 (res 0x62698f0f0be0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x62698f0f0c70 (res 0x62698f0f0d90)
+[LOG] Registered signal for owner 62698f094140: 62698f0f0ac8 -> 62698f094578 (owner: layerSurface)
+[LOG] Registered signal for owner 62698f094140: 62698f0f0d38 -> 62698f094440 (owner: layerSurface)
+[LOG] Registered signal for owner 62698f094140: 62698f0f0ad8 -> 62698f0944a8 (owner: layerSurface)
+[LOG] Registered signal for owner 62698f094140: 62698f0f0ae8 -> 62698f094510 (owner: layerSurface)
+[LOG] Registered signal for owner 62698e684c00: 62698f0f0d48 -> 62698e684d80 (owner: CPopup Head)
+[LOG] LayerSurface 62698f0f0c70 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 62698f0f07f0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 62698f0f07f0 in setPreferredTransformForSurface
+[LOG] LayerSurface 62698f0f0020 mapped
+[LOG] Registered signal for owner 62698f0f03b0: 62698e9e3a28 -> 62698f0f03f8 (owner: CWLSurface)
+[LOG] Registered signal for owner 62698f0f03b0: 62698e9e39e8 -> 62698f0f0460 (owner: CWLSurface)
+[LOG] CWLSurface 62698f0f03b0 called init()
+[LOG] [hookSystem] New hook event registered: openLayer
+[LOG] LayerSurface 62698f0f0c70 mapped
+[LOG] Registered signal for owner 62698f094320: 62698f0f0b08 -> 62698f094368 (owner: CWLSurface)
+[LOG] Registered signal for owner 62698f094320: 62698f0f0ac8 -> 62698f0943d0 (owner: CWLSurface)
+[LOG] CWLSurface 62698f094320 called init()
+[LOG] Socket2 accepted a new client at FD 70
+[LOG] [hookSystem] New hook event registered: keyPress
+[LOG] Keybind triggered, calling dispatcher (64, , 65293)
+[LOG] Executing foot
+[LOG] Process Created with pid 1130
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 62698f053f20: 62698f097628 -> 62698f053f38 (owner: textInput)
+[LOG] Registered signal for owner 62698f053f20: 62698f097638 -> 62698f054008 (owner: textInput)
+[LOG] Registered signal for owner 62698f053f20: 62698f097648 -> 62698f053fa0 (owner: textInput)
+[LOG] Registered signal for owner 62698f053f20: 62698f097658 -> 62698f054070 (owner: textInput)
+[LOG] FractionalScaleManager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698f097b00 (res 0x62698f097ef0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698f094760 (res 0x62698f094b50)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x62698f094e00 (res 0x62698f094f50)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 62698f10eb60: 62698f094a48 -> 62698f10ebc8 (owner: XDG Window)
+[LOG] Registered signal for owner 62698f10eb60: 62698f094ea8 -> 62698f10ec98 (owner: XDG Window)
+[LOG] Registered signal for owner 62698f10eb60: 62698f094a38 -> 62698f10eb60 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x62698f0ee450 (res 0x62698f095430)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x62698f094e00
+[LOG] Searching for matching rules for foot (title: )
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 62698f10eb60: title: ""]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698f110ef0 (res 0x62698f0954c0)
+[LOG] Registered signal for owner 62698f10eb60: 62698f113400 -> 62698f10f110 (owner: Toplevel)
+[LOG] Registered signal for owner 62698f10eb60: 62698f113410 -> 62698f10f178 (owner: Toplevel)
+[LOG] Registered signal for owner 62698f10eb60: 62698f113420 -> 62698f10f0a8 (owner: Toplevel)
+[LOG] Registered signal for owner 62698f10f380: 62698f094a78 -> 62698f10f3c8 (owner: CWLSurface)
+[LOG] Registered signal for owner 62698f10f380: 62698f094a38 -> 62698f10f430 (owner: CWLSurface)
+[LOG] CWLSurface 62698f10f380 called init()
+[LOG] Registered signal for owner 62698f10eb60: 62698f094a58 -> 62698f10ec30 (owner: CWindow)
+[LOG] Registered signal for owner 62698ec31cd0: 62698f094a68 -> 62698ec31da0 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 62698e7f4360: 62698f111208 -> 62698e7f43a8 (owner: CWLSurface)
+[LOG] Registered signal for owner 62698e7f4360: 62698f1111c8 -> 62698e7f4410 (owner: CWLSurface)
+[LOG] CWLSurface 62698e7f4360 called init()
+[LOG] Registered signal for owner 62698e7f4150: 62698f1111c8 -> 62698e7f41b8 (owner: CSubsurface)
+[LOG] Registered signal for owner 62698e7f4150: 62698f0955e0 -> 62698e7f4150 (owner: CSubsurface)
+[LOG] Registered signal for owner 62698e7f4150: 62698f1111f8 -> 62698e7f4220 (owner: CSubsurface)
+[LOG] Registered signal for owner 62698e7f4150: 62698f1111d8 -> 62698e7f4288 (owner: CSubsurface)
+[LOG] Registered signal for owner 62698e7f4150: 62698f1111e8 -> 62698e7f42f0 (owner: CSubsurface)
+[LOG] Registered signal for owner 62698e64dd50: 62698f094ec8 -> 62698e64ded0 (owner: CPopup Head)
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 62698f094760, with [Window 62698f10eb60: title: "foot"]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] [hookSystem] New hook event registered: activeWindow
+[LOG] Registered signal for owner 62698f10eb60: 62698f095348 -> 62698f10ed00 (owner: XDG Window Late)
+[LOG] Registered signal for owner 62698f10eb60: 62698f0952d8 -> 62698f10ef08 (owner: XDG Window Late)
+[LOG] Registered signal for owner 62698f10eb60: 62698f0952f8 -> 62698f10eea0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 62698f10eb60: 62698f095308 -> 62698f10ee38 (owner: XDG Window Late)
+[LOG] Registered signal for owner 62698f10eb60: 62698f095318 -> 62698f10ef70 (owner: XDG Window Late)
+[LOG] Registered signal for owner 62698f10eb60: 62698f0952e8 -> 62698f10edd0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 62698f10eb60: 62698f094ee8 -> 62698f10f318 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [hookSystem] New hook event registered: windowTitle
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f10eb60 set title to harun@fedora:~
+[LOG] Searching for matching rules for foot (title: yay -S greetd greetd-tuigreet)
+[LOG] Window 62698f10eb60 set title to yay -S greetd greetd-tuigreet
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f10eb60 set title to harun@fedora:~
+[LOG] Searching for matching rules for foot (title: sudo nvim /etc/makepkg.conf)
+[LOG] Window 62698f10eb60 set title to sudo nvim /etc/makepkg.conf
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f10eb60 set title to harun@fedora:~
+[LOG] Searching for matching rules for foot (title: sudo nvim /etc/pacman.conf)
+[LOG] Window 62698f10eb60 set title to sudo nvim /etc/pacman.conf
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f10eb60 set title to harun@fedora:~
+[LOG] Searching for matching rules for foot (title: yay -Syy)
+[LOG] Window 62698f10eb60 set title to yay -Syy
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f10eb60 set title to harun@fedora:~
+[LOG] Searching for matching rules for foot (title: sudo nvim /etc/greetd/config.toml)
+[LOG] Window 62698f10eb60 set title to sudo nvim /etc/greetd/config.toml
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f10eb60 set title to harun@fedora:~
+[LOG] Searching for matching rules for foot (title: sudo usermod -a -G video harun)
+[LOG] Window 62698f10eb60 set title to sudo usermod -a -G video harun
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f10eb60 set title to harun@fedora:~
+[LOG] Searching for matching rules for foot (title: sudo nvim /etc/systemd/logind.conf)
+[LOG] Window 62698f10eb60 set title to sudo nvim /etc/systemd/logind.conf
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f10eb60 set title to harun@fedora:~
+[LOG] Searching for matching rules for foot (title: yay swww)
+[LOG] Window 62698f10eb60 set title to yay swww
+[LOG] Keybind triggered, calling dispatcher (64, , 50)
+[LOG] [hookSystem] New hook event registered: workspace
+[LOG] [hookSystem] New hook event registered: mouseMove
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 65293)
+[LOG] Executing foot
+[LOG] Process Created with pid 9086
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 62698ef9aea0: 62698f118eb8 -> 62698ef9aeb8 (owner: textInput)
+[LOG] Registered signal for owner 62698ef9aea0: 62698f118ec8 -> 62698ef9af88 (owner: textInput)
+[LOG] Registered signal for owner 62698ef9aea0: 62698f118ed8 -> 62698ef9af20 (owner: textInput)
+[LOG] Registered signal for owner 62698ef9aea0: 62698f118ee8 -> 62698ef9aff0 (owner: textInput)
+[LOG] FractionalScaleManager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698f1198d0 (res 0x62698f119cc0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698f119de0 (res 0x62698f11a1d0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x62698f11a380 (res 0x62698f11a4d0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 62698f11f010: 62698f11a0c8 -> 62698f11f078 (owner: XDG Window)
+[LOG] Registered signal for owner 62698f11f010: 62698f11a428 -> 62698f11f148 (owner: XDG Window)
+[LOG] Registered signal for owner 62698f11f010: 62698f11a0b8 -> 62698f11f010 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x62698f115950 (res 0x62698f115a40)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x62698f11a380
+[LOG] Searching for matching rules for foot (title: )
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 62698f11f010: title: ""]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x62698f117430 (res 0x62698f117820)
+[LOG] Registered signal for owner 62698f11f010: 62698f114a50 -> 62698f11f5c0 (owner: Toplevel)
+[LOG] Registered signal for owner 62698f11f010: 62698f114a60 -> 62698f11f628 (owner: Toplevel)
+[LOG] Registered signal for owner 62698f11f010: 62698f114a70 -> 62698f11f558 (owner: Toplevel)
+[LOG] Registered signal for owner 62698f11f830: 62698f11a0f8 -> 62698f11f878 (owner: CWLSurface)
+[LOG] Registered signal for owner 62698f11f830: 62698f11a0b8 -> 62698f11f8e0 (owner: CWLSurface)
+[LOG] CWLSurface 62698f11f830 called init()
+[LOG] Registered signal for owner 62698f11f010: 62698f11a0d8 -> 62698f11f0e0 (owner: CWindow)
+[LOG] Registered signal for owner 62698e7b6e20: 62698f11a0e8 -> 62698e7b6ef0 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 62698e731340: 62698f117748 -> 62698e731388 (owner: CWLSurface)
+[LOG] Registered signal for owner 62698e731340: 62698f117708 -> 62698e7313f0 (owner: CWLSurface)
+[LOG] CWLSurface 62698e731340 called init()
+[LOG] Registered signal for owner 62698e731130: 62698f117708 -> 62698e731198 (owner: CSubsurface)
+[LOG] Registered signal for owner 62698e731130: 62698f115b60 -> 62698e731130 (owner: CSubsurface)
+[LOG] Registered signal for owner 62698e731130: 62698f117738 -> 62698e731200 (owner: CSubsurface)
+[LOG] Registered signal for owner 62698e731130: 62698f117718 -> 62698e731268 (owner: CSubsurface)
+[LOG] Registered signal for owner 62698e731130: 62698f117728 -> 62698e7312d0 (owner: CSubsurface)
+[LOG] Registered signal for owner 62698f115ea0: 62698f11a448 -> 62698f116020 (owner: CPopup Head)
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 62698f119de0, with [Window 62698f11f010: title: "foot"]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] Registered signal for owner 62698f11f010: 62698f117348 -> 62698f11f1b0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 62698f11f010: 62698f1172d8 -> 62698f11f3b8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 62698f11f010: 62698f1172f8 -> 62698f11f350 (owner: XDG Window Late)
+[LOG] Registered signal for owner 62698f11f010: 62698f117308 -> 62698f11f2e8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 62698f11f010: 62698f117318 -> 62698f11f420 (owner: XDG Window Late)
+[LOG] Registered signal for owner 62698f11f010: 62698f1172e8 -> 62698f11f280 (owner: XDG Window Late)
+[LOG] Registered signal for owner 62698f11f010: 62698f11a468 -> 62698f11f7c8 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f11f010 set title to harun@fedora:~
+[LOG] Searching for matching rules for foot (title: cd dotfiles)
+[LOG] Window 62698f11f010 set title to cd dotfiles
+[LOG] Searching for matching rules for foot (title: harun@fedora:~/dotfiles)
+[LOG] Window 62698f11f010 set title to harun@fedora:~/dotfiles
+[LOG] Searching for matching rules for foot (title: nvim install.py)
+[LOG] Window 62698f11f010 set title to nvim install.py
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [hookSystem] New hook event registered: mouseButton
+[LOG] [hookSystem] New hook event registered: mouseAxis
+[wlr] [types/wlr_data_control_v1.c:50] Ignoring duplicate MIME type offer text/plain
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@fedora:~/dotfiles)
+[LOG] Window 62698f11f010 set title to harun@fedora:~/dotfiles
+[LOG] Searching for matching rules for foot (title: yay -Q | grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox} )
+[LOG] Window 62698f11f010 set title to yay -Q | grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox} 
+[LOG] Searching for matching rules for foot (title: harun@fedora:~/dotfiles)
+[LOG] Window 62698f11f010 set title to harun@fedora:~/dotfiles
+[LOG] Searching for matching rules for foot (title: nvim install.py)
+[LOG] Window 62698f11f010 set title to nvim install.py
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 49)
+[LOG] Searching for matching rules for foot (title: nvim install.py)
+[LOG] Set keyboard focus to surface 62698f094760, with [Window 62698f10eb60: title: "yay swww"]
+[LOG] Searching for matching rules for foot (title: yay swww)
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f10eb60 set title to harun@fedora:~
+[LOG] Searching for matching rules for foot (title: yay -Rnsc $(yay -Qdtq))
+[LOG] Window 62698f10eb60 set title to yay -Rnsc $(yay -Qdtq)
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f10eb60 set title to harun@fedora:~
+[LOG] Searching for matching rules for foot (title: yay -Sc)
+[LOG] Window 62698f10eb60 set title to yay -Sc
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f10eb60 set title to harun@fedora:~
+[LOG] Searching for matching rules for foot (title: reboot)
+[LOG] Window 62698f10eb60 set title to reboot
+[LOG] Searching for matching rules for foot (title: harun@fedora:~)
+[LOG] Window 62698f10eb60 set title to harun@fedora:~

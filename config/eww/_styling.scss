@@ -71,16 +71,38 @@
 
 .icon { padding: 0px 4px; }
 
-.corners-left {
+.corners-left-alt {
+  margin: 0px;
+  border: 0px;
   background-color: transparent;
   padding: 12px;
   border-radius: 12px;
   box-shadow: -12px -12px 0px 0px $bg-color;
 }
 
-.corners-right {
+.corners-right-alt {
+  margin: 0px;
+  border: 0px;
   background-color: transparent;
   padding: 12px;
   border-radius: 12px;
   box-shadow: 12px -12px 0px 0px $bg-color;
+}
+
+.corners-left {
+  margin: 0px;
+  border: 0px;
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: -12px 12px 0px 0px $bg-color;
+}
+
+.corners-right {
+  margin: 0px;
+  border: 0px;
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 12px 12px 0px 0px $bg-color;
 }

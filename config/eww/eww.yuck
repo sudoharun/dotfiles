@@ -79,42 +79,55 @@
       :duration "250ms"
     (label :text "Lock"))))
 
-(defwidget logout []
+(defwidget suspend []
   (box
-    :class {power-option == 2 ? "pwr-active pwr-widget" : "pwr-inactive widget"}
+    :class {power-option == 2 ? "pwr-active pwr-widget" : "pwr-inactive pwr-widget"}
     :orientation "h"
     :spacing 10
     :space-evenly false
-    (image :path {power-option == 2 ? "images/logout-selected.svg" : "images/logout.svg"} :image-width 20 :image-height 20)
+    (image :path {power-option == 2 ? "images/suspend-selected.svg" : "images/suspend.svg"} :image-width 20 :image-height 20)
     (revealer
       :transition "slideright"
       :reveal {power-reveal == 2 ? true : false}
       :duration "250ms"
-    (label :text "Logout"))))
+    (label :text "Suspend"))))
 
-(defwidget reboot []
+(defwidget logout []
   (box
     :class {power-option == 3 ? "pwr-active pwr-widget" : "pwr-inactive widget"}
     :orientation "h"
     :spacing 10
     :space-evenly false
-    (image :path {power-option == 3 ? "images/reboot-selected.svg" : "images/reboot.svg"} :image-width 20 :image-height 20)
+    (image :path {power-option == 3 ? "images/logout-selected.svg" : "images/logout.svg"} :image-width 20 :image-height 20)
     (revealer
       :transition "slideright"
       :reveal {power-reveal == 3 ? true : false}
+      :duration "250ms"
+    (label :text "Logout"))))
+
+(defwidget reboot []
+  (box
+    :class {power-option == 4 ? "pwr-active pwr-widget" : "pwr-inactive widget"}
+    :orientation "h"
+    :spacing 10
+    :space-evenly false
+    (image :path {power-option == 4 ? "images/reboot-selected.svg" : "images/reboot.svg"} :image-width 20 :image-height 20)
+    (revealer
+      :transition "slideright"
+      :reveal {power-reveal == 4 ? true : false}
       :duration "250ms"
     (label :text "Reboot"))))
 
 (defwidget shutdown []
   (box
-    :class {power-option == 4 ? "pwr-active pwr-widget" : "pwr-inactive pwr-widget"}
+    :class {power-option == 5 ? "pwr-active pwr-widget" : "pwr-inactive pwr-widget"}
     :orientation "h"
     :spacing 10
     :space-evenly false
-    (image :path {power-option == 4 ? "images/shutdown-selected.svg" : "images/shutdown.svg"} :image-width 20 :image-height 20)
+    (image :path {power-option == 5 ? "images/shutdown-selected.svg" : "images/shutdown.svg"} :image-width 20 :image-height 20)
     (revealer
       :transition "slideright"
-      :reveal {power-reveal == 4 ? true : false}
+      :reveal {power-reveal == 5 ? true : false}
       :duration "250ms"
     (label :text "Shutdown"))))
 
@@ -125,6 +138,7 @@
     :space-evenly false
     :orientation "h"
     (lock)
+    (suspend)
     (logout)
     (reboot)
     (shutdown)))
@@ -218,11 +232,11 @@
   :exclusive true
   :namespace "bar"
   :geometry (geometry
-              :x "0px"
-              :y "0%"
-              :width "100%"
-              :height "0%"
-              :anchor "top center")
+    :x "0px"
+    :y "0%"
+    :width "100%"
+    :height "0%"
+    :anchor "bottom center")
   (bar))
 
 (defwidget corners []
@@ -237,15 +251,40 @@
       :hexpand false
       :halign "end")))
 
+(defwidget corners-alt []
+  (box
+    :class "corners-box-alt"
+    (box
+      :class "corners-left-alt"
+      :hexpand false
+      :halign "start")
+    (box
+      :class "corners-right-alt"
+      :hexpand false
+      :halign "end")))
+
 (defwindow corners
   :stacking "fg"
   :monitor "0"
   :exclusive false
   :namespace "corners"
   :geometry (geometry
-              :x "0px"
-              :y "6px"
-              :width "100%"
-              :height "0%"
-              :anchor "top center")
+    :x "0px"
+    :y "6px"
+    :width "100%"
+    :height "0%"
+    :anchor "bottom center")
   (corners))
+
+(defwindow corners_alt
+  :stacking "fg"
+  :monitor "0"
+  :exclusive false
+  :namespace "corners"
+  :geometry (geometry
+    :x "0px"
+    :y "0px"
+    :width "100%"
+    :height "0%"
+    :anchor "top center")
+  (corners-alt))

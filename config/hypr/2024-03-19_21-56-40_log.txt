@@ -1,0 +1,2361 @@
+[LOG] Executing hyprpm reload -n
+[LOG] Process Created with pid 1216
+[LOG] Executing hypridle
+[LOG] Process Created with pid 1218
+[LOG] Executing tail -f /tmp/hypr/e68c07d8096ee5f83e29508c8762279ab80a924b_1710885397/hyprland.log &> ~/.config/hypr/$(date '+%F_%H-%M-%S_log.txt')
+[LOG] Process Created with pid 1221
+[LOG] Executing foot bash -c "sudo /usr/bin/powertop --auto-tune"
+[LOG] Process Created with pid 1224
+[LOG] ApplyConfigToKeyboard for "power-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60dc3835d030's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "video-bus", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60dc2da05e90's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Video Bus"
+[LOG] ApplyConfigToKeyboard for "power-button-1", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60dc3848d9c0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "sleep-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60dc384f2ba0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Sleep Button"
+[LOG] ApplyConfigToKeyboard for "at-translated-set-2-keyboard", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60dc384e0d20's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "AT Translated Set 2 keyboard"
+[LOG] ApplyConfigToKeyboard for "wireless-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60dc385bdb50's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Wireless hotkeys"
+[LOG] ApplyConfigToKeyboard for "hp-wmi-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60dc38620ff0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "HP WMI hotkeys"
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-touchpad, sens 0.00
+[LOG] Applying monitor rule for eDP-1
+[LOG] Not applying a new rule to eDP-1 because it's already applied!
+[LOG] [hookSystem] New hook event registered: render
+[wlr] [render/swapchain.c:106] Allocating new swapchain buffer
+[wlr] [render/allocator/gbm.c:144] Allocated 1920x1080 GBM buffer with format XR24 (0x34325258), modifier Y_TILED_CCS (0x0100000000000004)
+[LOG] CRenderbuffer: wlr_egl_create_image_from_dmabuf found at 7f661f2ecee0
+[LOG] Registered signal for owner 60dc38382e20: 60dc3855e338 -> 60dc38382e28 (owner: CRenderbuffer)
+[LOG] Monitor eDP-1 -> destroyed all render data
+[LOG] Shaders initialized successfully.
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] [hookSystem] New hook event registered: tick
+[LOG] Registered signal for owner 60dc38b64cf0: 60dc386732f8 -> 60dc38b64cf8 (owner: CRenderbuffer)
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 60dc38545e70: 60dc38b8f5b8 -> 60dc38545e88 (owner: textInput)
+[LOG] Registered signal for owner 60dc38545e70: 60dc38b8f5c8 -> 60dc38545f58 (owner: textInput)
+[LOG] Registered signal for owner 60dc38545e70: 60dc38b8f5d8 -> 60dc38545ef0 (owner: textInput)
+[LOG] Registered signal for owner 60dc38545e70: 60dc38b8f5e8 -> 60dc38545fc0 (owner: textInput)
+[LOG] FractionalScaleManager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38cee170 (res 0x60dc38cee560)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc386c0710 (res 0x60dc38ce80e0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x60dc38ce62b0 (res 0x60dc38ce7660)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 60dc38d48d40: 60dc386c09f8 -> 60dc38d48da8 (owner: XDG Window)
+[LOG] Registered signal for owner 60dc38d48d40: 60dc38ce6358 -> 60dc38d48e78 (owner: XDG Window)
+[LOG] Registered signal for owner 60dc38d48d40: 60dc386c09e8 -> 60dc38d48d40 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x60dc38ce8f50 (res 0x60dc38ce92e0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x60dc38ce62b0
+[LOG] Searching for matching rules for foot (title: )
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 60dc38d48d40: title: ""]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38cef600 (res 0x60dc38cef9f0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38cee5f0 (res 0x60dc38ce65e0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38cee9e0 (res 0x60dc38ceedd0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d4ce60 (res 0x60dc38d4d250)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d4d400 (res 0x60dc38d4d7f0)
+[LOG] Registered signal for owner 60dc38d48d40: 60dc38d56590 -> 60dc38d492f0 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d48d40: 60dc38d565a0 -> 60dc38d49358 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d48d40: 60dc38d565b0 -> 60dc38d49288 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d49560: 60dc386c0a28 -> 60dc38d495a8 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc38d49560: 60dc386c09e8 -> 60dc38d49610 (owner: CWLSurface)
+[LOG] CWLSurface 60dc38d49560 called init()
+[LOG] Registered signal for owner 60dc38d48d40: 60dc386c0a08 -> 60dc38d48e10 (owner: CWindow)
+[LOG] Registered signal for owner 60dc384d3950: 60dc386c0a18 -> 60dc384d3a20 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 60dc38539310: 60dc38cef918 -> 60dc38539358 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc38539310: 60dc38cef8d8 -> 60dc385393c0 (owner: CWLSurface)
+[LOG] CWLSurface 60dc38539310 called init()
+[LOG] Registered signal for owner 60dc38539100: 60dc38cef8d8 -> 60dc38539168 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc38539100: 60dc38ce8260 -> 60dc38539100 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc38539100: 60dc38cef908 -> 60dc385391d0 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc38539100: 60dc38cef8e8 -> 60dc38539238 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc38539100: 60dc38cef8f8 -> 60dc385392a0 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc38bbfc00: 60dc38ce6378 -> 60dc38bbfd80 (owner: CPopup Head)
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 60dc386c0710, with [Window 60dc38d48d40: title: "foot"]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] [hookSystem] New hook event registered: activeWindow
+[LOG] Registered signal for owner 60dc38d48d40: 60dc38ce4738 -> 60dc38d48ee0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d48d40: 60dc38ce46c8 -> 60dc38d490e8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d48d40: 60dc38ce46e8 -> 60dc38d49080 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d48d40: 60dc38ce46f8 -> 60dc38d49018 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d48d40: 60dc38ce4708 -> 60dc38d49150 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d48d40: 60dc38ce46d8 -> 60dc38d48fb0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d48d40: 60dc38ce6398 -> 60dc38d494f8 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 20.00000], window size: [1880.00000, 1040.00000]
+[LOG] Searching for matching rules for foot (title: foot)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d57cd0 (res 0x60dc38d4b030)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d56800 (res 0x60dc38d56bf0)
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d63e70 (res 0x60dc38d64260)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x60dc38d642f0 (res 0x60dc38d64410)
+[LOG] Registered signal for owner 60dc38d588b0: 60dc38d64148 -> 60dc38d58ce8 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d588b0: 60dc38d643b8 -> 60dc38d58bb0 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d588b0: 60dc38d64158 -> 60dc38d58c18 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d588b0: 60dc38d64168 -> 60dc38d58c80 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38b70530: 60dc38d643c8 -> 60dc38b706b0 (owner: CPopup Head)
+[LOG] LayerSurface 60dc38d642f0 (namespace swww layer 0) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 60dc38d63e70 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 60dc38d63e70 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d4b670 (res 0x60dc38cea110)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x60dc38d4b0f0 (res 0x60dc38d4a640)
+[LOG] Registered signal for owner 60dc38d58ed0: 60dc38d4b948 -> 60dc38d59308 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d58ed0: 60dc38d4b1b8 -> 60dc38d591d0 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d58ed0: 60dc38d4b958 -> 60dc38d59238 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d58ed0: 60dc38d4b968 -> 60dc38d592a0 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38b7af70: 60dc38d4b1c8 -> 60dc38b7b0f0 (owner: CPopup Head)
+[LOG] LayerSurface 60dc38d4b0f0 (namespace bar layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 60dc38d4b670 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 60dc38d4b670 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d57810 (res 0x60dc38ce7810)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x60dc38d4bf10 (res 0x60dc38d57c00)
+[LOG] Registered signal for owner 60dc38d594f0: 60dc38d57ae8 -> 60dc38d59928 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d594f0: 60dc38d4bfd8 -> 60dc38d597f0 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d594f0: 60dc38d57af8 -> 60dc38d59858 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d594f0: 60dc38d57b08 -> 60dc38d598c0 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38baedb0: 60dc38d4bfe8 -> 60dc38baef30 (owner: CPopup Head)
+[LOG] LayerSurface 60dc38d4bf10 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 60dc38d57810 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 60dc38d57810 in setPreferredTransformForSurface
+[LOG] LayerSurface 60dc38d4b0f0 mapped
+[LOG] Registered signal for owner 60dc38d590b0: 60dc38d4b988 -> 60dc38d590f8 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc38d590b0: 60dc38d4b948 -> 60dc38d59160 (owner: CWLSurface)
+[LOG] CWLSurface 60dc38d590b0 called init()
+[LOG] [hookSystem] New hook event registered: openLayer
+[LOG] LayerSurface 60dc38d4bf10 mapped
+[LOG] Registered signal for owner 60dc38d596d0: 60dc38d57b28 -> 60dc38d59718 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc38d596d0: 60dc38d57ae8 -> 60dc38d59780 (owner: CWLSurface)
+[LOG] CWLSurface 60dc38d596d0 called init()
+[LOG] Socket2 accepted a new client at FD 76
+[LOG] LayerSurface 60dc38d642f0 mapped
+[LOG] Registered signal for owner 60dc38d58a90: 60dc38d64188 -> 60dc38d58ad8 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc38d58a90: 60dc38d64148 -> 60dc38d58b40 (owner: CWLSurface)
+[LOG] CWLSurface 60dc38d58a90 called init()
+[LOG] [hookSystem] New hook event registered: keyPress
+[LOG] Keybind triggered, calling dispatcher (0, , 269025042)
+[LOG] Executing pamixer -t
+[LOG] Process Created with pid 1636
+[LOG] [Window 60dc38d48d40: title: "foot", class: foot] unmapped
+[LOG] Unregistered late callbacks XDG
+[LOG] Callback 60dc38d48f08 -> 60dc38d48f00, XDG Window Late removed.
+[LOG] Callback 60dc38d49110 -> 60dc38d49108, XDG Window Late removed.
+[LOG] Callback 60dc38d490a8 -> 60dc38d490a0, XDG Window Late removed.
+[LOG] Callback 60dc38d49040 -> 60dc38d49038, XDG Window Late removed.
+[LOG] Callback 60dc38d49178 -> 60dc38d49170, XDG Window Late removed.
+[LOG] Callback 60dc38d48fd8 -> 60dc38d48fd0, XDG Window Late removed.
+[LOG] Callback 60dc38d49520 -> 60dc38d49518, XDG Window Late removed.
+[LOG] Framebuffer created, status 36053
+[LOG] Removing last node (dwindle)
+[LOG] On closed window, new focused candidate is [Window nullptr]
+[LOG] [hookSystem] New hook event registered: mouseMove
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 60dc38d49318 -> 60dc38d49310, Toplevel removed.
+[LOG] Callback 60dc38d492b0 -> 60dc38d492a8, Toplevel removed.
+[LOG] Callback 60dc38d49380 -> 60dc38d49378, Toplevel removed.
+[LOG] Callback 60dc38d495d0 -> 60dc38d495c8, CWLSurface removed.
+[LOG] Callback 60dc38d49638 -> 60dc38d49630, CWLSurface removed.
+[LOG] CWLSurface 60dc38d49560 called destroy()
+[LOG] Callback 60dc38d48e38 -> 60dc38d48e30, CWindow removed.
+[LOG] Callback 60dc384d3a48 -> 60dc384d3a40, CSubsurface Head removed.
+[LOG] Callback 60dc385391f8 -> 60dc385391f0, CSubsurface removed.
+[LOG] Callback 60dc38539190 -> 60dc38539188, CSubsurface removed.
+[LOG] Callback 60dc38539128 -> 60dc38539120, CSubsurface removed.
+[LOG] Callback 60dc38539380 -> 60dc38539378, CWLSurface removed.
+[LOG] Callback 60dc385393e8 -> 60dc385393e0, CWLSurface removed.
+[LOG] CWLSurface 60dc38539310 called destroy()
+[LOG] Callback 60dc385392c8 -> 60dc385392c0, CSubsurface removed.
+[LOG] Callback 60dc38539260 -> 60dc38539258, CSubsurface removed.
+[LOG] Callback 60dc38bbfda8 -> 60dc38bbfda0, CPopup Head removed.
+[LOG] [Window 60dc38d48d40: title: "foot", class: ] destroyed, queueing.
+[LOG] Callback 60dc38d48d68 -> 60dc38d48d60, XDG Window removed.
+[LOG] Callback 60dc38d48dd0 -> 60dc38d48dc8, XDG Window removed.
+[LOG] Callback 60dc38d48ea0 -> 60dc38d48e98, XDG Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Cleanup: destroyed a window
+[LOG] Keybind triggered, calling dispatcher (64, , 53)
+[LOG] [hookSystem] New hook event registered: workspace
+[LOG] Destroying workspace ID 1
+[LOG] [hookSystem] New hook event registered: destroyWorkspace
+[LOG] Keybind triggered, calling dispatcher (64, , 114)
+[LOG] Executing wofi -i -t foot
+[LOG] Process Created with pid 1729
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc386c0710 (res 0x60dc38b81730)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc386c6330 (res 0x60dc38b7f230)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38cee170 (res 0x60dc38cee560)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x60dc38ce75d0 (res 0x60dc38ce80e0)
+[LOG] New LayerSurface has no preferred monitor. Assigning Monitor eDP-1
+[LOG] Registered signal for owner 60dc38d580c0: 60dc38cee448 -> 60dc38d584f8 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d580c0: 60dc38ce7698 -> 60dc38d583c0 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d580c0: 60dc38cee458 -> 60dc38d58428 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d580c0: 60dc38cee468 -> 60dc38d58490 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38bbfc00: 60dc38ce76a8 -> 60dc38bbfd80 (owner: CPopup Head)
+[LOG] LayerSurface 60dc38ce75d0 (namespace wofi layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 60dc38cee170 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 60dc38cee170 in setPreferredTransformForSurface
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 60dc38cee170 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 60dc38cee170 in setPreferredTransformForSurface
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 60dc38cbb7f0: 60dc38b7e818 -> 60dc38cbb808 (owner: textInput)
+[LOG] Registered signal for owner 60dc38cbb7f0: 60dc38b7e828 -> 60dc38cbb8d8 (owner: textInput)
+[LOG] Registered signal for owner 60dc38cbb7f0: 60dc38b7e838 -> 60dc38cbb870 (owner: textInput)
+[LOG] Registered signal for owner 60dc38cbb7f0: 60dc38b7e848 -> 60dc38cbb940 (owner: textInput)
+[LOG] LayerSurface 60dc38ce75d0 mapped
+[LOG] Registered signal for owner 60dc38d582a0: 60dc38cee488 -> 60dc38d582e8 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc38d582a0: 60dc38cee448 -> 60dc38d58350 (owner: CWLSurface)
+[LOG] CWLSurface 60dc38d582a0 called init()
+[LOG] Set keyboard focus to surface 60dc38cee170
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6648 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6608 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] LayerSurface 60dc38ce75d0 unmapped
+[LOG] [hookSystem] New hook event registered: closeLayer
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 60dc38d58310 -> 60dc38d58308, CWLSurface removed.
+[LOG] Callback 60dc38d58378 -> 60dc38d58370, CWLSurface removed.
+[LOG] CWLSurface 60dc38d582a0 called destroy()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] LayerSurface 60dc38ce75d0 destroyed
+[LOG] Callback 60dc38bbfda8 -> 60dc38bbfda0, CPopup Head removed.
+[LOG] Callback 60dc38d58520 -> 60dc38d58518, layerSurface removed.
+[LOG] Callback 60dc38d583e8 -> 60dc38d583e0, layerSurface removed.
+[LOG] Callback 60dc38d58450 -> 60dc38d58448, layerSurface removed.
+[LOG] Callback 60dc38d584b8 -> 60dc38d584b0, layerSurface removed.
+[LOG] Cleanup: destroyed a layersurface
+[LOG] FractionalScaleManager bound successfully!
+[LOG] TextInputV1Manager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc386c6330 (res 0x60dc38b7fe30)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d49600 (res 0x60dc38ce49d0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38cee170 (res 0x60dc38cee560)
+[wlr] [xwayland/server.c:107] Starting Xwayland on :0
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d717d0 (res 0x60dc38d71bc0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x60dc38d486a0 (res 0x60dc38d487f0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d71ab8 -> 60dc38d74048 (owner: XDG Window)
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d48748 -> 60dc38d74118 (owner: XDG Window)
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d71aa8 -> 60dc38d73fe0 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x60dc38d71480 (res 0x60dc38d58800)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x60dc38d486a0
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 60dc38d73fe0: title: ""]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d75820 (res 0x60dc38d75c10)
+[wlr] [xwayland/server.c:272] Xserver is ready
+[wlr] [xwayland/xwm.c:1964] xfixes version: 6.0
+[wlr] [xwayland/xwm.c:1985] xres version: 1.2
+[LOG] cursorImage request: surface 0
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d8d3d0 (res 0x60dc38d7ecd0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d8eb00 (res 0x60dc38d8eef0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d8f0a0 (res 0x60dc38d8f490)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x60dc38d8f640 (res 0x60dc38d8f790)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 60dc38d840a0: 60dc38d8d6b8 -> 60dc38d84108 (owner: XDG Window)
+[LOG] Registered signal for owner 60dc38d840a0: 60dc38d8f6e8 -> 60dc38d841d8 (owner: XDG Window)
+[LOG] Registered signal for owner 60dc38d840a0: 60dc38d8d6a8 -> 60dc38d840a0 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x60dc38d85510 (res 0x60dc38d85600)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x60dc38d8f640
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 60dc38d840a0: title: ""]
+[LOG] [Window 60dc38d840a0: title: "", class: ] destroyed, queueing.
+[LOG] Callback 60dc38d840c8 -> 60dc38d840c0, XDG Window removed.
+[LOG] Callback 60dc38d84130 -> 60dc38d84128, XDG Window removed.
+[LOG] Callback 60dc38d84200 -> 60dc38d841f8, XDG Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Unmapped [Window 60dc38d840a0: title: ""] removed instantly
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d94460 (res 0x60dc38d94850)
+[LOG] Activate request for surface at 60dc38d717d0
+[LOG] Activate request for surface at 60dc38d717d0
+[LOG] Activate request for surface at 60dc38d8d3d0
+[LOG] ScreencopyProtocolManager bound successfully!
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d95010 -> 60dc38d74590 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d95020 -> 60dc38d745f8 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d95030 -> 60dc38d74528 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d74800: 60dc38d71ae8 -> 60dc38d74848 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc38d74800: 60dc38d71aa8 -> 60dc38d748b0 (owner: CWLSurface)
+[LOG] CWLSurface 60dc38d74800 called init()
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d71ac8 -> 60dc38d740b0 (owner: CWindow)
+[LOG] Registered signal for owner 60dc384d3950: 60dc38d71ad8 -> 60dc384d3a20 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 60dc38bbfc00: 60dc38d48768 -> 60dc38bbfd80 (owner: CPopup Head)
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 60dc38d717d0, with [Window 60dc38d73fe0: title: "ArmCord"]
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d71da8 -> 60dc38d74180 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d71d38 -> 60dc38d74388 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d71d58 -> 60dc38d74320 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d71d68 -> 60dc38d742b8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d71d78 -> 60dc38d743f0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d71d48 -> 60dc38d74250 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d73fe0: 60dc38d48788 -> 60dc38d74798 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6648 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6608 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] Keybind triggered, calling dispatcher (0, , 269025026)
+[LOG] Executing brillo -A 5 ; echo 1 >> /home/harun/.config/eww/files/brightness ; : > /home/harun/.config/eww/files/brightness
+[LOG] Process Created with pid 1984
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x60dc38d49430 (res 0x60dc38d848e0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d8d6b8 -> 60dc38d9b9f8 (owner: XDG Window)
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d494d8 -> 60dc38d9bac8 (owner: XDG Window)
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d8d6a8 -> 60dc38d9b990 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x60dc38d9ce00 (res 0x60dc38d9cef0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x60dc38d49430
+[LOG] Searching for matching rules for ArmCord (title: Discord)
+[LOG] Layout predicts size [Vector2D: x: 960, y: 1030] for [Window 60dc38d9b990: title: ""]
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1280x1024
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d9b040 -> 60dc38d9bf40 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d9b050 -> 60dc38d9bfa8 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d9b060 -> 60dc38d9bed8 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d9c1b0: 60dc38d8d6e8 -> 60dc38d9c1f8 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc38d9c1b0: 60dc38d8d6a8 -> 60dc38d9c260 (owner: CWLSurface)
+[LOG] CWLSurface 60dc38d9c1b0 called init()
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d8d6c8 -> 60dc38d9ba60 (owner: CWindow)
+[LOG] Registered signal for owner 60dc38539100: 60dc38d8d6d8 -> 60dc385391d0 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 60dc38d47ca0: 60dc38d494f8 -> 60dc38d47e20 (owner: CPopup Head)
+[LOG] Searching for matching rules for ArmCord (title: Discord)
+[LOG] OPENINGON: [Node 60dc38d47670: workspace: 5, pos: [0.00, 50.00], size: [1920.00, 1030.00], window: 60dc38d73fe0], Monitor: 0
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] Set keyboard focus to surface 60dc38d8d3d0, with [Window 60dc38d9b990: title: "Discord"]
+[LOG] Searching for matching rules for ArmCord (title: Discord)
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d85758 -> 60dc38d9bb30 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d856e8 -> 60dc38d9bd38 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d85708 -> 60dc38d9bcd0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d85718 -> 60dc38d9bc68 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d85728 -> 60dc38d9bda0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d856f8 -> 60dc38d9bc00 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d9b990: 60dc38d49518 -> 60dc38d9c148 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [935.00000, 990.00000]
+[LOG] Searching for matching rules for ArmCord (title: ArmCord)
+[LOG] Searching for matching rules for ArmCord (title: Discord)
+[LOG] Activate request for surface at 60dc38d8d3d0
+[wlr] [types/wlr_xdg_activation_v1.c:119] Rejecting token commit request: surface doesn't have focus
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] [Window 60dc38d73fe0: title: "ArmCord", class: ArmCord] unmapped
+[LOG] Unregistered late callbacks XDG
+[LOG] Callback 60dc38d741a8 -> 60dc38d741a0, XDG Window Late removed.
+[LOG] Callback 60dc38d743b0 -> 60dc38d743a8, XDG Window Late removed.
+[LOG] Callback 60dc38d74348 -> 60dc38d74340, XDG Window Late removed.
+[LOG] Callback 60dc38d742e0 -> 60dc38d742d8, XDG Window Late removed.
+[LOG] Callback 60dc38d74418 -> 60dc38d74410, XDG Window Late removed.
+[LOG] Callback 60dc38d74278 -> 60dc38d74270, XDG Window Late removed.
+[LOG] Callback 60dc38d747c0 -> 60dc38d747b8, XDG Window Late removed.
+[LOG] Framebuffer created, status 36053
+[LOG] Unmapped was not focused, ignoring a refocus.
+[LOG] Callback 60dc38d745b8 -> 60dc38d745b0, Toplevel removed.
+[LOG] Callback 60dc38d74550 -> 60dc38d74548, Toplevel removed.
+[LOG] Callback 60dc38d74620 -> 60dc38d74618, Toplevel removed.
+[LOG] Callback 60dc38d74870 -> 60dc38d74868, CWLSurface removed.
+[LOG] Callback 60dc38d748d8 -> 60dc38d748d0, CWLSurface removed.
+[LOG] CWLSurface 60dc38d74800 called destroy()
+[LOG] Callback 60dc38d740d8 -> 60dc38d740d0, CWindow removed.
+[LOG] Searching for matching rules for ArmCord (title: Discord)
+[LOG] Callback 60dc384d3a48 -> 60dc384d3a40, CSubsurface Head removed.
+[LOG] Callback 60dc38bbfda8 -> 60dc38bbfda0, CPopup Head removed.
+[LOG] [Window 60dc38d73fe0: title: "ArmCord", class: ] destroyed, queueing.
+[LOG] Callback 60dc38d74008 -> 60dc38d74000, XDG Window removed.
+[LOG] Callback 60dc38d74070 -> 60dc38d74068, XDG Window removed.
+[LOG] Callback 60dc38d74140 -> 60dc38d74138, XDG Window removed.
+[ERR] onWindowRemovedTiling node null?
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/wlr_xdg_activation_v1.c:305] Rejecting activate request: unknown token
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1280x1536
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[LOG] Cleanup: destroyed a window
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] Keybind triggered, calling dispatcher (64, , 113)
+[LOG] [Window 60dc38d9b990: title: "Discord", class: ArmCord] unmapped
+[LOG] Unregistered late callbacks XDG
+[LOG] Callback 60dc38d9bb58 -> 60dc38d9bb50, XDG Window Late removed.
+[LOG] Callback 60dc38d9bd60 -> 60dc38d9bd58, XDG Window Late removed.
+[LOG] Callback 60dc38d9bcf8 -> 60dc38d9bcf0, XDG Window Late removed.
+[LOG] Callback 60dc38d9bc90 -> 60dc38d9bc88, XDG Window Late removed.
+[LOG] Callback 60dc38d9bdc8 -> 60dc38d9bdc0, XDG Window Late removed.
+[LOG] Callback 60dc38d9bc28 -> 60dc38d9bc20, XDG Window Late removed.
+[LOG] Callback 60dc38d9c170 -> 60dc38d9c168, XDG Window Late removed.
+[LOG] Framebuffer created, status 36053
+[LOG] Removing last node (dwindle)
+[LOG] On closed window, new focused candidate is [Window nullptr]
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 60dc38d9bf68 -> 60dc38d9bf60, Toplevel removed.
+[LOG] Callback 60dc38d9bf00 -> 60dc38d9bef8, Toplevel removed.
+[LOG] Callback 60dc38d9bfd0 -> 60dc38d9bfc8, Toplevel removed.
+[LOG] Callback 60dc38d9c220 -> 60dc38d9c218, CWLSurface removed.
+[LOG] Callback 60dc38d9c288 -> 60dc38d9c280, CWLSurface removed.
+[LOG] CWLSurface 60dc38d9c1b0 called destroy()
+[LOG] Callback 60dc38d9ba88 -> 60dc38d9ba80, CWindow removed.
+[LOG] Callback 60dc385391f8 -> 60dc385391f0, CSubsurface Head removed.
+[LOG] Callback 60dc38d47e48 -> 60dc38d47e40, CPopup Head removed.
+[LOG] [Window 60dc38d9b990: title: "Discord", class: ] destroyed, queueing.
+[LOG] Callback 60dc38d9b9b8 -> 60dc38d9b9b0, XDG Window removed.
+[LOG] Callback 60dc38d9ba20 -> 60dc38d9ba18, XDG Window removed.
+[LOG] Callback 60dc38d9baf0 -> 60dc38d9bae8, XDG Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] Keybind triggered, calling dispatcher (64, , 114)
+[LOG] Executing wofi -i -t foot
+[LOG] Process Created with pid 2083
+[LOG] Cleanup: destroyed a window
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d49190 (res 0x60dc38d487a0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d858a0 (res 0x60dc38d85c90)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d74510 (res 0x60dc38d74900)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x60dc38d74d30 (res 0x60dc38d74e50)
+[LOG] New LayerSurface has no preferred monitor. Assigning Monitor eDP-1
+[LOG] Registered signal for owner 60dc38da14c0: 60dc38d747e8 -> 60dc38da18f8 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38da14c0: 60dc38d74df8 -> 60dc38da17c0 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38da14c0: 60dc38d747f8 -> 60dc38da1828 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38da14c0: 60dc38d74808 -> 60dc38da1890 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d47ca0: 60dc38d74e08 -> 60dc38d47e20 (owner: CPopup Head)
+[LOG] LayerSurface 60dc38d74d30 (namespace wofi layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 60dc38d74510 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 60dc38d74510 in setPreferredTransformForSurface
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 60dc38b6a340: 60dc38d74fa8 -> 60dc38b6a358 (owner: textInput)
+[LOG] Registered signal for owner 60dc38b6a340: 60dc38d74fb8 -> 60dc38b6a428 (owner: textInput)
+[LOG] Registered signal for owner 60dc38b6a340: 60dc38d74fc8 -> 60dc38b6a3c0 (owner: textInput)
+[LOG] Registered signal for owner 60dc38b6a340: 60dc38d74fd8 -> 60dc38b6a490 (owner: textInput)
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 60dc38d74510 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 60dc38d74510 in setPreferredTransformForSurface
+[LOG] LayerSurface 60dc38d74d30 mapped
+[LOG] Registered signal for owner 60dc38da16a0: 60dc38d74828 -> 60dc38da16e8 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc38da16a0: 60dc38d747e8 -> 60dc38da1750 (owner: CWLSurface)
+[LOG] CWLSurface 60dc38da16a0 called init()
+[LOG] Set keyboard focus to surface 60dc38d74510
+[LOG] LayerSurface 60dc38d74d30 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 60dc38da1710 -> 60dc38da1708, CWLSurface removed.
+[LOG] Callback 60dc38da1778 -> 60dc38da1770, CWLSurface removed.
+[LOG] CWLSurface 60dc38da16a0 called destroy()
+[LOG] LayerSurface 60dc38d74d30 destroyed
+[LOG] Callback 60dc38d47e48 -> 60dc38d47e40, CPopup Head removed.
+[LOG] Callback 60dc38da1920 -> 60dc38da1918, layerSurface removed.
+[LOG] Callback 60dc38da17e8 -> 60dc38da17e0, layerSurface removed.
+[LOG] Callback 60dc38da1850 -> 60dc38da1848, layerSurface removed.
+[LOG] Callback 60dc38da18b8 -> 60dc38da18b0, layerSurface removed.
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x60dc38d9cbc0 (res 0x60dc38d4adc0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d8d6b8 -> 60dc38d9d4f8 (owner: XDG Window)
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d9cc68 -> 60dc38d9d5c8 (owner: XDG Window)
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d8d6a8 -> 60dc38d9d490 (owner: XDG Window)
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x60dc38d9ce00 (res 0x60dc38d85020)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x60dc38d9cbc0
+[LOG] Searching for matching rules for ArmCord (title: Friends - ArmCord)
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 60dc38d9d490: title: ""]
+[LOG] Activate request for surface at 60dc38d8d3d0
+[LOG] Activate request for surface at 60dc38d8d3d0
+[LOG] Activate request for surface at 60dc38d8d3d0
+[LOG] FractionalScaleManager bound successfully!
+[LOG] TextInputV1Manager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d73fe0 (res 0x60dc38d8ddd0)
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d49470 -> 60dc38d9da40 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d49480 -> 60dc38d9daa8 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d49490 -> 60dc38d9d9d8 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d9dcb0: 60dc38d8d6e8 -> 60dc38d9dcf8 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc38d9dcb0: 60dc38d8d6a8 -> 60dc38d9dd60 (owner: CWLSurface)
+[LOG] CWLSurface 60dc38d9dcb0 called init()
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d8d6c8 -> 60dc38d9d560 (owner: CWindow)
+[LOG] Registered signal for owner 60dc38539100: 60dc38d8d6d8 -> 60dc385391d0 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 60dc38d47ca0: 60dc38d9cc88 -> 60dc38d47e20 (owner: CPopup Head)
+[LOG] Searching for matching rules for ArmCord (title: Friends - ArmCord)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 60dc38d8d3d0, with [Window 60dc38d9d490: title: "Friends - ArmCord"]
+[LOG] Searching for matching rules for ArmCord (title: Friends - ArmCord)
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d71e28 -> 60dc38d9d630 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d71db8 -> 60dc38d9d838 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d71dd8 -> 60dc38d9d7d0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d71de8 -> 60dc38d9d768 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d71df8 -> 60dc38d9d8a0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d71dc8 -> 60dc38d9d700 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d9d490: 60dc38d9cca8 -> 60dc38d9dc48 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for ArmCord (title: Friends - ArmCord)
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d84a00 (res 0x60dc38d84df0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38da2570 (res 0x60dc38da2960)
+[LOG] Cleanup: destroyed a layersurface
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 2304x1536
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d9baa0 (res 0x60dc38b8ea00)
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [hookSystem] New hook event registered: mouseButton
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [hookSystem] New hook event registered: windowTitle
+[LOG] Searching for matching rules for ArmCord (title: (2) Discord | #hyprland-issues | Hyprland Cathedral)
+[LOG] Window 60dc38d9d490 set title to (2) Discord | #hyprland-issues | Hyprland Cathedral
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #hyprland-issues - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [xwayland/server.c:214] Restarting Xwayland (lazy)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [hookSystem] New hook event registered: mouseAxis
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: (1) Discord | #hyprland-issues | Hyprland Cathedral)
+[LOG] Window 60dc38d9d490 set title to (1) Discord | #hyprland-issues | Hyprland Cathedral
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #hyprland-issues - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 49)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[LOG] Keybind triggered, calling dispatcher (64, , 102)
+[LOG] Executing floorp
+[LOG] Process Created with pid 3321
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d73fe0 (res 0x60dc38d73340)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38da1d90 (res 0x60dc38da2180)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d84c30 (res 0x60dc38d9cef0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d9cef0 (res 0x60dc38d9d2e0)
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 60dc38684af0: 60dc38d84f38 -> 60dc38684b08 (owner: textInput)
+[LOG] Registered signal for owner 60dc38684af0: 60dc38d84f48 -> 60dc38684bd8 (owner: textInput)
+[LOG] Registered signal for owner 60dc38684af0: 60dc38d84f58 -> 60dc38684b70 (owner: textInput)
+[LOG] Registered signal for owner 60dc38684af0: 60dc38d84f68 -> 60dc38684c40 (owner: textInput)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d71360 (res 0x60dc38d71750)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x60dc38d9d010 (res 0x60dc38d9d160)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38d71648 -> 60dc38d74c08 (owner: XDG Window)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38d9d0b8 -> 60dc38d74cd8 (owner: XDG Window)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38d71638 -> 60dc38d74ba0 (owner: XDG Window)
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 60dc38d74ba0: title: ""]
+[wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x60dc38d4ac10 (res 0x60dc38d71b10)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38da0a00 (res 0x60dc38da0df0)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38da1800 -> 60dc38d75150 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38da1810 -> 60dc38d751b8 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38da1820 -> 60dc38d750e8 (owner: Toplevel)
+[LOG] Registered signal for owner 60dc38d753c0: 60dc38d71678 -> 60dc38d75408 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc38d753c0: 60dc38d71638 -> 60dc38d75470 (owner: CWLSurface)
+[LOG] CWLSurface 60dc38d753c0 called init()
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38d71658 -> 60dc38d74c70 (owner: CWindow)
+[LOG] Registered signal for owner 60dc384d3950: 60dc38d71668 -> 60dc384d3a20 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 60dc37f13b30: 60dc38da0d18 -> 60dc37f13b78 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc37f13b30: 60dc38da0cd8 -> 60dc37f13be0 (owner: CWLSurface)
+[LOG] CWLSurface 60dc37f13b30 called init()
+[LOG] Registered signal for owner 60dc37f13920: 60dc38da0cd8 -> 60dc37f13988 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc37f13920: 60dc38d9d440 -> 60dc37f13920 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc37f13920: 60dc38da0d08 -> 60dc37f139f0 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc37f13920: 60dc38da0ce8 -> 60dc37f13a58 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc37f13920: 60dc38da0cf8 -> 60dc37f13ac0 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc38bbfc00: 60dc38d9d0d8 -> 60dc38bbfd80 (owner: CPopup Head)
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 60dc38d71360, with [Window 60dc38d74ba0: title: "Ablaze Floorp"]
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38d71938 -> 60dc38d74d40 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38d718c8 -> 60dc38d74f48 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38d718e8 -> 60dc38d74ee0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38d718f8 -> 60dc38d74e78 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38d71908 -> 60dc38d74fb0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38d718d8 -> 60dc38d74e10 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60dc38d74ba0: 60dc38d9d0f8 -> 60dc38d75358 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] cursorImage request: surface 60dc38da1d90
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38da20a8 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38da2068 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 960x1080
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d87210 (res 0x60dc38d87600)
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] Searching for matching rules for floorp (title: FAQ – Hyprland Wiki — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to FAQ – Hyprland Wiki — Ablaze Floorp
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d8a110 (res 0x60dc386911f0)
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d8abd0 (res 0x60dc38d8afc0)
+[LOG] Starting a swipe from 1
+[LOG] Searching for matching rules for floorp (title: FAQ – Hyprland Wiki — Ablaze Floorp)
+[LOG] Set keyboard focus to surface 60dc38d8d3d0, with [Window 60dc38d9d490: title: "#hyprland-issues - ArmCord"]
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Ended swipe to the right
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6648 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6608 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d8c9b0 (res 0x60dc38d8cda0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x60dc38d8c470 (res 0x60dc38d8c590)
+[LOG] Registered signal for owner 60dc38d8b050: 60dc38d8cc88 -> 60dc38d8b488 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d8b050: 60dc38d8c538 -> 60dc38d8b350 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d8b050: 60dc38d8cc98 -> 60dc38d8b3b8 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d8b050: 60dc38d8cca8 -> 60dc38d8b420 (owner: layerSurface)
+[LOG] Registered signal for owner 60dc38d8ce30: 60dc38d8c548 -> 60dc38d8cfb0 (owner: CPopup Head)
+[LOG] LayerSurface 60dc38d8c470 (namespace notifications layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 60dc38d8c9b0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 60dc38d8c9b0 in setPreferredTransformForSurface
+[LOG] LayerSurface 60dc38d8c470 mapped
+[LOG] Registered signal for owner 60dc38d8b230: 60dc38d8ccc8 -> 60dc38d8b278 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc38d8b230: 60dc38d8cc88 -> 60dc38d8b2e0 (owner: CWLSurface)
+[LOG] CWLSurface 60dc38d8b230 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Ablaze Floorp
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: FAQ – Hyprland Wiki — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to FAQ – Hyprland Wiki — Ablaze Floorp
+[LOG] cursorImage request: surface 60dc38cee9e0
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38ceecf8 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38ceecb8 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6648 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6608 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38cee9e0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] cursorImage request: surface 60dc38cee9e0
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38ceecf8 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38ceecb8 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6648 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6608 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38cee9e0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38cee9e0
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38ceecf8 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38ceecb8 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38cee9e0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d88cd0 (res 0x60dc38d88670)
+[LOG] cursorImage request: surface 60dc38d88cd0
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38d88fe8 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38d88fa8 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38da9f80 (res 0x60dc38d45c00)
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Ablaze Floorp
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6648 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6608 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] Searching for matching rules for floorp (title: Instagram — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Instagram — Ablaze Floorp
+[LOG] Starting a swipe from 5
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Set keyboard focus to surface 60dc38d71360, with [Window 60dc38d74ba0: title: "Instagram — Ablaze Floorp"]
+[LOG] Searching for matching rules for floorp (title: Instagram — Ablaze Floorp)
+[LOG] Ended swipe to the left
+[LOG] cursorImage request: surface 60dc38da1d90
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38da20a8 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38da2068 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] LayerSurface 60dc38d8c470 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 60dc38d8b2a0 -> 60dc38d8b298, CWLSurface removed.
+[LOG] Callback 60dc38d8b308 -> 60dc38d8b300, CWLSurface removed.
+[LOG] CWLSurface 60dc38d8b230 called destroy()
+[LOG] LayerSurface 60dc38d8c470 destroyed
+[LOG] Callback 60dc38d8cfd8 -> 60dc38d8cfd0, CPopup Head removed.
+[LOG] Callback 60dc38d8b4b0 -> 60dc38d8b4a8, layerSurface removed.
+[LOG] Callback 60dc38d8b378 -> 60dc38d8b370, layerSurface removed.
+[LOG] Callback 60dc38d8b3e0 -> 60dc38d8b3d8, layerSurface removed.
+[LOG] Callback 60dc38d8b448 -> 60dc38d8b440, layerSurface removed.
+[LOG] Cleanup: destroyed a layersurface
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: Instagram • Direct — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Instagram • Direct — Ablaze Floorp
+[LOG] Searching for matching rules for floorp (title: Inbox • Direct — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Inbox • Direct — Ablaze Floorp
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: FAQ – Hyprland Wiki — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to FAQ – Hyprland Wiki — Ablaze Floorp
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_xdg_activation_v1.c:46] Activation token '6edc0d183308ffb08995a730a99bdd46' has expired
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Ablaze Floorp
+[LOG] Searching for matching rules for floorp (title: Monitors – Hyprland Wiki — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Monitors – Hyprland Wiki — Ablaze Floorp
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d8b240 (res 0x60dc38d59b10)
+[wlr] [types/data_device/wlr_data_source.c:197] Ignoring duplicate MIME type offer text/plain;charset=utf-8
+[wlr] [types/data_device/wlr_data_source.c:197] Ignoring duplicate MIME type offer text/plain
+[wlr] [types/data_device/wlr_data_source.c:190] Offering additional MIME type after wl_data_device.set_selection
+[wlr] [types/wlr_primary_selection_v1.c:147] Ignoring duplicate MIME type offer text/plain;charset=utf-8
+[wlr] [types/wlr_primary_selection_v1.c:147] Ignoring duplicate MIME type offer text/plain
+[LOG] Starting a swipe from 1
+[LOG] Searching for matching rules for floorp (title: Monitors – Hyprland Wiki — Ablaze Floorp)
+[LOG] Set keyboard focus to surface 60dc38d8d3d0, with [Window 60dc38d9d490: title: "#hyprland-issues - ArmCord"]
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Ended swipe to the right
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6648 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6608 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Starting a swipe from 5
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] Tried to set prev workspace to the same as current one
+[LOG] Starting a swipe from 5
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Set keyboard focus to surface 60dc38d71360, with [Window 60dc38d74ba0: title: "Monitors – Hyprland Wiki — Ablaze Floorp"]
+[LOG] Searching for matching rules for floorp (title: Monitors – Hyprland Wiki — Ablaze Floorp)
+[LOG] Ended swipe to the left
+[LOG] cursorImage request: surface 60dc38da1d90
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38da20a8 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38da2068 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[LOG] Starting a swipe from 1
+[LOG] Searching for matching rules for floorp (title: Monitors – Hyprland Wiki — Ablaze Floorp)
+[LOG] Set keyboard focus to surface 60dc38d8d3d0, with [Window 60dc38d9d490: title: "#hyprland-issues - ArmCord"]
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Ended swipe to the right
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6648 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6608 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: (2) Discord | #hyprland-issues | Hyprland Cathedral)
+[LOG] Window 60dc38d9d490 set title to (2) Discord | #hyprland-issues | Hyprland Cathedral
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #hyprland-issues - ArmCord
+[LOG] Searching for matching rules for ArmCord (title: (1) Discord | #hyprland-issues | Hyprland Cathedral)
+[LOG] Window 60dc38d9d490 set title to (1) Discord | #hyprland-issues | Hyprland Cathedral
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #hyprland-issues - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Starting a swipe from 5
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Set keyboard focus to surface 60dc38d71360, with [Window 60dc38d74ba0: title: "Monitors – Hyprland Wiki — Ablaze Floorp"]
+[LOG] Searching for matching rules for floorp (title: Monitors – Hyprland Wiki — Ablaze Floorp)
+[LOG] Ended swipe to the left
+[LOG] cursorImage request: surface 60dc38da1d90
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38da20a8 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38da2068 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d866b0 (res 0x60dc38d8c080)
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Ablaze Floorp
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[LOG] Searching for matching rules for floorp (title: Startpage Search Results — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Startpage Search Results — Ablaze Floorp
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Ablaze Floorp
+[LOG] Searching for matching rules for floorp (title: Reddit - Dive into anything — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Reddit - Dive into anything — Ablaze Floorp
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] Searching for matching rules for floorp (title: Two monitors, main monitor not working. : r/hyprland — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Two monitors, main monitor not working. : r/hyprland — Ablaze Floorp
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Ablaze Floorp
+[LOG] Searching for matching rules for floorp (title: Startpage Search Results — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Startpage Search Results — Ablaze Floorp
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Ablaze Floorp
+[LOG] Searching for matching rules for floorp (title: Dual Monitor: Main Monitor turns black/off on boot · Issue #2780 · hyprwm/Hyprland — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Dual Monitor: Main Monitor turns black/off on boot · Issue #2780 · hyprwm/Hyprland — Ablaze Floorp
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Ablaze Floorp
+[LOG] Searching for matching rules for floorp (title: Startpage Search Results — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Startpage Search Results — Ablaze Floorp
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Ablaze Floorp
+[LOG] Searching for matching rules for floorp (title: Faq | Hyprland Wiki — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Faq | Hyprland Wiki — Ablaze Floorp
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_primary_selection_v1.c:147] Ignoring duplicate MIME type offer text/plain;charset=utf-8
+[wlr] [types/wlr_primary_selection_v1.c:147] Ignoring duplicate MIME type offer text/plain
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/data_device/wlr_data_source.c:197] Ignoring duplicate MIME type offer text/plain;charset=utf-8
+[wlr] [types/data_device/wlr_data_source.c:197] Ignoring duplicate MIME type offer text/plain
+[wlr] [types/data_device/wlr_data_source.c:190] Offering additional MIME type after wl_data_device.set_selection
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/data_device/wlr_data_source.c:197] Ignoring duplicate MIME type offer text/plain;charset=utf-8
+[wlr] [types/data_device/wlr_data_source.c:197] Ignoring duplicate MIME type offer text/plain
+[wlr] [types/data_device/wlr_data_source.c:190] Offering additional MIME type after wl_data_device.set_selection
+[wlr] [types/wlr_primary_selection_v1.c:147] Ignoring duplicate MIME type offer text/plain;charset=utf-8
+[wlr] [types/wlr_primary_selection_v1.c:147] Ignoring duplicate MIME type offer text/plain
+[LOG] Starting a swipe from 1
+[LOG] Searching for matching rules for floorp (title: Faq | Hyprland Wiki — Ablaze Floorp)
+[LOG] Set keyboard focus to surface 60dc38d8d3d0, with [Window 60dc38d9d490: title: "#hyprland-issues - ArmCord"]
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Ended swipe to the right
+[LOG] cursorImage request: surface 60dc386c6330
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6648 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc386c6608 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: (1) Discord | #announcements | Hyprland Cathedral)
+[LOG] Window 60dc38d9d490 set title to (1) Discord | #announcements | Hyprland Cathedral
+[LOG] Searching for matching rules for ArmCord (title: #announcements - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #announcements - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | #announcements | Hyprland Cathedral)
+[LOG] Window 60dc38d9d490 set title to Discord | #announcements | Hyprland Cathedral
+[LOG] Searching for matching rules for ArmCord (title: #announcements - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #announcements - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[LOG] Searching for matching rules for ArmCord (title: Discord | #hyprcursor | Hyprland Cathedral)
+[LOG] Window 60dc38d9d490 set title to Discord | #hyprcursor | Hyprland Cathedral
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: #hyprcursor - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #hyprcursor - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | #hyprlock | Hyprland Cathedral)
+[LOG] Window 60dc38d9d490 set title to Discord | #hyprlock | Hyprland Cathedral
+[LOG] Searching for matching rules for ArmCord (title: #hyprlock - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #hyprlock - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | #hyprpaper | Hyprland Cathedral)
+[LOG] Window 60dc38d9d490 set title to Discord | #hyprpaper | Hyprland Cathedral
+[LOG] Searching for matching rules for ArmCord (title: #hyprpaper - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #hyprpaper - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | #hyprland-help | Hyprland Cathedral)
+[LOG] Window 60dc38d9d490 set title to Discord | #hyprland-help | Hyprland Cathedral
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-help - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #hyprland-help - ArmCord
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | #hyprland-issues | Hyprland Cathedral)
+[LOG] Window 60dc38d9d490 set title to Discord | #hyprland-issues | Hyprland Cathedral
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: #hyprland-issues - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #hyprland-issues - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | "Wallpaper :sob:" | r/unixporn)
+[LOG] Window 60dc38d9d490 set title to Discord | "Wallpaper :sob:" | r/unixporn
+[LOG] Searching for matching rules for ArmCord (title: "Wallpaper :sob:" - ArmCord)
+[LOG] Window 60dc38d9d490 set title to "Wallpaper :sob:" - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | #showcase | r/unixporn)
+[LOG] Window 60dc38d9d490 set title to Discord | #showcase | r/unixporn
+[LOG] Searching for matching rules for ArmCord (title: #showcase - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #showcase - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | #wallpapers | r/unixporn)
+[LOG] Window 60dc38d9d490 set title to Discord | #wallpapers | r/unixporn
+[LOG] Searching for matching rules for ArmCord (title: #wallpapers - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #wallpapers - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | #showcase | r/unixporn)
+[LOG] Window 60dc38d9d490 set title to Discord | #showcase | r/unixporn
+[LOG] Searching for matching rules for ArmCord (title: #showcase - ArmCord)
+[LOG] Window 60dc38d9d490 set title to #showcase - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for ArmCord (title: Discord | Friends)
+[LOG] Window 60dc38d9d490 set title to Discord | Friends
+[LOG] Searching for matching rules for ArmCord (title: Friends - ArmCord)
+[LOG] Window 60dc38d9d490 set title to Friends - ArmCord
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc386c6330
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Starting a swipe from 5
+[LOG] Searching for matching rules for ArmCord (title: Friends - ArmCord)
+[LOG] Set keyboard focus to surface 60dc38d71360, with [Window 60dc38d74ba0: title: "Faq | Hyprland Wiki — Ablaze Floorp"]
+[LOG] Searching for matching rules for floorp (title: Faq | Hyprland Wiki — Ablaze Floorp)
+[LOG] Ended swipe to the left
+[LOG] cursorImage request: surface 60dc38da1d90
+[LOG] Callback 60dc2d343918 -> 60dc2d343910, CWLSurface removed.
+[LOG] Callback 60dc2d343980 -> 60dc2d343978, CWLSurface removed.
+[LOG] CWLSurface 60dc2d3438a8 called destroy()
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38da20a8 -> 60dc2d3438f0 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d3438a8: 60dc38da2068 -> 60dc2d343958 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d3438a8 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38d866b0 (res 0x60dc38d9cb30)
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Ablaze Floorp
+[LOG] Searching for matching rules for floorp (title: Snapchat for Web. — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Snapchat for Web. — Ablaze Floorp
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[LOG] Searching for matching rules for floorp (title: Snapchat — Ablaze Floorp)
+[LOG] Window 60dc38d74ba0 set title to Snapchat — Ablaze Floorp
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [backend/drm/atomic.c:78] connector eDP-1: Atomic commit failed: Device or resource busy
+[wlr] [backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38dad290 (res 0x60dc38d55fd0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60dc38dad680 (res 0x60dc38dada70)
+[LOG] Registered signal for owner 60dc37e72840: 60dc38dad5a8 -> 60dc37e72888 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc37e72840: 60dc38dad568 -> 60dc37e728f0 (owner: CWLSurface)
+[LOG] CWLSurface 60dc37e72840 called init()
+[LOG] Registered signal for owner 60dc37e72630: 60dc38dad568 -> 60dc37e72698 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc37e72630: 60dc38d86dd0 -> 60dc37e72630 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc37e72630: 60dc38dad598 -> 60dc37e72700 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc37e72630: 60dc38dad578 -> 60dc37e72768 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc37e72630: 60dc38dad588 -> 60dc37e727d0 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc2d339b50: 60dc38dad998 -> 60dc2d339b98 (owner: CWLSurface)
+[LOG] Registered signal for owner 60dc2d339b50: 60dc38dad958 -> 60dc2d339c00 (owner: CWLSurface)
+[LOG] CWLSurface 60dc2d339b50 called init()
+[LOG] Registered signal for owner 60dc2d339940: 60dc38dad958 -> 60dc2d3399a8 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc2d339940: 60dc38da3070 -> 60dc2d339940 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc2d339940: 60dc38dad988 -> 60dc2d339a10 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc2d339940: 60dc38dad968 -> 60dc2d339a78 (owner: CSubsurface)
+[LOG] Registered signal for owner 60dc2d339940: 60dc38dad978 -> 60dc2d339ae0 (owner: CSubsurface)
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 60dc2d339a38 -> 60dc2d339a30, CSubsurface removed.
+[LOG] Callback 60dc2d3399d0 -> 60dc2d3399c8, CSubsurface removed.
+[LOG] Callback 60dc2d339968 -> 60dc2d339960, CSubsurface removed.
+[LOG] Callback 60dc2d339bc0 -> 60dc2d339bb8, CWLSurface removed.
+[LOG] Callback 60dc2d339c28 -> 60dc2d339c20, CWLSurface removed.
+[LOG] CWLSurface 60dc2d339b50 called destroy()
+[LOG] Callback 60dc2d339b08 -> 60dc2d339b00, CSubsurface removed.
+[LOG] Callback 60dc2d339aa0 -> 60dc2d339a98, CSubsurface removed.
+[LOG] Callback 60dc37e72728 -> 60dc37e72720, CSubsurface removed.
+[LOG] Callback 60dc37e726c0 -> 60dc37e726b8, CSubsurface removed.
+[LOG] Callback 60dc37e72658 -> 60dc37e72650, CSubsurface removed.
+[LOG] Callback 60dc37e728b0 -> 60dc37e728a8, CWLSurface removed.
+[LOG] Callback 60dc37e72918 -> 60dc37e72910, CWLSurface removed.
+[LOG] CWLSurface 60dc37e72840 called destroy()
+[LOG] Callback 60dc37e727f8 -> 60dc37e727f0, CSubsurface removed.
+[LOG] Callback 60dc37e72790 -> 60dc37e72788, CSubsurface removed.
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 60dc38da1d90
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (0, , 269025066)
+[LOG] Executing eww update center-option="powermenu" ; hyprctl dispatch submap powermenu ; eww update reveal-option="powermenu" ; eww update power-reveal=1
+[LOG] Process Created with pid 11550
+[LOG] Changed keybind submap to powermenu
+[LOG] [hookSystem] New hook event registered: submap
+[LOG] Hyprctl: dispatcher submap : powermenu
+[LOG] Keybind triggered, calling dispatcher (0, , 65364)
+[LOG] Executing eww update power-option=5 ; eww update power-reveal=5
+[LOG] Process Created with pid 11560
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Executing eww update power-reveal=0
+[LOG] Process Created with pid 11564
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Executing /home/harun/.config/scripts/powermenu
+[LOG] Process Created with pid 11566
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Executing eww update center-option="workspaces" ; eww update reveal-option="workspaces"
+[LOG] Process Created with pid 11568
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Reset active submap to the default one.
+[LOG] Hyprland received signal 15

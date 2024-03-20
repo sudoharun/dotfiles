@@ -58,14 +58,17 @@ packages = [
     "papirus-icon-theme",
     "hyprlang-git",
     "hyprcursor-git",
-    "xdg-desktop-portal-hyprland-git",
     "hyprland-git",
+    "xdg-desktop-portal-wlr",
     "hyprlock-git",
     "hypridle-git",
     "nwg-look-bin",
     "qt5ct",
     "imv",
-    "wl-clipboard"
+    "wl-clipboard",
+    "meson",
+    "cpio",
+    "cmake"
 ]
 
 audio = [
@@ -110,7 +113,7 @@ os.chdir(home)
 
 # Update pacman databases
 print("\n\nUpdating databases...")
-os.system("sudo pacman -Syy &>> /dev/null")
+os.system("sudo pacman -Syy")
 sleep(1)
 print("Done.\n\n")
 
@@ -120,9 +123,9 @@ is_yay = int(subprocess.run("pacman -Q | grep -w yay | wc -l", shell=True, stdou
 if is_yay != 0:
     print("'yay' already installed. Skipping...\n\n")
 else:
-    os.system("git clone https://aur.archlinux.org/yay.git &>> /dev/null")
+    os.system("git clone https://aur.archlinux.org/yay.git")
     os.chdir("yay")
-    os.system("makepkg -si --noconfirm &>> /dev/null")
+    os.system("makepkg -si --noconfirm")
     os.system("rm -rf ~/yay")
     sleep(1)
     print("Done.\n\n")
@@ -139,7 +142,7 @@ for pkg in packages:
             print(f"'{pkg}' already installed. Skipping...")
             sleep(1)
         else:
-            os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
+            os.system(f"yay -S --noconfirm {pkg}")
             sleep(0.5)
             print(f"Successfully installed '{pkg}'!")
     except:
@@ -158,7 +161,7 @@ while True:
                 if is_pkg != 0:
                     print(f"'{pkg}' already installed. Skipping...")
                 else:
-                    os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
+                    os.system(f"yay -S --noconfirm {pkg}")
                     sleep(0.5)
                     print(f"Successfully installed '{pkg}'!")
             except:
@@ -200,7 +203,7 @@ while True:
                 if is_pkg != 0:
                     print(f"'{pkg}' already installed. Skipping...")
                 else:
-                    os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
+                    os.system(f"yay -S --noconfirm {pkg}")
                     sleep(0.5)
                     print(f"Successfully installed '{pkg}'!")
             except:
@@ -242,7 +245,7 @@ while True:
                 if is_pkg != 0:
                     print(f"'{pkg}' already installed. Skipping...")
                 else:
-                    os.system(f"yay -S --noconfirm {pkg} &>> /dev/null")
+                    os.system(f"yay -S --noconfirm {pkg}")
                     sleep(0.5)
                     print(f"Successfully installed '{pkg}'!")
             except:
@@ -293,11 +296,11 @@ os.system("gsettings set org.gnome.nautilus.desktop font \"IBM Plex Sans 11\"")
 
 # Copying dotfiles
 print("\nCopying dotfiles...")
-os.system("mkdir ~/.config &>> /dev/null")
+os.system("mkdir ~/.config")
 os.system(f"cp {dots_dir}/home/zlogin ~")
 os.system(f"cp {dots_dir}/config/chadrc.lua ~")
 os.system(f"cp {dots_dir}/config/plugins.lua ~")
-os.system(f"cp -r {dots_dir}/config/* ~/.config &>> /dev/null")
+os.system(f"cp -r {dots_dir}/config/* ~/.config")
 
 # Fix waypaper config
 edited = []
@@ -329,7 +332,7 @@ print("Done.")
 
 # Removing unnecessary/unused dependencies
 print("\nRemoving unnecessary/unused dependencies...")
-os.system("yay -Rns --noconfirm $(yay -Qdtq) &>> /dev/null")
+os.system("yay -Rns --noconfirm $(yay -Qdtq)")
 print("Done.")
 
 # Setup oh-my-zsh
@@ -362,7 +365,7 @@ os.system("clear")
 # Bluetooth
 bt_opt = input("Would you like to install Bluetooth tools (bluez)? [Y/n] ").lower()
 if bt_opt != "n":
-    os.system("yay -S --noconfirm bluez bluez-tools bluez-utils &>> /dev/null")
+    os.system("yay -S --noconfirm bluez bluez-tools bluez-utils")
     os.system("sudo systemctl enable --now bluetooth")
     print("Done.")
 
@@ -370,10 +373,10 @@ nvchad_opt = input("\n\nWould you like to set up NVChad? [Y/n] ").lower()
 if nvchad_opt != "n":
     print("\n\nThis next step will setup NVChad. Just press enter when the prompt shows up, then type ':q' to quit neovim.")
     sleep(5)
-    os.system("git clone https://github.com/NvChad/starter ~/.config/nvim --depth 1 && nvim && echo 0 &>> /dev/null")
+    os.system("git clone https://github.com/NvChad/starter ~/.config/nvim --depth 1 && nvim && echo 0")
     os.system("mv ~/chadrc.lua ~/.config/nvim/lua/chadrc.lua")
     os.system("mv ~/plugins.lua ~/.config/nvim/lua/plugins.lua")
-    with open("~/.config/nvim/lua/chadrc.lua", "a") as f:
+    with open(f"{home}/.config/nvim/lua/chadrc.lua", "a") as f:
         f.close()
 else:
     os.system("rm -f ~/chadrc.lua")
