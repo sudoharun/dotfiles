@@ -7,6 +7,7 @@ if [[ $opt == "1" ]]; then
 elif [[ $opt == "2" ]]; then
   eww update power-option=1
   hyprlock &
+  sleep 3
   systemctl suspend
 elif [[ $opt == "3" ]]; then
   eww update power-option=1

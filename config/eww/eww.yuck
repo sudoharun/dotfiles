@@ -16,7 +16,7 @@
       :spacing 0
       :space-evenly false
       (image :class "icon vol-icon" :path vol-icon :image-height "20")
-      (label :class "text vol-text" :text "${vol-num}%"))
+      (label :class "text vol-text" :text "${vol-num}"))
     (box
       :class "tray-item bat"
       :spacing 0
@@ -227,7 +227,7 @@
     (tray)))
 
 (defwindow bar
-  :stacking "fg"
+  :stacking "bg"
   :monitor "0"
   :exclusive true
   :namespace "bar"
@@ -236,7 +236,7 @@
     :y "0%"
     :width "100%"
     :height "0%"
-    :anchor "bottom center")
+    :anchor "top center")
   (bar))
 
 (defwidget corners []
@@ -264,20 +264,7 @@
       :halign "end")))
 
 (defwindow corners
-  :stacking "fg"
-  :monitor "0"
-  :exclusive false
-  :namespace "corners"
-  :geometry (geometry
-    :x "0px"
-    :y "6px"
-    :width "100%"
-    :height "0%"
-    :anchor "bottom center")
-  (corners))
-
-(defwindow corners_alt
-  :stacking "fg"
+  :stacking "bg"
   :monitor "0"
   :exclusive false
   :namespace "corners"
@@ -287,4 +274,17 @@
     :width "100%"
     :height "0%"
     :anchor "top center")
+  (corners))
+
+(defwindow corners_alt
+  :stacking "bg"
+  :monitor "0"
+  :exclusive false
+  :namespace "corners"
+  :geometry (geometry
+    :x "0px"
+    :y "0px"
+    :width "100%"
+    :height "0%"
+    :anchor "bottom center")
   (corners-alt))

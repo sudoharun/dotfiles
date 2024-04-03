@@ -16,9 +16,9 @@ icon() {
 level() {
   level=`pamixer --get-volume-human | awk -F'%' '{ print $1 }' | xargs`
   if [[ $level -eq "muted" ]]; then
-    echo "0"
+    echo "muted"
   else
-    echo $level
+    echo "$level%"
   fi
 }
 

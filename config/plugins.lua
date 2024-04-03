@@ -1,17 +1,32 @@
 return {
+  {
+    "stevearc/conform.nvim",
+    -- event = 'BufWritePre', -- uncomment for format on save
+    config = function()
+      require "configs.conform"
+    end,
+  },
+
+  -- {
+  --   "nvim-tree/nvim-tree.lua",
+  --   opts = {
+  --     git = { enable = true },
+  --   },
+  -- },
 
   {
-    "andweeb/presence.nvim",
+    "IogaMaster/neocord",
     event = "VeryLazy",
-    opts = {},
-    -- lazy = false
   },
 
   {
-    "L3MON4D3/LuaSnip",
-    keys = function()
-      return {}
-    end,
+  	"williamboman/mason.nvim",
+  	opts = {
+  		ensure_installed = {
+  			"lua-language-server", "stylua",
+  			"html-lsp", "css-lsp" , "prettier"
+  		},
+  	},
   },
 
   {
@@ -63,11 +78,60 @@ return {
     end,
     lazy = false
   },
-  --[[ {
-    "gelguy/wilder.nvim",
-    opts = {
-      modes = { ":", "/", "?" },
-      accept_key = "<CR>",
-    },
-  }, ]]
+
+  -- {
+  --   "hrsh7th/nvim-cmp",
+  --   opts = {
+  --       preselect = cmp.PreselectMode.None,
+  --       completion = { completeopt = "menu,menuone,noselect" },    
+  --   },
+  -- },
+
+  -- {
+  --   "L3MON4D3/LuaSnip",
+  --   keys = function()
+  --     return {}
+  --   end,
+  -- },
+
+  -- {
+  --   "hrsh7th/nvim-cmp",
+  --   opts = {
+  --     mapping = {
+  --       ["<CR>"] = cmp.mapping.confirm {
+  --         behavior = cmp.ConfirmBehavior.Insert,
+  --         -- when true, auto-selects the first item if nothing was selected,
+  --         -- making noselect below not take effect.
+  --         select = false,
+  --       },
+  --     },
+  --     -- adding noselect compared to default, to prevent autocomplete when typing,
+  --     -- and this is actually nvim-cmp defaults, but NvChad overrides this.
+  --     completion = {
+  --       completeopt = "menu,menuone,noselect",
+  --     },
+  --     -- for LSPs that (re)enable this:
+  --     preselect = cmp.PreselectMode.None,
+  --   },
+  -- },
+
+  -- These are some examples, uncomment them if you want to see them work!
+  -- {
+  --   "neovim/nvim-lspconfig",
+  --   config = function()
+  --     require("nvchad.configs.lspconfig").defaults()
+  --     require "configs.lspconfig"
+  --   end,
+  -- },
+  --
+  --
+  -- {
+  -- 	"nvim-treesitter/nvim-treesitter",
+  -- 	opts = {
+  -- 		ensure_installed = {
+  -- 			"vim", "lua", "vimdoc",
+  --      "html", "css"
+  -- 		},
+  -- 	},
+  -- },
 }

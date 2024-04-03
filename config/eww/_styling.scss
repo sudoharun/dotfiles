@@ -1,13 +1,13 @@
 .bar { 
-  background-color: $bg-color;
+  background-color: $background;
   padding: 12px 0px;
 }
 
 .tray-item,
 .date {
-  color: $fg-color;
+  color: $foreground;
   padding: 0px 12px;
-  border-left: 2px solid rgba($fg-color, 0.1);
+  border-left: 2px solid rgba($foreground, 0.1);
 }
 
 .wifi { border: 0px; }
@@ -18,7 +18,7 @@
 
 .time,
 .time-pak {
-  color: $fg-color;
+  color: $foreground;
   padding: 0px 12px;
 }
 
@@ -30,25 +30,25 @@
 }
 
 .active-monitor-ws {
-  color: $bg-color;
-  //background: linear-gradient(90deg, $fg-color, $accent-color);
-  background-color: $accent-color;
+  color: $background;
+  //background: linear-gradient(90deg, $foreground, $accent);
+  background-color: $accent;
   padding: 0px 40px;
 }
 
 .occupied-monitor-ws {
-  color: $bg-color;
-  background-color: rgba($accent-color, 0.5);
+  color: $background;
+  background-color: rgba($accent, 0.5);
   padding: 0px 40px;
 }
 
 .occupied-ws {
-  background-color: rgba($accent-color, 0.25);
+  background-color: rgba($accent, 0.25);
   padding: 0px 20px;
 }
 
 .ws-separator {
-  border-right: 2px solid rgba($fg-color, 0.1);
+  border-right: 2px solid rgba($foreground, 0.1);
   margin: 0px 4px;
 }
 
@@ -59,8 +59,9 @@
 
 .pwr-active,
 .ss-active {
-  color: $bg-color;
-  background: linear-gradient(90deg, $fg-color, $accent-color);
+  color: $background;
+  background-color: $accent;
+  // background: linear-gradient(90deg, $foreground, $accent);
   padding: 0px 20px;
 }
 
@@ -77,7 +78,7 @@
   background-color: transparent;
   padding: 12px;
   border-radius: 12px;
-  box-shadow: -12px -12px 0px 0px $bg-color;
+  box-shadow: -12px 12px 0px 0px $background;
 }
 
 .corners-right-alt {
@@ -86,7 +87,7 @@
   background-color: transparent;
   padding: 12px;
   border-radius: 12px;
-  box-shadow: 12px -12px 0px 0px $bg-color;
+  box-shadow: 12px 12px 0px 0px $background;
 }
 
 .corners-left {
@@ -95,7 +96,7 @@
   background-color: transparent;
   padding: 12px;
   border-radius: 12px;
-  box-shadow: -12px 12px 0px 0px $bg-color;
+  box-shadow: -12px -12px 0px 0px $background;
 }
 
 .corners-right {
@@ -104,5 +105,5 @@
   background-color: transparent;
   padding: 12px;
   border-radius: 12px;
-  box-shadow: 12px 12px 0px 0px $bg-color;
+  box-shadow: 12px -12px 0px 0px $background;
 }

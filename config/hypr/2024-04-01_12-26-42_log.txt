@@ -1,0 +1,1819 @@
+[LOG] Executing /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+[LOG] Process Created with pid 4492
+[LOG] Executing hyprpm reload -n
+[LOG] Process Created with pid 4496
+[LOG] Executing hypridle
+[LOG] Process Created with pid 4498
+[LOG] Executing tail -f /tmp/hypr/6fb8f502050c269597636c3b0bfcf046f7f6a947_1711970800/hyprland.log &> ~/.config/hypr/$(date '+%F_%H-%M-%S_log.txt')
+[LOG] Process Created with pid 4501
+[LOG] ApplyConfigToKeyboard for "power-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea321690's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "video-bus", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea348a70's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Video Bus"
+[LOG] ApplyConfigToKeyboard for "power-button-1", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea336960's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "sleep-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea1b4e60's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Sleep Button"
+[LOG] ApplyConfigToKeyboard for "at-translated-set-2-keyboard", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bdf9cd420's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "AT Translated Set 2 keyboard"
+[LOG] ApplyConfigToKeyboard for "hp-wmi-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea598f80's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "HP WMI hotkeys"
+[LOG] ApplyConfigToKeyboard for "wireless-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea5fd740's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Wireless hotkeys"
+[LOG] Applied config to mouse corsair-corsair-gaming-harpoon-rgb-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-touchpad, sens 0.00
+[LOG] Applying monitor rule for eDP-1
+[LOG] Not applying a new rule to eDP-1 because it's already applied!
+[LOG] [hookSystem] New hook event registered: render
+[wlr] [render/swapchain.c:106] Allocating new swapchain buffer
+[wlr] [render/allocator/gbm.c:144] Allocated 1920x1080 GBM buffer with format XR24 (0x34325258), modifier Y_TILED_CCS (0x0100000000000004)
+[LOG] CRenderbuffer: wlr_egl_create_image_from_dmabuf found at 7b3e683e3f10
+[LOG] Registered signal for owner 5e8bea642f00: 5e8bea529e48 -> 5e8bea642f08 (owner: CRenderbuffer)
+[LOG] Monitor eDP-1 -> destroyed all render data
+[LOG] Shaders initialized successfully.
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] [hookSystem] New hook event registered: tick
+[LOG] Registered signal for owner 5e8beab38cf0: 5e8bea64f798 -> 5e8beab38cf8 (owner: CRenderbuffer)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beac4aed0 (res 0x5e8beac44cf0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8bea69c2a0 (res 0x5e8bea69c690)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beac4b2c0 (res 0x5e8beac4b6b0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beac4b740 (res 0x5e8beac4bb30)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beaca3e10 (res 0x5e8beaca4200)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beaca43b0 (res 0x5e8beaca47a0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacbbfb0 (res 0x5e8beacbc3a0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5e8beacbc530 (res 0x5e8beacbbda0)
+[LOG] Registered signal for owner 5e8beacbc650: 5e8beacbc288 -> 5e8beacbca88 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beacbc650: 5e8beacbc5f8 -> 5e8beacbc950 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beacbc650: 5e8beacbc298 -> 5e8beacbc9b8 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beacbc650: 5e8beacbc2a8 -> 5e8beacbca20 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beab51cd0: 5e8beacbc608 -> 5e8beab51e50 (owner: CPopup Head)
+[LOG] LayerSurface 5e8beacbc530 (namespace swww layer 0) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5e8beacbbfb0 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5e8beacbbfb0 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacc5120 (res 0x5e8beacc5510)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5e8beacbcd70 (res 0x5e8beacbce90)
+[LOG] Registered signal for owner 5e8beacbcf20: 5e8beacc53f8 -> 5e8beacbd358 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beacbcf20: 5e8beacbce38 -> 5e8beacbd220 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beacbcf20: 5e8beacc5408 -> 5e8beacbd288 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beacbcf20: 5e8beacc5418 -> 5e8beacbd2f0 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beab65470: 5e8beacbce48 -> 5e8beab655f0 (owner: CPopup Head)
+[LOG] LayerSurface 5e8beacbcd70 (namespace bar layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5e8beacc5120 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5e8beacc5120 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beaca3830 (res 0x5e8beab53ae0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5e8beab53880 (res 0x5e8beacc5030)
+[LOG] Registered signal for owner 5e8beac4bbc0: 5e8beaca3b08 -> 5e8beac4bff8 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beac4bbc0: 5e8beab53948 -> 5e8beac4bec0 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beac4bbc0: 5e8beaca3b18 -> 5e8beac4bf28 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beac4bbc0: 5e8beaca3b28 -> 5e8beac4bf90 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beab826a0: 5e8beab53958 -> 5e8beab82820 (owner: CPopup Head)
+[LOG] LayerSurface 5e8beab53880 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5e8beaca3830 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5e8beaca3830 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacbd540 (res 0x5e8beacbd930)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5e8beac4c300 (res 0x5e8beaca4200)
+[LOG] Registered signal for owner 5e8beab60480: 5e8beacbd818 -> 5e8beab608b8 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beab60480: 5e8beac4c3c8 -> 5e8beab60780 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beab60480: 5e8beacbd828 -> 5e8beab607e8 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beab60480: 5e8beacbd838 -> 5e8beab60850 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beab61ab0: 5e8beac4c3d8 -> 5e8beab61c30 (owner: CPopup Head)
+[LOG] LayerSurface 5e8beac4c300 (namespace corners layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5e8beacbd540 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5e8beacbd540 in setPreferredTransformForSurface
+[LOG] LayerSurface 5e8beacbcd70 mapped
+[LOG] Registered signal for owner 5e8beacbd100: 5e8beacc5438 -> 5e8beacbd148 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beacbd100: 5e8beacc53f8 -> 5e8beacbd1b0 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beacbd100 called init()
+[LOG] [hookSystem] New hook event registered: openLayer
+[LOG] LayerSurface 5e8beab53880 mapped
+[LOG] Registered signal for owner 5e8beac4bda0: 5e8beaca3b48 -> 5e8beac4bde8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beac4bda0: 5e8beaca3b08 -> 5e8beac4be50 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beac4bda0 called init()
+[LOG] LayerSurface 5e8beac4c300 mapped
+[LOG] Registered signal for owner 5e8beab60660: 5e8beacbd858 -> 5e8beab606a8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beab60660: 5e8beacbd818 -> 5e8beab60710 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beab60660 called init()
+[LOG] Socket2 accepted a new client at FD 76
+[LOG] LayerSurface 5e8beacbc530 mapped
+[LOG] Registered signal for owner 5e8beacbc830: 5e8beacbc2c8 -> 5e8beacbc878 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beacbc830: 5e8beacbc288 -> 5e8beacbc8e0 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beacbc830 called init()
+[LOG] Keybind triggered, calling dispatcher (64, , 50)
+[LOG] [hookSystem] New hook event registered: workspace
+[LOG] Destroying workspace ID 1
+[LOG] [hookSystem] New hook event registered: destroyWorkspace
+[LOG] Keybind triggered, calling dispatcher (64, , 114)
+[LOG] Executing wofi -i -t foot
+[LOG] Process Created with pid 4771
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacccfa0 (res 0x5e8beaccd390)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beab60bc0 (res 0x5e8beab60fb0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beaccf430 (res 0x5e8beab61560)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5e8beaccfac0 (res 0x5e8beaccfbe0)
+[LOG] New LayerSurface has no preferred monitor. Assigning Monitor eDP-1
+[LOG] Registered signal for owner 5e8beaccd420: 5e8beaccf708 -> 5e8beaccd858 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beaccd420: 5e8beaccfb88 -> 5e8beaccd720 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beaccd420: 5e8beaccf718 -> 5e8beaccd788 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beaccd420: 5e8beaccf728 -> 5e8beaccd7f0 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beab61eb0: 5e8beaccfb98 -> 5e8beab62030 (owner: CPopup Head)
+[LOG] LayerSurface 5e8beaccfac0 (namespace wofi layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5e8beaccf430 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5e8beaccf430 in setPreferredTransformForSurface
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5e8beaccf430 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5e8beaccf430 in setPreferredTransformForSurface
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 5e8beacac630: 5e8beaccdff8 -> 5e8beacac650 (owner: textInput)
+[LOG] Registered signal for owner 5e8beacac630: 5e8beacce008 -> 5e8beacac720 (owner: textInput)
+[LOG] Registered signal for owner 5e8beacac630: 5e8beacce018 -> 5e8beacac6b8 (owner: textInput)
+[LOG] Registered signal for owner 5e8beacac630: 5e8beacce028 -> 5e8beacac788 (owner: textInput)
+[LOG] LayerSurface 5e8beaccfac0 mapped
+[LOG] Registered signal for owner 5e8beaccd600: 5e8beaccf748 -> 5e8beaccd648 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beaccd600: 5e8beaccf708 -> 5e8beaccd6b0 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beaccd600 called init()
+[LOG] Set keyboard focus to surface 5e8beaccf430
+[LOG] LayerSurface 5e8beaccfac0 unmapped
+[LOG] [hookSystem] New hook event registered: closeLayer
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5e8beaccd670 -> 5e8beaccd668, CWLSurface removed.
+[LOG] Callback 5e8beaccd6d8 -> 5e8beaccd6d0, CWLSurface removed.
+[LOG] CWLSurface 5e8beaccd600 called destroy()
+[LOG] LayerSurface 5e8beaccfac0 destroyed
+[LOG] Callback 5e8beab62058 -> 5e8beab62050, CPopup Head removed.
+[LOG] Callback 5e8beaccd880 -> 5e8beaccd878, layerSurface removed.
+[LOG] Callback 5e8beaccd748 -> 5e8beaccd740, layerSurface removed.
+[LOG] Callback 5e8beaccd7b0 -> 5e8beaccd7a8, layerSurface removed.
+[LOG] Callback 5e8beaccd818 -> 5e8beaccd810, layerSurface removed.
+[LOG] FractionalScaleManager bound successfully!
+[LOG] TextInputV1Manager bound successfully!
+[LOG] New TI V1 at 5e8beab548c0
+[LOG] Registered signal for owner 5e8beaccee90: 5e8beab548e0 -> 5e8beacceeb0 (owner: textInput)
+[LOG] Registered signal for owner 5e8beaccee90: 5e8beab54900 -> 5e8beaccef80 (owner: textInput)
+[LOG] Registered signal for owner 5e8beaccee90: 5e8beab548f0 -> 5e8beaccef18 (owner: textInput)
+[LOG] Registered signal for owner 5e8beaccee90: 5e8beab54910 -> 5e8beaccefe8 (owner: textInput)
+[wlr] [xwayland/server.c:107] Starting Xwayland on :0
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacd6840 (res 0x5e8beacd6c30)
+[wlr] [xwayland/server.c:272] Xserver is ready
+[wlr] [xwayland/xwm.c:1964] xfixes version: 6.0
+[wlr] [xwayland/xwm.c:1985] xres version: 1.2
+[LOG] cursorImage request: surface 0
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[LOG] New XWayland Surface created (class null).
+[LOG] Registered signal for owner 5e8beacd6cc0: 5e8beace0880 -> 5e8beacd73a8 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacd6cc0: 5e8beace0890 -> 5e8beacd7410 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacd6cc0: 5e8beace0800 -> 5e8beacd6df8 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacd6cc0: 5e8beace0930 -> 5e8beacd7340 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacd6cc0: 5e8beace0810 -> 5e8beacd71a0 (owner: XWayland Window)
+[wlr] [xwayland/xwm.c:867] unhandled X11 property 334 (_NET_WM_USER_TIME_WINDOW) for window 4194305
+[wlr] [xwayland/xwm.c:867] unhandled X11 property 34 (WM_COMMAND) for window 4194305
+[wlr] [xwayland/xwm.c:867] unhandled X11 property 36 (WM_CLIENT_MACHINE) for window 4194305
+[wlr] [xwayland/xwm.c:867] unhandled X11 property 310 (WM_LOCALE_NAME) for window 4194305
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beace0980 (res 0x5e8beace0d70)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beace0e00 (res 0x5e8beace11f0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5e8beace3b40 (res 0x5e8beace1860)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace0c68 -> 5e8beace19c8 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace3be8 -> 5e8beace1a98 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace0c58 -> 5e8beace1960 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beace2180: 5e8beace0c98 -> 5e8beace21c8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beace2180: 5e8beace0c58 -> 5e8beace2230 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beace2180 called init()
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5e8beace2dd0 (res 0x5e8beace2ec0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5e8beace3b40
+[LOG] Searching for matching rules for com.obsproject.Studio (title: OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beace1960: title: ""]
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 5e8beace1960: title: ""]
+[LOG] ToplevelExportManager bound successfully!
+[LOG] GlobalShortcutsManager bound successfully!
+[LOG] ScreencopyProtocolManager bound successfully!
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace9f40 -> 5e8beace1f10 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace9f50 -> 5e8beace1f78 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace9f60 -> 5e8beace1ea8 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace0c78 -> 5e8beace1a30 (owner: CWindow)
+[LOG] Registered signal for owner 5e8bea417820: 5e8beace0c88 -> 5e8bea4178f0 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5e8bea4731d0: 5e8beace1118 -> 5e8bea473218 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8bea4731d0: 5e8beace10d8 -> 5e8bea473280 (owner: CWLSurface)
+[LOG] CWLSurface 5e8bea4731d0 called init()
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8beace10d8 -> 5e8bea473028 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8beace15b0 -> 5e8bea472fc0 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8beace1108 -> 5e8bea473090 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8beace10e8 -> 5e8bea4730f8 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8beace10f8 -> 5e8bea473160 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8beab61eb0: 5e8beace3c08 -> 5e8beab62030 (owner: CPopup Head)
+[LOG] Searching for matching rules for com.obsproject.Studio (title: OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 5e8beace0980, with [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] Searching for matching rules for com.obsproject.Studio (title: OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] [hookSystem] New hook event registered: activeWindow
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace3de8 -> 5e8beace1b00 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace3d78 -> 5e8beace1d08 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace3d98 -> 5e8beace1ca0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace3da8 -> 5e8beace1c38 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace3db8 -> 5e8beace1d70 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace3d88 -> 5e8beace1bd0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beace1960: 5e8beace3c28 -> 5e8beace2118 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for com.obsproject.Studio (title: OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1912x748
+[LOG] Cleanup: destroyed a layersurface
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1912x748
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1868x654
+[LOG] FractionalScaleManager bound successfully!
+[LOG] TextInputV1Manager bound successfully!
+[LOG] New TI V1 at 5e8beaccfa30
+[LOG] Registered signal for owner 5e8beace9ab0: 5e8beaccfa50 -> 5e8beace9ad0 (owner: textInput)
+[LOG] Registered signal for owner 5e8beace9ab0: 5e8beaccfa70 -> 5e8beace9ba0 (owner: textInput)
+[LOG] Registered signal for owner 5e8beace9ab0: 5e8beaccfa60 -> 5e8beace9b38 (owner: textInput)
+[LOG] Registered signal for owner 5e8beace9ab0: 5e8beaccfa80 -> 5e8beace9c08 (owner: textInput)
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1868x654
+[LOG] New XWayland Surface created (class null).
+[LOG] Registered signal for owner 5e8beacf9f90: 5e8beacf9e30 -> 5e8beacfa678 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacf9f90: 5e8beacf9e40 -> 5e8beacfa6e0 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacf9f90: 5e8beacf9db0 -> 5e8beacfa0c8 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacf9f90: 5e8beacf9ee0 -> 5e8beacfa610 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacf9f90: 5e8beacf9dc0 -> 5e8beacfa470 (owner: XWayland Window)
+[wlr] [xwayland/xwm.c:867] unhandled X11 property 34 (WM_COMMAND) for window 6291457
+[wlr] [xwayland/xwm.c:867] unhandled X11 property 36 (WM_CLIENT_MACHINE) for window 6291457
+[wlr] [xwayland/xwm.c:867] unhandled X11 property 310 (WM_LOCALE_NAME) for window 6291457
+[LOG] New XWayland Surface created (class null).
+[LOG] Registered signal for owner 5e8beacfb310: 5e8beaceca80 -> 5e8beacfb9f8 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfb310: 5e8beaceca90 -> 5e8beacfba60 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfb310: 5e8beaceca00 -> 5e8beacfb448 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfb310: 5e8beacecb30 -> 5e8beacfb990 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfb310: 5e8beaceca10 -> 5e8beacfb7f0 (owner: XWayland Window)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacecb80 (res 0x5e8beacccb40)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5e8beacecf70 (res 0x5e8beaced0c0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8beacece68 -> 5e8beacfd708 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8beaced018 -> 5e8beacfd7d8 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8beacece58 -> 5e8beacfd6a0 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beacfdec0: 5e8beacece98 -> 5e8beacfdf08 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beacfdec0: 5e8beacece58 -> 5e8beacfdf70 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beacfdec0 called init()
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5e8beacfeb10 (res 0x5e8beaced390)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5e8beacecf70
+[LOG] Searching for matching rules for hyprland-share-picker (title: MainPicker)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfd6a0: title: ""]
+[LOG] Layout predicts size [Vector2D: x: 0, y: 0] for [Window 5e8beacfd6a0: title: ""]
+[wlr] [xwayland/xwm.c:867] unhandled X11 property 336 (_MOTIF_DRAG_RECEIVER_INFO) for window 6291459
+[wlr] [xwayland/xwm.c:867] unhandled X11 property 292 (XdndAware) for window 6291459
+[LOG] New XWayland Surface created (class null).
+[LOG] Registered signal for owner 5e8beacfec00: 5e8beacfd050 -> 5e8beacff2e8 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfec00: 5e8beacfd060 -> 5e8beacff350 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfec00: 5e8beacfcfd0 -> 5e8beacfed38 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfec00: 5e8beacfd100 -> 5e8beacff280 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfec00: 5e8beacfcfe0 -> 5e8beacff0e0 (owner: XWayland Window)
+[LOG] New XWayland Surface created (class null).
+[LOG] Registered signal for owner 5e8bead01530: 5e8bead01430 -> 5e8bead01c18 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8bead01530: 5e8bead01440 -> 5e8bead01c80 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8bead01530: 5e8bead013b0 -> 5e8bead01668 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8bead01530: 5e8bead014e0 -> 5e8bead01bb0 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8bead01530: 5e8bead013c0 -> 5e8bead01a10 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8bead03970 -> 5e8beacfdc50 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8bead03980 -> 5e8beacfdcb8 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8bead03990 -> 5e8beacfdbe8 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8beacece78 -> 5e8beacfd770 (owner: CWindow)
+[LOG] Registered signal for owner 5e8bea331790: 5e8beacece88 -> 5e8bea331860 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5e8beaced830: 5e8beaced038 -> 5e8beaced9b0 (owner: CPopup Head)
+[LOG] Searching for matching rules for hyprland-share-picker (title: MainPicker)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfd6a0: title: "MainPicker"]
+[LOG] OPENINGON: [Node 5e8beaccc700: workspace: 2, pos: [0.00, 50.00], size: [1920.00, 1030.00], window: 5e8beace1960], Monitor: 0
+[LOG] Searching for matching rules for com.obsproject.Studio (title: OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] Set keyboard focus to surface 5e8beacecb80, with [Window 5e8beacfd6a0: title: "MainPicker"]
+[LOG] Searching for matching rules for hyprland-share-picker (title: MainPicker)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfd6a0: title: "MainPicker"]
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8beaced2a8 -> 5e8beacfd840 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8beaced238 -> 5e8beacfda48 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8beaced258 -> 5e8beacfd9e0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8beaced268 -> 5e8beacfd978 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8beaced278 -> 5e8beacfdab0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8beaced248 -> 5e8beacfd910 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacfd6a0: 5e8beaced058 -> 5e8beacfde58 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [710.00000, 395.00000], window size: [500.00000, 290.00000]
+[LOG] Searching for matching rules for com.obsproject.Studio (title: OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] Searching for matching rules for hyprland-share-picker (title: MainPicker)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfd6a0: title: "MainPicker"]
+[LOG] cursorImage request: shape 1
+[LOG] Searching for matching rules for hyprland-share-picker (title: MainPicker)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfd6a0: title: "MainPicker"]
+[LOG] Set keyboard focus to surface 5e8beace0e00, with [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] Searching for matching rules for com.obsproject.Studio (title: OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for com.obsproject.Studio (title: OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] Set keyboard focus to surface 5e8beacecb80, with [Window 5e8beacfd6a0: title: "MainPicker"]
+[LOG] Searching for matching rules for hyprland-share-picker (title: MainPicker)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfd6a0: title: "MainPicker"]
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [hookSystem] New hook event registered: mouseButton
+[LOG] [Window 5e8beacfd6a0: title: "MainPicker", class: hyprland-share-picker] unmapped
+[LOG] Unregistered late callbacks XDG
+[LOG] Callback 5e8beacfd868 -> 5e8beacfd860, XDG Window Late removed.
+[LOG] Callback 5e8beacfda70 -> 5e8beacfda68, XDG Window Late removed.
+[LOG] Callback 5e8beacfda08 -> 5e8beacfda00, XDG Window Late removed.
+[LOG] Callback 5e8beacfd9a0 -> 5e8beacfd998, XDG Window Late removed.
+[LOG] Callback 5e8beacfdad8 -> 5e8beacfdad0, XDG Window Late removed.
+[LOG] Callback 5e8beacfd938 -> 5e8beacfd930, XDG Window Late removed.
+[LOG] Callback 5e8beacfde80 -> 5e8beacfde78, XDG Window Late removed.
+[LOG] Framebuffer created, status 36053
+[LOG] On closed window, new focused candidate is [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] Set keyboard focus to surface 5e8beace0980, with [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] Searching for matching rules for com.obsproject.Studio (title: OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] Callback 5e8beacfdc78 -> 5e8beacfdc70, Toplevel removed.
+[LOG] Callback 5e8beacfdc10 -> 5e8beacfdc08, Toplevel removed.
+[LOG] Callback 5e8beacfdce0 -> 5e8beacfdcd8, Toplevel removed.
+[LOG] Callback 5e8beacfd798 -> 5e8beacfd790, CWindow removed.
+[LOG] Searching for matching rules for com.obsproject.Studio (title: OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled"]
+[LOG] Callback 5e8bea331888 -> 5e8bea331880, CSubsurface Head removed.
+[LOG] Callback 5e8beaced9d8 -> 5e8beaced9d0, CPopup Head removed.
+[LOG] [Window 5e8beacfd6a0: title: "MainPicker", class: ] destroyed, queueing.
+[LOG] Callback 5e8beacfdf30 -> 5e8beacfdf28, CWLSurface removed.
+[LOG] Callback 5e8beacfdf98 -> 5e8beacfdf90, CWLSurface removed.
+[LOG] CWLSurface 5e8beacfdec0 called destroy()
+[LOG] Callback 5e8beacfd6c8 -> 5e8beacfd6c0, XDG Window removed.
+[LOG] Callback 5e8beacfd730 -> 5e8beacfd728, XDG Window removed.
+[LOG] Callback 5e8beacfd800 -> 5e8beacfd7f8, XDG Window removed.
+[LOG] cursorImage request: shape 1
+[LOG] Callback 5e8beace9c30 -> 5e8beace9c28, textInput removed.
+[LOG] Callback 5e8beace9bc8 -> 5e8beace9bc0, textInput removed.
+[LOG] Callback 5e8beace9b60 -> 5e8beace9b58, textInput removed.
+[LOG] Callback 5e8beace9af8 -> 5e8beace9af0, textInput removed.
+[LOG] [Window 5e8beacf9f90: title: "", class: ] destroyed, queueing.
+[LOG] XWayland class raw: Hyprland-share-picker
+[LOG] Callback 5e8beacfa0f0 -> 5e8beacfa0e8, XWayland Window removed.
+[LOG] Callback 5e8beacfa498 -> 5e8beacfa490, XWayland Window removed.
+[LOG] Callback 5e8beacfa638 -> 5e8beacfa630, XWayland Window removed.
+[LOG] Callback 5e8beacfa6a0 -> 5e8beacfa698, XWayland Window removed.
+[LOG] Callback 5e8beacfa708 -> 5e8beacfa700, XWayland Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Unmapped [Window 5e8beacf9f90: title: ""] removed instantly
+[LOG] [Window 5e8beacfb310: title: "", class: ] destroyed, queueing.
+[LOG] XWayland class raw: null
+[LOG] Callback 5e8beacfb470 -> 5e8beacfb468, XWayland Window removed.
+[LOG] Callback 5e8beacfb818 -> 5e8beacfb810, XWayland Window removed.
+[LOG] Callback 5e8beacfb9b8 -> 5e8beacfb9b0, XWayland Window removed.
+[LOG] Callback 5e8beacfba20 -> 5e8beacfba18, XWayland Window removed.
+[LOG] Callback 5e8beacfba88 -> 5e8beacfba80, XWayland Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Unmapped [Window 5e8beacfb310: title: ""] removed instantly
+[LOG] [Window 5e8bead01530: title: "", class: ] destroyed, queueing.
+[LOG] XWayland class raw: null
+[LOG] Callback 5e8bead01690 -> 5e8bead01688, XWayland Window removed.
+[LOG] Callback 5e8bead01a38 -> 5e8bead01a30, XWayland Window removed.
+[LOG] Callback 5e8bead01bd8 -> 5e8bead01bd0, XWayland Window removed.
+[LOG] Callback 5e8bead01c40 -> 5e8bead01c38, XWayland Window removed.
+[LOG] Callback 5e8bead01ca8 -> 5e8bead01ca0, XWayland Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Unmapped [Window 5e8bead01530: title: ""] removed instantly
+[LOG] [Window 5e8beacfec00: title: "", class: ] destroyed, queueing.
+[LOG] XWayland class raw: null
+[LOG] Callback 5e8beacfed60 -> 5e8beacfed58, XWayland Window removed.
+[LOG] Callback 5e8beacff108 -> 5e8beacff100, XWayland Window removed.
+[LOG] Callback 5e8beacff2a8 -> 5e8beacff2a0, XWayland Window removed.
+[LOG] Callback 5e8beacff310 -> 5e8beacff308, XWayland Window removed.
+[LOG] Callback 5e8beacff378 -> 5e8beacff370, XWayland Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Unmapped [Window 5e8beacfec00: title: ""] removed instantly
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1920x1080
+[LOG] Registered signal for owner 5e8beaca4950: 5e8bead0c5c8 -> 5e8beaca4958 (owner: CRenderbuffer)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[LOG] Callback 5e8beaca4980 -> 5e8beaca4978, CRenderbuffer removed.
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[LOG] Registered signal for owner 5e8beaca4950: 5e8bead0c5c8 -> 5e8beaca4958 (owner: CRenderbuffer)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[LOG] Registered signal for owner 5e8beacc5ae0: 5e8beacec6f8 -> 5e8beacc5ae8 (owner: CRenderbuffer)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[LOG] Registered signal for owner 5e8beac441e0: 5e8beaccf158 -> 5e8beac441e8 (owner: CRenderbuffer)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[LOG] Registered signal for owner 5e8beab45040: 5e8beacedef8 -> 5e8beab45048 (owner: CRenderbuffer)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[LOG] [hookSystem] New hook event registered: screencast
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[LOG] Cleanup: destroyed a window
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[LOG] cursorImage request: shape 1
+[LOG] cursorImage request: shape 31
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[wlr] [types/output/cursor.c:44] Disabling hardware cursors on output 'eDP-1' (locks: 2)
+[wlr] [types/output/cursor.c:44] Enabling hardware cursors on output 'eDP-1' (locks: 1)
+[LOG] Callback 5e8beaca4980 -> 5e8beaca4978, CRenderbuffer removed.
+[LOG] Callback 5e8beacc5b10 -> 5e8beacc5b08, CRenderbuffer removed.
+[LOG] Callback 5e8beac44210 -> 5e8beac44208, CRenderbuffer removed.
+[LOG] Callback 5e8beab45070 -> 5e8beab45068, CRenderbuffer removed.
+[LOG] cursorImage request: shape 5
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled", class: com.obsproject.Studio] unmapped
+[LOG] Unregistered late callbacks XDG
+[LOG] Callback 5e8beace1b28 -> 5e8beace1b20, XDG Window Late removed.
+[LOG] Callback 5e8beace1d30 -> 5e8beace1d28, XDG Window Late removed.
+[LOG] Callback 5e8beace1cc8 -> 5e8beace1cc0, XDG Window Late removed.
+[LOG] Callback 5e8beace1c60 -> 5e8beace1c58, XDG Window Late removed.
+[LOG] Callback 5e8beace1d98 -> 5e8beace1d90, XDG Window Late removed.
+[LOG] Callback 5e8beace1bf8 -> 5e8beace1bf0, XDG Window Late removed.
+[LOG] Callback 5e8beace2140 -> 5e8beace2138, XDG Window Late removed.
+[LOG] Framebuffer created, status 36053
+[LOG] Removing last node (dwindle)
+[LOG] On closed window, new focused candidate is [Window nullptr]
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5e8beace1f38 -> 5e8beace1f30, Toplevel removed.
+[LOG] Callback 5e8beace1ed0 -> 5e8beace1ec8, Toplevel removed.
+[LOG] Callback 5e8beace1fa0 -> 5e8beace1f98, Toplevel removed.
+[LOG] Callback 5e8beace1a58 -> 5e8beace1a50, CWindow removed.
+[LOG] Callback 5e8bea417918 -> 5e8bea417910, CSubsurface Head removed.
+[LOG] Callback 5e8bea4730b8 -> 5e8bea4730b0, CSubsurface removed.
+[LOG] Callback 5e8bea473050 -> 5e8bea473048, CSubsurface removed.
+[LOG] Callback 5e8bea472fe8 -> 5e8bea472fe0, CSubsurface removed.
+[LOG] Callback 5e8bea473240 -> 5e8bea473238, CWLSurface removed.
+[LOG] Callback 5e8bea4732a8 -> 5e8bea4732a0, CWLSurface removed.
+[LOG] CWLSurface 5e8bea4731d0 called destroy()
+[LOG] Callback 5e8bea473188 -> 5e8bea473180, CSubsurface removed.
+[LOG] Callback 5e8bea473120 -> 5e8bea473118, CSubsurface removed.
+[LOG] Callback 5e8beab62058 -> 5e8beab62050, CPopup Head removed.
+[LOG] [Window 5e8beace1960: title: "OBS 30.1.0-1 - Profile: Untitled - Scenes: Untitled", class: ] destroyed, queueing.
+[LOG] Callback 5e8beace21f0 -> 5e8beace21e8, CWLSurface removed.
+[LOG] Callback 5e8beace2258 -> 5e8beace2250, CWLSurface removed.
+[LOG] CWLSurface 5e8beace2180 called destroy()
+[LOG] Callback 5e8beace1988 -> 5e8beace1980, XDG Window removed.
+[LOG] Callback 5e8beace19f0 -> 5e8beace19e8, XDG Window removed.
+[LOG] Callback 5e8beace1ac0 -> 5e8beace1ab8, XDG Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Callback 5e8beaccf010 -> 5e8beaccf008, textInput removed.
+[LOG] Callback 5e8beaccefa8 -> 5e8beaccefa0, textInput removed.
+[LOG] Callback 5e8beaccef40 -> 5e8beaccef38, textInput removed.
+[LOG] Callback 5e8beacceed8 -> 5e8beacceed0, textInput removed.
+[LOG] [Window 5e8beacd6cc0: title: "", class: ] destroyed, queueing.
+[LOG] XWayland class raw: Obs
+[LOG] Callback 5e8beacd6e20 -> 5e8beacd6e18, XWayland Window removed.
+[LOG] Callback 5e8beacd71c8 -> 5e8beacd71c0, XWayland Window removed.
+[LOG] Callback 5e8beacd7368 -> 5e8beacd7360, XWayland Window removed.
+[LOG] Callback 5e8beacd73d0 -> 5e8beacd73c8, XWayland Window removed.
+[LOG] Callback 5e8beacd7438 -> 5e8beacd7430, XWayland Window removed.
+[ERR] onWindowRemovedTiling node null?
+[LOG] Unmapped [Window 5e8beacd6cc0: title: ""] removed instantly
+[LOG] Cleanup: destroyed a window
+[LOG] Keybind triggered, calling dispatcher (64, , 114)
+[LOG] Executing wofi -i -t foot
+[LOG] Process Created with pid 5006
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacd7cd0 (res 0x5e8beacec150)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beace3b40 (res 0x5e8beab619f0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacee330 (res 0x5e8beacea200)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x5e8beab611a0 (res 0x5e8beacce130)
+[LOG] New LayerSurface has no preferred monitor. Assigning Monitor eDP-1
+[LOG] Registered signal for owner 5e8beacf4830: 5e8beacee608 -> 5e8beacf4c68 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beacf4830: 5e8beab61268 -> 5e8beacf4b30 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beacf4830: 5e8beacee618 -> 5e8beacf4b98 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beacf4830: 5e8beacee628 -> 5e8beacf4c00 (owner: layerSurface)
+[LOG] Registered signal for owner 5e8beab61eb0: 5e8beab61278 -> 5e8beab62030 (owner: CPopup Head)
+[LOG] LayerSurface 5e8beab611a0 (namespace wofi layer 2) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5e8beacee330 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5e8beacee330 in setPreferredTransformForSurface
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 5e8beacee330 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 5e8beacee330 in setPreferredTransformForSurface
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 5e8beac4a520: 5e8beacfd308 -> 5e8beac4a540 (owner: textInput)
+[LOG] Registered signal for owner 5e8beac4a520: 5e8beacfd318 -> 5e8beac4a610 (owner: textInput)
+[LOG] Registered signal for owner 5e8beac4a520: 5e8beacfd328 -> 5e8beac4a5a8 (owner: textInput)
+[LOG] Registered signal for owner 5e8beac4a520: 5e8beacfd338 -> 5e8beac4a678 (owner: textInput)
+[LOG] LayerSurface 5e8beab611a0 mapped
+[LOG] Registered signal for owner 5e8beacf4a10: 5e8beacee648 -> 5e8beacf4a58 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beacf4a10: 5e8beacee608 -> 5e8beacf4ac0 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beacf4a10 called init()
+[LOG] Set keyboard focus to surface 5e8beacee330
+[LOG] LayerSurface 5e8beab611a0 unmapped
+[LOG] Framebuffer created, status 36053
+[LOG] Callback 5e8beacf4a80 -> 5e8beacf4a78, CWLSurface removed.
+[LOG] Callback 5e8beacf4ae8 -> 5e8beacf4ae0, CWLSurface removed.
+[LOG] CWLSurface 5e8beacf4a10 called destroy()
+[LOG] LayerSurface 5e8beab611a0 destroyed
+[LOG] Callback 5e8beab62058 -> 5e8beab62050, CPopup Head removed.
+[LOG] Callback 5e8beacf4c90 -> 5e8beacf4c88, layerSurface removed.
+[LOG] Callback 5e8beacf4b58 -> 5e8beacf4b50, layerSurface removed.
+[LOG] Callback 5e8beacf4bc0 -> 5e8beacf4bb8, layerSurface removed.
+[LOG] Callback 5e8beacf4c28 -> 5e8beacf4c20, layerSurface removed.
+[LOG] New XWayland Surface created (class null).
+[LOG] Registered signal for owner 5e8beace1520: 5e8bead04d60 -> 5e8beace1c08 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beace1520: 5e8bead04d70 -> 5e8beace1c70 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beace1520: 5e8bead04ce0 -> 5e8beace1658 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beace1520: 5e8bead04e10 -> 5e8beace1ba0 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beace1520: 5e8bead04cf0 -> 5e8beace1a00 (owner: XWayland Window)
+[LOG] New XWayland Surface created (class null).
+[LOG] Registered signal for owner 5e8bead01080: 5e8beaccd8c0 -> 5e8bead01768 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8bead01080: 5e8beaccd8d0 -> 5e8bead017d0 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8bead01080: 5e8beaccd840 -> 5e8bead011b8 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8bead01080: 5e8beaccd970 -> 5e8bead01700 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8bead01080: 5e8beaccd850 -> 5e8bead01560 (owner: XWayland Window)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beaccee90 (res 0x5e8beaccf390)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5e8beaca47a0 (res 0x5e8beaccc160)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8beaccf178 -> 5e8beacf0ae8 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8beaca4848 -> 5e8beacf0bb8 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8beaccf168 -> 5e8beacf0a80 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beacf12a0: 5e8beaccf1a8 -> 5e8beacf12e8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beacf12a0: 5e8beaccf168 -> 5e8beacf1350 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beacf12a0 called init()
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5e8beab619b0 (res 0x5e8beab940c0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5e8beaca47a0
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: ""]
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 5e8beacf0a80: title: ""]
+[wlr] [xwayland/xwm.c:867] unhandled X11 property 336 (_MOTIF_DRAG_RECEIVER_INFO) for window 4194307
+[wlr] [xwayland/xwm.c:867] unhandled X11 property 292 (XdndAware) for window 4194307
+[LOG] New XWayland Surface created (class null).
+[LOG] Registered signal for owner 5e8beacf1e00: 5e8bead06b80 -> 5e8beacf24e8 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacf1e00: 5e8bead06b90 -> 5e8beacf2550 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacf1e00: 5e8bead06b00 -> 5e8beacf1f38 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacf1e00: 5e8bead06c30 -> 5e8beacf2480 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacf1e00: 5e8bead06b10 -> 5e8beacf22e0 (owner: XWayland Window)
+[LOG] New XWayland Surface created (class null).
+[LOG] Registered signal for owner 5e8beacfd660: 5e8beaccfa20 -> 5e8beacfdd48 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfd660: 5e8beaccfa30 -> 5e8beacfddb0 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfd660: 5e8beaccf9a0 -> 5e8beacfd798 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfd660: 5e8beaccfad0 -> 5e8beacfdce0 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacfd660: 5e8beaccf9b0 -> 5e8beacfdb40 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8bdf301e40 -> 5e8beacf1030 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8bdf301e50 -> 5e8beacf1098 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8bdf301e60 -> 5e8beacf0fc8 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8beaccf188 -> 5e8beacf0b50 (owner: CWindow)
+[LOG] Registered signal for owner 5e8bea417820: 5e8beaccf198 -> 5e8bea4178f0 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5e8beab61eb0: 5e8beaca4868 -> 5e8beab62030 (owner: CPopup Head)
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 5e8beaccee90, with [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8bead0d528 -> 5e8beacf0c20 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8bead0d4b8 -> 5e8beacf0e28 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8bead0d4d8 -> 5e8beacf0dc0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8bead0d4e8 -> 5e8beacf0d58 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8bead0d4f8 -> 5e8beacf0e90 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8bead0d4c8 -> 5e8beacf0cf0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacf0a80: 5e8beaca4888 -> 5e8beacf1238 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beace28a0 (res 0x5e8bead0bb20)
+[LOG] cursorImage request: surface 5e8beace28a0
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8beace2bb8 -> 5e8bdf30abc8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8beace2b78 -> 5e8bdf30ac30 (owner: CWLSurface)
+[LOG] CWLSurface 5e8bdf30ab80 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Cleanup: destroyed a layersurface
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[LOG] Callback 5e8bdf30abf0 -> 5e8bdf30abe8, CWLSurface removed.
+[LOG] Callback 5e8bdf30ac58 -> 5e8bdf30ac50, CWLSurface removed.
+[LOG] CWLSurface 5e8bdf30ab80 called destroy()
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8bea69c5b8 -> 5e8bdf30abc8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8bea69c578 -> 5e8bdf30ac30 (owner: CWLSurface)
+[LOG] CWLSurface 5e8bdf30ab80 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8beace28a0
+[LOG] Callback 5e8bdf30abf0 -> 5e8bdf30abe8, CWLSurface removed.
+[LOG] Callback 5e8bdf30ac58 -> 5e8bdf30ac50, CWLSurface removed.
+[LOG] CWLSurface 5e8bdf30ab80 called destroy()
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8beace2bb8 -> 5e8bdf30abc8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8beace2b78 -> 5e8bdf30ac30 (owner: CWLSurface)
+[LOG] CWLSurface 5e8bdf30ab80 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beaceec20 (res 0x5e8beab60b30)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5e8beacec500 (res 0x5e8beace44e0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5e8beacef190: 5e8beaceef08 -> 5e8beacef1f8 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beacef190: 5e8beacec5a8 -> 5e8beacef2c8 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beacef190: 5e8beaceeef8 -> 5e8beacef190 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beacef9b0: 5e8beaceef38 -> 5e8beacef9f8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beacef9b0: 5e8beaceeef8 -> 5e8beacefa60 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beacef9b0 called init()
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5e8beab611a0 (res 0x5e8bead04e60)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5e8beacec500
+[LOG] Searching for matching rules for qt5ct (title: Warning)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacef190: title: ""]
+[LOG] Layout predicts size [Vector2D: x: 0, y: 0] for [Window 5e8beacef190: title: ""]
+[LOG] Registered signal for owner 5e8beacef190: 5e8beab610c0 -> 5e8beacef740 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beacef190: 5e8beab610d0 -> 5e8beacef7a8 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beacef190: 5e8beab610e0 -> 5e8beacef6d8 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beacef190: 5e8beaceef18 -> 5e8beacef260 (owner: CWindow)
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8beaceef28 -> 5e8bea473090 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beacec5c8 -> 5e8beace3cc0 (owner: CPopup Head)
+[LOG] Searching for matching rules for qt5ct (title: Warning)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacef190: title: "Warning"]
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Set keyboard focus to surface 5e8beaceec20, with [Window 5e8beacef190: title: "Warning"]
+[LOG] Searching for matching rules for qt5ct (title: Warning)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacef190: title: "Warning"]
+[LOG] Registered signal for owner 5e8beacef190: 5e8beacce288 -> 5e8beacef330 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacef190: 5e8beacce218 -> 5e8beacef538 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacef190: 5e8beacce238 -> 5e8beacef4d0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacef190: 5e8beacce248 -> 5e8beacef468 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacef190: 5e8beacce258 -> 5e8beacef5a0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacef190: 5e8beacce228 -> 5e8beacef400 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacef190: 5e8beacec5e8 -> 5e8beacef948 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [710.00000, 478.00000], window size: [500.00000, 124.00000]
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Searching for matching rules for qt5ct (title: Warning)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacef190: title: "Warning"]
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for qt5ct (title: Warning)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacef190: title: "Warning"]
+[LOG] Set keyboard focus to surface 5e8beaccee90, with [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Set keyboard focus to surface 5e8beaceec20, with [Window 5e8beacef190: title: "Warning"]
+[LOG] Searching for matching rules for qt5ct (title: Warning)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacef190: title: "Warning"]
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for qt5ct (title: Warning)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacef190: title: "Warning"]
+[LOG] Set keyboard focus to surface 5e8beaccee90, with [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Set keyboard focus to surface 5e8beaceec20, with [Window 5e8beacef190: title: "Warning"]
+[LOG] Searching for matching rules for qt5ct (title: Warning)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacef190: title: "Warning"]
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [Window 5e8beacef190: title: "Warning", class: qt5ct] unmapped
+[LOG] Unregistered late callbacks XDG
+[LOG] Callback 5e8beacef358 -> 5e8beacef350, XDG Window Late removed.
+[LOG] Callback 5e8beacef560 -> 5e8beacef558, XDG Window Late removed.
+[LOG] Callback 5e8beacef4f8 -> 5e8beacef4f0, XDG Window Late removed.
+[LOG] Callback 5e8beacef490 -> 5e8beacef488, XDG Window Late removed.
+[LOG] Callback 5e8beacef5c8 -> 5e8beacef5c0, XDG Window Late removed.
+[LOG] Callback 5e8beacef428 -> 5e8beacef420, XDG Window Late removed.
+[LOG] Callback 5e8beacef970 -> 5e8beacef968, XDG Window Late removed.
+[LOG] Framebuffer created, status 36053
+[LOG] On closed window, new focused candidate is [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Set keyboard focus to surface 5e8beaccee90, with [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Callback 5e8beacef768 -> 5e8beacef760, Toplevel removed.
+[LOG] Callback 5e8beacef700 -> 5e8beacef6f8, Toplevel removed.
+[LOG] Callback 5e8beacef7d0 -> 5e8beacef7c8, Toplevel removed.
+[LOG] Callback 5e8beacef288 -> 5e8beacef280, CWindow removed.
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Callback 5e8bea4730b8 -> 5e8bea4730b0, CSubsurface Head removed.
+[LOG] Callback 5e8beace3ce8 -> 5e8beace3ce0, CPopup Head removed.
+[LOG] [Window 5e8beacef190: title: "Warning", class: ] destroyed, queueing.
+[LOG] Callback 5e8beacefa20 -> 5e8beacefa18, CWLSurface removed.
+[LOG] Callback 5e8beacefa88 -> 5e8beacefa80, CWLSurface removed.
+[LOG] CWLSurface 5e8beacef9b0 called destroy()
+[LOG] Callback 5e8beacef1b8 -> 5e8beacef1b0, XDG Window removed.
+[LOG] Callback 5e8beacef220 -> 5e8beacef218, XDG Window removed.
+[LOG] Callback 5e8beacef2f0 -> 5e8beacef2e8, XDG Window removed.
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Cleanup: destroyed a window
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beaceec20 (res 0x5e8beacec260)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5e8beacf4c90 (res 0x5e8beab60aa0)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beaceef38 -> 5e8beace3b88 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beaceeef8 -> 5e8beace3bf0 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beace3b40 called init()
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5e8beacf4c90
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beaccf340 -> 5e8beace3ec8 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beaccf330 -> 5e8beace3d28 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beaceef08 -> 5e8beace3d90 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beaceef18 -> 5e8beace3df8 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beaceeef8 -> 5e8beace3e60 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beacf4d58 -> 5e8beace3cc0 (owner: CPopup)
+[LOG] New popup at wlr 5e8beaccf280 and hl 5e8beace3b40
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8beaceef28 -> 5e8bea473090 (owner: CSubsurface Head)
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5e8bea4730b8 -> 5e8bea4730b0, CSubsurface Head removed.
+[LOG] Callback 5e8beace3bb0 -> 5e8beace3ba8, CWLSurface removed.
+[LOG] Callback 5e8beace3c18 -> 5e8beace3c10, CWLSurface removed.
+[LOG] CWLSurface 5e8beace3b40 called destroy()
+[LOG] Callback 5e8beace3e88 -> 5e8beace3e80, CPopup removed.
+[LOG] Callback 5e8beace3ef0 -> 5e8beace3ee8, CPopup removed.
+[LOG] Callback 5e8beace3db8 -> 5e8beace3db0, CPopup removed.
+[LOG] Callback 5e8beace3e20 -> 5e8beace3e18, CPopup removed.
+[LOG] Callback 5e8beace3ce8 -> 5e8beace3ce0, CPopup removed.
+[LOG] Callback 5e8beace3d50 -> 5e8beace3d48, CPopup removed.
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beace0d60 (res 0x5e8beab60aa0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5e8beacf4c90 (res 0x5e8beac45840)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beace1078 -> 5e8beace3b88 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beace1038 -> 5e8beace3bf0 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beace3b40 called init()
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5e8beacf4c90
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beaccf340 -> 5e8beace3ec8 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beaccf330 -> 5e8beace3d28 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beace1048 -> 5e8beace3d90 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beace1058 -> 5e8beace3df8 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beace1038 -> 5e8beace3e60 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace3b40: 5e8beacf4d58 -> 5e8beace3cc0 (owner: CPopup)
+[LOG] New popup at wlr 5e8beaccf280 and hl 5e8beace3b40
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8beace1068 -> 5e8bea473090 (owner: CSubsurface Head)
+[LOG] Callback 5e8bea4730b8 -> 5e8bea4730b0, CSubsurface Head removed.
+[LOG] Callback 5e8beace3bb0 -> 5e8beace3ba8, CWLSurface removed.
+[LOG] Callback 5e8beace3c18 -> 5e8beace3c10, CWLSurface removed.
+[LOG] CWLSurface 5e8beace3b40 called destroy()
+[LOG] Callback 5e8beace3e88 -> 5e8beace3e80, CPopup removed.
+[LOG] Callback 5e8beace3ef0 -> 5e8beace3ee8, CPopup removed.
+[LOG] Callback 5e8beace3db8 -> 5e8beace3db0, CPopup removed.
+[LOG] Callback 5e8beace3e20 -> 5e8beace3e18, CPopup removed.
+[LOG] Callback 5e8beace3ce8 -> 5e8beace3ce0, CPopup removed.
+[LOG] Callback 5e8beace3d50 -> 5e8beace3d48, CPopup removed.
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacf47c0 (res 0x5e8beacee4b0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5e8beacf4c90 (res 0x5e8beab61750)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beacf4ad8 -> 5e8beace0da8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beacf4a98 -> 5e8beace0e10 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beace0d60 called init()
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5e8beacf4c90
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beaccf340 -> 5e8beace10e8 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beaccf330 -> 5e8beace0f48 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beacf4aa8 -> 5e8beace0fb0 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beacf4ab8 -> 5e8beace1018 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beacf4a98 -> 5e8beace1080 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beacf4d58 -> 5e8beace0ee0 (owner: CPopup)
+[LOG] New popup at wlr 5e8beaccf280 and hl 5e8beace0d60
+[LOG] Registered signal for owner 5e8bead0a970: 5e8beacf4ac8 -> 5e8bead0aa40 (owner: CSubsurface Head)
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5e8bead0aa68 -> 5e8bead0aa60, CSubsurface Head removed.
+[LOG] Callback 5e8beace0dd0 -> 5e8beace0dc8, CWLSurface removed.
+[LOG] Callback 5e8beace0e38 -> 5e8beace0e30, CWLSurface removed.
+[LOG] CWLSurface 5e8beace0d60 called destroy()
+[LOG] Callback 5e8beace10a8 -> 5e8beace10a0, CPopup removed.
+[LOG] Callback 5e8beace1110 -> 5e8beace1108, CPopup removed.
+[LOG] Callback 5e8beace0fd8 -> 5e8beace0fd0, CPopup removed.
+[LOG] Callback 5e8beace1040 -> 5e8beace1038, CPopup removed.
+[LOG] Callback 5e8beace0f08 -> 5e8beace0f00, CPopup removed.
+[LOG] Callback 5e8beace0f70 -> 5e8beace0f68, CPopup removed.
+[LOG] New XWayland Surface created (class null).
+[LOG] Registered signal for owner 5e8beacef190: 5e8bead04490 -> 5e8beacef878 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacef190: 5e8bead044a0 -> 5e8beacef8e0 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacef190: 5e8bead04410 -> 5e8beacef2c8 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacef190: 5e8bead04540 -> 5e8beacef810 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8beacef190: 5e8bead04420 -> 5e8beacef670 (owner: XWayland Window)
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beace4720 (res 0x5e8beacc6ee0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5e8bead08370 (res 0x5e8beac45840)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beace4a38 -> 5e8beace0da8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beace49f8 -> 5e8beace0e10 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beace0d60 called init()
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5e8bead08370
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beace4110 -> 5e8beace10e8 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beace4100 -> 5e8beace0f48 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beace4a08 -> 5e8beace0fb0 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beace4a18 -> 5e8beace1018 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8beace49f8 -> 5e8beace1080 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8bead08438 -> 5e8beace0ee0 (owner: CPopup)
+[LOG] New popup at wlr 5e8beace4050 and hl 5e8beace0d60
+[LOG] Registered signal for owner 5e8bead0a970: 5e8beace4a28 -> 5e8bead0aa40 (owner: CSubsurface Head)
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5e8bead0aa68 -> 5e8bead0aa60, CSubsurface Head removed.
+[LOG] Callback 5e8beace0dd0 -> 5e8beace0dc8, CWLSurface removed.
+[LOG] Callback 5e8beace0e38 -> 5e8beace0e30, CWLSurface removed.
+[LOG] CWLSurface 5e8beace0d60 called destroy()
+[LOG] Callback 5e8beace10a8 -> 5e8beace10a0, CPopup removed.
+[LOG] Callback 5e8beace1110 -> 5e8beace1108, CPopup removed.
+[LOG] Callback 5e8beace0fd8 -> 5e8beace0fd0, CPopup removed.
+[LOG] Callback 5e8beace1040 -> 5e8beace1038, CPopup removed.
+[LOG] Callback 5e8beace0f08 -> 5e8beace0f00, CPopup removed.
+[LOG] Callback 5e8beace0f70 -> 5e8beace0f68, CPopup removed.
+[LOG] New XWayland Surface created (class null).
+[LOG] Registered signal for owner 5e8bead094c0: 5e8bead08800 -> 5e8bead09ba8 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8bead094c0: 5e8bead08810 -> 5e8bead09c10 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8bead094c0: 5e8bead08780 -> 5e8bead095f8 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8bead094c0: 5e8bead088b0 -> 5e8bead09b40 (owner: XWayland Window)
+[LOG] Registered signal for owner 5e8bead094c0: 5e8bead08790 -> 5e8bead099a0 (owner: XWayland Window)
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beaceec20 (res 0x5e8beacc6ee0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5e8bead08370 (res 0x5e8beacec610)
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaceef38 -> 5e8beace4768 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaceeef8 -> 5e8beace47d0 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beace4720 called init()
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5e8bead08370
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaccf340 -> 5e8beace4aa8 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaccf330 -> 5e8beace4908 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaceef08 -> 5e8beace4970 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaceef18 -> 5e8beace49d8 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaceeef8 -> 5e8beace4a40 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace4720: 5e8bead08438 -> 5e8beace48a0 (owner: CPopup)
+[LOG] New popup at wlr 5e8beaccf280 and hl 5e8beace4720
+[LOG] Registered signal for owner 5e8bead0a970: 5e8beaceef28 -> 5e8bead0aa40 (owner: CSubsurface Head)
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5e8bead0aa68 -> 5e8bead0aa60, CSubsurface Head removed.
+[LOG] Callback 5e8beace4790 -> 5e8beace4788, CWLSurface removed.
+[LOG] Callback 5e8beace47f8 -> 5e8beace47f0, CWLSurface removed.
+[LOG] CWLSurface 5e8beace4720 called destroy()
+[LOG] Callback 5e8beace4a68 -> 5e8beace4a60, CPopup removed.
+[LOG] Callback 5e8beace4ad0 -> 5e8beace4ac8, CPopup removed.
+[LOG] Callback 5e8beace4998 -> 5e8beace4990, CPopup removed.
+[LOG] Callback 5e8beace4a00 -> 5e8beace49f8, CPopup removed.
+[LOG] Callback 5e8beace48c8 -> 5e8beace48c0, CPopup removed.
+[LOG] Callback 5e8beace4930 -> 5e8beace4928, CPopup removed.
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beaceec20 (res 0x5e8beacc6ee0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5e8bead08370 (res 0x5e8beacec260)
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaceef38 -> 5e8beace4768 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaceeef8 -> 5e8beace47d0 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beace4720 called init()
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5e8bead08370
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaccf340 -> 5e8beace4aa8 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaccf330 -> 5e8beace4908 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaceef08 -> 5e8beace4970 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaceef18 -> 5e8beace49d8 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace4720: 5e8beaceeef8 -> 5e8beace4a40 (owner: CPopup)
+[LOG] Registered signal for owner 5e8beace4720: 5e8bead08438 -> 5e8beace48a0 (owner: CPopup)
+[LOG] New popup at wlr 5e8beaccf280 and hl 5e8beace4720
+[LOG] Registered signal for owner 5e8bead0a970: 5e8beaceef28 -> 5e8bead0aa40 (owner: CSubsurface Head)
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Callback 5e8bead0aa68 -> 5e8bead0aa60, CSubsurface Head removed.
+[LOG] Callback 5e8beace4790 -> 5e8beace4788, CWLSurface removed.
+[LOG] Callback 5e8beace47f8 -> 5e8beace47f0, CWLSurface removed.
+[LOG] CWLSurface 5e8beace4720 called destroy()
+[LOG] Callback 5e8beace4a68 -> 5e8beace4a60, CPopup removed.
+[LOG] Callback 5e8beace4ad0 -> 5e8beace4ac8, CPopup removed.
+[LOG] Callback 5e8beace4998 -> 5e8beace4990, CPopup removed.
+[LOG] Callback 5e8beace4a00 -> 5e8beace49f8, CPopup removed.
+[LOG] Callback 5e8beace48c8 -> 5e8beace48c0, CPopup removed.
+[LOG] Callback 5e8beace4930 -> 5e8beace4928, CPopup removed.
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 49)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 50)
+[LOG] Set keyboard focus to surface 5e8beaccee90, with [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8beace28a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Destroying workspace ID 1
+[LOG] Keybind triggered, calling dispatcher (64, , 49)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 102)
+[LOG] Executing floorp
+[LOG] Process Created with pid 5887
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beaceec20 (res 0x5e8beace9f00)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8bead004c0 (res 0x5e8bead008b0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacf47c0 (res 0x5e8beacf4bb0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beace0680 (res 0x5e8beace0a70)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacf3180 (res 0x5e8beacf3570)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacf3180 (res 0x5e8beacf3570)
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 5e8bead09090: 5e8beacf3248 -> 5e8bead090b0 (owner: textInput)
+[LOG] Registered signal for owner 5e8bead09090: 5e8beacf3258 -> 5e8bead09180 (owner: textInput)
+[LOG] Registered signal for owner 5e8bead09090: 5e8beacf3268 -> 5e8bead09118 (owner: textInput)
+[LOG] Registered signal for owner 5e8bead09090: 5e8beacf3278 -> 5e8bead091e8 (owner: textInput)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8bead02df0 (res 0x5e8bead031e0)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5e8bead0e5f0 (res 0x5e8beacf34c0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8bead030d8 -> 5e8beacfea48 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8bead0e698 -> 5e8beacfeb18 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8bead030c8 -> 5e8beacfe9e0 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8beacff200: 5e8bead03108 -> 5e8beacff248 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8beacff200: 5e8bead030c8 -> 5e8beacff2b0 (owner: CWLSurface)
+[LOG] CWLSurface 5e8beacff200 called init()
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: ""]
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 5e8beacfe9e0: title: ""]
+[wlr] [types/wlr_server_decoration.c:104] new server_decoration 0x5e8beacf0840 (res 0x5e8bead08240)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacffd60 (res 0x5e8bead00150)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8beacec580 -> 5e8beacfef90 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8beacec590 -> 5e8beacfeff8 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8beacec5a0 -> 5e8beacfef28 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8bead030e8 -> 5e8beacfeab0 (owner: CWindow)
+[LOG] Registered signal for owner 5e8bead0a970: 5e8bead030f8 -> 5e8bead0aa40 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5e8bea4731d0: 5e8bead00078 -> 5e8bea473218 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8bea4731d0: 5e8bead00038 -> 5e8bea473280 (owner: CWLSurface)
+[LOG] CWLSurface 5e8bea4731d0 called init()
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8bead00038 -> 5e8bea473028 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8beacf0a30 -> 5e8bea472fc0 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8bead00068 -> 5e8bea473090 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8bead00048 -> 5e8bea4730f8 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8bea472fc0: 5e8bead00058 -> 5e8bea473160 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8beace4720: 5e8bead0e6b8 -> 5e8beace48a0 (owner: CPopup Head)
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "Ablaze Floorp"]
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 5e8bead02df0, with [Window 5e8beacfe9e0: title: "Ablaze Floorp"]
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "Ablaze Floorp"]
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8bead08178 -> 5e8beacfeb80 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8bead08108 -> 5e8beacfed88 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8bead08128 -> 5e8beacfed20 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8bead08138 -> 5e8beacfecb8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8bead08148 -> 5e8beacfedf0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8bead08118 -> 5e8beacfec50 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8beacfe9e0: 5e8bead0e6d8 -> 5e8beacff198 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "Ablaze Floorp"]
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 960x1080
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacd6cc0 (res 0x5e8beacd70b0)
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] [hookSystem] New hook event registered: windowTitle
+[LOG] Searching for matching rules for floorp (title: trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp"]
+[LOG] Window 5e8beacfe9e0 set title to trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[LOG] Callback 5e8bdf30abf0 -> 5e8bdf30abe8, CWLSurface removed.
+[LOG] Callback 5e8bdf30ac58 -> 5e8bdf30ac50, CWLSurface removed.
+[LOG] CWLSurface 5e8bdf30ab80 called destroy()
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8bead007d8 -> 5e8bdf30abc8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8bead00798 -> 5e8bdf30ac30 (owner: CWLSurface)
+[LOG] CWLSurface 5e8bdf30ab80 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacfbd60 (res 0x5e8beac46710)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacfc150 (res 0x5e8beab5f9b0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8beacfc540 (res 0x5e8bead0c080)
+[LOG] Searching for matching rules for floorp (title: Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "Ablaze Floorp"]
+[LOG] Window 5e8beacfe9e0 set title to Ablaze Floorp
+[LOG] Searching for matching rules for floorp (title: trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp"]
+[LOG] Window 5e8beacfe9e0 set title to trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 50)
+[LOG] Searching for matching rules for floorp (title: trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp"]
+[LOG] Set keyboard focus to surface 5e8beaccee90, with [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] cursorImage request: surface 5e8beace28a0
+[LOG] Callback 5e8bdf30abf0 -> 5e8bdf30abe8, CWLSurface removed.
+[LOG] Callback 5e8bdf30ac58 -> 5e8bdf30ac50, CWLSurface removed.
+[LOG] CWLSurface 5e8bdf30ab80 called destroy()
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8beace2bb8 -> 5e8bdf30abc8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8beace2b78 -> 5e8bdf30ac30 (owner: CWLSurface)
+[LOG] CWLSurface 5e8bdf30ab80 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] Keybind triggered, calling dispatcher (64, , 51)
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 65293)
+[LOG] Executing foot
+[LOG] Process Created with pid 6628
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 5e8beacf3550: 5e8bead15798 -> 5e8beacf3570 (owner: textInput)
+[LOG] Registered signal for owner 5e8beacf3550: 5e8bead157a8 -> 5e8beacf3640 (owner: textInput)
+[LOG] Registered signal for owner 5e8beacf3550: 5e8bead157b8 -> 5e8beacf35d8 (owner: textInput)
+[LOG] Registered signal for owner 5e8beacf3550: 5e8bead157c8 -> 5e8beacf36a8 (owner: textInput)
+[LOG] FractionalScaleManager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8bead15bd0 (res 0x5e8bead15fc0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8bead16260 (res 0x5e8bead16650)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x5e8bead16da0 (res 0x5e8bead16ef0)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8bead16548 -> 5e8bead1be48 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8bead16e48 -> 5e8bead1bf18 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8bead16538 -> 5e8bead1bde0 (owner: XDG Window)
+[LOG] Registered signal for owner 5e8bead1c600: 5e8bead16578 -> 5e8bead1c648 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8bead1c600: 5e8bead16538 -> 5e8bead1c6b0 (owner: CWLSurface)
+[LOG] CWLSurface 5e8bead1c600 called init()
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x5e8bead16900 (res 0x5e8bead16800)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5e8bead16da0
+[LOG] Searching for matching rules for foot (title: )
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8bead1bde0: title: ""]
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 5e8bead1bde0: title: ""]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x5e8bead173d0 (res 0x5e8bead177c0)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8beaccdfb0 -> 5e8bead1c390 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8beaccdfc0 -> 5e8bead1c3f8 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8beaccdfd0 -> 5e8bead1c328 (owner: Toplevel)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8bead16558 -> 5e8bead1beb0 (owner: CWindow)
+[LOG] Registered signal for owner 5e8bea331790: 5e8bead16568 -> 5e8bea331860 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 5e8bea3476b0: 5e8bead176e8 -> 5e8bea3476f8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8bea3476b0: 5e8bead176a8 -> 5e8bea347760 (owner: CWLSurface)
+[LOG] CWLSurface 5e8bea3476b0 called init()
+[LOG] Registered signal for owner 5e8bea3474a0: 5e8bead176a8 -> 5e8bea347508 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8bea3474a0: 5e8bead178e0 -> 5e8bea3474a0 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8bea3474a0: 5e8bead176d8 -> 5e8bea347570 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8bea3474a0: 5e8bead176b8 -> 5e8bea3475d8 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8bea3474a0: 5e8bead176c8 -> 5e8bea347640 (owner: CSubsurface)
+[LOG] Registered signal for owner 5e8beace0d60: 5e8bead16e68 -> 5e8beace0ee0 (owner: CPopup Head)
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8bead1bde0: title: "foot"]
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 5e8bead16260, with [Window 5e8bead1bde0: title: "foot"]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8bead1bde0: title: "foot"]
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8bead172e8 -> 5e8bead1bf80 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8bead17278 -> 5e8bead1c188 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8bead17298 -> 5e8bead1c120 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8bead172a8 -> 5e8bead1c0b8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8bead172b8 -> 5e8bead1c1f0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8bead17288 -> 5e8bead1c050 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5e8bead1bde0: 5e8bead16e88 -> 5e8bead1c598 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8bead1bde0: title: "foot"]
+[LOG] cursorImage request: shape 9
+[LOG] Callback 5e8bdf30abf0 -> 5e8bdf30abe8, CWLSurface removed.
+[LOG] Callback 5e8bdf30ac58 -> 5e8bdf30ac50, CWLSurface removed.
+[LOG] CWLSurface 5e8bdf30ab80 called destroy()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8bead1bde0: title: "harun@archlinux:~"]
+[LOG] Window 5e8bead1bde0 set title to harun@archlinux:~
+[LOG] Searching for matching rules for foot (title: nvim ~/.config/hypr/hyprland.conf)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8bead1bde0: title: "nvim ~/.config/hypr/hyprland.conf"]
+[LOG] Window 5e8bead1bde0 set title to nvim ~/.config/hypr/hyprland.conf
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [hookSystem] New hook event registered: mouseAxis
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 49)
+[LOG] Searching for matching rules for foot (title: nvim ~/.config/hypr/hyprland.conf)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8bead1bde0: title: "nvim ~/.config/hypr/hyprland.conf"]
+[LOG] Set keyboard focus to surface 5e8bead02df0, with [Window 5e8beacfe9e0: title: "trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp"]
+[LOG] Searching for matching rules for floorp (title: trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp"]
+[LOG] cursorImage request: surface 5e8bead004c0
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8bead007d8 -> 5e8bdf30abc8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8bead00798 -> 5e8bdf30ac30 (owner: CWLSurface)
+[LOG] CWLSurface 5e8bdf30ab80 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 30.68µs. Estimated average calc time: 0.07µs.
+[LOG] Using config: /home/harun/.config/hypr/hyprland.conf
+[LOG] ApplyConfigToKeyboard for "power-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea321690's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "video-bus", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea348a70's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Video Bus"
+[LOG] ApplyConfigToKeyboard for "power-button-1", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea336960's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "sleep-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea1b4e60's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Sleep Button"
+[LOG] ApplyConfigToKeyboard for "at-translated-set-2-keyboard", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bdf9cd420's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "AT Translated Set 2 keyboard"
+[LOG] ApplyConfigToKeyboard for "hp-wmi-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea598f80's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "HP WMI hotkeys"
+[LOG] ApplyConfigToKeyboard for "wireless-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea5fd740's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Wireless hotkeys"
+[LOG] Applied config to mouse corsair-corsair-gaming-harpoon-rgb-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-touchpad, sens 0.00
+[LOG] Applying monitor rule for eDP-1
+[LOG] Not applying a new rule to eDP-1 because it's already applied!
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Searching for matching rules for floorp (title: trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "trialuser02/qt6gtk2: GTK+2.0 integration plugins for Qt6 — Ablaze Floorp"]
+[LOG] Searching for matching rules for foot (title: nvim ~/.config/hypr/hyprland.conf)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8bead1bde0: title: "nvim ~/.config/hypr/hyprland.conf"]
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: Issues · trialuser02/qt6gtk2 — Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "Issues · trialuser02/qt6gtk2 — Ablaze Floorp"]
+[LOG] Window 5e8beacfe9e0 set title to Issues · trialuser02/qt6gtk2 — Ablaze Floorp
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: Supporting Wayland and bump requirement to gtk3 · Issue #2 · trialuser02/qt6gtk2 — Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "Supporting Wayland and bump requirement to gtk3 · Issue #2 · trialuser02/qt6gtk2 — Ablaze Floorp"]
+[LOG] Window 5e8beacfe9e0 set title to Supporting Wayland and bump requirement to gtk3 · Issue #2 · trialuser02/qt6gtk2 — Ablaze Floorp
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[LOG] Callback 5e8bdf30abf0 -> 5e8bdf30abe8, CWLSurface removed.
+[LOG] Callback 5e8bdf30ac58 -> 5e8bdf30ac50, CWLSurface removed.
+[LOG] CWLSurface 5e8bdf30ab80 called destroy()
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8bea69c5b8 -> 5e8bdf30abc8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8bea69c578 -> 5e8bdf30ac30 (owner: CWLSurface)
+[LOG] CWLSurface 5e8bdf30ab80 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bead004c0
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for floorp (title: Supporting Wayland and bump requirement to gtk3 · Issue #2 · trialuser02/qt6gtk2 — Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "Supporting Wayland and bump requirement to gtk3 · Issue #2 · trialuser02/qt6gtk2 — Ablaze Floorp"]
+[LOG] Set keyboard focus to surface 5e8beaccee90, with [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Hyprctl: dispatcher workspace : 2
+[wlr] [render/gles2/renderer.c:158] Created GL FBO for buffer 1876x986
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8bea69c2a0
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: surface 5e8beace28a0
+[LOG] Callback 5e8bdf30abf0 -> 5e8bdf30abe8, CWLSurface removed.
+[LOG] Callback 5e8bdf30ac58 -> 5e8bdf30ac50, CWLSurface removed.
+[LOG] CWLSurface 5e8bdf30ab80 called destroy()
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8beace2bb8 -> 5e8bdf30abc8 (owner: CWLSurface)
+[LOG] Registered signal for owner 5e8bdf30ab80: 5e8beace2b78 -> 5e8bdf30ac30 (owner: CWLSurface)
+[LOG] CWLSurface 5e8bdf30ab80 called init()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Keybind triggered, calling dispatcher (64, , 51)
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Set keyboard focus to surface 5e8bead16260, with [Window 5e8bead1bde0: title: "nvim ~/.config/hypr/hyprland.conf"]
+[LOG] Searching for matching rules for foot (title: nvim ~/.config/hypr/hyprland.conf)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8bead1bde0: title: "nvim ~/.config/hypr/hyprland.conf"]
+[LOG] cursorImage request: shape 1
+[LOG] Callback 5e8bdf30abf0 -> 5e8bdf30abe8, CWLSurface removed.
+[LOG] Callback 5e8bdf30ac58 -> 5e8bdf30ac50, CWLSurface removed.
+[LOG] CWLSurface 5e8bdf30ab80 called destroy()
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 30.37µs. Estimated average calc time: 0.07µs.
+[LOG] Using config: /home/harun/.config/hypr/hyprland.conf
+[LOG] ApplyConfigToKeyboard for "power-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea321690's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "video-bus", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea348a70's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Video Bus"
+[LOG] ApplyConfigToKeyboard for "power-button-1", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea336960's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "sleep-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea1b4e60's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Sleep Button"
+[LOG] ApplyConfigToKeyboard for "at-translated-set-2-keyboard", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bdf9cd420's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "AT Translated Set 2 keyboard"
+[LOG] ApplyConfigToKeyboard for "hp-wmi-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea598f80's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "HP WMI hotkeys"
+[LOG] ApplyConfigToKeyboard for "wireless-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 5e8bea5fd740's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Wireless hotkeys"
+[LOG] Applied config to mouse corsair-corsair-gaming-harpoon-rgb-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-touchpad, sens 0.00
+[LOG] Applying monitor rule for eDP-1
+[LOG] Not applying a new rule to eDP-1 because it's already applied!
+[LOG] Searching for matching rules for qt5ct (title: Qt5 Configuration Tool)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacf0a80: title: "Qt5 Configuration Tool"]
+[LOG] Searching for matching rules for floorp (title: Supporting Wayland and bump requirement to gtk3 · Issue #2 · trialuser02/qt6gtk2 — Ablaze Floorp)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8beacfe9e0: title: "Supporting Wayland and bump requirement to gtk3 · Issue #2 · trialuser02/qt6gtk2 — Ablaze Floorp"]
+[LOG] Searching for matching rules for foot (title: nvim ~/.config/hypr/hyprland.conf)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 5e8bead1bde0: title: "nvim ~/.config/hypr/hyprland.conf"]
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[LOG] Keybind triggered, calling dispatcher (0, , 269025066)
+[LOG] Executing eww update center-option="powermenu" ; hyprctl dispatch submap powermenu ; eww update reveal-option="powermenu" ; eww update power-reveal=1
+[LOG] Process Created with pid 7734
+[LOG] Changed keybind submap to powermenu
+[LOG] [hookSystem] New hook event registered: submap
+[LOG] Hyprctl: dispatcher submap : powermenu
+[LOG] Keybind triggered, calling dispatcher (0, , 65363)
+[LOG] Executing declare -i val=`eww get power-option` ; eww update power-option=$(( val < 5 ? val + 1 : val )) ; eww update power-reveal=$(( val < 5 ? val + 1 : val ))
+[LOG] Process Created with pid 7752
+[LOG] Keybind triggered, calling dispatcher (0, , 65363)
+[LOG] Executing declare -i val=`eww get power-option` ; eww update power-option=$(( val < 5 ? val + 1 : val )) ; eww update power-reveal=$(( val < 5 ? val + 1 : val ))
+[LOG] Process Created with pid 7763
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Executing eww update power-reveal=0
+[LOG] Process Created with pid 7785
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Executing /home/harun/.config/eww/scripts/powermenu
+[LOG] Process Created with pid 7787
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Executing eww update center-option="workspaces" ; eww update reveal-option="workspaces"
+[LOG] Process Created with pid 7789
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Reset active submap to the default one.
+[LOG] Hyprland received signal 15
+[wlr] [backend/drm/drm.c:817] connector eDP-1: Turning off

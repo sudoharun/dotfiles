@@ -1,12 +1,9 @@
-$bg-color: #121212;
-$fg-color: #f5f5f5;
-$accent-color: #c5cdda;
+// $background: #121212;
+// $foreground: #f5f5f5;
+// $accent-color: #c5cdda;
 $rad: 4px;
 
-// Empty workspaces
-// @import "pillws";
-
-// Numbered workspaces
+@import "colors";
 @import "styling";
 
 * {

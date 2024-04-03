@@ -62,7 +62,7 @@ packages = [
     "xdg-desktop-portal-wlr",
     "hyprlock-git",
     "hypridle-git",
-    "nwg-look-bin",
+    "nwg-look",
     "qt5ct",
     "imv",
     "wl-clipboard",
@@ -283,11 +283,11 @@ os.system(f"cp -r {dots_dir}/themes/* ~/.local/share/themes/")
 os.system(f"cp -r {dots_dir}/icons/* ~/.local/share/icons/")
 os.chdir(home)
 print("\nSetting theme...")
-os.system("gsettings set org.gnome.desktop.interface gtk-theme \"Triple12\"")
+os.system("gsettings set org.gnome.desktop.interface gtk-theme \"triple12\"")
 print("\nSetting cursor theme...")
 os.system("gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'")
 print("\nSetting icon theme...")
-os.system("gsettings set org.gnome.desktop.interface icon-theme \"Triple12Papirus\"")
+os.system("gsettings set org.gnome.desktop.interface icon-theme \"triple12\"")
 print("\nSettings fonts...")
 os.system("gsettings set org.gnome.desktop.interface document-font-name \"IBM Plex Sans 11\"")
 os.system("gsettings set org.gnome.desktop.interface font-name \"IBM Plex Sans 11\"")
@@ -375,14 +375,14 @@ if nvchad_opt != "n":
     sleep(5)
     os.system("git clone https://github.com/NvChad/starter ~/.config/nvim --depth 1 && nvim && echo 0")
     os.system("mv ~/chadrc.lua ~/.config/nvim/lua/chadrc.lua")
-    os.system("mv ~/plugins.lua ~/.config/nvim/lua/plugins.lua")
-    with open(f"{home}/.config/nvim/lua/chadrc.lua", "a") as f:
+    os.system("mv ~/plugins.lua ~/.config/nvim/lua/plugins/init.lua")
+    with open(f"{home}/.config/nvim/lua/plugins/init.lua", "a") as f:
         f.close()
 else:
     os.system("rm -f ~/chadrc.lua")
 
 # pywal
-os.system(f'wal -b 121212 -i "{home}/.config/hypr/flowerz.jpg"')
+# os.system(f'wal -b 121212 -i "{home}/.config/hypr/flowerz.jpg"')
 
 # Add user to video group to be able to change brightness
 os.system("sudo usermod -aG video $USER")

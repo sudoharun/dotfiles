@@ -1,0 +1,253 @@
+[LOG] Process Created with pid 1178
+[LOG] Executing hyprpm reload -n
+[LOG] Process Created with pid 1182
+[LOG] Executing hypridle
+[LOG] Process Created with pid 1184
+[LOG] Executing tail -f /tmp/hypr/af3a61a4e437fe728ef69c2739cae79e5a6254c0_1712054661/hyprland.log &> ~/.config/hypr/$(date '+%F_%H-%M-%S_log.txt')
+[LOG] Process Created with pid 1187
+[LOG] ApplyConfigToKeyboard for "power-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09ef1a170's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "video-bus", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09ef3f4d0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Video Bus"
+[LOG] ApplyConfigToKeyboard for "power-button-1", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09ef346e0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "sleep-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09ef2e730's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Sleep Button"
+[LOG] ApplyConfigToKeyboard for "at-translated-set-2-keyboard", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09f1183a0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "AT Translated Set 2 keyboard"
+[LOG] ApplyConfigToKeyboard for "hp-wmi-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09f18ec50's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "HP WMI hotkeys"
+[LOG] ApplyConfigToKeyboard for "wireless-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09f1f3480's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Wireless hotkeys"
+[LOG] Applied config to mouse corsair-corsair-gaming-harpoon-rgb-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-touchpad, sens 0.00
+[LOG] Applying monitor rule for eDP-1
+[LOG] Not applying a new rule to eDP-1 because it's already applied!
+[LOG] [hookSystem] New hook event registered: render
+[wlr] [render/swapchain.c:106] Allocating new swapchain buffer
+[wlr] [render/allocator/gbm.c:144] Allocated 1920x1080 GBM buffer with format XR24 (0x34325258), modifier Y_TILED_CCS (0x0100000000000004)
+[LOG] CRenderbuffer: wlr_egl_create_image_from_dmabuf found at 739c30abbf10
+[LOG] Registered signal for owner 60f09ef52630: 60f09f1b3f28 -> 60f09ef52638 (owner: CRenderbuffer)
+[LOG] Monitor eDP-1 -> destroyed all render data
+[LOG] Shaders initialized successfully.
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] Framebuffer created, status 36053
+[LOG] [hookSystem] New hook event registered: tick
+[LOG] Registered signal for owner 60f09f732670: 60f09f245e88 -> 60f09f732678 (owner: CRenderbuffer)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60f09f83ff30 (res 0x60f09f840320)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60f09f2931b0 (res 0x60f09f2935a0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60f09f8403b0 (res 0x60f09f8407a0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60f09f8408c0 (res 0x60f09f840cb0)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60f09f8ab410 (res 0x60f09f8ab800)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x60f09f8ab990 (res 0x60f09f8ab320)
+[LOG] Registered signal for owner 60f09f8abab0: 60f09f8ab6e8 -> 60f09f8abee8 (owner: layerSurface)
+[LOG] Registered signal for owner 60f09f8abab0: 60f09f8aba58 -> 60f09f8abdb0 (owner: layerSurface)
+[LOG] Registered signal for owner 60f09f8abab0: 60f09f8ab6f8 -> 60f09f8abe18 (owner: layerSurface)
+[LOG] Registered signal for owner 60f09f8abab0: 60f09f8ab708 -> 60f09f8abe80 (owner: layerSurface)
+[LOG] Registered signal for owner 60f09f773bd0: 60f09f8aba68 -> 60f09f773d50 (owner: CPopup Head)
+[LOG] LayerSurface 60f09f8ab990 (namespace bar layer 0) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 60f09f8ab410 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 60f09f8ab410 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60f09f896900 (res 0x60f09f896cf0)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x60f09f8ac1d0 (res 0x60f09f8ac2f0)
+[LOG] Registered signal for owner 60f09f8ac380: 60f09f896bd8 -> 60f09f8ac7b8 (owner: layerSurface)
+[LOG] Registered signal for owner 60f09f8ac380: 60f09f8ac298 -> 60f09f8ac680 (owner: layerSurface)
+[LOG] Registered signal for owner 60f09f8ac380: 60f09f896be8 -> 60f09f8ac6e8 (owner: layerSurface)
+[LOG] Registered signal for owner 60f09f8ac380: 60f09f896bf8 -> 60f09f8ac750 (owner: layerSurface)
+[LOG] Registered signal for owner 60f09f74aa40: 60f09f8ac2a8 -> 60f09f74abc0 (owner: CPopup Head)
+[LOG] LayerSurface 60f09f8ac1d0 (namespace corners layer 0) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 60f09f896900 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 60f09f896900 in setPreferredTransformForSurface
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60f09f897d90 (res 0x60f09f898180)
+[wlr] [types/wlr_layer_shell_v1.c:475] new layer_surface 0x60f09f898210 (res 0x60f09f898330)
+[LOG] Registered signal for owner 60f09f896d80: 60f09f898068 -> 60f09f8971b8 (owner: layerSurface)
+[LOG] Registered signal for owner 60f09f896d80: 60f09f8982d8 -> 60f09f897080 (owner: layerSurface)
+[LOG] Registered signal for owner 60f09f896d80: 60f09f898078 -> 60f09f8970e8 (owner: layerSurface)
+[LOG] Registered signal for owner 60f09f896d80: 60f09f898088 -> 60f09f897150 (owner: layerSurface)
+[LOG] Registered signal for owner 60f09f75d520: 60f09f8982e8 -> 60f09f75d6a0 (owner: CPopup Head)
+[LOG] LayerSurface 60f09f898210 (namespace corners layer 0) created on monitor eDP-1
+[ERR] BUG THIS: No CWLSurface for surface in damageSurface!!!
+[WARN] Orphaned wlr_surface 60f09f897d90 in setPreferredScaleForSurface
+[WARN] Orphaned wlr_surface 60f09f897d90 in setPreferredTransformForSurface
+[LOG] LayerSurface 60f09f8ab990 mapped
+[LOG] Registered signal for owner 60f09f8abc90: 60f09f8ab728 -> 60f09f8abcd8 (owner: CWLSurface)
+[LOG] Registered signal for owner 60f09f8abc90: 60f09f8ab6e8 -> 60f09f8abd40 (owner: CWLSurface)
+[LOG] CWLSurface 60f09f8abc90 called init()
+[LOG] [hookSystem] New hook event registered: openLayer
+[LOG] LayerSurface 60f09f8ac1d0 mapped
+[LOG] Registered signal for owner 60f09f8ac560: 60f09f896c18 -> 60f09f8ac5a8 (owner: CWLSurface)
+[LOG] Registered signal for owner 60f09f8ac560: 60f09f896bd8 -> 60f09f8ac610 (owner: CWLSurface)
+[LOG] CWLSurface 60f09f8ac560 called init()
+[LOG] LayerSurface 60f09f898210 mapped
+[LOG] Registered signal for owner 60f09f896f60: 60f09f8980a8 -> 60f09f896fa8 (owner: CWLSurface)
+[LOG] Registered signal for owner 60f09f896f60: 60f09f898068 -> 60f09f897010 (owner: CWLSurface)
+[LOG] CWLSurface 60f09f896f60 called init()
+[LOG] Socket2 accepted a new client at FD 73
+[LOG] Keybind triggered, calling dispatcher (64, , 65293)
+[LOG] Executing foot
+[LOG] Process Created with pid 1522
+[LOG] New TextInput added!
+[LOG] Registered signal for owner 60f09f840f30: 60f09f8bf088 -> 60f09f840f50 (owner: textInput)
+[LOG] Registered signal for owner 60f09f840f30: 60f09f8bf098 -> 60f09f841020 (owner: textInput)
+[LOG] Registered signal for owner 60f09f840f30: 60f09f8bf0a8 -> 60f09f840fb8 (owner: textInput)
+[LOG] Registered signal for owner 60f09f840f30: 60f09f8bf0b8 -> 60f09f841088 (owner: textInput)
+[LOG] FractionalScaleManager bound successfully!
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60f09f8bf870 (res 0x60f09f8bfc60)
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60f09f8ad240 (res 0x60f09f8ad630)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:401] new xdg_surface 0x60f09f8ad7e0 (res 0x60f09f8ad930)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8ad528 -> 60f09f8bfd58 (owner: XDG Window)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8ad888 -> 60f09f8bfe28 (owner: XDG Window)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8ad518 -> 60f09f8bfcf0 (owner: XDG Window)
+[LOG] Registered signal for owner 60f09f8c0510: 60f09f8ad558 -> 60f09f8c0558 (owner: CWLSurface)
+[LOG] Registered signal for owner 60f09f8c0510: 60f09f8ad518 -> 60f09f8c05c0 (owner: CWLSurface)
+[LOG] CWLSurface 60f09f8c0510 called init()
+[wlr] [types/wlr_xdg_decoration_v1.c:216] new xdg_toplevel_decoration 0x60f09f8ade10 (res 0x60f09f8adf60)
+[wlr] [types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x60f09f8ad7e0
+[LOG] Searching for matching rules for foot (title: )
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 60f09f8bfcf0: title: ""]
+[LOG] Layout predicts size [Vector2D: x: 1920, y: 1080] for [Window 60f09f8bfcf0: title: ""]
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60f09f8c2090 (res 0x60f09f8c2480)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8c12c0 -> 60f09f8c02a0 (owner: Toplevel)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8c12d0 -> 60f09f8c0308 (owner: Toplevel)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8c12e0 -> 60f09f8c0238 (owner: Toplevel)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8ad538 -> 60f09f8bfdc0 (owner: CWindow)
+[LOG] Registered signal for owner 60f09f0a6a00: 60f09f8ad548 -> 60f09f0a6ad0 (owner: CSubsurface Head)
+[LOG] Registered signal for owner 60f09f0afcb0: 60f09f8c23a8 -> 60f09f0afcf8 (owner: CWLSurface)
+[LOG] Registered signal for owner 60f09f0afcb0: 60f09f8c2368 -> 60f09f0afd60 (owner: CWLSurface)
+[LOG] CWLSurface 60f09f0afcb0 called init()
+[LOG] Registered signal for owner 60f09f0afaa0: 60f09f8c2368 -> 60f09f0afb08 (owner: CSubsurface)
+[LOG] Registered signal for owner 60f09f0afaa0: 60f09f8c25a0 -> 60f09f0afaa0 (owner: CSubsurface)
+[LOG] Registered signal for owner 60f09f0afaa0: 60f09f8c2398 -> 60f09f0afb70 (owner: CSubsurface)
+[LOG] Registered signal for owner 60f09f0afaa0: 60f09f8c2378 -> 60f09f0afbd8 (owner: CSubsurface)
+[LOG] Registered signal for owner 60f09f0afaa0: 60f09f8c2388 -> 60f09f0afc40 (owner: CSubsurface)
+[LOG] Registered signal for owner 60f09f777960: 60f09f8ad8a8 -> 60f09f777ae0 (owner: CPopup Head)
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 60f09f8bfcf0: title: "foot"]
+[LOG] OPENINGON: [Node nullptr], Monitor: 0
+[LOG] Set keyboard focus to surface 60f09f8ad240, with [Window 60f09f8bfcf0: title: "foot"]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 60f09f8bfcf0: title: "foot"]
+[LOG] [hookSystem] New hook event registered: activeWindow
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8add28 -> 60f09f8bfe90 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8adcb8 -> 60f09f8c0098 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8adcd8 -> 60f09f8c0030 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8adce8 -> 60f09f8bffc8 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8adcf8 -> 60f09f8c0100 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8adcc8 -> 60f09f8bff60 (owner: XDG Window Late)
+[LOG] Registered signal for owner 60f09f8bfcf0: 60f09f8ad8c8 -> 60f09f8c04a8 (owner: XDG Window Late)
+[LOG] Map request dispatched, monitor eDP-1, window pos: [20.00000, 70.00000], window size: [1880.00000, 990.00000]
+[LOG] Searching for matching rules for foot (title: foot)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 60f09f8bfcf0: title: "foot"]
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[wlr] [xwayland/server.c:107] Starting Xwayland on :0
+[LOG] [hookSystem] New hook event registered: windowTitle
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 60f09f8bfcf0: title: "harun@archlinux:~"]
+[LOG] Window 60f09f8bfcf0 set title to harun@archlinux:~
+[wlr] [types/wlr_compositor.c:779] New wlr_surface 0x60f09f8c5690 (res 0x60f09f8c5a80)
+[wlr] [xwayland/server.c:272] Xserver is ready
+[wlr] [xwayland/xwm.c:1964] xfixes version: 6.0
+[wlr] [xwayland/xwm.c:1985] xres version: 1.2
+[LOG] cursorImage request: surface 0
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[LOG] Searching for matching rules for foot (title: nvim ~/.config/hypr/hyprland.conf)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 60f09f8bfcf0: title: "nvim ~/.config/hypr/hyprland.conf"]
+[LOG] Window 60f09f8bfcf0 set title to nvim ~/.config/hypr/hyprland.conf
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] [hookSystem] New hook event registered: mouseButton
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 1
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] cursorImage request: shape 9
+[wlr] [types/output/cursor.c:371] Falling back to software cursor on output 'eDP-1'
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 60f09f8bfcf0: title: "harun@archlinux:~"]
+[LOG] Window 60f09f8bfcf0 set title to harun@archlinux:~
+[LOG] Keybind triggered, calling dispatcher (0, , 269025066)
+[LOG] Executing eww update center-option="powermenu" ; hyprctl dispatch submap powermenu ; eww update reveal-option="powermenu" ; eww update power-reveal=1
+[LOG] Process Created with pid 1792
+[LOG] Changed keybind submap to powermenu
+[LOG] [hookSystem] New hook event registered: submap
+[LOG] Hyprctl: dispatcher submap : powermenu
+[LOG] Keybind triggered, calling dispatcher (0, , 65363)
+[LOG] Executing declare -i val=`eww get power-option` ; eww update power-option=$(( val < 5 ? val + 1 : val )) ; eww update power-reveal=$(( val < 5 ? val + 1 : val ))
+[LOG] Process Created with pid 1801
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 31.01µs. Estimated average calc time: 0.08µs.
+[LOG] Using config: /home/harun/.config/hypr/hyprland.conf
+[LOG] ApplyConfigToKeyboard for "power-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09ef1a170's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "video-bus", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09ef3f4d0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Video Bus"
+[LOG] ApplyConfigToKeyboard for "power-button-1", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09ef346e0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Power Button"
+[LOG] ApplyConfigToKeyboard for "sleep-button", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09ef2e730's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Sleep Button"
+[LOG] ApplyConfigToKeyboard for "at-translated-set-2-keyboard", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09f1183a0's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "AT Translated Set 2 keyboard"
+[LOG] ApplyConfigToKeyboard for "hp-wmi-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09f18ec50's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "HP WMI hotkeys"
+[LOG] ApplyConfigToKeyboard for "wireless-hotkeys", hasconfig: 0
+[LOG] Attempting to create a keymap for layout gb with variant  (rules: , model: , options: )
+[LOG] Updating keyboard 60f09f1f3480's translation state from an active index 0
+[LOG] Set the keyboard layout to gb and variant to  for keyboard "Wireless hotkeys"
+[LOG] Applied config to mouse corsair-corsair-gaming-harpoon-rgb-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-mouse, sens 0.00
+[LOG] Applied config to mouse syna30a6:00-06cb:cdec-touchpad, sens 0.00
+[LOG] Applying monitor rule for eDP-1
+[LOG] Not applying a new rule to eDP-1 because it's already applied!
+[LOG] Searching for matching rules for foot (title: harun@archlinux:~)
+[LOG] Window rule suppressevent maximize -> class:^(.*)$ matched [Window 60f09f8bfcf0: title: "harun@archlinux:~"]
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[wlr] [xwayland/xwm.c:1655] unhandled X11 event: MappingNotify (34)
+[LOG] Keybind triggered, calling dispatcher (0, , 65363)
+[LOG] Executing declare -i val=`eww get power-option` ; eww update power-option=$(( val < 5 ? val + 1 : val )) ; eww update power-reveal=$(( val < 5 ? val + 1 : val ))
+[LOG] Process Created with pid 1827
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Executing eww update power-reveal=0
+[LOG] Process Created with pid 1876
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Executing /home/harun/.config/eww/scripts/powermenu
+[LOG] Process Created with pid 1878
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Executing eww update center-option="workspaces" ; eww update reveal-option="workspaces"
+[LOG] Process Created with pid 1881
+[LOG] Keybind triggered, calling dispatcher (0, , 65293)
+[LOG] Reset active submap to the default one.
+[LOG] Hyprland received signal 15
+[wlr] [backend/drm/drm.c:817] connector eDP-1: Turning off
