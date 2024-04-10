@@ -6,8 +6,8 @@ icon() {
     echo "images/volume-off.svg"
   elif [[ $lvl -eq 0 ]]; then
     echo "images/volume-low.svg"
-  elif [[ $lvl -le 50 ]]; then
-    echo "images/volume-medium.svg"
+#   elif [[ $lvl -le 50 ]]; then
+#     echo "images/volume-medium.svg"
   else
     echo "images/volume-high.svg"
   fi
@@ -15,7 +15,7 @@ icon() {
 
 level() {
   level=`pamixer --get-volume-human | awk -F'%' '{ print $1 }' | xargs`
-  if [[ $level -eq "muted" ]]; then
+  if [[ $level == "muted" ]]; then
     echo "muted"
   else
     echo "$level%"

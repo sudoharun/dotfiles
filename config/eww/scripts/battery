@@ -26,8 +26,6 @@ icon() {
     elif [[ $batlvl -le 100 ]]; then
       echo "images/battery-100.svg"
     fi
-  else
-    echo "󰑓"
   fi
 }
 
