@@ -127,16 +127,16 @@ input type:keyboard {
     bindsym $mod+9 workspace number 9
     bindsym $mod+0 workspace number 10
     # Move focused container to workspace
-    bindsym $alt+1 move container to workspace number 1
-    bindsym $alt+2 move container to workspace number 2
-    bindsym $alt+3 move container to workspace number 3
-    bindsym $alt+4 move container to workspace number 4
-    bindsym $alt+5 move container to workspace number 5
-    bindsym $alt+6 move container to workspace number 6
-    bindsym $alt+7 move container to workspace number 7
-    bindsym $alt+8 move container to workspace number 8
-    bindsym $alt+9 move container to workspace number 9
-    bindsym $alt+0 move container to workspace number 10
+    bindsym $alt+1 move container to workspace number 1; workspace number 1
+    bindsym $alt+2 move container to workspace number 2; workspace number 2
+    bindsym $alt+3 move container to workspace number 3; workspace number 3
+    bindsym $alt+4 move container to workspace number 4; workspace number 4
+    bindsym $alt+5 move container to workspace number 5; workspace number 5
+    bindsym $alt+6 move container to workspace number 6; workspace number 6
+    bindsym $alt+7 move container to workspace number 7; workspace number 7
+    bindsym $alt+8 move container to workspace number 8; workspace number 8
+    bindsym $alt+9 move container to workspace number 9; workspace number 9
+    bindsym $alt+0 move container to workspace number 10; workspace number 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 #
@@ -201,6 +201,26 @@ mode "resize" {
 }
 bindsym $alt+r mode "resize"
 
+mode "powermenu" {
+    bindsym Left exec declare -i val=`eww get power-option` ; eww update power-option=$(( val > 1 ? val - 1 : val )) ; eww update power-reveal=$(( val > 1 ? val - 1 : val ))
+    bindsym Right exec declare -i val=`eww get power-option` ; eww update power-option=$(( val < 5 ? val + 1 : val )) ; eww update power-reveal=$(( val < 5 ? val + 1 : val ))
+    bindsym Up exec eww update power-option=1 ; eww update power-reveal=1
+    bindsym Down exec eww update power-option=5 ; eww update power-reveal=5
+    bindsym Return exec $HOME/.config/eww/scripts/powermenu; exec eww update center-option="workspaces" ; eww update reveal-option="workspaces"; mode "default"
+    bindsym Escape exec eww update power-option=1; exec eww update power-reveal=0; exec eww update center-option="workspaces"; exec eww update reveal-option="workspaces"; mode "default"
+}
+bindsym XF86PowerOff exec eww update center-option="powermenu"; mode "powermenu"; exec eww update reveal-option="powermenu"; exec eww update power-reveal=1
+
+mode "screenshooter" {
+   bindsym Left exec declare -i val=`eww get screenshot-option` ; eww update screenshot-option=$(( val > 1 ? val - 1 : val )) ; eww update screenshot-reveal=$(( val > 1 ? val - 1 : val ))
+   bindsym Right exec declare -i val=`eww get screenshot-option` ; eww update screenshot-option=$(( val < 3 ? val + 1 : val )) ; eww update screenshot-reveal=$(( val < 3 ? val + 1 : val ))
+   bindsym Up exec eww update screenshot-option=1 ; eww update screenshot-reveal=1
+   bindsym Down exec eww update screenshot-option=3 ; eww update screenshot-reveal=3
+   bindsym Return exec eww update screenshot-reveal=0; exec $HOME/.config/eww/scripts/screenshooter; exec eww update center-option="workspaces" ; eww update reveal-option="workspaces"; mode "default"
+   bindsym Escape exec eww update screenshot-option=1; exec eww update screenshot-reveal=0; exec eww update center-option="workspaces"; exec eww update reveal-option="workspaces"; mode "default"
+}
+bindsym Print exec eww update center-option="screenshooter"; mode "screenshooter"; exec eww update reveal-option="screenshooter"; exec eww update screenshot-reveal=1
+
 #
 # Status Bar:
 #
@@ -243,6 +263,7 @@ bindsym $mod+e exec wofi-emoji -i -t foot
 # Exec-once
 exec eww update br=`brillo -G | awk -F'.' '{ print $1 }`
 exec dbus-update-activation-environment --systemd --all
+exec export DESKTOP_SESSION=sway
 exec eww daemon && eww open bar
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec hypridle
+# exec hypridle
