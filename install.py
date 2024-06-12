@@ -51,7 +51,7 @@ packages = [
     "rustup",
     "eww",
     "python-pywal",
-    "waypaper-git",
+    "waypaper",
     "floorp-bin",
     "mpv",
     "bibata-cursor-theme-bin",
