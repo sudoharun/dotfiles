@@ -64,6 +64,7 @@ packages = [
     "hypridle-git",
     "nwg-look",
     "qt6ct",
+    "swww",
     "imv",
     "wl-clipboard",
     "meson",
