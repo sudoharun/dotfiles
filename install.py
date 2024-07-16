@@ -20,7 +20,6 @@ packages = [
     "p7zip",
     "upower",
     "udisks2",
-    "zsh",
     "neovim",
     "polkit-gnome",
     "xdg-desktop-portal-gtk",
@@ -56,14 +55,14 @@ packages = [
     "mpv",
     "bibata-cursor-theme-bin",
     "papirus-icon-theme",
-    "hyprlang-git",
-    "hyprcursor-git",
-    "hyprland-git",
-    "xdg-desktop-portal-wlr",
-    "hyprlock-git",
-    "hypridle-git",
+    "hyprlang",
+    "hyprcursor",
+    "hyprland",
+    "xdg-desktop-portal-hyprland",
+    "hyprlock",
+    "hypridle",
     "nwg-look",
-    "qt6ct",
+    "qt5ct",
     "swww",
     "imv",
     "wl-clipboard",
@@ -279,16 +278,18 @@ while True:
 # Gtk theme
 print("\nMaking Gtk themes folder...")
 os.system("mkdir -p ~/.local/share/themes")
-os.system("mkdir -p ~/.local/share/icons")
-os.system(f"cp -r {dots_dir}/themes/* ~/.local/share/themes/")
-os.system(f"cp -r {dots_dir}/icons/* ~/.local/share/icons/")
 os.chdir(home)
+os.system("git clone https://github.com/sudoharun/Triple12.git")
+os.chdir("Triple12")
+os.system("cp -r gtk/* ~/.local/share/themes")
+os.chdir(home)
+os.system("rm -rf Triple12")
 print("\nSetting theme...")
-os.system("gsettings set org.gnome.desktop.interface gtk-theme \"triple12\"")
+os.system("gsettings set org.gnome.desktop.interface gtk-theme \"Triple12\"")
 print("\nSetting cursor theme...")
 os.system("gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'")
 print("\nSetting icon theme...")
-os.system("gsettings set org.gnome.desktop.interface icon-theme \"triple12\"")
+os.system("gsettings set org.gnome.desktop.interface icon-theme \"Papirus\"")
 print("\nSettings fonts...")
 os.system("gsettings set org.gnome.desktop.interface document-font-name \"IBM Plex Sans 11\"")
 os.system("gsettings set org.gnome.desktop.interface font-name \"IBM Plex Sans 11\"")
@@ -342,6 +343,7 @@ if zsh_opt != "n":
     print("\n\nThis next step will set up ohmyzsh. Follow the onscreen instructions if any appear.")
     input("(Press enter to continue)")
     os.system("clear")
+    os.system("yay -S --noconfirm zsh")
     os.system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
     os.system("mv ~/zlogin ~/.zlogin")
     os.system("chsh -s /bin/zsh")
@@ -360,6 +362,9 @@ if zsh_opt != "n":
         f.write("\npfetch")
 else:
     os.system("rm -f ~/zlogin")
+    with open(f"{home}/.bashrc", "a") as f:
+        f.write("bind \"set completion-ignore-case on\"")
+        f.write("bind \"set show-all-if-ambiguous on\"")
 
 os.system("clear")
 
