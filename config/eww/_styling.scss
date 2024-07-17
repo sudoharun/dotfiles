@@ -72,6 +72,22 @@
 
 .icon { padding: 0px 4px; }
 
+.tray menu {
+  background-color: $background;
+  color: $foreground;
+  >menuitem {
+    &:hover {
+      background-color: $foreground;
+      color: $background;
+    }
+  }
+}
+
+tooltip {
+  background-color: $background;
+  color: $foreground;
+}
+
 .corners-left-alt {
   margin: 0px;
   border: 0px;

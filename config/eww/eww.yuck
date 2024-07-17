@@ -29,6 +29,13 @@
       :space-evenly false
       (image :class "icon br-icon" :path "images/brightness.svg" :image-height "20")
       (label :class "text vol-text" :text "${br}%"))
+    (box
+      :class "tray-item"
+      (systray
+        :spacing 10
+        :orientation "h"
+        :space-evenly true
+        :icon-size "20"))
     ))
 
 (defwidget workspaces []

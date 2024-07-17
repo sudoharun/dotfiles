@@ -3,14 +3,18 @@
 opt=`eww get power-option`
 
 if [[ $opt == "1" ]]; then
+  eww update power-option=1
   hyprlock
 elif [[ $opt == "2" ]]; then
   eww update power-option=1
-  pkill Hyprland
+  systemctl suspend
 elif [[ $opt == "3" ]]; then
   eww update power-option=1
-  reboot
+  pkill Hyprland
 elif [[ $opt == "4" ]]; then
+  eww update power-option=1
+  reboot
+elif [[ $opt == "5" ]]; then
   eww update power-option=1
   shutdown -f now
 else
