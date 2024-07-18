@@ -40,7 +40,7 @@ packages = [
     "ttf-fantasque-nerd",
     "ttf-iosevka-term",
     "ttf-apple-emoji",
-    "dunst",
+    "mako",
     "ranger-git",
     "dragon-drop",
     "wofi",
