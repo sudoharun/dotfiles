@@ -1,20 +1,21 @@
 (deflisten br "scripts/brightness")
+
 (deflisten vol-num "scripts/volume number")
 (deflisten vol-icon "scripts/volume icon")
+
 (defpoll wifi-icon :interval "10s" "scripts/wifi icon")
 (defpoll wifi-strength :interval "10s" "scripts/wifi percentage")
-(defpoll wifi-essid :interval "10s" "scripts/wifi name")
-(defpoll bat-icon :interval "1m" "scripts/battery icon")
-(defpoll bat-lvl :interval "1m" "scripts/battery level")
-(defpoll bat-num :interval "1m" "scripts/battery number")
-(defpoll hours :interval "10s" 'date "+%H"')
-(defpoll mins :interval "1s" 'date "+%M"')
-(defpoll day-num :interval "1h" "date '+%d'")
-(defpoll day :interval "1h" "date '+%a'")
-(defpoll month :interval "3h" "date '+%b'")
-(defpoll year :interval "24h" "date '+%Y'")
+; (defpoll wifi-essid :interval "10s" "scripts/wifi name")
+
+(defpoll bat-icon :interval "10s" "scripts/battery icon")
+(defpoll bat-num :interval "10s" "scripts/battery number")
+
+(defpoll time :interval "1s" "date '+%I:%M%P'")
+(defpoll date :interval "1h" "date '+%A %d %B, %Y'")
+
 (deflisten numworkspaces "scripts/workspaces")
 ; (deflisten numworkspaces "scripts/sway_workspaces")
+
 (defvar center-option "workspaces")
 (defvar reveal-option "workspaces")
 (defvar screenshot-option 1)

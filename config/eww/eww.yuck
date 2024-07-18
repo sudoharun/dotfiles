@@ -1,5 +1,6 @@
 (include "variables.yuck")
 
+; Tray
 (defwidget tray []
   (box
     :class "tray"
@@ -16,7 +17,7 @@
       :spacing 0
       :space-evenly false
       (image :class "icon vol-icon" :path vol-icon :image-height "20")
-      (label :class "text vol-text" :text "${vol-num}"))
+      (label :class "text vol-text" :text "${vol-num}%"))
     (box
       :class "tray-item bat"
       :spacing 0
@@ -31,6 +32,9 @@
       (label :class "text vol-text" :text "${br}%"))
     (box
       :class "tray-item"
+      :spacing 0
+      :space-evenly false
+      (image :class "icon systray-icon" :path "images/tray.svg" :image-height "20")
       (systray
         :spacing 10
         :orientation "h"
@@ -38,6 +42,7 @@
         :icon-size "20"))
     ))
 
+; Workspaces
 (defwidget workspaces []
   (box
     :class "workspaces"
@@ -53,7 +58,7 @@
     :spacing 0
     (label :class "text" :text "")
     (image :class "icon clock-icon" :path "images/clock.svg" :image-width "20" :image-height "20")
-    (label :class "text" :text "${hours}󰇙${mins}")))
+    (label :class "text" :text time)))
 
 (defwidget date []
   (box
@@ -62,7 +67,7 @@
     :spacing 0
     :space-evenly false
     (image :class "icon date-icon" :path "images/calendar.svg" :image-width "20" :image-height "20")
-    (label :class "text" :text "${day} ${day-num} ${month}, ${year}")))
+    (label :class "text" :text date)))
 
 (defwidget left []
   (box
@@ -295,3 +300,72 @@
     :height "0%"
     :anchor "bottom center")
   (corners-alt))
+
+; OSD
+(defwidget volume-osd []
+  (box
+    :class "osd volume-osd"
+    :spacing 0
+    :space-evenly false
+    :orientation "h"
+    :hexpand true
+    (image :class "osd-icon" :path vol-icon :image-height "45")
+    (scale
+      :flipped false
+      :orientation "h"
+      :value vol-num
+      :draw-value true
+      :min 0
+      :max 101
+    )
+  )
+)
+
+(defwindow volume_osd
+  :stacking "overlay"
+  :monitor "0"
+  :exclusive false
+  :namespace "volume-osd"
+  :geometry (geometry
+    :x "0px"
+    :y "5%"
+    :width "15%"
+    :height "5%"
+    :anchor "bottom center"
+  )
+  (volume-osd)
+)
+
+(defwidget brightness-osd []
+  (box
+    :class "osd brightness-osd"
+    :spacing 0
+    :space-evenly false
+    :orientation "h"
+    :hexpand true
+    (image :class "osd-icon" :path "images/brightness.svg" :image-height "45")
+    (scale
+      :flipped false
+      :orientation "h"
+      :value br
+      :draw-value true
+      :min 0
+      :max 101
+    )
+  )
+)
+
+(defwindow brightness_osd
+  :stacking "overlay"
+  :monitor "0"
+  :exclusive false
+  :namespace "brightness-osd"
+  :geometry (geometry
+    :x "0px"
+    :y "5%"
+    :width "15%"
+    :height "5%"
+    :anchor "bottom center"
+  )
+  (brightness-osd)
+)

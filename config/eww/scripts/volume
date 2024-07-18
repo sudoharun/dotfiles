@@ -29,9 +29,9 @@ widget() {
 }
 
 if [[ $1 == number ]]; then
-  level
+  level | cut -d '%' -f1
   pactl subscribe | grep --line-buffered "sink" | while read -r UNUSED_LINE; do
-    level
+    level | cut -d '%' -f1
   done
 elif [[ $1 == icon ]]; then
   icon
