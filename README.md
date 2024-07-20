@@ -113,7 +113,7 @@ $ useradd -m <username>
 
 Give them some permissions like the ability to use `sudo` commands and the ability to change the brightness with `$ usermod -aG video wheel <username>`
 
-When adding your user to the `wheel` group to give them access to `sudo` commands, you need to give the `wheel` group the ability to perform `sudo` commands. Edit `/etc/sudoers` with `$ visudo` (recommended, but you need `vi` installed), or `$ nvim /etc/sudoers` (not recommended). Then go down to this line: `## Uncomment to allow members of group wheel to execute any command` and uncomment the line below then save and quit.
+When adding your user to the `wheel` group to give them access to `sudo` commands, you need to give the `wheel` group the ability to perform `sudo` commands. Edit `/etc/sudoers` with `$ visudo` (recommended, but you need `vi` installed), or `$ nvim /etc/sudoers` (not recommended). Then go down to this line: `## Uncomment to allow members of group wheel to execute any command` and uncomment the line below it, then save and quit.
 
 Next add passwords to your users with `$ passwd <username>`. Add a root password with `$ passwd`.
 
