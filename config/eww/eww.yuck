@@ -1,4 +1,5 @@
 (include "variables.yuck")
+(include "nc.yuck")
 
 ; Tray
 (defwidget tray []
@@ -17,7 +18,7 @@
       :spacing 0
       :space-evenly false
       (image :class "icon vol-icon" :path vol-icon :image-height "20")
-      (label :class "text vol-text" :text "${vol-num}%"))
+      (label :class "text vol-text" :text {vol-num == "muted" ? vol-num : "${vol-num}%"}))
     (box
       :class "tray-item bat"
       :spacing 0
@@ -34,12 +35,18 @@
       :class "tray-item"
       :spacing 0
       :space-evenly false
-      (image :class "icon systray-icon" :path "images/tray.svg" :image-height "20")
+      (button
+        :class "icon systray-icon"
+        :onclick {ncstate == 0 ? "eww open ncwindow && eww update ncstate=1" : "eww close ncwindow && eww update ncstate=0"}
+        (box :space-evenly false :spacing 4
+          (image :path "images/bell.svg" :image-height "18")
+          (box :visible {nm-num == 0 ? false : true} (label :text "(${nm-num})"))))
       (systray
         :spacing 10
         :orientation "h"
         :space-evenly true
         :icon-size "20"))
+    (box :visible false (literal :content tiramisu)) ; ignore
     ))
 
 ; Workspaces
@@ -63,7 +70,7 @@
 (defwidget date []
   (box
     :class "date"
-    :halign "start" 
+    :halign "start"
     :spacing 0
     :space-evenly false
     (image :class "icon date-icon" :path "images/calendar.svg" :image-width "20" :image-height "20")
@@ -305,18 +312,21 @@
 (defwidget volume-osd []
   (box
     :class "osd volume-osd"
-    :spacing 0
+    :spacing 5
     :space-evenly false
     :orientation "h"
     :hexpand true
-    (image :class "osd-icon" :path vol-icon :image-height "45")
-    (scale
-      :flipped false
-      :orientation "h"
-      :value vol-num
-      :draw-value true
-      :min 0
-      :max 101
+    (image :class "osd-icon" :path vol-icon :image-height "50")
+    (box :orientation "v" :space-evenly false :spacing 5
+      (label :text {vol-num == "muted" ? "Volume is muted" : "Volume: ${vol-num}%"} :halign "center")
+      (scale
+        :flipped false
+        :orientation "h"
+        :value vol-num
+        :draw-value false
+        :min 0
+        :max 101
+      )
     )
   )
 )
@@ -339,18 +349,21 @@
 (defwidget brightness-osd []
   (box
     :class "osd brightness-osd"
-    :spacing 0
+    :spacing 5
     :space-evenly false
     :orientation "h"
     :hexpand true
-    (image :class "osd-icon" :path "images/brightness.svg" :image-height "45")
-    (scale
-      :flipped false
-      :orientation "h"
-      :value br
-      :draw-value true
-      :min 0
-      :max 101
+    (image :class "osd-icon" :path "images/brightness.svg" :image-height "50")
+    (box :orientation "v" :space-evenly false :spacing 5
+      (label :text "Brightness: ${br}%" :halign "center")
+      (scale
+        :flipped false
+        :orientation "h"
+        :value br
+        :draw-value false
+        :min 0
+        :max 101
+      )
     )
   )
 )

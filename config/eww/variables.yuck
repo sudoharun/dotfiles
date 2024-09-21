@@ -1,3 +1,7 @@
+(deflisten tiramisu "python scripts/handle_tiramisu.py")
+(deflisten ncscript "python scripts/handle_center.py")
+(deflisten nm-num "python scripts/update_notifs_num.py")
+
 (deflisten br "scripts/brightness")
 
 (deflisten vol-num "scripts/volume number")
@@ -18,6 +22,8 @@
 
 (defvar center-option "workspaces")
 (defvar reveal-option "workspaces")
+(defvar notifications 0)
+(defvar ncstate 0)
 (defvar screenshot-option 1)
 (defvar screenshot-reveal 0)
 (defvar power-option 1)

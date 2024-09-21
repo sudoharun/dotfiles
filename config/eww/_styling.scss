@@ -44,7 +44,7 @@
 
 .occupied-ws {
   color: rgba($foreground, 0.4);
-  background-color: rgba($accent, 0.2);  
+  background-color: rgba($accent, 0.1);  
   padding: 0px 20px;
 }
 
@@ -73,7 +73,7 @@
 
 .icon { padding: 0px 4px; }
 
-.systray-icon { padding-right: 12px; }
+.systray-icon { margin-right: 8px; }
 
 .tray menu {
   background-color: $background;
@@ -131,7 +131,7 @@ tooltip {
   background-color: $background;
   border: 2px solid rgba($foreground, 0.05);
   border-radius: $rad;
-  padding: 6px 0px;
+  padding: 8px;
 }
 
 .osd scale {
@@ -145,11 +145,17 @@ tooltip {
   margin-right: 12px;
   min-height: 20px;
   min-width: 200px;
+  border-radius: $rad;
 }
 
 .osd scale trough highlight {
   background-color: $accent;
-  margin: 2px;
+  margin: 1px;
+  border-radius: $rad;
+}
+
+.osd scale trough slider {
+  background: transparent;
 }
 
 .osd-icon {
