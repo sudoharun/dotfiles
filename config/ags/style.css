@@ -1,0 +1,142 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+window#bar > * {
+    padding: 8px 16px;
+}
+
+window * {
+    border-radius: 4px;
+}
+
+button {
+    padding: 4px;
+}
+
+.search-button {
+    background: transparent;
+}
+
+.workspaces-container {
+    margin: 0px;
+    padding: 2px;
+    background-color: #242424;
+}
+
+.workspaces {
+    margin: 0px;
+    padding: 0px;
+}
+
+.workspace {
+    padding: 4px 8px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.occupied-ws {
+    background-color: #363636;
+}
+
+.active-ws {
+    background-color: #f5f5f5;
+    color: #121212;
+}
+
+.bar-right button {
+    background: none;
+    padding: 0px 8px;
+}
+
+.bar-right button:hover {
+    background-color: #363636;
+}
+
+window.notification-popups box.notifications {
+    padding: .5em;
+}
+
+.icon {
+    min-width: 68px;
+    min-height: 68px;
+    margin-right: 1em;
+}
+
+.icon image {
+    font-size: 58px;
+    /* to center the icon */
+    margin: 5px;
+    color: @theme_fg_color;
+}
+
+.icon box {
+    min-width: 68px;
+    min-height: 68px;
+    border-radius: 8px;
+}
+
+.notification {
+    min-width: 250px;
+    border-radius: 8px;
+    padding: .5em;
+    margin: 4px;
+    background-color: @theme_bg_color;
+}
+
+.notification.critical {
+    border: 1px solid lightcoral;
+}
+
+.title {
+    color: @theme_fg_color;
+    font-size: 1.4em;
+}
+
+.body {
+    color: @theme_unfocused_fg_color;
+}
+
+.actions .action-button {
+    margin: 0 .4em;
+    margin-top: .8em;
+}
+
+.actions .action-button:first-child {
+    margin-left: 0;
+}
+
+.actions .action-button:last-child {
+    margin-right: 0;
+}
+
+.systray-item {
+    background: transparent;
+    padding: 0px 4px;
+}
+
+.powermenu-button {
+    background: none;
+}
+
+window#powermenu {
+    border-radius: 4px;
+}
+
+.powermenu * {
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.powermenu-item {
+    background: none;
+}
+
+.powermenu button:hover {
+    background-color: #363636;
+}

@@ -10,8 +10,9 @@ packages = [
     "qt6-wayland",
     "linux-headers",
     "reflector-simple",
+    "bash-completion",
     "ccache",
-    "brillo",
+    "brightnessctl",
     "iw",
     "wireless_tools",
     "zip",
@@ -25,11 +26,6 @@ packages = [
     "xdg-desktop-portal-gtk",
     "grim",
     "slurp",
-    "socat",
-    "bc",
-    "sysstat",
-    "watchexec",
-    "jq",
     "wev",
     "foot",
     "foot-terminfo",
@@ -40,8 +36,6 @@ packages = [
     "ttf-fantasque-nerd",
     "ttf-iosevka-term",
     "ttf-apple-emoji",
-    "tiramisu-git",
-    "mako",
     "ranger-git",
     "dragon-drop",
     "wofi",
@@ -51,8 +45,7 @@ packages = [
     "pfetch",
     "btop",
     "rustup",
-    "eww",
-    "python-pywal",
+    "aylurs-gtk-shell",
     "waypaper",
     "firefox",
     "mpv",
@@ -69,6 +62,7 @@ packages = [
     "swww",
     "imv",
     "wl-clipboard",
+    "zed",
     "meson",
     "cpio",
     "cmake"
@@ -87,9 +81,9 @@ audio = [
 ]
 
 power_management = [
-    "powertop",
-    "auto-cpufreq",
-    "tlp"
+    # "powertop",
+    "auto-cpufreq"
+    # "tlp"
 ]
 
 optional = [
@@ -99,18 +93,19 @@ optional = [
     "gimp",
     "deluge-gtk",
     "handbrake",
+    "steam",
     "armcord-bin"
 ]
 
 start_time = int(perf_counter())
 
 # Warning
-os.system("clear")
-print("This script is designed to run after a fresh, minimal install of Arch Linux.\nRun at your own risk!\nYou should also make sure your system is updated.")
-print("\n(Also, if a package takes long to install,\n don't worry, just be a bit patient.\n It's probably just a rust package compiling, such as eww.)")
-start = input("\nContinue? [Y/n]: ")
-if start == "n":
-    exit()
+# os.system("clear")
+# print("This script is designed to run after a fresh, minimal install of Arch Linux.\nRun at your own risk!\nYou should also make sure your system is updated.")
+# print("\n(Also, if a package takes long to install,\n don't worry, just be a bit patient.\n It's probably just a rust package compiling, such as eww.)")
+# start = input("\nContinue? [Y/n]: ")
+# if start == "n":
+#     exit()
 
 os.chdir(home)
 
@@ -135,148 +130,164 @@ else:
 
 os.chdir(home)
 
-# Install packages
-print("Installing required packages (this may take a while)...")
+packages_to_install = ""
+
 for pkg in packages:
-    print(f"\nInstalling '{pkg}'...")
-    try:
-        is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
-        if is_pkg != 0:
-            print(f"'{pkg}' already installed. Skipping...")
-            sleep(1)
-        else:
-            os.system(f"yay -S --noconfirm {pkg}")
-            sleep(0.5)
-            print(f"Successfully installed '{pkg}'!")
-    except:
-        print(f"There was an error installing '{pkg}'!")
-        print("Continuing...")
+    packages_to_install = packages_to_install + " " + pkg
 
-# Installing audio tools
-while True:
-    audio_opt = input("\n\nWould you like to install audio tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
-    print()
-    if audio_opt == "y":
-        print(f"Installing '{pkg}'...")
-        for pkg in audio:
-            try:
-                is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
-                if is_pkg != 0:
-                    print(f"'{pkg}' already installed. Skipping...")
-                else:
-                    os.system(f"yay -S --noconfirm {pkg}")
-                    sleep(0.5)
-                    print(f"Successfully installed '{pkg}'!")
-            except:
-                print(f"There was an error installing '{pkg}'!")
-                print("Continuing...")
-        break
-    elif audio_opt == "n":
-        print("Continuing...\n")
-        break
-    elif audio_opt == "s":
-        print("The audio tools include:")
-        for pkg in audio:
-            print(f" - {pkg}")
-        sleep(1)
-    elif audio_opt == "o":
-        print("Please enter 1 package to omit:")
-        i = 1
-        for pkg in audio:
-            print(f" - {i}: {pkg}")
-            i+=1
-        try:
-            om_audio_opt = int(input(">> "))
-            audio.pop(om_audio_opt-1)
-        except:
-            print("Something went wrong!")
-            print("Continuing...")
-    else:
-        print("Please enter a valid answer.\n")
+for pkg in power_management:
+    packages_to_install = packages_to_install + " " + pkg
 
-# Installing (laptop) power management tools
-while True:
-    power_opt = input("\n\nWould you like to install (laptop) power management tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
-    print()
-    if power_opt == "y":
-        print(f"Installing '{pkg}'...")
-        for pkg in power_management:
-            try:
-                is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
-                if is_pkg != 0:
-                    print(f"'{pkg}' already installed. Skipping...")
-                else:
-                    os.system(f"yay -S --noconfirm {pkg}")
-                    sleep(0.5)
-                    print(f"Successfully installed '{pkg}'!")
-            except:
-                print(f"There was an error installing '{pkg}'!")
-                print("Continuing...")
-        break
-    elif power_opt == "n":
-        print("Continuing...\n")
-        break
-    elif power_opt == "s":
-        print("The power management tools include:")
-        for pkg in power_management:
-            print(f" - {pkg}")
-        sleep(1)
-    elif power_opt == "o":
-        print("Please enter 1 package to omit:")
-        i = 1
-        for pkg in power_management:
-            print(f" - {i}: {pkg}")
-            i+=1
-        try:
-            om_power_opt = int(input(">> "))
-            power_management.pop(om_power_opt-1)
-        except:
-            print("Something went wrong!")
-            print("Continuing...")
-    else:
-        print("Please enter a valid answer.\n")
+for pkg in audio:
+    packages_to_install = packages_to_install + " " + pkg
 
-# Installing optional packages
-while True:
-    optional_opt = input("\n\nWould you like to install optional packages? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
-    print()
-    if optional_opt == "y":
-        for pkg in optional:
-            print(f"Installing '{pkg}'...")
-            try:
-                is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
-                if is_pkg != 0:
-                    print(f"'{pkg}' already installed. Skipping...")
-                else:
-                    os.system(f"yay -S --noconfirm {pkg}")
-                    sleep(0.5)
-                    print(f"Successfully installed '{pkg}'!")
-            except:
-                print(f"There was an error installing '{pkg}'!")
-                print("Continuing...")
-        break
-    elif optional_opt == "n":
-        print("Continuing...\n")
-        break
-    elif optional_opt == "s":
-        print("The optional packages include:")
-        for pkg in optional:
-            print(f" - {pkg}")
-        sleep(1)
-    elif optional_opt == "o":
-        print("Please enter 1 package to omit:")
-        i = 1
-        for pkg in optional:
-            print(f" - {i}: {pkg}")
-            i+=1
-        try:
-            om_optional_opt = int(input(">> "))
-            optional.pop(om_optional_opt-1)
-        except:
-            print("Something went wrong!")
-            print("Continuing...")
-    else:
-        print("Please enter a valid answer.\n")
+for pkg in optional:
+    packages_to_install = packages_to_install + " " + pkg
+
+subprocess.run(f"yay -S --noconfirm {packages_to_install}", shell=True)
+
+# # Install packages
+# print("Installing required packages (this may take a while)...")
+# for pkg in packages:
+#     print(f"\nInstalling '{pkg}'...")
+#     try:
+#         is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
+#         if is_pkg != 0:
+#             print(f"'{pkg}' already installed. Skipping...")
+#             sleep(1)
+#         else:
+#             os.system(f"yay -S --noconfirm {pkg}")
+#             sleep(0.5)
+#             print(f"Successfully installed '{pkg}'!")
+#     except:
+#         print(f"There was an error installing '{pkg}'!")
+#         print("Continuing...")
+# 
+# # Installing audio tools
+# while True:
+#     audio_opt = input("\n\nWould you like to install audio tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
+#     print()
+#     if audio_opt == "y":
+#         print(f"Installing '{pkg}'...")
+#         for pkg in audio:
+#             try:
+#                 is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
+#                 if is_pkg != 0:
+#                     print(f"'{pkg}' already installed. Skipping...")
+#                 else:
+#                     os.system(f"yay -S --noconfirm {pkg}")
+#                     sleep(0.5)
+#                     print(f"Successfully installed '{pkg}'!")
+#             except:
+#                 print(f"There was an error installing '{pkg}'!")
+#                 print("Continuing...")
+#         break
+#     elif audio_opt == "n":
+#         print("Continuing...\n")
+#         break
+#     elif audio_opt == "s":
+#         print("The audio tools include:")
+#         for pkg in audio:
+#             print(f" - {pkg}")
+#         sleep(1)
+#     elif audio_opt == "o":
+#         print("Please enter 1 package to omit:")
+#         i = 1
+#         for pkg in audio:
+#             print(f" - {i}: {pkg}")
+#             i+=1
+#         try:
+#             om_audio_opt = int(input(">> "))
+#             audio.pop(om_audio_opt-1)
+#         except:
+#             print("Something went wrong!")
+#             print("Continuing...")
+#     else:
+#         print("Please enter a valid answer.\n")
+# 
+# # Installing (laptop) power management tools
+# while True:
+#     power_opt = input("\n\nWould you like to install (laptop) power management tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
+#     print()
+#     if power_opt == "y":
+#         print(f"Installing '{pkg}'...")
+#         for pkg in power_management:
+#             try:
+#                 is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
+#                 if is_pkg != 0:
+#                     print(f"'{pkg}' already installed. Skipping...")
+#                 else:
+#                     os.system(f"yay -S --noconfirm {pkg}")
+#                     sleep(0.5)
+#                     print(f"Successfully installed '{pkg}'!")
+#             except:
+#                 print(f"There was an error installing '{pkg}'!")
+#                 print("Continuing...")
+#         break
+#     elif power_opt == "n":
+#         print("Continuing...\n")
+#         break
+#     elif power_opt == "s":
+#         print("The power management tools include:")
+#         for pkg in power_management:
+#             print(f" - {pkg}")
+#         sleep(1)
+#     elif power_opt == "o":
+#         print("Please enter 1 package to omit:")
+#         i = 1
+#         for pkg in power_management:
+#             print(f" - {i}: {pkg}")
+#             i+=1
+#         try:
+#             om_power_opt = int(input(">> "))
+#             power_management.pop(om_power_opt-1)
+#         except:
+#             print("Something went wrong!")
+#             print("Continuing...")
+#     else:
+#         print("Please enter a valid answer.\n")
+# 
+# # Installing optional packages
+# while True:
+#     optional_opt = input("\n\nWould you like to install optional packages? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
+#     print()
+#     if optional_opt == "y":
+#         for pkg in optional:
+#             print(f"Installing '{pkg}'...")
+#             try:
+#                 is_pkg = int(subprocess.run(f"yay -Q | grep -w {pkg} | wc -l", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
+#                 if is_pkg != 0:
+#                     print(f"'{pkg}' already installed. Skipping...")
+#                 else:
+#                     os.system(f"yay -S --noconfirm {pkg}")
+#                     sleep(0.5)
+#                     print(f"Successfully installed '{pkg}'!")
+#             except:
+#                 print(f"There was an error installing '{pkg}'!")
+#                 print("Continuing...")
+#         break
+#     elif optional_opt == "n":
+#         print("Continuing...\n")
+#         break
+#     elif optional_opt == "s":
+#         print("The optional packages include:")
+#         for pkg in optional:
+#             print(f" - {pkg}")
+#         sleep(1)
+#     elif optional_opt == "o":
+#         print("Please enter 1 package to omit:")
+#         i = 1
+#         for pkg in optional:
+#             print(f" - {i}: {pkg}")
+#             i+=1
+#         try:
+#             om_optional_opt = int(input(">> "))
+#             optional.pop(om_optional_opt-1)
+#         except:
+#             print("Something went wrong!")
+#             print("Continuing...")
+#     else:
+#         print("Please enter a valid answer.\n")
 
 # Gtk theme
 print("\nMaking Gtk themes folder...")
@@ -322,16 +333,16 @@ with open(f"{home}/.config/waypaper/config.ini", "w") as f:
 print("\nEnabling script execution permissions...")
 os.chdir(home)
 os.system("chmod +x dotfiles/wine.sh")
-os.system("chmod +x .config/dunst/dunstrc")
-os.system("chmod +x .config/dunst/alert")
+# os.system("chmod +x .config/dunst/dunstrc")
+# os.system("chmod +x .config/dunst/alert")
 os.system("chmod +x .config/ranger/scope.sh")
-os.system("chmod +x .config/scripts/powermenu")
-os.system("chmod +x .config/scripts/screenshooter")
-os.system("chmod +x .config/eww/scripts/battery")
-os.system("chmod +x .config/eww/scripts/brightness")
-os.system("chmod +x .config/eww/scripts/workspaces")
-os.system("chmod +x .config/eww/scripts/volume")
-os.system("chmod +x .config/eww/scripts/wifi")
+# os.system("chmod +x .config/scripts/powermenu")
+# os.system("chmod +x .config/scripts/screenshooter")
+# os.system("chmod +x .config/eww/scripts/battery")
+# os.system("chmod +x .config/eww/scripts/brightness")
+# os.system("chmod +x .config/eww/scripts/workspaces")
+# os.system("chmod +x .config/eww/scripts/volume")
+# os.system("chmod +x .config/eww/scripts/wifi")
 os.system("chmod +x .config/hypr/idler")
 print("Done.")
 
@@ -385,7 +396,7 @@ if nvchad_opt != "n":
     os.system("git clone https://github.com/NvChad/starter ~/.config/nvim --depth 1 && nvim && echo 0")
     os.system("mv ~/chadrc.lua ~/.config/nvim/lua/chadrc.lua")
     os.system("mv ~/plugins.lua ~/.config/nvim/lua/plugins/init.lua")
-    with open(f"{home}/.config/nvim/lua/plugins/init.lua", "a") as f:
+    with open(f"{home}/.config/nvim/lua/plugins/init.lua", "w") as f:
         f.close()
 else:
     os.system("rm -f ~/chadrc.lua")
@@ -394,7 +405,7 @@ else:
 # os.system(f'wal -b 121212 -i "{home}/.config/hypr/flowerz.jpg"')
 
 # Add user to video group to be able to change brightness
-os.system("sudo usermod -aG video $USER")
+# os.system("sudo usermod -aG video $USER")
 
 os.system("clear")
 end_time = int(perf_counter())
