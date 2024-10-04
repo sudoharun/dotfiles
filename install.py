@@ -377,8 +377,13 @@ if zsh_opt != "n":
 else:
     os.system("rm -f ~/zlogin")
     with open(f"{home}/.bashrc", "a") as f:
-        f.write("bind \"set completion-ignore-case on\"")
-        f.write("bind \"set show-all-if-ambiguous on\"")
+        f.write("\n\nbind \"set completion-ignore-case on\"")
+        f.write("\nbind \"set show-all-if-ambiguous on\"")
+        f.write("\n\nbind '\"\\e[A\": history-search-backward'")
+        f.write("\nbind '\"\\e[B\": history-search-forward'")
+        f.write("\nbind '\"\\C-H\": shell-backward-kill-word'")
+        f.write("\nbind '\"\\e[3;5~\": shell-kill-word'")
+        f.write("\n\nexport HISTCONTROL=ignoreboth:erasedups")
 
 os.system("clear")
 
