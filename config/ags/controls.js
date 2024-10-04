@@ -5,7 +5,45 @@ const notifications = await Service.import("notifications");
 const systemtray = await Service.import("systemtray");
 import brightness from "./modules/brightness.js";
 
-// Bar widget
+// Objects
+const Network = {
+  icon () {
+    return network[network.primary].icon_name;
+  },
+  connection () {
+    switch (network.connectivity) {
+      case 'full': {
+        if (network.primary == "wifi") {
+          return `Connected to ${network.wifi.ssid}`
+        } else {
+          return "Connected via Ethernet"
+        }
+      };
+      case 'limited':
+        return "Limited Connectivity";
+      case 'unknown':
+        return "Unknown Connectivity";
+      default:
+        return "Not Connected"
+    }
+  },
+  strength () {
+    if (network.primary == "wifi" && network.wifi.strength > 1) {
+      return {
+        visible: true,
+        value: `Strength: ${network.wifi.strength}`
+      };
+    } else {
+      return {
+        visible: false,
+        value: "",
+      }
+    }
+  }
+};
+
+
+// Bar widgets
 
 function NetworkButton() {
   return Widget.Button({
@@ -13,24 +51,8 @@ function NetworkButton() {
     child: Widget.Icon({ size: 18 }),
     setup: (self) =>
       self.hook(network, () => {
-        if (network.connectivity == "full") {
-          if (network.primary == "wifi") {
-            self.child.icon_name = network.wifi.icon_name;
-            self.child.tooltip_text = `Strength: ${network.wifi.strength}%`;
-          } else {
-            self.child.icon_name = network.wired.icon_name;
-            self.child.tooltip_text = "Connect via ethernet";
-          }
-        } else if (network.connectivity == "limited") {
-          self.child.icon_name = network.wifi.icon_name;
-          self.child.tooltip_text = "Limited Connectivity";
-        } else if (network.connectivity == "unknown") {
-          self.child.icon_name = network.wifi.icon_name;
-          self.child.tooltip_text = "Unknown Connectivity";
-        } else {
-          self.child.icon_name = network.wifi.icon_name;
-          self.child.tooltip_text = "Not Connected";
-        }
+        self.child.icon_name = Network.icon()
+        self.child.tooltip_text = Network.connection()
       }),
   });
 }
@@ -80,6 +102,31 @@ export const Controls = Widget.Box({
   children: [NetworkButton(), AudioButton(), BatteryButton()],
 });
 
+// Control Widgets/Windows
+const NetworkWidget = Widget.Box({
+  children: [Widget.Label(), Widget.Button()],
+  setup: (self) =>
+    self.hook(network, () => {
+      if (network.connectivity == "full") {
+        if (network.primary == "wifi") {
+          self.child.icon_name = network.wifi.icon_name;
+          self.child.tooltip_text = `Strength: ${network.wifi.strength}%`;
+        } else {
+          self.child.icon_name = network.wired.icon_name;
+          self.child.tooltip_text = "Connect via ethernet";
+        }
+      } else if (network.connectivity == "limited") {
+        self.child.icon_name = network.wifi.icon_name;
+        self.child.tooltip_text = "Limited Connectivity";
+      } else if (network.connectivity == "unknown") {
+        self.child.icon_name = network.wifi.icon_name;
+        self.child.tooltip_text = "Unknown Connectivity";
+      } else {
+        self.child.icon_name = network.wifi.icon_name;
+        self.child.tooltip_text = "Not Connected";
+      }
+    }),
+});
 
 // Systray
 const SysTrayItem = (item) =>
@@ -120,6 +167,8 @@ function NotificationIcon({ app_entry, app_icon, image }) {
     child: Widget.Icon(icon),
   });
 }
+
+// Notifications
 
 function Notification(n) {
   const icon = Widget.Box({

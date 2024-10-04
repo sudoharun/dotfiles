@@ -44,7 +44,7 @@ const PowerMenuWidget = Widget.Box({
         Utils.exec("reboot");
       },
       child: Widget.Icon({
-        icon: "system-restart",
+        icon: "system-restart-symbolic",
         size: 64,
       }),
     }),
