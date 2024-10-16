@@ -104,8 +104,9 @@ icon.tray-g-icon {
     font-size: 18px;
 }
 
-.notif-icon {
+icon.notif-icon {
     font-size: 64px;
+    border-radius: $rad;
 }
 
 // .Battery {
