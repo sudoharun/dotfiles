@@ -1,0 +1,127 @@
+$bg: #121212;
+$fg: #f5f5f5;
+$accent: #378DF7;
+$rad: 8px;
+
+* {
+    box-shadow: none;
+    font-weight: bold;
+    border-radius: $rad;
+}
+
+window.Bar, window.Notifications {
+    background-color: $bg;
+    color: $fg;
+    border-radius: 0px;
+}
+
+window.Bar > * {
+    padding: 8px 16px;
+}
+
+window.Notifications {
+    background: none;
+}
+
+
+// Boxes
+
+box {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+box.Workspaces {
+    background-color: rgba($fg, 0.05);
+    padding: 2px;
+    border: 1px solid rgba($fg, 0.01);
+    border-radius: $rad;
+}
+
+box.Tray {
+    padding: 0px 4px;
+}
+
+
+// Buttons
+
+button * {
+    background-color: transparent;
+}
+
+button {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    padding: 2px 8px;
+
+    &:hover {
+        background-color: rgba($fg, 0.05);
+    }
+}
+
+button.focused {
+    background-color: $fg;
+    color: $bg;
+
+    &:hover {
+        background-color: rgba($fg, 0.75);
+    }
+}
+
+button.tray-item {
+    background: none;
+    padding: 0px;
+
+    &:hover {
+        background: none;
+    }
+}
+
+button.action {
+    background-color: rgba($fg, 0.05);
+    margin: 2px;
+    border-radius: $rad;
+
+    &:hover {
+        background-color: rgba($fg, 0.1);
+    }
+}
+
+
+// Icon sizes
+
+icon {
+    font-size: 24px;
+}
+
+icon.tray-g-icon {
+    font-size: 20px;
+}
+
+.Runner > icon, .Battery {
+    font-size: 18px;
+}
+
+.notif-icon {
+    font-size: 64px;
+}
+
+// .Battery {
+//     font-size: 20px;
+// }
+
+
+// Notification
+
+box.Notification {
+    background-color: transparent;
+    margin: 4px;
+}
+
+box.Notification box {
+    background-color: $bg;
+    border-radius: $rad;
+    padding: 2px;
+}

@@ -1,4 +1,4 @@
-# Retro-esque, a Hyprland config
+# Modernish, a Hyprland config (WIP)
 
 <div align="center">
   <img src="./assets/hyprland1.png">
@@ -106,7 +106,7 @@ Set up your TTY keymap with `$ nvim /etc/vconsole.conf` and add `KEYMAP=<your ke
 
 Create your hostname with `$ nvim /etc/hostname` and you can put in anything you want. Make sure it is unique or at least different to all computers on your LAN however.
 
-Next, create your user(s) with 
+Next, create your user(s) with
 ```
 $ useradd -m <username>
 ```

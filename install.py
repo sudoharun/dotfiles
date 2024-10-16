@@ -36,8 +36,6 @@ packages = [
     "ttf-fantasque-nerd",
     "ttf-iosevka-term",
     "ttf-apple-emoji",
-    "ranger-git",
-    "dragon-drop",
     "wofi",
     "wofi-emoji",
     "cliphist",
@@ -45,7 +43,9 @@ packages = [
     "pfetch",
     "btop",
     "rustup",
-    "aylurs-gtk-shell",
+    "aylurs-gtk-shell", # Removing soon since moving to libastal
+    "libastal-git",
+    "libastal-meta",
     "waypaper",
     "firefox",
     "mpv",
@@ -162,7 +162,7 @@ subprocess.run(f"yay -S --noconfirm {packages_to_install}", shell=True)
 #     except:
 #         print(f"There was an error installing '{pkg}'!")
 #         print("Continuing...")
-# 
+#
 # # Installing audio tools
 # while True:
 #     audio_opt = input("\n\nWould you like to install audio tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
@@ -204,7 +204,7 @@ subprocess.run(f"yay -S --noconfirm {packages_to_install}", shell=True)
 #             print("Continuing...")
 #     else:
 #         print("Please enter a valid answer.\n")
-# 
+#
 # # Installing (laptop) power management tools
 # while True:
 #     power_opt = input("\n\nWould you like to install (laptop) power management tools? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
@@ -246,7 +246,7 @@ subprocess.run(f"yay -S --noconfirm {packages_to_install}", shell=True)
 #             print("Continuing...")
 #     else:
 #         print("Please enter a valid answer.\n")
-# 
+#
 # # Installing optional packages
 # while True:
 #     optional_opt = input("\n\nWould you like to install optional packages? [Y]es | [N]o | [S]ee what they are | [O]mit a package\n>> ").lower()
@@ -335,7 +335,6 @@ os.chdir(home)
 os.system("chmod +x dotfiles/wine.sh")
 # os.system("chmod +x .config/dunst/dunstrc")
 # os.system("chmod +x .config/dunst/alert")
-os.system("chmod +x .config/ranger/scope.sh")
 # os.system("chmod +x .config/scripts/powermenu")
 # os.system("chmod +x .config/scripts/screenshooter")
 # os.system("chmod +x .config/eww/scripts/battery")
@@ -361,7 +360,7 @@ if zsh_opt != "n":
     os.system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended')
     os.system("mv ~/zlogin ~/.zlogin")
     os.system("chsh -s /bin/zsh")
-    
+
     # Append stuff to ~/.zshrc
     with open(f"{home}/.zshrc", "a") as f:
         f.write("\n\n# Custom Aliases")
