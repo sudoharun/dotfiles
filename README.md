@@ -1,18 +1,26 @@
 # Modernish, a Hyprland config (WIP)
 
 <div align="center">
-  <img src="./assets/hyprland1.png">
-  <img src="./assets/hyprland2.png">
-  <img src="./assets/hyprland3.png">
+  <img src="./assets/modernish1.png">
 </div>
+
+## Feature Roadmap
+
+- [x] Bar
+- [x] Notification Popups
+- [ ] Notification Center (in progress)
+- [ ] App Launcher
+- [ ] Emoji Picker
+- [ ] Controls Menus (individual menus for wifi, audio, etc.)
 
 ## Keybindings
 
 - `Super + [num]` = Switch to workspace [num]
 - `Alt + [num]` = Move active window to workspace [num]
 - `Super + Enter` = Open `foot` terminal
-- `Super + B` = Open Floorp Web Browser
-- `Super + Shift + B` = Open Floorp Private Window
+- `Super + F` = Open Thunar File Manager (needs to be installed)
+- `Super + B` = Open Firefox Web Browser
+- `Super + Shift + B` = Open Firefox Private Window
 - `Super + Q` = Kill active application
 - `Super + R` = Open wofi (application launcher)
 - `Super + E` = Open wofi-emoji (emoji selector)
@@ -21,8 +29,7 @@
 - `Super + F` = Toggle floating
 - `Super + S` = Toggle split
 - `Super + M` = Exit Hyprland
-- `Print` = Open screenshot menu in bar (arrow keys to change selection, `Enter` to enter selection, `Escape` to quit)
-- `XF86PowerOff` = Open power menu in bar (arrow keys to change selection, `Enter` to enter selection, `Escape` to quit)
+- `Print` = Take a screenshot (copied to clipboard only, additional functionality coming soon)
 
 ## How to install
 
@@ -32,9 +39,9 @@ You can either use `$ archinstall` and add `git` and `python` as additional pack
 
 NOTE: I made this guide using the Arch Linux Installation Guide and Artix Installation Guide.
 
-After plugging in my usb with the Arch Linux ISO and booting into the Arch installer, I set my keyboard layout with `$ loadkeys`. In my case it's `$ loadkeys gb` since I have a British keyboard layout.
+After plugging in my usb with the Arch Linux ISO and booting into the Arch installer, I set my keyboard layout with `$ loadkeys`. In my case it's `$ loadkeys uk` since I have a British keyboard layout.
 
-Next, I connect to wifi using `iwctl` (not necessary if on ethernet)
+Next, I connect to wifi using `iwctl` (not necessary if on ethernet):
 ```
 $ iwctl
 [iwctl] station wlan0 scan
@@ -42,7 +49,7 @@ $ iwctl
 [iwctl] quit
 ```
 
-Next, I do stuff with the keyring and keys
+Next, I do stuff with the keyring and keys:
 ```
 $ pacman-key --init
 $ pacman-key --populate archlinux
@@ -98,42 +105,67 @@ $ hwclock --systohc
 ```
 
 Next, setting up locales:
-- `$ nvim /etc/locale.gen` then uncomment your locale
-- Then run `$ locale-gen` to generate them
-- Finally `nvim /etc/locale.conf` and add `LANG=<locale>`. In my case it's `LANG=en_GB.UTF-8`.
+```
+$ nvim /etc/locale.gen
+# Uncomment the locales you want to use, in my case my main locale is en_GB.UTF-8 but I also want en_US.UTF-8 installed
+$ locale-gen
+$ nvim /etc/locale.conf
+LANG=<main locale you want to use>
+```
 
-Set up your TTY keymap with `$ nvim /etc/vconsole.conf` and add `KEYMAP=<your keymap>`. In my case it's `KEYMAP=gb`.
+Set up your TTY keymap:
+```
+$ nvim /etc/vconsole.conf
+KEYMAP=<your keymap>
+```
 
-Create your hostname with `$ nvim /etc/hostname` and you can put in anything you want. Make sure it is unique or at least different to all computers on your LAN however.
+Set hostname:
+```
+$ nvim /etc/hostname
+Put in whatever you want here as long as it's unique on your LAN, I just put "archlinux" without the quotes
+```
 
-Next, create your user(s) with
+
+Next, create your user(s) and set appropriate permissions:
 ```
 $ useradd -m <username>
+$ usermod -aG video <username> # Set ability to change brightness
+$ usermod -aG wheel <username> # Add ability to use super user commands, but won't work right now
+$ passwd <username> # Set a password
+$ passwd # Set a root password, optional
 ```
 
-Give them some permissions like the ability to use `sudo` commands and the ability to change the brightness with `$ usermod -aG video wheel <username>`
-
-When adding your user to the `wheel` group to give them access to `sudo` commands, you need to give the `wheel` group the ability to perform `sudo` commands. Edit `/etc/sudoers` with `$ visudo` (recommended, but you need `vi` installed), or `$ nvim /etc/sudoers` (not recommended). Then go down to this line: `## Uncomment to allow members of group wheel to execute any command` and uncomment the line below it, then save and quit.
-
-Next add passwords to your users with `$ passwd <username>`. Add a root password with `$ passwd`.
-
-Next, install grub:
-- If you want to dual-boot, first uncomment `#GRUB_DISABLE_OS_PROBER=false` from `/etc/default/grub` then do the following.
-- If you are not interested in Secure Boot, you can install `grub` normally with ```$ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=Grub```
-- If you want to setup Secure Boot, do ```$ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=Grub --modules="tpm" --disable-shim-lock```
-
-Now finally run
+Next, installing and configuring grub:
 ```
+$ nvim /etc/default/grub
+#GRUB_DISABLE_OS_PROBER=false # Uncomment this line, usually at the very bottom of the file
+
+# Then do either of the 2 following commands:
+$ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub # Regular way of installing grub, no Secure Boot
+$ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=Grub --modules="tpm" --disable-shim-lock # If you want to setup Secure Boot
+
+# Then finally:
 $ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-Now exit `chroot` with `$ exit`, unmount all partitions with `$ umount -R /mnt` and finally reboot into your newly installed system!
+Now exit, unmount partitions and reboot:
+```
+$ exit
+$ umount -R /mnt
+$ reboot
+```
 
 ### After Arch Linux installation
 
-Connect to wifi with `$ nmtui` or plug in your ethernet cable.
+Connect to wifi if applicable:
+```
+$ nmtui
+```
 
-Then update your system with `$ sudo pacman -Syu`
+Then update:
+```
+$ sudo pacman -Syu
+```
 
 Then you can do the following:
 ```
@@ -141,10 +173,6 @@ $ git clone -b retroesque https://github.com/sudoharun/dotfiles.git
 $ cd dotfiles
 $ python install.py
 ```
-
-To show the shutdown menu in the bar when pressing the power button, you need to edit `/etc/systemd/logind.conf`. You need to uncomment and edit the line `#HandlePowerKey=poweroff` to `HandlePowerKey=ignore`. The change will take effect after a reboot.
-
-To show colours when using `yay` or `pacman` commands, you need to edit `/etc/pacman.conf`. Uncomment the line `#Color` to `Color`.
 
 ### Tips and tricks
 
