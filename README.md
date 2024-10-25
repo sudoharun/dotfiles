@@ -2,6 +2,12 @@
 
 ⭐ If you like these, please star! ⭐
 
+## <a href="https://github.com/sudo-harun/dotfiles/tree/modernish">Modernish (VERY VERY WIP!!!)</a>
+
+
+## Desktop bar + notification popup
+<img src="./assets/modernish1.png" align="center">
+
 ## <a href="https://github.com/sudo-harun/dotfiles/tree/retroesque">Retro-esque: Another Hyprland Config</a>
 
 
