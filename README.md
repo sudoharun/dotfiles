@@ -107,22 +107,31 @@ $ hwclock --systohc
 Next, setting up locales:
 ```
 $ nvim /etc/locale.gen
+
 # Uncomment the locales you want to use, in my case my main locale is en_GB.UTF-8 but I also want en_US.UTF-8 installed
+
 $ locale-gen
 $ nvim /etc/locale.conf
+
 LANG=<main locale you want to use>
+
 ```
 
 Set up your TTY keymap:
 ```
 $ nvim /etc/vconsole.conf
+
 KEYMAP=<your keymap>
+
 ```
 
 Set hostname:
 ```
 $ nvim /etc/hostname
-Put in whatever you want here as long as it's unique on your LAN, I just put "archlinux" without the quotes
+
+# Put in whatever you want here as long as it's unique on your LAN, I just put:
+archlinux
+
 ```
 
 
@@ -135,10 +144,22 @@ $ passwd <username> # Set a password
 $ passwd # Set a root password, optional
 ```
 
+For the user of the wheel group to be able to run super user commands do:
+```
+$ visudo # Recommended, requires vi to be installed, or alternatively you can do nvim /etc/sudoers (not recommended)
+
+...
+# %wheel ALL=(ALL:ALL) ALL # Uncomment this line, usually towards the bottom of the file
+...
+
+```
+
 Next, installing and configuring grub:
 ```
 $ nvim /etc/default/grub
+
 #GRUB_DISABLE_OS_PROBER=false # Uncomment this line, usually at the very bottom of the file
+
 
 # Then do either of the 2 following commands:
 $ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub # Regular way of installing grub, no Secure Boot
