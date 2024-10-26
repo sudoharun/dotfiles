@@ -190,7 +190,7 @@ $ sudo pacman -Syu
 
 Then you can do the following:
 ```
-$ git clone -b retroesque https://github.com/sudoharun/dotfiles.git
+$ git clone -b modernish https://github.com/sudoharun/dotfiles.git
 $ cd dotfiles
 $ python install.py
 ```
