@@ -8,7 +8,7 @@
 
 - [x] Bar
 - [x] Notification Popups
-- [ ] Notification Center (in progress)
+- [x] Notification Center
 - [ ] App Launcher
 - [ ] Emoji Picker
 - [ ] Controls Menus (individual menus for wifi, audio, etc.)

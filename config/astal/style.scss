@@ -9,7 +9,7 @@ $rad: 8px;
     border-radius: $rad;
 }
 
-window.Bar, window.Notifications {
+window.Bar, window.NCWindow {
     background-color: $bg;
     color: $fg;
     border-radius: 0px;
@@ -23,6 +23,10 @@ window.Notifications {
     background: none;
 }
 
+window.NCWindow {
+    border-radius: $rad;
+    border: 2px solid rgba($fg, 0.1);
+}
 
 // Boxes
 
@@ -34,31 +38,35 @@ box {
 }
 
 box.Workspaces {
-    background-color: rgba($fg, 0.05);
+    background-color: rgba($fg, 0.1);
     padding: 2px;
-    border: 1px solid rgba($fg, 0.01);
-    border-radius: $rad;
+    border-radius: 8px;
 }
 
-box.Tray {
+window.NCWindow > * {
     padding: 0px 4px;
 }
-
 
 // Buttons
 
 button * {
     background-color: transparent;
+    border-radius: $rad;
 }
 
 button {
     background-color: transparent;
     transition: background-color 0.3s ease;
-    padding: 2px 8px;
+    padding: 4px 4px;
 
     &:hover {
-        background-color: rgba($fg, 0.05);
+        background-color: rgba($fg, 0.1);
     }
+}
+
+.Workspaces button {
+    padding: 2px 8px;
+    border-radius: 8px;
 }
 
 button.focused {
@@ -80,7 +88,7 @@ button.tray-item {
 }
 
 button.action {
-    background-color: rgba($fg, 0.05);
+    background-color: rgba($fg, 0.1);
     margin: 2px;
     border-radius: $rad;
 
@@ -89,11 +97,21 @@ button.action {
     }
 }
 
+button.notification-button * {
+    font-size: 18px;
+    padding: 2px 4px;
+}
+
+button.notification-active-button * {
+    font-size: 24px;
+    padding: 0px 1px;
+}
 
 // Icon sizes
 
 icon {
     font-size: 24px;
+    padding: 4px;
 }
 
 icon.tray-g-icon {
@@ -104,10 +122,11 @@ icon.tray-g-icon {
     font-size: 18px;
 }
 
-icon.notif-icon {
+icon.notification-icon {
     font-size: 64px;
     border-radius: $rad;
 }
+
 
 // .Battery {
 //     font-size: 20px;
@@ -117,12 +136,32 @@ icon.notif-icon {
 // Notification
 
 box.Notification {
-    background-color: transparent;
+    background-color: $bg;
+    border-radius: $rad;
+    border: 2px solid rgba($fg, 0.1);
+    padding: 2px;
     margin: 4px;
 }
 
-box.Notification box {
+box.Notification box, box.NC box {
     background-color: $bg;
     border-radius: $rad;
     padding: 2px;
+}
+
+box.nc-top-label {
+    padding: 4px;
+    margin: 4px;
+    border-radius: 0px;
+    border-bottom: 2px solid rgba($fg, 0.1);
+    font-size: 125%;
+}
+
+.nc-no-notifications-label {
+    padding: 4px;
+}
+
+.notification-app-name-time {
+    font-size: 90%;
+    color: rgba($fg, 0.75);
 }

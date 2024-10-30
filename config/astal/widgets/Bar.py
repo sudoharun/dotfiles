@@ -12,18 +12,19 @@ from gi.repository import (
     AstalTray as Tray,
     AstalNetwork as Network,
     AstalMpris as Mpris,
-    AstalHyprland as Hyprland
+    AstalHyprland as Hyprland,
+    AstalNotifd as Notifd
 )
 
 SYNC = GObject.BindingFlags.SYNC_CREATE
 
 class Runner(Gtk.Button):
     def __init__(self) -> None:
-        super().__init__()
+        super().__init__(visible=True)
         self.connect("clicked", self.search)
         Astal.widget_set_class_names(self, ["Runner"])
 
-        self.add(Astal.Icon(icon="search-symbolic"))
+        self.add(Astal.Icon(visible=True, icon="search-symbolic"))
         # self.set_label("Applications")
 
     def search(self, *_):
@@ -32,7 +33,7 @@ class Runner(Gtk.Button):
 
 class Workspaces(Gtk.Box):
     def __init__(self) -> None:
-        super().__init__(spacing=4)
+        super().__init__(visible=True, spacing=4)
         Astal.widget_set_class_names(self, ["Workspaces"])
         hypr = Hyprland.get_default()
         hypr.connect("notify::workspaces", self.sync)
@@ -75,7 +76,7 @@ class Workspaces(Gtk.Box):
 
 class Time(Astal.Label):
     def __init__(self, format="%I:%M%P%n%a %d %b, %Y") -> None:
-        super().__init__()
+        super().__init__(visible=True)
         self.format = format
         self.interval = AstalIO.Time.interval(1000, self.sync)
         self.connect("destroy", self.interval.cancel)
@@ -87,7 +88,7 @@ class Time(Astal.Label):
 
 class Wifi(Astal.Icon):
     def __init__(self) -> None:
-        super().__init__()
+        super().__init__(visible=True)
         Astal.widget_set_class_names(self, ["Wifi"])
         wifi = Network.get_default().get_wifi()
         wifi.bind_property("ssid", self, "tooltip-text", SYNC)
@@ -95,7 +96,7 @@ class Wifi(Astal.Icon):
 
 class Audio(Astal.Icon):
     def __init__(self) -> None:
-        super().__init__()
+        super().__init__(visible=True)
         Astal.widget_set_class_names(self, ["Audio"])
         speaker = Wp.get_default().get_audio().get_default_speaker()
         speaker.bind_property("volume-icon", self, "icon", SYNC)
@@ -103,7 +104,7 @@ class Audio(Astal.Icon):
 
 class BatteryIcon(Astal.Icon):
     def __init__(self) -> None:
-        super().__init__()
+        super().__init__(visible=True)
         Astal.widget_set_class_names(self, ["Battery"])
         battery = Battery.get_default()
         battery.bind_property("is-present", self, "visible", SYNC)
@@ -112,7 +113,7 @@ class BatteryIcon(Astal.Icon):
 
 class SysTray(Gtk.Box):
     def __init__(self) -> None:
-        super().__init__(spacing=12)
+        super().__init__(visible=True, spacing=4)
         self.items = {}
         Astal.widget_set_class_names(self, ["Tray"])
         tray = Tray.get_default()
@@ -170,25 +171,50 @@ class SysTray(Gtk.Box):
                 child.destroy()
                 return
 
+class NotificationButton(Astal.Button):
+    def __init__(self) -> None:
+        super().__init__(visible=True)
+        Astal.widget_set_class_names(self, ["notification-button"])
+        self.connect("clicked", self.on_click)
+        self.icon = Astal.Icon(visible=True, icon="notification-symbolic")
+        self.add(self.icon)
+
+        notifd = Notifd.get_default()
+        notifd.connect("notified", self.sync)
+        notifd.connect("resolved", self.sync)
+
+    def sync(self, *args):
+        if len(Notifd.get_default().get_notifications()) > 0:
+            self.icon.set_icon("notification-active-symbolic")
+            Astal.widget_set_class_names(self, ["notification-active-button"])
+        else:
+            self.icon.set_icon("notification-symbolic")
+            Astal.widget_set_class_names(self, ["notification-button"])
+
+    def on_click(self, *args):
+        AstalIO.Process.exec_async("astal -i notifications -t notification-center")
+        AstalIO.Process.exec_async("astal -i notifications -t notification-popups")
+
 class Left(Gtk.Box):
     def __init__(self) -> None:
-        super().__init__(halign=Gtk.Align.START, hexpand=True, spacing=12)
+        super().__init__(halign=Gtk.Align.START, hexpand=True, spacing=12, visible=True)
         self.add(Runner())
-        self.add(Astal.Label(label="|"))
+        self.add(Astal.Label(visible=True, label="|"))
         self.add(Workspaces())
 
 class Middle(Gtk.Box):
     def __init__(self) -> None:
-        super().__init__()
+        super().__init__(visible=True)
         self.add(Time())
 
 class Right(Gtk.Box):
     def __init__(self) -> None:
-        super().__init__(hexpand=True, halign=Gtk.Align.END, spacing=12)
+        super().__init__(hexpand=True, halign=Gtk.Align.END, spacing=4, visible=True)
         self.add(Wifi())
         self.add(Audio())
         self.add(BatteryIcon())
         self.add(SysTray())
+        self.add(NotificationButton())
 
 class Bar(Astal.Window):
     def __init__(self, monitor: Gdk.Monitor):
@@ -198,11 +224,13 @@ class Bar(Astal.Window):
             | Astal.WindowAnchor.BOTTOM,
             gdkmonitor=monitor,
             exclusivity=Astal.Exclusivity.EXCLUSIVE,
+            name='bar',
         )
 
         Astal.widget_set_class_names(self, ["Bar"])
 
         self.add(Astal.CenterBox(
+            visible=True,
             start_widget=Left(),
             center_widget=Middle(),
             end_widget=Right()
