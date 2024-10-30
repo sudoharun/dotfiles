@@ -7,8 +7,10 @@
 ## Feature Roadmap
 
 - [x] Bar
+  - [ ] Separate workspace indicators for each monitor
 - [x] Notification Popups
 - [x] Notification Center
+- [ ] On Screen Displays
 - [ ] App Launcher
 - [ ] Emoji Picker
 - [ ] Controls Menus (individual menus for wifi, audio, etc.)
