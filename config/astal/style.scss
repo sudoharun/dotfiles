@@ -111,6 +111,7 @@ button.notification-active-button * {
 
 icon {
     font-size: 24px;
+    font-weight: normal;
     padding: 4px;
 }
 
@@ -123,7 +124,7 @@ icon.tray-g-icon {
 }
 
 icon.notification-icon {
-    font-size: 64px;
+    font-size: 48px;
     border-radius: $rad;
 }
 
@@ -146,22 +147,37 @@ box.Notification {
 box.Notification box, box.NC box {
     background-color: $bg;
     border-radius: $rad;
-    padding: 2px;
+    padding: 1px;
 }
 
 box.nc-top-label {
     padding: 4px;
+    padding-bottom: 0px;
     margin: 4px;
+    margin-bottom: 0px;
     border-radius: 0px;
-    border-bottom: 2px solid rgba($fg, 0.1);
-    font-size: 125%;
+    //border-bottom: 2px solid rgba($fg, 0.1);
+    font-size: 150%;
 }
 
 .nc-no-notifications-label {
-    padding: 4px;
+    padding: 8px;
+    margin: 4px;
+    margin-top: 0px;
+    border-radius: 0px;
+    border-top: 2px solid rgba($fg, 0.1);
 }
 
 .notification-app-name-time {
-    font-size: 90%;
+    font-size: 80%;
     color: rgba($fg, 0.75);
+}
+
+.nc-scrollable, .nc-scrollable > * {
+    background: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 4px;
+    border: 0px;
+    border-radius: $rad;
 }

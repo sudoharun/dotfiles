@@ -128,7 +128,7 @@ class NotificationPopups(Gtk.Box):
             notification.get_actions(),
             True
         ))
-        AstalIO.Process.exec_async(f"paplay {HOME}/.config/astal/notification.wav")
+        AstalIO.Process.exec_async(f"paplay {HOME}/.config/astal/notification.mp3")
 
     def remove_notification(self, _, id, *args):
         for child in self.get_children():
@@ -209,7 +209,7 @@ class NCLabel(Gtk.Box):
         self.label = Astal.Label(visible=True, label="Notifications", halign=Gtk.Align.START, valign=Gtk.Align.CENTER, hexpand=True)
 
         self.button = Astal.Button(visible=True)
-        self.button.add(Astal.Icon(visible=True, icon="edit-clear-all-symbolic"))
+        self.button.add(Astal.Icon(visible=True, icon="list-remove-all-symbolic"))
         self.button.connect("clicked", self.clear_all)
 
         self.add(self.label)
@@ -258,10 +258,14 @@ class NCWindow(Astal.Window):
 
         self.scrolled_window = Gtk.ScrolledWindow(visible=True, hexpand=True, vexpand=True)
         self.scrolled_window.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
+        Astal.widget_set_class_names(self.scrolled_window, ["nc-scrollable"])
         self.scrolled_window.add(NotificationCenter())
 
         self.box.add(NCLabel())
         self.box.add(self.scrolled_window)
         self.add(self.box)
 
+        self.hide()
+
+    def on_focus_out(self, widget, event):
         self.hide()
