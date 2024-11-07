@@ -25,7 +25,6 @@ class Runner(Gtk.Button):
         Astal.widget_set_class_names(self, ["Runner"])
 
         self.add(Astal.Icon(visible=True, icon="search-symbolic"))
-        # self.set_label("Applications")
 
     def search(self, *_):
         if len(subprocess.run(["pidof", "wofi"], text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout) < 1:
@@ -224,6 +223,7 @@ class Bar(Astal.Window):
             | Astal.WindowAnchor.BOTTOM,
             gdkmonitor=monitor,
             exclusivity=Astal.Exclusivity.EXCLUSIVE,
+            layer=Astal.Layer.BOTTOM,
             name='bar',
         )
 

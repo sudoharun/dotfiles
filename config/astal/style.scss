@@ -150,6 +150,14 @@ box.Notification box, box.NC box {
     padding: 1px;
 }
 
+.notification-body * {
+    // font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    padding-right: 4px;
+}
+
 box.nc-top-label {
     padding: 4px;
     padding-bottom: 0px;
@@ -180,4 +188,8 @@ box.nc-top-label {
     margin-bottom: 4px;
     border: 0px;
     border-radius: $rad;
+}
+
+box.nc-container {
+    margin: 4px;
 }

@@ -18,9 +18,9 @@ class Notification(Gtk.Box):
         super().__init__(visible=True, orientation=Gtk.Orientation.VERTICAL, hexpand=True)
         Astal.widget_set_class_names(self, ["Notification"])
         self.id = id
-        self.app_name = app_name or None
-        self.summary = summary or None
-        self.body = body or None
+        self.app_name = app_name.strip().replace("\n", " ") or None
+        self.summary = summary.strip().replace("\n", " ") or None
+        self.body = body.strip().replace("\n", " ") or None
         self.image = image or None
         self.actions = actions
         self.popup = popup
@@ -59,11 +59,14 @@ class Notification(Gtk.Box):
             self.text_container.add(self.summary_label)
 
         if self.body is not None:
-            self.body_label = Astal.Label(label=self.body, halign=Gtk.Align.START, hexpand=True, visible=True)
-            self.body_label.set_ellipsize(Pango.EllipsizeMode.END)
-            self.app_name_label.set_max_width_chars(48)
-            self.body_label.set_line_wrap(True)
-            self.body_label.set_line_wrap_mode(Pango.WrapMode.WORD)
+            self.body_label = Astal.Label(xalign=0, halign=Gtk.Align.START, hexpand=False, visible=True)
+            if self.popup:
+                self.body_label.set_label(self.body)
+                self.body_label.set_ellipsize(Pango.EllipsizeMode.END)
+            else:
+                self.body_label.set_label(self.body[:147]+"...") if len(self.body) > 150 else self.body_label.set_label(self.body)
+                self.body_label.set_line_wrap(True)
+                self.body_label.set_line_wrap_mode(Pango.WrapMode.WORD)
             Astal.widget_set_class_names(self.body_label, ["notification-body"])
             self.text_container.add(self.body_label)
 
@@ -234,9 +237,7 @@ class NPWindow(Astal.Window):
         )
 
         Astal.widget_set_class_names(self, ["NPWindow"])
-
         self.add(NotificationPopups())
-
         self.show_all()
 
 class NCWindow(Astal.Window):
@@ -246,26 +247,38 @@ class NCWindow(Astal.Window):
             | Astal.WindowAnchor.RIGHT,
             gdkmonitor=monitor,
             exclusivity=Astal.Exclusivity.NORMAL,
+            keymode=Astal.Keymode.EXCLUSIVE,
             layer=Astal.Layer.TOP,
             margin=4,
             name="notification-center"
         )
 
-        Astal.widget_set_class_names(self, ["NCWindow"])
-
-        self.box = Gtk.Box(visible=True, spacing=4, hexpand=True, vexpand=True, orientation=Gtk.Orientation.VERTICAL)
-        self.box.set_size_request(400, round(Gdk.Screen.get_default().get_height()*0.4))
-
         self.scrolled_window = Gtk.ScrolledWindow(visible=True, hexpand=True, vexpand=True)
-        self.scrolled_window.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
         Astal.widget_set_class_names(self.scrolled_window, ["nc-scrollable"])
+        self.scrolled_window.set_policy(Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC)
         self.scrolled_window.add(NotificationCenter())
 
+        self.box = Gtk.Box(visible=True, spacing=4, hexpand=True, vexpand=True, orientation=Gtk.Orientation.VERTICAL)
+        Astal.widget_set_class_names(self.box, ["nc-container"])
+        self.box.set_size_request(375, round(Gdk.Screen.get_default().get_height()*0.4))
         self.box.add(NCLabel())
         self.box.add(self.scrolled_window)
-        self.add(self.box)
 
+        self.eventbox = Astal.EventBox(visible=True, hexpand=True, vexpand=True)
+        Astal.widget_set_class_names(self.eventbox, ["nc-eventbox"])
+        self.eventbox.add(self.box)
+        self.eventbox.connect("key-press-event", self.on_escape)
+        self.eventbox.connect("hover-lost", self.on_focus_out)
+        self.add(self.eventbox)
+
+        Astal.widget_set_class_names(self, ["NCWindow"])
         self.hide()
 
-    def on_focus_out(self, widget, event):
-        self.hide()
+    def on_escape(self, widget, event, *args):
+        if event.keyval == Gdk.KEY_Escape:
+            AstalIO.Process.exec_async("astal -i notifications -t notification-center")
+            AstalIO.Process.exec_async("astal -i notifications -t notification-popups")
+
+    def on_focus_out(self, widget, event, *args):
+        AstalIO.Process.exec_async("astal -i notifications -t notification-center")
+        AstalIO.Process.exec_async("astal -i notifications -t notification-popups")

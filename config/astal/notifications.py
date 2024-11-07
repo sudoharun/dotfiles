@@ -20,9 +20,8 @@ class App(Astal.Application):
         AstalIO.Process.execv(["sass", scss, css])
         self.apply_css(css, True)
         print("hello")
-        for monitor in self.get_monitors():
-            self.add_window(NCWindow(monitor))
-            self.add_window(NPWindow(monitor))
+        self.add_window(NCWindow(self.get_monitors()[0]))
+        self.add_window(NPWindow(self.get_monitors()[0]))
 
 instance_name = "notifications"
 app = App(instance_name=instance_name)
