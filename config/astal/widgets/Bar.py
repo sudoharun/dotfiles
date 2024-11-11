@@ -27,8 +27,7 @@ class Runner(Gtk.Button):
         self.add(Astal.Icon(visible=True, icon="search-symbolic"))
 
     def search(self, *_):
-        if len(subprocess.run(["pidof", "wofi"], text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout) < 1:
-            subprocess.Popen(["wofi"], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        AstalIO.Process.exec_async("astal -i apps -t apps")
 
 class Workspaces(Gtk.Box):
     def __init__(self) -> None:

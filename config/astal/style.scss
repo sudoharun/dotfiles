@@ -9,7 +9,7 @@ $rad: 8px;
     border-radius: $rad;
 }
 
-window.Bar, window.NCWindow {
+window.Bar, window.NCWindow, window.AppsWindow {
     background-color: $bg;
     color: $fg;
     border-radius: 0px;
@@ -23,7 +23,7 @@ window.Notifications {
     background: none;
 }
 
-window.NCWindow {
+window.NCWindow, window.AppsWindow {
     border-radius: $rad;
     border: 2px solid rgba($fg, 0.1);
 }
@@ -192,4 +192,19 @@ box.nc-top-label {
 
 box.nc-container {
     margin: 4px;
+}
+
+
+// App launcher
+
+box.apps-box {
+    margin: 8px;
+}
+
+entry.app-search {
+    all: unset;
+    padding: 8px;
+    background-color: rgba($fg, 0.05);
+    border: 2px solid rgba($fg, 0.1);
+    border-radius: $rad;
 }

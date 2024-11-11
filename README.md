@@ -11,7 +11,7 @@
 - [x] Notification Popups
 - [x] Notification Center
 - [ ] On Screen Displays
-- [ ] App Launcher
+- [x] App Launcher
 - [ ] Emoji Picker
 - [ ] Controls Menus (individual menus for wifi, audio, etc.)
 

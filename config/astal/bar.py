@@ -7,7 +7,6 @@ from pathlib import Path
 scss = str(Path(__file__).parent.resolve() / "style.scss")
 css = "/tmp/style.css"
 
-
 class App(Astal.Application):
     def do_astal_application_request(
         self, msg: str, conn: Gio.SocketConnection
