@@ -1,18 +1,24 @@
-$bg: #121212;
+$bg: #151515;
 $fg: #f5f5f5;
 $accent: #378DF7;
-$rad: 8px;
+$border: #363636;
+$outrad: 12px;
+$inrad: 8px;
+$ininrad: 4px;
 
 * {
     box-shadow: none;
     font-weight: bold;
-    border-radius: $rad;
 }
 
 window.Bar, window.NCWindow, window.AppsWindow {
     background-color: $bg;
     color: $fg;
     border-radius: 0px;
+}
+
+window.Bar {
+    border-top: 2px solid $border;
 }
 
 window.Bar > * {
@@ -24,8 +30,15 @@ window.Notifications {
 }
 
 window.NCWindow, window.AppsWindow {
-    border-radius: $rad;
-    border: 2px solid rgba($fg, 0.1);
+    border-radius: $outrad;
+    border: 2px solid $border;
+}
+
+
+// Bar
+
+.Separator {
+    padding: 0px 8px;
 }
 
 // Boxes
@@ -51,13 +64,13 @@ window.NCWindow > * {
 
 button * {
     background-color: transparent;
-    border-radius: $rad;
 }
 
 button {
     background-color: transparent;
     transition: background-color 0.3s ease;
-    padding: 4px 4px;
+    padding: 2px;
+    border-radius: $inrad;
 
     &:hover {
         background-color: rgba($fg, 0.1);
@@ -90,7 +103,7 @@ button.tray-item {
 button.action {
     background-color: rgba($fg, 0.1);
     margin: 2px;
-    border-radius: $rad;
+    border-radius: $inrad;
 
     &:hover {
         background-color: rgba($fg, 0.1);
@@ -124,8 +137,8 @@ icon.tray-g-icon {
 }
 
 icon.notification-icon {
-    font-size: 48px;
-    border-radius: $rad;
+    font-size: 32px;
+    border-radius: $inrad;
 }
 
 
@@ -138,16 +151,30 @@ icon.notification-icon {
 
 box.Notification {
     background-color: $bg;
-    border-radius: $rad;
-    border: 2px solid rgba($fg, 0.1);
+    border-radius: $outrad;
+    border: 2px solid $border;
     padding: 2px;
     margin: 4px;
 }
 
-box.Notification box, box.NC box {
+box.Notification, box.NC > box {
     background-color: $bg;
-    border-radius: $rad;
-    padding: 1px;
+    //border-radius: $inrad;
+    padding: 2px;
+}
+
+box.Notification box {
+    background-color: transparent;
+    padding: 2px;
+}
+
+box.Notification button {
+    background-color: #242424;
+    border-radius: $inrad;
+
+    &:hover {
+        background-color: #363636;
+    }
 }
 
 .notification-body * {
@@ -159,13 +186,15 @@ box.Notification box, box.NC box {
 }
 
 box.nc-top-label {
-    padding: 4px;
-    padding-bottom: 0px;
-    margin: 4px;
+    padding: 8px 16px;
+    margin: -4px;
     margin-bottom: 0px;
     border-radius: 0px;
-    //border-bottom: 2px solid rgba($fg, 0.1);
-    font-size: 150%;
+    border-top-left-radius: $outrad;
+    border-top-right-radius: $outrad;
+    border-bottom: 2px solid $border;
+    background-color: rgba($fg, 0.05);
+    font-size: 125%;
 }
 
 .nc-no-notifications-label {
@@ -173,12 +202,7 @@ box.nc-top-label {
     margin: 4px;
     margin-top: 0px;
     border-radius: 0px;
-    border-top: 2px solid rgba($fg, 0.1);
-}
-
-.notification-app-name-time {
-    font-size: 80%;
-    color: rgba($fg, 0.75);
+    // border-top: 2px solid rgba($fg, 0.1);
 }
 
 .nc-scrollable, .nc-scrollable > * {
@@ -187,13 +211,34 @@ box.nc-top-label {
     margin: 0px;
     margin-bottom: 4px;
     border: 0px;
-    border-radius: $rad;
+    border-radius: $outrad;
 }
 
 box.nc-container {
     margin: 4px;
 }
 
+box.Notification box.notification-top-box {
+    font-weight: normal;
+    color: rgba($fg, 0.9);
+    padding: 2px;
+    margin: -2px;
+    margin-bottom: 2px;
+    border-radius: 0px;
+    border-top-left-radius: $outrad;
+    border-top-right-radius: $outrad;
+    border-bottom: 2px solid $border;
+    background-color: rgba($fg, 0.05);
+}
+
+box.Notification box.notification-top-box button {
+    background-color: transparent;
+    padding: 0px;
+
+    &:hover {
+        color: #363636;
+    }
+}
 
 // App launcher
 
@@ -201,10 +246,22 @@ box.apps-box {
     margin: 8px;
 }
 
+box.apps-box > * {
+    border-radius: $inrad;
+}
+
 entry.app-search {
     all: unset;
-    padding: 8px;
+    padding: 12px;
+    margin: -6px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border-top-left-radius: $outrad;
+    border-top-right-radius: $outrad;
+    border-bottom: 2px solid $border;
     background-color: rgba($fg, 0.05);
-    border: 2px solid rgba($fg, 0.1);
-    border-radius: $rad;
+}
+
+entry.app-search * {
+    padding-right: 8px;
 }

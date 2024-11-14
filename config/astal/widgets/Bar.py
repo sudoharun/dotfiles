@@ -73,16 +73,18 @@ class Workspaces(Gtk.Box):
         return btn
 
 class Time(Astal.Label):
-    def __init__(self, format="%I:%M%P%n%a %d %b, %Y") -> None:
+    def __init__(self, time_format="%I:%M%P", date_format="%a %d %b, %Y") -> None: # For full time and date: %I:%M%P%n%a %d %b, %Y
         super().__init__(visible=True)
-        self.format = format
+        self.time_format = time_format
+        self.date_format = date_format
         self.interval = AstalIO.Time.interval(1000, self.sync)
         self.connect("destroy", self.interval.cancel)
         Astal.widget_set_class_names(self, ["Time"])
-        self.set_justify(Gtk.Justification.CENTER)
+        self.set_justify(Gtk.Justification.RIGHT)
 
     def sync(self):
-        self.set_label(GLib.DateTime.new_now_local().format(self.format))
+        self.set_label(GLib.DateTime.new_now_local().format(self.time_format))
+        self.set_tooltip_text(GLib.DateTime.new_now_local().format(self.date_format))
 
 class Wifi(Astal.Icon):
     def __init__(self) -> None:
@@ -193,17 +195,22 @@ class NotificationButton(Astal.Button):
         AstalIO.Process.exec_async("astal -i notifications -t notification-center")
         AstalIO.Process.exec_async("astal -i notifications -t notification-popups")
 
+class Separator(Astal.Label):
+    def __init__(self) -> None:
+        super().__init__()
+        self.set_label("|")
+        Astal.widget_set_class_names(self, ["Separator"])
+
 class Left(Gtk.Box):
     def __init__(self) -> None:
-        super().__init__(halign=Gtk.Align.START, hexpand=True, spacing=12, visible=True)
+        super().__init__(halign=Gtk.Align.START, hexpand=True, spacing=4, visible=True)
         self.add(Runner())
-        self.add(Astal.Label(visible=True, label="|"))
+        self.add(Separator())
         self.add(Workspaces())
 
 class Middle(Gtk.Box):
     def __init__(self) -> None:
         super().__init__(visible=True)
-        self.add(Time())
 
 class Right(Gtk.Box):
     def __init__(self) -> None:
@@ -213,6 +220,8 @@ class Right(Gtk.Box):
         self.add(BatteryIcon())
         self.add(SysTray())
         self.add(NotificationButton())
+        self.add(Separator())
+        self.add(Time())
 
 class Bar(Astal.Window):
     def __init__(self, monitor: Gdk.Monitor):
@@ -226,6 +235,7 @@ class Bar(Astal.Window):
             name='bar',
         )
 
+        self.set_size_request(-1, 54)
         Astal.widget_set_class_names(self, ["Bar"])
 
         self.add(Astal.CenterBox(

@@ -33,22 +33,22 @@ class Notification(Gtk.Box):
 
         # Containers
         self.main_container = Gtk.Box(visible=True, orientation=Gtk.Orientation.HORIZONTAL)
-        self.action_buttons_container = Gtk.Box(visible=True, hexpand=True)
-        self.app_name_time_container = Gtk.Box(visible=True, hexpand=True)
+        self.top_container = Gtk.Box(visible=True, hexpand=True)
+        self.action_buttons_container = Gtk.Box(visible=True, spacing=4, hexpand=True)
+        self.app_name_time_container = Gtk.Box(visible=True, halign=Gtk.Align.START, hexpand=False)
         self.text_container = Gtk.Box(visible=True, hexpand=True, orientation=Gtk.Orientation.VERTICAL, spacing=2)
 
-        self.app_name_label = Astal.Label(label=self.app_name or "Unknown", halign=Gtk.Align.START, hexpand=False, visible=True)
+        self.app_name_label = Astal.Label(label=self.app_name or "Unknown", halign=Gtk.Align.START, xalign=0, hexpand=False, visible=True)
         self.app_name_label.set_ellipsize(Pango.EllipsizeMode.END)
         self.app_name_label.set_max_width_chars(12)
         self.app_name_label.set_line_wrap(True)
         self.app_name_label.set_line_wrap_mode(Pango.WrapMode.WORD)
 
-        self.time_label = Astal.Label(label=" @ " + str(self.time) or "", halign=Gtk.Align.START, hexpand=True, visible=True)
+        self.time_label = Astal.Label(label=" @ " + str(self.time) or "", halign=Gtk.Align.START, xalign=0, hexpand=True, visible=True)
 
         self.app_name_time_container.add(self.app_name_label)
         self.app_name_time_container.add(self.time_label)
-        Astal.widget_set_class_names(self.app_name_time_container, ["notification-app-name-time"])
-        self.text_container.add(self.app_name_time_container)
+        self.app_name_time_container.set_halign(Gtk.Align.START)
 
         if self.summary is not None:
             self.summary_label = Astal.Label(label=self.summary, halign=Gtk.Align.START, visible=True)
@@ -73,15 +73,19 @@ class Notification(Gtk.Box):
         if self.image is not None:
             self.icon = Astal.Icon(icon=self.image, visible=True)
             Astal.widget_set_class_names(self.icon, ["notification-icon"])
-            self.main_container.add(self.icon)
+            self.top_container.pack_start(self.icon, False, False, 0)
 
+        self.top_container.pack_start(self.app_name_time_container, False, False, 0)
         self.main_container.add(self.text_container)
 
         self.dismiss_button = Astal.Button(visible=True)
         self.dismiss_button.add(Astal.Icon(visible=True, icon="window-close-symbolic"))
         self.dismiss_button.connect("clicked", self.dismiss, True)
-        self.main_container.add(self.dismiss_button)
+        self.top_container.pack_end(self.dismiss_button, False, False, 0)
 
+        Astal.widget_set_class_names(self.top_container, ["notification-top-box"])
+
+        self.add(self.top_container)
         self.add(self.main_container)
 
         for action_index in range(len(self.actions)):
@@ -141,7 +145,7 @@ class NotificationPopups(Gtk.Box):
 
 class NotificationCenter(Gtk.Box):
     def __init__(self) -> None:
-        super().__init__(visible=True, orientation=Gtk.Orientation.VERTICAL, spacing=4)
+        super().__init__(visible=True, orientation=Gtk.Orientation.VERTICAL)
         self.set_name("Notification Center")
         Astal.widget_set_class_names(self, ["NC"])
 
@@ -206,7 +210,7 @@ class NotificationCenter(Gtk.Box):
 
 class NCLabel(Gtk.Box):
     def __init__(self) -> None:
-        super().__init__(visible=True)
+        super().__init__(visible=True, hexpand=True)
         Astal.widget_set_class_names(self, ["nc-top-label"])
 
         self.label = Astal.Label(visible=True, label="Notifications", halign=Gtk.Align.START, valign=Gtk.Align.CENTER, hexpand=True)
@@ -260,7 +264,7 @@ class NCWindow(Astal.Window):
 
         self.box = Gtk.Box(visible=True, spacing=4, hexpand=True, vexpand=True, orientation=Gtk.Orientation.VERTICAL)
         Astal.widget_set_class_names(self.box, ["nc-container"])
-        self.box.set_size_request(375, round(Gdk.Screen.get_default().get_height()*0.4))
+        self.box.set_size_request(375, 425)
         self.box.add(NCLabel())
         self.box.add(self.scrolled_window)
 

@@ -11,7 +11,7 @@ from gi.repository import (
 class AppsBox(Gtk.Box):
     def __init__(self) -> None:
         super().__init__(orientation=Gtk.Orientation.VERTICAL, hexpand=True, vexpand=True, spacing=6, visible=True)
-        self.set_size_request(350, 400)
+        self.set_size_request(375, 425)
         Astal.widget_set_class_names(self, ["apps-box"])
         self.focus_order = 0
 
