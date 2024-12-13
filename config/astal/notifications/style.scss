@@ -1,118 +1,33 @@
-$bg: #151515;
-$fg: #f5f5f5;
-$accent: #378DF7;
-$border: #363636;
-$outrad: 12px;
-$inrad: 8px;
-$ininrad: 4px;
+@import "../base";
 
-* {
-    box-shadow: none;
-    font-weight: bold;
-}
-
-window.Bar, window.NCWindow, window.AppsWindow {
+window.NCWindow {
     background-color: $bg;
     color: $fg;
-    border-radius: 0px;
-}
-
-window.Bar {
-    border-top: 2px solid $border;
-}
-
-window.Bar > * {
-    padding: 8px 16px;
+    border: 2px solid $border;
+    border-radius: $outrad;
 }
 
 window.Notifications {
     background: none;
 }
 
-window.NCWindow, window.AppsWindow {
-    border-radius: $outrad;
-    border: 2px solid $border;
-}
-
-
-// Bar
-
-.Separator {
-    padding: 0px 8px;
-}
-
-// Boxes
-
-box {
-    background-color: transparent;
-    border: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-box.Workspaces {
-    background-color: rgba($fg, 0.1);
-    padding: 2px;
-    border-radius: 8px;
-}
-
 window.NCWindow > * {
     padding: 0px 4px;
 }
 
-// Buttons
-
-button * {
-    background-color: transparent;
-}
-
-button {
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-    padding: 2px;
-    border-radius: $inrad;
-
-    &:hover {
-        background-color: rgba($fg, 0.1);
-    }
-}
-
-.Workspaces button {
-    padding: 2px 8px;
-    border-radius: 8px;
-}
-
-button.focused {
-    background-color: $fg;
-    color: $bg;
-
-    &:hover {
-        background-color: rgba($fg, 0.75);
-    }
-}
-
-button.tray-item {
-    background: none;
-    padding: 0px;
-
-    &:hover {
-        background: none;
-    }
-}
-
 button.action {
-    background-color: rgba($fg, 0.1);
+    background-color: $alt-bg;
     margin: 2px;
     border-radius: $inrad;
 
     &:hover {
-        background-color: rgba($fg, 0.1);
+        background-color: rgba($alt-bg, 0.9);
     }
 }
 
 button.notification-button * {
-    font-size: 18px;
-    padding: 2px 4px;
+    //font-size: 18px;
+    //padding: 2px 4px;
 }
 
 button.notification-active-button * {
@@ -120,34 +35,18 @@ button.notification-active-button * {
     padding: 0px 1px;
 }
 
-// Icon sizes
+button.notification-action-button {
+    background-color: $alt-bg;
 
-icon {
-    font-size: 24px;
-    font-weight: normal;
-    padding: 4px;
-}
-
-icon.tray-g-icon {
-    font-size: 20px;
-}
-
-.Runner > icon, .Battery {
-    font-size: 18px;
+    &:hover {
+        background-color: rgba($alt-bg, 0.75);
+    }
 }
 
 icon.notification-icon {
     font-size: 24px;
     border-radius: $inrad;
 }
-
-
-// .Battery {
-//     font-size: 20px;
-// }
-
-
-// Notification
 
 box.Notification {
     background-color: $bg;
@@ -193,7 +92,7 @@ box.nc-top-label {
     border-top-left-radius: $outrad;
     border-top-right-radius: $outrad;
     border-bottom: 2px solid $border;
-    background-color: rgba($fg, 0.05);
+    background-color: $alt-bg;
     font-size: 125%;
 }
 
@@ -238,30 +137,4 @@ box.Notification box.notification-top-box button {
     &:hover {
         color: #363636;
     }
-}
-
-// App launcher
-
-box.apps-box {
-    margin: 8px;
-}
-
-box.apps-box > * {
-    border-radius: $inrad;
-}
-
-entry.app-search {
-    all: unset;
-    padding: 12px;
-    margin: -6px;
-    margin-bottom: 0px;
-    border-radius: 0px;
-    border-top-left-radius: $outrad;
-    border-top-right-radius: $outrad;
-    border-bottom: 2px solid $border;
-    background-color: rgba($fg, 0.05);
-}
-
-entry.app-search * {
-    padding-right: 8px;
 }

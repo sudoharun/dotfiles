@@ -1,7 +1,6 @@
 import sys
-import versions
 from gi.repository import AstalIO, Astal, Gio
-from widgets.Notifications import NCWindow, NPWindow
+from OSD import OSDWindow
 from pathlib import Path
 
 scss = str(Path(__file__).parent.resolve() / "style.scss")
@@ -19,10 +18,9 @@ class App(Astal.Application):
         AstalIO.Process.execv(["sass", scss, css])
         self.apply_css(css, True)
         print("hello")
-        self.add_window(NCWindow(self.get_monitors()[0]))
-        self.add_window(NPWindow(self.get_monitors()[0]))
+        self.add_window(OSDWindow(self.get_monitors()[0]))
 
-instance_name = "notifications"
+instance_name = "osd"
 app = App(instance_name=instance_name)
 
 if __name__ == "__main__":

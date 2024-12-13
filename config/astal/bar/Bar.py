@@ -1,5 +1,3 @@
-import versions
-import subprocess
 from gi.repository import (
     Astal,
     AstalIO,
@@ -24,7 +22,7 @@ class Runner(Gtk.Button):
         self.connect("clicked", self.search)
         Astal.widget_set_class_names(self, ["Runner"])
 
-        self.add(Astal.Icon(visible=True, icon="search-symbolic"))
+        self.add(Astal.Icon(visible=True, icon="system-search-symbolic"))
 
     def search(self, *_):
         AstalIO.Process.exec_async("astal -i apps -t apps")
@@ -86,7 +84,7 @@ class Time(Astal.Label):
         self.set_label(GLib.DateTime.new_now_local().format(self.time_format))
         self.set_tooltip_text(GLib.DateTime.new_now_local().format(self.date_format))
 
-class Wifi(Astal.Icon):
+class NetworkIcon(Astal.Icon):
     def __init__(self) -> None:
         super().__init__(visible=True)
         Astal.widget_set_class_names(self, ["Wifi"])
@@ -94,7 +92,7 @@ class Wifi(Astal.Icon):
         wifi.bind_property("ssid", self, "tooltip-text", SYNC)
         wifi.bind_property("icon-name", self, "icon", SYNC)
 
-class Audio(Astal.Icon):
+class AudioIcon(Astal.Icon):
     def __init__(self) -> None:
         super().__init__(visible=True)
         Astal.widget_set_class_names(self, ["Audio"])
@@ -110,6 +108,29 @@ class BatteryIcon(Astal.Icon):
         battery.bind_property("is-present", self, "visible", SYNC)
         battery.bind_property("battery-icon-name", self, "icon", SYNC)
         battery.bind_property("percentage", self, "tooltip-text", SYNC, lambda _, value: f"{round(value * 100)}%")
+
+class ControlCenter(Gtk.Box):
+    def __init__(self) -> None:
+        super().__init__(visible=True)
+        Astal.widget_set_class_names(self, ["control-center"])
+
+        self.network_button = Astal.Button(visible=True)
+        self.audio_button = Astal.Button(visible=True)
+        self.battery_button = Astal.Button(visible=True)
+
+        self.network_button.add(NetworkIcon())
+        self.network_button.connect("clicked", self.network_on_click)
+
+        self.audio_button.add(AudioIcon())
+
+        self.battery_button.add(BatteryIcon())
+
+        self.add(self.network_button)
+        self.add(self.audio_button)
+        self.add(self.battery_button)
+
+    def network_on_click(self, *_):
+        AstalIO.Process.exec_async("astal -i network -t network")
 
 class SysTray(Gtk.Box):
     def __init__(self) -> None:
@@ -128,7 +149,7 @@ class SysTray(Gtk.Box):
         theme = item.get_icon_theme_path()
 
         if theme is not None:
-            from bar import app
+            from app import app
 
             app.add_icons(theme)
 
@@ -176,19 +197,29 @@ class NotificationButton(Astal.Button):
         super().__init__(visible=True)
         Astal.widget_set_class_names(self, ["notification-button"])
         self.connect("clicked", self.on_click)
-        self.icon = Astal.Icon(visible=True, icon="notification-symbolic")
-        self.add(self.icon)
+        self.icon = Astal.Icon(visible=True, icon="user-available-symbolic")
+        self.label = Astal.Label(visible=False)
+        self.box = Gtk.Box(visible=True, hexpand=True, vexpand=True)
+        Astal.widget_set_class_names(self, ["notification-button"])
+
+        self.box.add(self.icon)
+        self.box.add(self.label)
+        self.add(self.box)
 
         notifd = Notifd.get_default()
         notifd.connect("notified", self.sync)
         notifd.connect("resolved", self.sync)
+        self.sync()
 
     def sync(self, *args):
         if len(Notifd.get_default().get_notifications()) > 0:
-            self.icon.set_icon("notification-active-symbolic")
-            Astal.widget_set_class_names(self, ["notification-active-button"])
+            # self.icon.set_icon("notification-active-symbolic")
+            self.label.set_label(f"({len(Notifd.get_default().get_notifications())})")
+            self.label.set_visible(True)
+            # Astal.widget_set_class_names(self, ["notification-active-button"])
         else:
-            self.icon.set_icon("notification-symbolic")
+            self.label.set_label("(0)")
+            self.label.set_visible(False)
             Astal.widget_set_class_names(self, ["notification-button"])
 
     def on_click(self, *args):
@@ -215,10 +246,8 @@ class Middle(Gtk.Box):
 class Right(Gtk.Box):
     def __init__(self) -> None:
         super().__init__(hexpand=True, halign=Gtk.Align.END, spacing=4, visible=True)
-        self.add(Wifi())
-        self.add(Audio())
-        self.add(BatteryIcon())
         self.add(SysTray())
+        self.add(ControlCenter())
         self.add(NotificationButton())
         self.add(Separator())
         self.add(Time())

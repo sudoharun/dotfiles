@@ -1,8 +1,11 @@
 import sys
 import versions
 from gi.repository import AstalIO, Astal, Gio
-from widgets.Bar import Bar
+from Network import MainWindow
 from pathlib import Path
+
+sys.path.append(str(Path(__file__).absolute().parent))
+# import versions
 
 scss = str(Path(__file__).parent.resolve() / "style.scss")
 css = "/tmp/style.css"
@@ -20,10 +23,10 @@ class App(Astal.Application):
         self.apply_css(css, True)
         print("hello")
         for mon in self.get_monitors():
-            self.add_window(Bar(mon))
+            self.add_window(MainWindow(mon))
 
 
-instance_name = "bar"
+instance_name = "network"
 app = App(instance_name=instance_name)
 
 if __name__ == "__main__":

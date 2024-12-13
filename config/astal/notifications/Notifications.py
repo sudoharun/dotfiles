@@ -91,6 +91,7 @@ class Notification(Gtk.Box):
         for action_index in range(len(self.actions)):
             action_button = Astal.Button(visible=True, hexpand=True, halign=Gtk.Align.FILL, label=self.actions[action_index].label)
             action_button.connect("clicked", self.invoke, self.actions[action_index].id)
+            Astal.widget_set_class_names(action_button, ["notification-action-button"])
             self.action_buttons_container.pack_start(action_button, True, True, 0)
         self.add(self.action_buttons_container)
 
@@ -216,7 +217,7 @@ class NCLabel(Gtk.Box):
         self.label = Astal.Label(visible=True, label="Notifications", halign=Gtk.Align.START, valign=Gtk.Align.CENTER, hexpand=True)
 
         self.button = Astal.Button(visible=True)
-        self.button.add(Astal.Icon(visible=True, icon="list-remove-all-symbolic"))
+        self.button.add(Astal.Icon(visible=True, icon="edit-clear-symbolic"))
         self.button.connect("clicked", self.clear_all)
 
         self.add(self.label)

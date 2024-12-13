@@ -16,7 +16,7 @@ class AppsBox(Gtk.Box):
         self.focus_order = 0
 
         self.entry = Gtk.Entry(hexpand=True, vexpand=False, visible=True)
-        self.entry.set_icon_from_icon_name(Gtk.EntryIconPosition.PRIMARY, "search-symbolic")
+        self.entry.set_icon_from_icon_name(Gtk.EntryIconPosition.PRIMARY, "system-search-symbolic")
         self.entry.set_placeholder_text("Search...")
         self.entry.connect("changed", self.on_entry_changed)
         self.entry.connect("key-press-event", self.on_key_press)
