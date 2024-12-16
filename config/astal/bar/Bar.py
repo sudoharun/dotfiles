@@ -180,7 +180,7 @@ class SysTray(Gtk.Box):
         btn.add(icon)
         btn.set_name(id)
         Astal.widget_set_class_names(btn, ["tray-item"])
-        self.add(btn)
+        self.pack_end(btn, False, False, 0)
         self.items[id] = btn
         self.show_all()
 

@@ -69,10 +69,7 @@ class NetworkButton(Gtk.Box):
         if nm.get_primary() == Network.Primary.WIRED:
             wired = nm.get_wired()
             wired.bind_property("icon-name", self.icon, "icon", SYNC)
-            if wired.get_state() == Network.DeviceState.ACTIVATED:
-                self.label.set_label("Connected")
-            else:
-                self.label.set_label("Not Connected")
+            wired.bind_property("state", self.label, "label", SYNC, state_to_string)
 
             self.add(self.icon)
             self.add(self.label)
@@ -255,6 +252,10 @@ class ActiveConnection(Gtk.Box):
         self.add(self.main_container)
         self.add(self.revealer)
 
+        nm = Network.get_default()
+        nm.connect("notify::state", self.sync)
+        nm.connect("notify::connectivity", self.sync)
+
         self.sync()
 
     def sync(self, *_):
@@ -274,8 +275,6 @@ class ActiveConnection(Gtk.Box):
             self.wifi_name.set_label(wifi.get_ssid())
             self.connectivity_label.set_label(internet_to_str(internet=wifi.get_internet()))
             self.speed_label.set_label(f"Strength: {str(wifi.get_strength())}%")
-
-
 
     def revealer_toggle(self, widget, *_):
         self.revealer.set_reveal_child(not self.revealer.get_reveal_child())

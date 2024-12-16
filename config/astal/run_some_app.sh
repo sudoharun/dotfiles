@@ -1,6 +1,6 @@
 #!/bin/bash
 
-while [[ $(astal -l | grep "network" | wc -l) < 1 ]]; do
+while [[ $(astal -l | grep "osd" | wc -l) < 1 ]]; do
     sleep 0.5
-    python network/app.py &
+    python osds/app.py &
 done

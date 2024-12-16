@@ -1,6 +1,8 @@
 import sys
+import versions
 from gi.repository import AstalIO, Astal, Gio
-from OSD import OSDWindow
+from Audio import AudioOSD
+from Brightness import BrightnessOSD
 from pathlib import Path
 
 scss = str(Path(__file__).parent.resolve() / "style.scss")
@@ -18,7 +20,9 @@ class App(Astal.Application):
         AstalIO.Process.execv(["sass", scss, css])
         self.apply_css(css, True)
         print("hello")
-        self.add_window(OSDWindow(self.get_monitors()[0]))
+        for mon in self.get_monitors():
+            self.add_window(AudioOSD(mon))
+            self.add_window(BrightnessOSD(mon))
 
 instance_name = "osd"
 app = App(instance_name=instance_name)

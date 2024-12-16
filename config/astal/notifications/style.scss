@@ -68,11 +68,11 @@ box.Notification box {
 }
 
 box.Notification button {
-    background-color: #242424;
+    background-color: rgba($fg, 0.05);
     border-radius: $inrad;
 
     &:hover {
-        background-color: #363636;
+        background-color: rgba($fg, 0.1);
     }
 }
 
@@ -127,7 +127,7 @@ box.Notification box.notification-top-box {
     border-top-left-radius: $outrad;
     border-top-right-radius: $outrad;
     border-bottom: 2px solid $border;
-    background-color: rgba($fg, 0.05);
+    background-color: $alt-bg;
 }
 
 box.Notification box.notification-top-box button {

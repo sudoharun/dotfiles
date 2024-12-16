@@ -1,1 +1,42 @@
 @import "../base";
+
+window {
+    background: none;
+}
+
+.container {
+    background-color: $bg;
+    color: $fg;
+    border: 2px solid $border;
+    border-radius: $outrad;
+    padding: 8px;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.label {
+    font-size: 18px;
+    min-width: 32px;
+}
+
+scale {
+    padding: 0px;
+}
+
+scale trough {
+    min-height: 22px;
+    min-width: 150px;
+    background-color: $alt-bg;
+    padding: 0px;
+    border: none;
+}
+
+scale trough highlight {
+    background-color: $fg;
+}
+
+scale trough slider {
+    background-color: transparent;
+}

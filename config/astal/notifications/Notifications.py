@@ -6,7 +6,8 @@ from gi.repository import (
     Astal,
     AstalIO,
     Pango,
-    AstalNotifd as Notifd
+    AstalNotifd as Notifd,
+    AstalHyprland as Hyprland
 )
 from datetime import datetime
 import os
