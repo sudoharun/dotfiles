@@ -42,10 +42,10 @@ entry.app-search {
     margin: -6px;
     margin-bottom: 0px;
     border-radius: 0px;
-    border-top-left-radius: $outrad;
-    border-top-right-radius: $outrad;
+    border-top-left-radius: $inrad;
+    border-top-right-radius: $inrad;
     border-bottom: 2px solid $border;
-    background-color: rgba($fg, 0.05);
+    background-color: $alt-bg;
 }
 
 entry.app-search * {

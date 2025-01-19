@@ -4,11 +4,15 @@ window {
     background: none;
 }
 
-.container {
+.all-container {
     background-color: $bg;
     color: $fg;
     border: 2px solid $border;
     border-radius: $outrad;
+}
+
+.rest-container {
+    padding: 8px 16px;
 }
 
 .top-label {
@@ -20,6 +24,6 @@ window {
     font-size: 125%;
 }
 
-.active-connection {
-    padding: 8px;
+icon.revealer-button-icon {
+    padding: 4px;
 }

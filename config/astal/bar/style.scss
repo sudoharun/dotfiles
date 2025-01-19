@@ -35,6 +35,24 @@ button.focused {
     }
 }
 
+menu {
+    background-color: $bg;
+    padding: 8px;
+    border: 2px solid rgba($border, 0.25);
+    border-radius: $outrad;
+}
+
+menuitem {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    padding: 4px 0px;
+    border-radius: $inrad;
+
+    &:hover {
+        background-color: rgba($fg, 0.1);
+    }
+}
+
 button.tray-item {
     background: none;
     padding: 0px;
@@ -42,6 +60,10 @@ button.tray-item {
     &:hover {
         background: none;
     }
+}
+
+icon {
+    padding: 4px;
 }
 
 icon.tray-g-icon {

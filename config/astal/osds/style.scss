@@ -13,7 +13,8 @@ window {
 }
 
 .icon {
-    font-size: 24px;
+    font-size: 26px;
+    padding: 2px 0px;
 }
 
 .label {
@@ -21,22 +22,7 @@ window {
     min-width: 32px;
 }
 
-scale {
-    padding: 0px;
-}
-
 scale trough {
-    min-height: 22px;
     min-width: 150px;
-    background-color: $alt-bg;
-    padding: 0px;
-    border: none;
-}
-
-scale trough highlight {
-    background-color: $fg;
-}
-
-scale trough slider {
-    background-color: transparent;
+    min-height: 18px;
 }

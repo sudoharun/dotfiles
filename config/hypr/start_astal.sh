@@ -20,6 +20,11 @@ while [[ $(astal -l | grep "network" | wc -l) < 1 ]]; do
   python $HOME/.config/astal/network/app.py &
 done
 
+while [[ $(astal -l | grep "audio" | wc -l) < 1 ]]; do
+  sleep 0.5
+  python $HOME/.config/astal/audio/app.py &
+done
+
 while [[ $(astal -l | grep "osd" | wc -l) < 1 ]]; do
   sleep 0.5
   python $HOME/.config/astal/osds/app.py &

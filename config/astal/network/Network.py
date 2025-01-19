@@ -156,7 +156,7 @@ class ActiveConnection(Gtk.Box):
             spacing=0,
         )
 
-        Astal.widget_set_class_names(self, ["active-connection"])
+        Astal.widget_set_class_names(self, ["access-point"])
 
         # Container for label
 
@@ -199,6 +199,7 @@ class ActiveConnection(Gtk.Box):
             visible=True,
             icon="pan-down-symbolic"
         )
+        Astal.widget_set_class_names(self.revealer_button_icon, ["revealer-button-icon"])
 
         self.revealer_button.add(self.revealer_button_icon)
         self.revealer_button.connect("clicked", self.revealer_toggle)
@@ -261,20 +262,28 @@ class ActiveConnection(Gtk.Box):
     def sync(self, *_):
         nm = Network.get_default()
 
-        if nm.get_wifi().get_device() is None:
+        if nm.get_wifi().get_device() is not None:
+            wifi = nm.get_wifi()
+
+            self.connectivity_icon.set_icon(wifi.get_icon_name())
+            self.wifi_name.set_visible(True)
+            self.wifi_name.set_label(wifi.get_ssid())
+            self.connectivity_label.set_label(internet_to_str(internet=wifi.get_internet()))
+            self.speed_label.set_visible(True)
+            self.speed_label.set_label(f"Strength: {str(wifi.get_strength())}%")
+        elif nm.get_wired().get_device() is not None:
             wired = nm.get_wired()
 
             self.connectivity_icon.set_icon(wired.get_icon_name())
             self.wifi_name.set_visible(False)
             self.connectivity_label.set_label(internet_to_str(internet=wired.get_internet()))
+            self.speed_label.set_visible(True)
             self.speed_label.set_label(f"Speed: {str(wired.get_speed())}")
         else:
-            wifi = nm.get_wifi()
-
-            self.connectivity_icon.set_icon(wifi.get_icon_name())
-            self.wifi_name.set_label(wifi.get_ssid())
-            self.connectivity_label.set_label(internet_to_str(internet=wifi.get_internet()))
-            self.speed_label.set_label(f"Strength: {str(wifi.get_strength())}%")
+            # self.connectivity_icon.set_icon()
+            self.wifi_name.set_visible(False)
+            self.connectivity_label.set_label("Not Connected")
+            self.speed_label.set_visible(False)
 
     def revealer_toggle(self, widget, *_):
         self.revealer.set_reveal_child(not self.revealer.get_reveal_child())
@@ -286,37 +295,142 @@ class ActiveConnection(Gtk.Box):
     # def disconnect(self, widget, *_):
     #     wifi = Network.get_default().get_wifi()
 
-class RootBox(Gtk.Box):
+class AccessPoint(Gtk.Box):
+    def __init__(self) -> None:
+        super().__init__(
+            visible=True,
+            orientation=Gtk.Orientation.VERTICAL,
+            hexpand=True,
+            vexpand=False,
+            spacing=0,
+        )
+
+        Astal.widget_set_class_names(self, ["active-connection"])
+
+        # Container for label
+
+        self.main_container = Gtk.Box(
+            visible=True,
+            spacing=8,
+        )
+
+        self.connectivity_icon = Astal.Icon(
+            visible=True
+        )
+
+        self.wifi_name = Astal.Label(
+            visible=True,
+            xalign=0
+        )
+
+        # Revealer
+
+        self.revealer = Gtk.Revealer(
+            visible=True,
+            reveal_child=False
+        )
+
+        self.revealer_button = Astal.Button(
+            visible=True
+        )
+
+        self.revealer_button_icon = Astal.Icon(
+            visible=True,
+            icon="pan-down-symbolic"
+        )
+
+        self.revealer_button.add(self.revealer_button_icon)
+        self.revealer_button.connect("clicked", self.revealer_toggle)
+
+        # What will be revealed
+
+        self.revealer_child = Gtk.Box(
+            visible=True,
+            orientation=Gtk.Orientation.VERTICAL
+        )
+
+        self.speed_label = Astal.Label(
+            visible=True
+        )
+
+        self.connection_buttons_container = Gtk.Box(
+            visible=True
+        )
+
+        # Adding all the boxes to make the complete product
+
+        self.revealer_child.add(self.speed_label)
+        self.revealer_child.add(self.connection_buttons_container)
+        self.revealer.add(self.revealer_child)
+
+        self.main_container.add(self.connectivity_icon)
+        self.main_container.add(self.wifi_name)
+        self.main_container.pack_end(self.revealer_button, False, False, 0)
+        self.add(self.main_container)
+        self.add(self.revealer)
+
+    def sync(self, *_):
+        wifi = Network.get_default().get_wifi()
+
+    def revealer_toggle(self, widget, *_):
+        self.revealer.set_reveal_child(not self.revealer.get_reveal_child())
+
+    # Functionality not yet available in Astal
+    # def connect(self, widget, *_):
+    #     wifi = Network.get_default().get_wifi()
+
+class AvailableAPs(Gtk.Box):
     def __init__(self) -> None:
         super().__init__(
             visible=True,
         )
 
-        self.eventbox = Astal.EventBox(
-            visible=True
-        )
+        wifi = Network.get_default().get_wifi()
 
-        self.box = Gtk.Box(
-            visible=True,
-            orientation=Gtk.Orientation.VERTICAL
-        )
+        wifi.connect("notify::scanning", self.sync)
 
-        Astal.widget_set_class_names(self, ['container'])
+    def sync(self, *args):
+        wifi = Network.get_default().get_wifi()
 
-        self.eventbox.connect("key-press-event", self.on_escape)
-        self.eventbox.connect("hover-lost", self.on_focus_out)
+        while wifi.get_scanning():
+            # Add and remove access points here
+            pass
 
-        self.box.add(TopLabel())
-        self.box.add(ActiveConnection())
-        self.eventbox.add(self.box)
-        self.add(self.eventbox)
-
-    def on_escape(self, widget, event, *args):
-        if event.keyval == Gdk.KEY_Escape:
-            AstalIO.Process.exec_async("astal -i network -t network")
-
-    def on_focus_out(self, widget, event, *args):
-        AstalIO.Process.exec_async("astal -i network -t network")
+# class RootBox(Gtk.Box):
+#     def __init__(self) -> None:
+#         super().__init__(
+#             visible=True,
+#         )
+#
+#         self.eventbox = Astal.EventBox(
+#             visible=True
+#         )
+#
+#         self.box = Gtk.Box(
+#             visible=True,
+#             orientation=Gtk.Orientation.VERTICAL
+#         )
+#
+#         self.box_in_box = Gtk.Box(
+#             visible=True
+#         )
+#
+#         Astal.widget_set_class_names(self, ['container'])
+#
+#         self.eventbox.connect("key-press-event", self.on_escape)
+#         self.eventbox.connect("hover-lost", self.on_focus_out)
+#
+#         self.box.add(TopLabel())
+#         self.box_in_box.add(ActiveConnection())
+#         self.eventbox.add(self.box)
+#         self.add(self.eventbox)
+#
+#     def on_escape(self, widget, event, *args):
+#         if event.keyval == Gdk.KEY_Escape:
+#             AstalIO.Process.exec_async("astal -i network -t network")
+#
+#     def on_focus_out(self, widget, event, *args):
+#         AstalIO.Process.exec_async("astal -i network -t network")
 
 class MainWindow(Astal.Window):
     def __init__(self, monitor: Gdk.Monitor) -> None:
@@ -330,6 +444,39 @@ class MainWindow(Astal.Window):
             name="network"
         )
 
-        self.add(RootBox())
+        self.eventbox = Astal.EventBox(
+            visible=True,
+            hexpand=True,
+            vexpand=True
+        )
+        self.all_container = Gtk.Box(
+            orientation=Gtk.Orientation.VERTICAL,
+            visible=True,
+        )
+        self.box = Gtk.Box(
+            orientation=Gtk.Orientation.VERTICAL,
+            visible=True,
+            spacing=8
+        )
+
+        self.eventbox.connect("key-press-event", self.on_escape)
+        self.eventbox.connect("hover-lost", self.on_focus_out)
+
+        self.all_container.add(TopLabel())
+        self.box.add(ActiveConnection())
+        self.all_container.add(self.box)
+        self.eventbox.add(self.all_container)
+
+        Astal.widget_set_class_names(self.all_container, ["all-container"])
+        Astal.widget_set_class_names(self.box, ["rest-container"])
+
+        self.add(self.eventbox)
         self.set_size_request(375, -1)
         self.hide()
+
+    def on_escape(self, widget, event, *args):
+        if event.keyval == Gdk.KEY_Escape:
+            AstalIO.Process.exec_async("astal -i network -t network")
+
+    def on_focus_out(self, widget, event, *args):
+        AstalIO.Process.exec_async("astal -i network -t network")

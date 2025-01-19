@@ -122,6 +122,7 @@ class ControlCenter(Gtk.Box):
         self.network_button.connect("clicked", self.network_on_click)
 
         self.audio_button.add(AudioIcon())
+        self.audio_button.connect("clicked", self.audio_on_click)
 
         self.battery_button.add(BatteryIcon())
 
@@ -132,11 +133,14 @@ class ControlCenter(Gtk.Box):
     def network_on_click(self, *_):
         AstalIO.Process.exec_async("astal -i network -t network")
 
+    def audio_on_click(self, *_):
+        AstalIO.Process.exec_async("astal -i audio -t audio")
+
 class SysTray(Gtk.Box):
     def __init__(self) -> None:
-        super().__init__(visible=True, spacing=4)
+        super().__init__()
+        Astal.widget_set_class_names(self, ["SysTray"])
         self.items = {}
-        Astal.widget_set_class_names(self, ["Tray"])
         tray = Tray.get_default()
         tray.connect("item_added", self.add_item)
         tray.connect("item_removed", self.remove_item)
@@ -146,58 +150,34 @@ class SysTray(Gtk.Box):
             return
 
         item = Tray.get_default().get_item(id)
-        theme = item.get_icon_theme_path()
-
-        if theme is not None:
-            from app import app
-
-            app.add_icons(theme)
-
-        menu = item.create_menu()
-        btn = Astal.Button()
-        icon = Astal.Icon()
-
-        def on_clicked(btn):
-            if menu:
-                menu.popup_at_widget(btn, Gdk.Gravity.SOUTH, Gdk.Gravity.NORTH, None)
-
-        def on_destroy(btn):
-            if menu:
-                menu.destroy()
-
-        btn.connect("clicked", on_clicked)
-        btn.connect("destroy", on_destroy)
+        btn = Gtk.MenuButton(use_popover=False, visible=True)
+        icon = Astal.Icon(visible=True)
 
         item.bind_property("tooltip-markup", btn, "tooltip-markup", SYNC)
+        item.bind_property("gicon", icon, "gicon", SYNC)
+        item.bind_property("menu-model", btn, "menu-model", SYNC)
+        btn.insert_action_group("dbusmenu", item.get_action_group())
 
-        if item.get_property("gicon") is not None:
-            item.bind_property("gicon", icon, "g-icon", SYNC)
-            Astal.widget_set_class_names(icon, ["tray-g-icon"])
-        else:
-            item.bind_property("icon-name", icon, "icon", SYNC)
-            Astal.widget_set_class_names(icon, ["tray-icon"])
+        def on_action_group(*args):
+            btn.insert_action_group("dbusmenu", item.get_action_group())
+
+        item.connect("notify::action-group", on_action_group)
 
         btn.add(icon)
-        btn.set_name(id)
-        Astal.widget_set_class_names(btn, ["tray-item"])
         self.pack_end(btn, False, False, 0)
         self.items[id] = btn
-        self.show_all()
 
     def remove_item(self, _: Tray.Tray, id: str):
         if id in self.items:
+            self.remove(self.items[id])
             del self.items[id]
-        for child in self.get_children():
-            if child.get_name() == id:
-                child.destroy()
-                return
 
 class NotificationButton(Astal.Button):
     def __init__(self) -> None:
         super().__init__(visible=True)
         Astal.widget_set_class_names(self, ["notification-button"])
         self.connect("clicked", self.on_click)
-        self.icon = Astal.Icon(visible=True, icon="user-available-symbolic")
+        self.icon = Astal.Icon(visible=True, icon="mail-read-symbolic")
         self.label = Astal.Label(visible=False)
         self.box = Gtk.Box(visible=True, hexpand=True, vexpand=True)
         Astal.widget_set_class_names(self, ["notification-button"])
@@ -213,11 +193,12 @@ class NotificationButton(Astal.Button):
 
     def sync(self, *args):
         if len(Notifd.get_default().get_notifications()) > 0:
-            # self.icon.set_icon("notification-active-symbolic")
+            self.icon.set_icon("mail-unread-symbolic")
             self.label.set_label(f"({len(Notifd.get_default().get_notifications())})")
             self.label.set_visible(True)
             # Astal.widget_set_class_names(self, ["notification-active-button"])
         else:
+            self.icon.set_icon("mail-read-symbolic")
             self.label.set_label("(0)")
             self.label.set_visible(False)
             Astal.widget_set_class_names(self, ["notification-button"])
@@ -237,7 +218,10 @@ class Left(Gtk.Box):
         super().__init__(halign=Gtk.Align.START, hexpand=True, spacing=4, visible=True)
         self.add(Runner())
         self.add(Separator())
-        self.add(Workspaces())
+        try:
+            self.add(Workspaces())
+        except:
+            print("You are not running Hyprland!")
 
 class Middle(Gtk.Box):
     def __init__(self) -> None:

@@ -35,7 +35,34 @@ button {
 }
 
 icon {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
-    padding: 4px;
+    padding: 0px;
+}
+
+scale {
+    padding: 0px;
+    min-height: 4px;
+}
+
+scale trough {
+    min-height: 4px;
+    background-color: $alt-bg;
+    padding: 0px;
+    border: none;
+    border-radius: $outrad;
+}
+
+scale trough highlight {
+    min-height: 4px;
+    background-color: $fg;
+    border-radius: $outrad;
+}
+
+scale trough slider {
+    min-height: 4px;
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+    margin: 0px;
 }
