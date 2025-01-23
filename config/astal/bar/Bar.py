@@ -125,6 +125,7 @@ class ControlCenter(Gtk.Box):
         self.audio_button.connect("clicked", self.audio_on_click)
 
         self.battery_button.add(BatteryIcon())
+        self.battery_button.connect("clicked", self.battery_on_click)
 
         self.add(self.network_button)
         self.add(self.audio_button)
@@ -135,6 +136,9 @@ class ControlCenter(Gtk.Box):
 
     def audio_on_click(self, *_):
         AstalIO.Process.exec_async("astal -i audio -t audio")
+
+    def battery_on_click(self, *_):
+        AstalIO.Process.exec_async("astal -i battery -t battery")
 
 class SysTray(Gtk.Box):
     def __init__(self) -> None:

@@ -11,7 +11,7 @@ def get_device():
     return AstalIO.Process.exec("ls /sys/class/backlight")
 
 def get_brightness(device):
-    return round(int(AstalIO.read_file(f"/sys/class/backlight/{device}/brightness")) / 255 * 100 / 5) * 5
+    return round(int(AstalIO.read_file(f"/sys/class/backlight/{device}/brightness")) / 255 * 100)
 
 SYNC = GObject.BindingFlags.SYNC_CREATE
 

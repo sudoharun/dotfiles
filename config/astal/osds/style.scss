@@ -9,7 +9,7 @@ window {
     color: $fg;
     border: 2px solid $border;
     border-radius: $outrad;
-    padding: 8px;
+    padding: 12px;
 }
 
 .icon {
@@ -24,5 +24,9 @@ window {
 
 scale trough {
     min-width: 150px;
+    min-height: 18px;
+}
+
+scale trough slider {
     min-height: 18px;
 }

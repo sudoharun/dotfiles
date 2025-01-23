@@ -82,6 +82,7 @@ class Notification(Gtk.Box):
         self.dismiss_button = Astal.Button(visible=True)
         self.dismiss_button.add(Astal.Icon(visible=True, icon="window-close-symbolic"))
         self.dismiss_button.connect("clicked", self.dismiss, True)
+        Astal.widget_set_class_names(self.dismiss_button, ["dismiss-button"])
         self.top_container.pack_end(self.dismiss_button, False, False, 0)
 
         Astal.widget_set_class_names(self.top_container, ["notification-top-box"])

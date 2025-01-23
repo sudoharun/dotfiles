@@ -43,10 +43,11 @@ icon {
 scale {
     padding: 0px;
     min-height: 4px;
+    margin: 4px 6px;
 }
 
 scale trough {
-    min-height: 4px;
+    min-height: 12px;
     background-color: $alt-bg;
     padding: 0px;
     border: none;
@@ -54,15 +55,17 @@ scale trough {
 }
 
 scale trough highlight {
-    min-height: 4px;
+    min-height: 12px;
     background-color: $fg;
     border-radius: $outrad;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 scale trough slider {
-    min-height: 4px;
-    background-color: transparent;
+    min-height: 12px;
+    background-color: $fg;
     padding: 0px;
-    border: none;
-    margin: 0px;
+    box-shadow: 0px 0px 18px 2px #000000;
+    border-radius: $outrad;
 }

@@ -43,6 +43,10 @@ button.notification-action-button {
     }
 }
 
+icon {
+    padding: 4px;
+}
+
 icon.notification-icon {
     font-size: 24px;
     border-radius: $inrad;
@@ -58,7 +62,6 @@ box.Notification {
 
 box.Notification, box.NC > box {
     background-color: $bg;
-    //border-radius: $inrad;
     padding: 2px;
 }
 
@@ -101,7 +104,6 @@ box.nc-top-label {
     margin: 4px;
     margin-top: 0px;
     border-radius: 0px;
-    // border-top: 2px solid rgba($fg, 0.1);
 }
 
 .nc-scrollable, .nc-scrollable > * {
@@ -135,6 +137,6 @@ box.Notification box.notification-top-box button {
     padding: 0px;
 
     &:hover {
-        color: #363636;
+        background-color: rgba($fg, 0.1);
     }
 }
