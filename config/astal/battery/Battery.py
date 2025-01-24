@@ -34,13 +34,25 @@ class TopLabel(Gtk.Box):
         )
 
         self.lock_button = Astal.Button(visible=True)
+        self.logout_button = Astal.Button(visible=True)
         self.reboot_button = Astal.Button(visible=True)
         self.shutdown_button = Astal.Button(visible=True)
+
+        self.lock_button.set_tooltip_text("Lock")
+        self.logout_button.set_tooltip_text("Log out")
+        self.reboot_button.set_tooltip_text("Reboot")
+        self.shutdown_button.set_tooltip_text("Shutdown")
 
         self.lock_button.add(
             Astal.Icon(
                 visible=True,
                 icon="system-lock-screen-symbolic"
+            )
+        )
+        self.logout_button.add(
+            Astal.Icon(
+                visible=True,
+                icon="system-log-out-symbolic"
             )
         )
         self.reboot_button.add(
@@ -57,16 +69,21 @@ class TopLabel(Gtk.Box):
         )
 
         self.lock_button.connect("clicked", self.on_lock_button_click)
+        self.logout_button.connect("clicked", self.on_logout_button_click)
         self.reboot_button.connect("clicked", self.on_reboot_button_click)
         self.shutdown_button.connect("clicked", self.on_shutdown_button_click)
 
         self.pack_start(self.label, False, False, 0)
         self.pack_end(self.shutdown_button, False, False, 0)
         self.pack_end(self.reboot_button, False, False, 0)
+        self.pack_end(self.logout_button, False, False, 0)
         self.pack_end(self.lock_button, False, False, 0)
 
     def on_lock_button_click(self, *_):
-        AstalIO.Process.exec("hyprlock &")
+        AstalIO.Process.subprocess("sh -c 'hyprlock &'")
+
+    def on_logout_button_click(self, *_):
+        AstalIO.Process.subprocess("sh -c 'pkill Hyprland'")
 
     def on_reboot_button_click(self, *_):
         AstalIO.Process.exec("systemctl reboot")
