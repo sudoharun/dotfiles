@@ -79,9 +79,10 @@ class AppsBox(Gtk.Box):
             self.entry.set_position(self.entry.get_position())
             return True
         elif event.keyval == Gdk.KEY_Escape:
-            self.apps_box.get_children()[self.focus_order].set_state_flags(Gtk.StateFlags.NORMAL, True)
-            self.focus_order = 0
-            self.apps_box.get_children()[self.focus_order].set_state_flags(Gtk.StateFlags.PRELIGHT, True)
+            if len(self.apps_box.get_children()) > 0:
+                self.apps_box.get_children()[self.focus_order].set_state_flags(Gtk.StateFlags.NORMAL, True)
+                self.focus_order = 0
+                self.apps_box.get_children()[self.focus_order].set_state_flags(Gtk.StateFlags.PRELIGHT, True)
             self.entry.set_text("")
             self.get_parent().hide()
 

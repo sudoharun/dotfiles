@@ -219,7 +219,7 @@ class NCLabel(Gtk.Box):
         self.label = Astal.Label(visible=True, label="Notifications", halign=Gtk.Align.START, valign=Gtk.Align.CENTER, hexpand=True)
 
         self.button = Astal.Button(visible=True)
-        self.button.add(Astal.Icon(visible=True, icon="edit-clear-symbolic"))
+        self.button.add(Astal.Icon(visible=True, icon="user-trash-symbolic"))
         self.button.connect("clicked", self.clear_all)
 
         self.add(self.label)

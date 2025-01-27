@@ -134,6 +134,52 @@ class Brightness(Gtk.Box):
         self.slider.set_value(get_brightness(get_display()) / 100)
         self.percentage.set_label(f"{get_brightness(get_display())}%")
 
+class PowerProfileMenu(Gtk.Box):
+    def __init__(self) -> None:
+        super().__init__(
+            visible=True,
+            orientation=Gtk.Orientation.HORIZONTAL
+        )
+
+        self.label = Astal.Label(
+            visible=True,
+            label="Power Profile: "
+        )
+
+        self.combobox = Gtk.ComboBoxText(
+            visible=True
+        )
+
+        powerprofiles = PowerProfiles.get_default()
+        profiles = {
+            0: "power-saver",
+            1: "balanced",
+            2: "performance"
+        }
+
+        for id, profile in profiles.items():
+            self.combobox.insert(id, None, profile)
+            if powerprofiles.get_active_profile() == profile:
+                self.combobox.set_active(id)
+        self.combobox.connect("changed", self.on_combobox_changed)
+
+        self.pack_start(self.label, False, False, 0)
+        self.pack_end(self.combobox, True, True, 0)
+
+    def on_combobox_changed(self, *_, id=0):
+        powerprofiles = PowerProfiles.get_default()
+        profiles = {
+            0: "power-saver",
+            1: "balanced",
+            2: "performance"
+        }
+        if id == 0:
+            powerprofiles.set_active_profile(self.combobox.get_active_text())
+        else:
+            for id, profile in profiles.items():
+                if profile == powerprofiles.get_active_profile():
+                    self.combobox.set_active(id)
+
 class MainWindow(Astal.Window):
     def __init__(self, monitor: Gdk.Monitor) -> None:
         super().__init__(
@@ -159,7 +205,7 @@ class MainWindow(Astal.Window):
         self.box = Gtk.Box(
             orientation=Gtk.Orientation.VERTICAL,
             visible=True,
-            spacing=16
+            spacing=8
         )
 
         self.eventbox.connect("key-press-event", self.on_escape)
@@ -167,6 +213,7 @@ class MainWindow(Astal.Window):
 
         self.all_container.add(TopLabel())
         self.box.add(Brightness())
+        self.box.add(PowerProfileMenu())
         self.all_container.add(self.box)
         self.eventbox.add(self.all_container)
 
