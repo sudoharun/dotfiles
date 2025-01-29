@@ -67,6 +67,8 @@ dependencies=(
     "cpio"
     "cmake"
     "adw-gtk-theme"
+    "kvantum"
+    "kvantum-qt5"
     "kvantum-theme-libadwaita-git"
     "morewaita-icon-theme"
     "thunar"
