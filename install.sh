@@ -151,7 +151,7 @@ yay -Rnsc --noconfirm $(yay -Qdtq)
 yay -Sc --noconfirm
 
 cd $dots_dir
-cp -r ./home/* $HOME
+cp ./home/bashrc $HOME/.bashrc
 cp -r ./config/* $HOME/.config/
 chmod u+x $HOME/.config/hypr/start_astal.sh
 
