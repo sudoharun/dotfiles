@@ -128,13 +128,13 @@ cd $HOME
 
 sudo pacman -Syyu
 
-if [ ! -f "/usr/bin/yay" ]; do
+if [ ! -f "/usr/bin/yay" ]; then
     git clone https://aur.archlinux.org/yay.git
     cd yay
     makepkg -si --noconfirm
     cd ..
     rm -r yay
-done
+fi
 
 yay -S --noconfirm $install_str
 yay -Rnsc --noconfirm $(yay -Qdtq)
