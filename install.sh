@@ -58,6 +58,7 @@ dependencies=(
     "hypridle"
     "nwg-look"
     "qt5ct"
+    "qt6ct"
     "swww"
     "imv"
     "wl-clipboard"
@@ -68,6 +69,13 @@ dependencies=(
     "adw-gtk-theme"
     "kvantum-theme-libadwaita-git"
     "morewaita-icon-theme"
+    "thunar"
+    "gvfs"
+    "tumbler"
+    "thunar-volman"
+    "thunar-archive-plugin"
+    "thunar-media-tags-plugin"
+    "xarchiver"
 )
 
 audio=(
@@ -160,4 +168,7 @@ rm -rf rubik
 
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'MoreWaita'
-kvantummanager --set KvLibadwaitaDark
+# kvantummanager --set KvLibadwaitaDark
+
+clear
+echo "Installation complete. Reboot, set Kvantum theme, set qt6ct style to kvantum-dark"
