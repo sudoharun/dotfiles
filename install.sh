@@ -125,13 +125,18 @@ for pkg in ${optional[@]}; do
 done
 
 cd $HOME
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd ..
-rm -r yay
 
-yay -S --noconfirm install_str
+sudo pacman -Syyu
+
+if [ ! -f "/usr/bin/yay" ]; do
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si --noconfirm
+    cd ..
+    rm -r yay
+done
+
+yay -S --noconfirm $install_str
 yay -Rnsc --noconfirm $(yay -Qdtq)
 yay -Sc --noconfirm
 
