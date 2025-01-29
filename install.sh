@@ -38,8 +38,8 @@ dependencies=(
     "cliphist"
     "wl-clipboard"
     "btop"
-    "python",
-    "git",
+    "python"
+    "git"
     "rustup"
     "libastal-git"
     "libastal-io-git"
