@@ -108,10 +108,11 @@ class AppsBox(Gtk.Box):
             app_button.connect("clicked", launch_app, app)
             app_box = Gtk.Box(hexpand=True, vexpand=False, spacing=4, visible=True)
 
-            app_icon = Astal.Icon(icon=app.get_icon_name(), hexpand=False, vexpand=True, valign=Gtk.Align.FILL, visible=True)
-            app_label = Astal.Label(label=app.get_name(), hexpand=True, vexpand=True, halign=Gtk.Align.START, visible=True)
+            if app.get_icon_name() is not None:
+                app_icon = Astal.Icon(icon=app.get_icon_name(), hexpand=False, vexpand=True, valign=Gtk.Align.FILL, visible=True)
+                app_box.add(app_icon)
 
-            app_box.add(app_icon)
+            app_label = Astal.Label(label=app.get_name(), hexpand=True, vexpand=True, halign=Gtk.Align.START, visible=True)
             app_box.add(app_label)
 
             Astal.widget_set_class_names(app_button, ["app-button"])
