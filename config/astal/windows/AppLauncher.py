@@ -81,17 +81,19 @@ class AppLauncher(Astal.Window):
             if len(search_string) == 0:
                 return True
             elif len(search_string) < 4:
-                return fuzzy_ratio > 25
+                return fuzzy_ratio > (50+(len(search_string)*10))
             else:
-                return fuzzy_ratio > 70
+                return fuzzy_ratio > 80
 
         def sort_func(row1, row2):
             search_string = self.search_bar.get_text().lower()
-            row1_ratio = fuzz.ratio(search_string, row1.get_name().lower())
-            row2_ratio = fuzz.ratio(search_string, row2.get_name().lower())
-            if row1_ratio == row2_ratio:
+            # row1_ratio = fuzz.ratio(search_string, row1.get_name().lower())
+            row1_partial = fuzz.partial_ratio(search_string, row1.get_name().lower())
+            # row2_ratio = fuzz.ratio(search_string, row2.get_name().lower())
+            row2_partial = fuzz.partial_ratio(search_string, row2.get_name().lower())
+            if row1_partial == row2_partial:
                 return 0
-            elif row1_ratio > row2_ratio:
+            elif row1_partial > row2_partial:
                 return -1
             else:
                 return 1
