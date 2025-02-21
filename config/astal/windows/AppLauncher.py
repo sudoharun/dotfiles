@@ -87,9 +87,7 @@ class AppLauncher(Astal.Window):
 
         def sort_func(row1, row2):
             search_string = self.search_bar.get_text().lower()
-            # row1_ratio = fuzz.ratio(search_string, row1.get_name().lower())
             row1_partial = fuzz.partial_ratio(search_string, row1.get_name().lower())
-            # row2_ratio = fuzz.ratio(search_string, row2.get_name().lower())
             row2_partial = fuzz.partial_ratio(search_string, row2.get_name().lower())
             if row1_partial == row2_partial:
                 return 0
