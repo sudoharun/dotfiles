@@ -39,7 +39,7 @@ class NotificationPopups(Astal.Window):
 
         notifd = Notifd.get_default()
         notifd.connect('notified', self.add_notification)
-        notifd.connect('notify::dont-disturb', lambda obj, _: self.hide() if obj.get_dont_disturb() else self.present())
+        notifd.connect('notify::dont-disturb', lambda obj, _: self.set_visible(False) if obj.get_dont_disturb() else self.set_visible(True))
 
     def add_notification(self, obj: Notifd.Notifd=None, id: int=-1, *_):
         notification = Notification(
@@ -51,7 +51,7 @@ class NotificationPopups(Astal.Window):
 
     def set_timeout(self, notification):
         if self.timeout_id is None:
-            self.timeout_id = GLib.timeout_add(3001, self.hide)
+            self.timeout_id = GLib.timeout_add(3001, lambda *_: self.set_visible(False))
         else:
             GLib.source_remove(self.timeout_id)
             self.timeout_id = None
@@ -66,4 +66,4 @@ class NotificationPopups(Astal.Window):
             notification.timeout_id = GLib.timeout_add(3000, notification.unparent)
 
         if not Notifd.get_default().get_dont_disturb():
-            self.present()
+            self.set_visible(True)

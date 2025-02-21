@@ -237,4 +237,13 @@ box.power-display-top-label {
     padding: 4px 8px;
     padding-right: 4px;
     border-bottom: 1px solid #121212;
+    font-size: 125%;
+}
+
+box.power-profiles-dropdown {
+    padding: 0px 4px;
+
+    & > dropdown {
+        margin: 0px;
+    }
 }

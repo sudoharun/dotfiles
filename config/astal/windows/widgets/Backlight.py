@@ -27,7 +27,7 @@ class BacklightGraphics(Gtk.Box):
         self.icon.set_size_request(20, -1)
         self.percentage.set_size_request(40, -1)
 
-        self.slider.connect('change-value', self.on_dragged)
+        self.slider.connect('value-changed', self.on_dragged)
 
         if len(self.get_device()) > 0:
             self.set_visible(True)
@@ -50,4 +50,4 @@ class BacklightGraphics(Gtk.Box):
         self.percentage.set_label(f'{round(self.get_brightness() / self.get_max_brightness() * 100)}%')
 
     def on_dragged(self, *_):
-        AstalIO.Process.subprocess(f'brightnessctl s {str(self.slider.get_value())}')
+        AstalIO.Process.exec_async(f'brightnessctl s {str(self.slider.get_value())}', lambda *_: None)

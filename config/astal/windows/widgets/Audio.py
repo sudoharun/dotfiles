@@ -42,7 +42,7 @@ class SpeakerSlider(Astal.Slider):
         speaker = Wp.get_default().get_default_speaker()
         speaker.bind_property('volume', self, 'value', SYNC)
 
-        self.connect('change-value', self.on_dragged)
+        self.connect('value-changed', self.on_dragged)
 
     def on_dragged(self, *_):
         speaker = Wp.get_default().get_default_speaker()
@@ -122,7 +122,7 @@ class MicrophoneSlider(Astal.Slider):
         microphone = Wp.get_default().get_default_microphone()
         microphone.bind_property('volume', self, 'value', SYNC)
 
-        self.connect('change-value', self.on_dragged)
+        self.connect('value-changed', self.on_dragged)
 
     def on_dragged(self, *_):
         microphone = Wp.get_default().get_default_microphone()

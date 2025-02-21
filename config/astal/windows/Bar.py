@@ -129,6 +129,24 @@ class Systray(Gtk.Box):
             self.remove(self.items[id])
             del self.items[id]
 
+class EmojiButton(Gtk.MenuButton):
+    def __init__(self) -> None:
+        super().__init__()
+
+        self.set_tooltip_text('Emoji Picker')
+
+        self.popover = Gtk.EmojiChooser.new()
+        self.popover.set_size_request(350, 350)
+        self.popover.connect('emoji-picked', self.on_emoji_picked)
+        self.set_popover(self.popover)
+
+        self.icon = Gtk.Image.new_from_icon_name('emoji-symbols-symbolic')
+        self.set_child(self.icon)
+
+    def on_emoji_picked(self, _, emoji):
+        AstalIO.Process.subprocess(f'wl-copy {emoji}')
+        AstalIO.Process.subprocess(f'notify-send -a "Emoji Picker" "Emoji copied to clipboard!" "{emoji} was copied to your clipboard"')
+
 class NetworkButton(Gtk.Button):
     def __init__(self) -> None:
         super().__init__()
@@ -256,9 +274,9 @@ class NotificationButton(Gtk.Button):
 
     def on_notification_center_visible(self, *_):
         if not Notifd.get_default().get_dont_disturb() and not self.notification_center.get_visible():
-            self.notification_popups.show()
+            self.notification_popups.set_visible(True)
         else:
-            self.notification_popups.hide()
+            self.notification_popups.set_visible(False)
 
     def on_clicked(self, *_):
         self.notification_center.set_visible(not self.notification_center.get_visible())
@@ -322,10 +340,13 @@ class Right(Gtk.Box):
             spacing=8
         )
 
+        emoji_button = EmojiButton()
         systray = Systray()
         controls = Controls(app)
         separator = Separator()
         time = Time()
+
+        self.append(emoji_button)
         self.append(systray)
         self.append(controls)
         self.append(separator)
@@ -353,4 +374,4 @@ class Bar(Astal.Window):
         )
 
         self.set_child(self.box)
-        self.present()
+        self.set_visible(True)

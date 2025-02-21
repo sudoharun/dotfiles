@@ -122,4 +122,4 @@ class NotificationCenter(Astal.Window):
 
     def on_focus_lost(self, *_):
         if not self.has_focus():
-            self.hide()
+            self.set_visible(False)

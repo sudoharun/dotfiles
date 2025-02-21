@@ -72,7 +72,7 @@ class OSDWindow(Astal.Window):
 
         self.box.add_css_class('osd-box')
         self.set_child(self.box)
-        self.present()
+        self.set_visible(True)
 
     def get_backlight_device(self, *_):
         return AstalIO.Process.exec("ls /sys/class/backlight")
@@ -86,11 +86,11 @@ class OSDWindow(Astal.Window):
             context = self.speaker
 
         if self.timeout_id is None:
-            self.timeout_id = GLib.timeout_add(2100, self.hide)
+            self.timeout_id = GLib.timeout_add(2100, lambda *_: self.set_visible(False))
         else:
             GLib.source_remove(self.timeout_id)
             self.timeout_id = None
-            self.timeout_id = GLib.timeout_add(2100, self.hide)
+            self.timeout_id = GLib.timeout_add(2100, lambda *_: self.set_visible(False))
 
         if context.timeout_id is None:
             context.timeout_id = GLib.timeout_add(2000, context.unparent)
@@ -101,4 +101,4 @@ class OSDWindow(Astal.Window):
 
         if context.get_parent() is None:
             self.box.prepend(context)
-        self.present()
+        self.set_visible(True)

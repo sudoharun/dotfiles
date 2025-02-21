@@ -23,7 +23,7 @@ class Desktop(Astal.Window):
         self.desktop.add_css_class('desktop')
 
         self.set_child(self.desktop)
-        self.present()
+        self.set_visible(True)
 
 class LeftEdge(Astal.Window):
     def __init__(self, app: Astal.Application) -> None:
@@ -38,7 +38,7 @@ class LeftEdge(Astal.Window):
         )
 
         self.set_size_request(8, -1)
-        self.present()
+        self.set_visible(True)
 
 class RightEdge(Astal.Window):
     def __init__(self, app: Astal.Application) -> None:
@@ -53,7 +53,7 @@ class RightEdge(Astal.Window):
         )
 
         self.set_size_request(8, -1)
-        self.present()
+        self.set_visible(True)
 
 class TopEdge(Astal.Window):
     def __init__(self, app: Astal.Application) -> None:
@@ -68,4 +68,4 @@ class TopEdge(Astal.Window):
         )
 
         self.set_size_request(-1, 8)
-        self.present()
+        self.set_visible(True)

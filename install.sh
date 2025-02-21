@@ -33,8 +33,6 @@ dependencies=(
     "ttf-fantasque-nerd"
     "ttf-iosevka-term"
     "ttf-apple-emoji"
-    "wofi"
-    "wofi-emoji"
     "cliphist"
     "wl-clipboard"
     "btop"

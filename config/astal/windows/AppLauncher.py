@@ -102,7 +102,7 @@ class AppLauncher(Astal.Window):
         self.apps_controller = Gtk.EventControllerKey.new()
         self.apps.add_controller(self.apps_controller)
         self.apps_controller.connect('key-pressed', self.on_apps_key_press)
-        self.apps.connect('row-activated', lambda *_: self.hide())
+        self.apps.connect('row-activated', lambda *_: self.set_visible(False))
 
         self.search_bar_controller = Gtk.EventControllerKey.new()
         self.search_bar.add_controller(self.search_bar_controller)
@@ -111,7 +111,7 @@ class AppLauncher(Astal.Window):
         self.search_bar.connect('changed', self.on_search_entry_changed)
 
         self.connect('notify::visible', self.on_visibility_changed)
-        self.hide()
+        self.set_visible(False)
 
     def on_apps_key_press(self, widget, keyval, keycode, *_):
         if keyval == Gdk.KEY_Up:
@@ -119,7 +119,7 @@ class AppLauncher(Astal.Window):
                 self.search_bar.grab_focus()
 
         if keyval == Gdk.KEY_Escape:
-            self.hide()
+            self.set_visible(False)
 
     def on_visibility_changed(self, *_):
         if self.get_visible():
@@ -138,7 +138,7 @@ class AppLauncher(Astal.Window):
                 self.apps.select_row(self.apps.get_row_at_index(0))
 
         if keyval == Gdk.KEY_Escape:
-            self.hide()
+            self.set_visible(False)
 
     def on_search_entry_changed(self, *_):
         self.apps.invalidate_filter()
