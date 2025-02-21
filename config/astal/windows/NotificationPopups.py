@@ -2,6 +2,7 @@ from gi.repository import (
     Gtk,
     GLib,
     Astal,
+    AstalIO,
     AstalNotifd as Notifd,
 )
 from .widgets.Notification import Notification
@@ -14,7 +15,7 @@ class EmptyExpandedBox(Gtk.Box):
         )
 
 class NotificationPopups(Astal.Window):
-    def __init__(self, app: Astal.Application) -> None:
+    def __init__(self, app: Astal.Application, notification_center_reference) -> None:
         super().__init__(
             anchor=Astal.WindowAnchor.BOTTOM
             | Astal.WindowAnchor.RIGHT,
@@ -26,6 +27,7 @@ class NotificationPopups(Astal.Window):
         )
 
         self.timeout_id = None
+        self.notification_center_reference = notification_center_reference
         self.add_css_class('notification-popups')
         self.set_size_request(300, 0)
         self.set_default_size(1, 1)
@@ -47,6 +49,8 @@ class NotificationPopups(Astal.Window):
             popup=True
         )
         self.box.append(notification)
+        if not Notifd.get_default().get_dont_disturb():
+            AstalIO.Process.subprocess('mpv assets/notification_sound.mp3')
         self.set_timeout(notification)
 
     def set_timeout(self, notification):
@@ -65,5 +69,5 @@ class NotificationPopups(Astal.Window):
             notification.timeout_id = None
             notification.timeout_id = GLib.timeout_add(3000, notification.unparent)
 
-        if not Notifd.get_default().get_dont_disturb():
+        if not Notifd.get_default().get_dont_disturb() and not self.notification_center_reference.get_visible():
             self.set_visible(True)

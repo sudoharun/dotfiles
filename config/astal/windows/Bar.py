@@ -238,7 +238,7 @@ class NotificationButton(Gtk.Button):
         self.add_css_class('control-button')
 
         self.notification_center = NotificationCenter(app)
-        self.notification_popups = NotificationPopups(app)
+        self.notification_popups = NotificationPopups(app, self.notification_center)
 
         self.icon = Gtk.Image()
         self.set_child(self.icon)

@@ -12,7 +12,7 @@ from windows.Desktop import Desktop, LeftEdge, RightEdge, TopEdge
 from windows.NotificationPopups import NotificationPopups
 from windows.OSDs import OSDWindow
 
-scss = str(Path(__file__).parent.resolve() / "style" / "style.scss")
+scss = str(Path(__file__).parent.resolve() / "style" / "default.scss")
 css = "/tmp/style.css"
 
 class App(Astal.Application):
@@ -32,8 +32,6 @@ class App(Astal.Application):
         TopEdge(self)
         RightEdge(self)
         OSDWindow(self)
-        # AppLauncher(self)
-        # NotificationPopups(self)
         Bar(self)
 
 application_id = "com.harun.astal"
