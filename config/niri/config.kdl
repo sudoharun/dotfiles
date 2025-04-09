@@ -1,0 +1,317 @@
+input {
+    keyboard {
+        xkb {
+            layout "us"
+        }
+    }
+
+    touchpad {
+        tap
+    }
+
+    mouse { }
+
+    // warp-mouse-to-focus
+    // focus-follows-mouse max-scroll-amount="0%"
+}
+
+output "eDP-1" {
+    mode "1920x1080@60"
+    scale 1
+    transform "normal"
+    position x=0 y=0
+}
+
+output "HDMI-A-1" {
+    mode "1920x1080@60"
+    scale 1
+    transform "normal"
+    position x=1920 y=0
+}
+
+layout {
+    gaps 16
+    center-focused-column "never"
+
+    preset-column-widths {
+        proportion 0.25
+        proportion 0.5
+        proportion 0.75
+    }
+
+    preset-window-heights { }
+
+    default-column-width { proportion 0.75; }
+
+    focus-ring {
+        off
+        width 4
+        active-color "rgba(0, 0, 0, 0.0)"
+        inactive-color "#505050"
+    }
+
+    border {
+        width 1
+        active-color "#505050"
+        inactive-color "#505050"
+    }
+
+    /-shadow {
+        // on
+        off
+        draw-behind-window true
+        softness 30
+        spread 5
+        offset x=0 y=0
+        color "#000000"
+    }
+
+    struts {
+        left 0
+        right 0
+        top 0
+        bottom 0
+    }
+}
+
+spawn-at-startup "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+spawn-at-startup "dbus-update-activation-environment --systemd --all"
+spawn-at-startup "xwayland-satellite"
+spawn-at-startup "hypridle"
+spawn-at-startup "ignis" "init"
+spawn-at-startup "waypaper" "--restore"
+
+environment {
+    DISPLAY ":0"
+    XDG_SESSION_TYPE "wayland"
+    MOZ_ENABLE_WAYLAND "1"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    WINIT_UNIX_BACKEND "wayland"
+    CLUTTER_BACKEND "wayland"
+    QT_AUTO_SCREEN_SCALE_FACTOR "1"
+    QT_QPA_PLATFORM "wayland;xcb"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_SCALE_FACTOR "1"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+    SDL_VIDEODRIVER "wayland,x11,windows"
+    SDL_VIDEO_DRIVER "wayland,x11,windows"
+}
+
+prefer-no-csd
+
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+cursor {
+    xcursor-theme "Bibata-Modern-Classic"
+    xcursor-size 24
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+animations {
+    workspace-switch {
+        spring damping-ratio=0.6 stiffness=600 epsilon=0.0001
+    }
+
+    window-open {
+        duration-ms 150
+        curve "ease-out-expo"
+    }
+
+    window-close {
+        duration-ms 150
+        curve "ease-out-quad"
+    }
+
+    horizontal-view-movement {
+        spring damping-ratio=0.6 stiffness=600 epsilon=0.0001
+    }
+
+    window-movement {
+        spring damping-ratio=0.6 stiffness=600 epsilon=0.0001
+    }
+
+    window-resize {
+        spring damping-ratio=0.6 stiffness=600 epsilon=0.0001
+    }
+
+    config-notification-open-close {
+        spring damping-ratio=0.6 stiffness=600 epsilon=0.0001
+    }
+
+    screenshot-ui-open {
+        duration-ms 200
+        curve "ease-out-quad"
+    }
+}
+
+window-rule {
+    geometry-corner-radius 8
+    clip-to-geometry true
+}
+
+window-rule {
+    match is-focused=false
+    opacity 0.8
+}
+
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+    opacity 1.0
+}
+
+window-rule {
+    match app-id="^steam$"
+    geometry-corner-radius 0
+}
+
+window-rule {
+    match app-id="thunar"
+    default-column-width { proportion 0.6; }
+}
+
+window-rule {
+    match app-id="thunar" title="File Operation Progress"
+    match app-id="gcr-prompter"
+    open-floating true
+}
+
+window-rule {
+    match app-id=r#"firefox$"# title="^YouTube$"
+    open-focused true
+}
+
+window-rule {
+    match app-id="wlroots"
+    match app-id="labwc"
+    match app-id="gamescope"
+    open-fullscreen true
+}
+
+switch-events {
+    lid-close { spawn "pidof" "hyprlock" "||" "hyprlock"; }
+}
+
+binds {
+    Mod+Shift+Slash { show-hotkey-overlay; }
+
+    Mod+Return { spawn "foot"; }
+    Mod+B { spawn "firefox"; }
+    Mod+Shift+B { spawn "firefox" "--private-window"; }
+    Mod+R { spawn "sh" "-c" "ignis run-file $HOME/.config/ignis/scripts/open_apps_launcher.py"; }
+    Mod+F { spawn "thunar"; }
+    Super+L { spawn "hyprlock"; }
+
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }
+    XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+
+    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "set" "10%+"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "set" "10%-"; }
+
+    XF86AudioPlay { spawn "playerctl" "play-pause"; }
+    XF86AudioPause { spawn "playerctl" "play-pause"; }
+    XF86AudioNext { spawn "playerctl" "next"; }
+    XF86AudioPrev { spawn "playerctl" "previous"; }
+
+    Mod+Q { close-window; }
+
+    Mod+Left  { focus-column-left; }
+    Mod+Down  { focus-window-down; }
+    Mod+Up    { focus-window-up; }
+    Mod+Right { focus-column-right; }
+    Mod+A     { focus-column-left; }
+    Mod+S     { focus-window-down; }
+    Mod+W     { focus-window-up; }
+    Mod+D     { focus-column-right; }
+
+    Mod+Shift+Left  { move-column-left; }
+    Mod+Shift+Down  { move-window-down; }
+    Mod+Shift+Up    { move-window-up; }
+    Mod+Shift+Right { move-column-right; }
+    Mod+Shift+A  { move-column-left; }
+    Mod+Shift+S  { move-window-down; }
+    Mod+Shift+W    { move-window-up; }
+    Mod+Shift+D { move-column-right; }
+
+    Mod+Home { focus-column-first; }
+    Mod+End  { focus-column-last; }
+    Alt+Home { move-column-to-first; }
+    Alt+End  { move-column-to-last; }
+
+    Mod+Ctrl+Left  { focus-monitor-left; }
+    Mod+Ctrl+Down  { focus-monitor-down; }
+    Mod+Ctrl+Up    { focus-monitor-up; }
+    Mod+Ctrl+Right { focus-monitor-right; }
+
+    Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
+    Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
+    Mod+Shift+Ctrl+Up    { move-column-to-monitor-up; }
+    Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
+
+    Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
+    Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
+    Mod+Shift+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
+    Mod+Shift+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+
+    Alt+WheelScrollDown      { focus-column-right; }
+    Alt+WheelScrollUp        { focus-column-left; }
+    Alt+Shift+WheelScrollDown { move-column-right; }
+    Alt+Shift+WheelScrollUp   { move-column-left; }
+
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+4 { focus-workspace 4; }
+    Mod+5 { focus-workspace 5; }
+    Mod+6 { focus-workspace 6; }
+    Mod+7 { focus-workspace 7; }
+    Mod+8 { focus-workspace 8; }
+    Mod+9 { focus-workspace 9; }
+    Alt+1 { move-column-to-workspace 1; }
+    Alt+2 { move-column-to-workspace 2; }
+    Alt+3 { move-column-to-workspace 3; }
+    Alt+4 { move-column-to-workspace 4; }
+    Alt+5 { move-column-to-workspace 5; }
+    Alt+6 { move-column-to-workspace 6; }
+    Alt+7 { move-column-to-workspace 7; }
+    Alt+8 { move-column-to-workspace 8; }
+    Alt+9 { move-column-to-workspace 9; }
+
+    Mod+BracketLeft  { consume-or-expel-window-left; }
+    Mod+BracketRight { consume-or-expel-window-right; }
+
+    Mod+Comma  { consume-window-into-column; }
+    Mod+Period { expel-window-from-column; }
+
+    Mod+Shift+R { switch-preset-column-width; }
+    Mod+Escape { fullscreen-window; }
+    Alt+Escape { maximize-column; }
+
+    Mod+C { center-column; }
+
+    Mod+Minus { set-column-width "-10%"; }
+    Mod+Equal { set-column-width "+10%"; }
+
+    Mod+Shift+Minus { set-window-height "-10%"; }
+    Mod+Shift+Equal { set-window-height "+10%"; }
+
+    Alt+F       { toggle-window-floating; }
+    Alt+Shift+F { switch-focus-between-floating-and-tiling; }
+
+    Print { screenshot; }
+    Ctrl+Print { screenshot-screen; }
+    Shift+Print { screenshot-window; }
+
+    Mod+M { quit; }
+
+    Mod+Shift+P { power-off-monitors; }
+}
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}

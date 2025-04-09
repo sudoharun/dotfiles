@@ -7,13 +7,34 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "vim_mode": true,
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_assistant": false
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "vim_mode": false,
   "ui_font_size": 20,
   "buffer_font_size": 18,
+  "tab_size": 4,
   "theme": {
     "mode": "system",
-    "light": "Ayu Dark",
-    "dark": "One Dark"
+    "light": "Adwaita Pastel Dark",
+    "dark": "Adwaita Pastel Dark"
   },
-  "format_on_save": "off"
+  "format_on_save": "off",
+  "show_edit_predictions": true,
+  "show_completions_on_input": true
 }

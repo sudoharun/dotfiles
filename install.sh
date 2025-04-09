@@ -21,37 +21,31 @@ dependencies=(
     "neovim"
     "polkit-gnome"
     "xdg-desktop-portal-gtk"
-    "grim"
-    "slurp"
+    "xdg-desktop-portal-gnome"
     "wev"
     "foot"
     "foot-terminfo"
     "noto-fonts"
     "noto-fonts-cjk"
-    "ttf-roboto"
-    "ttf-ibm-plex"
+    "ttf-nerd-fonts-symbols"
     "ttf-fantasque-nerd"
     "ttf-iosevka-term"
     "ttf-apple-emoji"
+    "niri-git"
+    "ignis-git"
+    "xwayland-satellite"
     "cliphist"
     "wl-clipboard"
     "btop"
     "python"
     "git"
     "rustup"
-    "libastal-git"
-    "libastal-io-git"
-    "libastal-meta"
     "dart-sass"
     "waypaper"
     "firefox"
     "mpv"
     "bibata-cursor-theme-bin"
     "papirus-icon-theme"
-    "hyprlang"
-    "hyprcursor"
-    "hyprland"
-    "xdg-desktop-portal-hyprland"
     "hyprlock"
     "hypridle"
     "nwg-look"
@@ -60,10 +54,6 @@ dependencies=(
     "swww"
     "imv"
     "wl-clipboard"
-    "zed"
-    "meson"
-    "cpio"
-    "cmake"
     "adw-gtk-theme"
     "kvantum"
     "kvantum-qt5"
@@ -98,11 +88,12 @@ power_management=(
 optional=(
     "downgrade"
     "dosfstools"
-    "filezilla"
+    "zed"
     "gimp"
     "deluge-gtk"
     "handbrake"
-    # "vesktop-bin"
+    "discord"
+    "steam"
 )
 
 cd $HOME
@@ -152,7 +143,6 @@ yay -Sc --noconfirm
 cd $dots_dir
 cp ./home/bashrc $HOME/.bashrc
 cp -r ./config/* $HOME/.config/
-chmod u+x $HOME/.config/hypr/start_astal.sh
 
 cd $HOME
 

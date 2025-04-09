@@ -1,0 +1,117 @@
+$inside-radius: 8px;
+$outside-radius: 10px;
+
+* {
+    color: var(--window-fg-color);
+    background-color: var(--window-bg-color);
+    font-weight: bold;
+    outline: none;
+}
+
+window, popover {
+    background: none;
+    border-radius: 0px;
+}
+
+scrolledwindow {
+    & > * {
+        all: unset;
+    }
+    & > scrollbar > range > trough {
+        background-color: rgb(from var(--window-fg-color) r g b / 5%);
+        & > slider {
+            background-color: var(--window-fg-color);
+        }
+    }
+}
+
+popover {
+    padding: 4px;
+
+    & > contents {
+        background-color: var(--window-bg-color);
+        padding: 2px;
+    }
+}
+
+button, modelbutton, row {
+    padding: 4px 8px;
+
+    &:hover {
+        background-color: rgb(from var(--window-fg-color) r g b / 10%);
+    }
+
+    & * {
+        background-color: transparent;
+    }
+}
+
+modelbutton {
+    padding: 2px 8px;
+}
+
+separator {
+    background-color: rgb(from var(--window-fg-color) r g b / 20%);
+}
+
+list {
+    padding: 4px;
+
+    & > row {
+        padding: 6px;
+        margin: 2px 0px;
+        border-radius: $inside-radius;
+
+        &:selected {
+            background-color: rgba(from var(--window-fg-color) r g b / 10%);
+            box-shadow: 0px 0px 2px 0px #000;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+scale {
+    padding: 0px;
+    min-height: 24px;
+    margin: 4px 6px;
+}
+
+scale trough {
+    min-height: 18px;
+    background-color: rgb(from var(--window-fg-color) r g b / 10%);
+    padding: 0px;
+    border: none;
+}
+
+scale trough highlight {
+    min-height: 12px;
+    background-color: var(--window-fg-color);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+scale trough slider {
+    background-color: var(--window-fg-color);
+    padding: 0px;
+    margin: -4px;
+    box-shadow: 0px 0px 24px 2px #000000;
+}
+
+switch {
+    background-color: rgb(from var(--window-fg-color) r g b / 10%);
+
+    &:hover {
+        background-color: rgb(from var(--window-fg-color) r g b / 50%);
+    }
+
+    &:checked {
+        background-color: rgb(from var(--window-fg-color) r g b / 50%);
+
+        &:hover {
+            background-color: rgb(from var(--window-fg-color) r g b / 75%);
+        }
+    }
+}

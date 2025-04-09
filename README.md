@@ -1,7 +1,7 @@
 # Modernish, a Hyprland config (WIP)
 
 <div align="center">
-  <img src="./assets/modernish1.png">
+  <img src="./assets/noka1.png">
 </div>
 
 ## Feature Roadmap
@@ -13,25 +13,25 @@
 - [x] On Screen Displays
 - [x] App Launcher
 - [ ] Emoji Picker
-- [ ] Controls Menus (individual menus for wifi, audio, etc.)
+- [ ] Controls Center
 
 ## Keybindings
 
 - `Super + [num]` = Switch to workspace [num]
+- `Super + Shift + Arrows/WASD` = Move windows around the current workspace
 - `Alt + [num]` = Move active window to workspace [num]
 - `Super + Enter` = Open `foot` terminal
 - `Super + F` = Open Thunar File Manager (needs to be installed)
 - `Super + B` = Open Firefox Web Browser
 - `Super + Shift + B` = Open Firefox Private Window
 - `Super + Q` = Kill active application
-- `Super + R` = Open wofi (application launcher)
-- `Super + E` = Open wofi-emoji (emoji selector)
+- `Super + R` = Open application launcher
 - `Super + Tab` = Switch application
+- `Alt + Escape` = Maximize/unmaximize active application
 - `Super + Escape` = Toggle fullscreen for active application
 - `Super + F` = Toggle floating
-- `Super + S` = Toggle split
-- `Super + M` = Exit Hyprland
-- `Print` = Take a screenshot (copied to clipboard only, additional functionality coming soon)
+- `Super + M` = Exit Niri
+- `Print` = Screenshot functionality for Niri
 
 ## How to install
 
@@ -192,9 +192,10 @@ $ sudo pacman -Syu
 
 Then you can do the following:
 ```
-$ git clone -b modernish https://github.com/sudoharun/dotfiles.git
+$ git clone -b noka https://github.com/sudoharun/dotfiles.git
 $ cd dotfiles
-$ python install.py
+$ chmod u+x install.sh
+$ ./install.sh
 ```
 
 ### Tips and tricks

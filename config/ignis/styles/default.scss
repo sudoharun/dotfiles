@@ -1,0 +1,140 @@
+@use 'base' as base;
+
+window.dock-activator > box {
+    border-top-left-radius: var(--window-radius);
+    border-top-right-radius: var(--window-radius);
+
+    & > box {
+        background-color: rgb(from var(--window-bg-color) r g b / 80%);
+    }
+}
+
+window.dock,
+window.apps-launcher {
+    padding: 8px;
+}
+
+window.notification-center {
+    padding: 8px;
+}
+
+box.bar {
+    background-color: var(--window-bg-color);
+    padding: 12px 8px;
+}
+
+box.workspaces {
+    background-color: rgb(from var(--window-fg-color) r g b / 5%);
+    padding: 2px;
+    border-radius: base.$inside-radius;
+}
+
+button.workspace {
+    background-color: transparent;
+
+    &:hover {
+        background-color: rgb(from var(--window-fg-color) r g b / 10%);
+    }
+}
+
+button.focused-workspace {
+    background-color: rgb(from var(--window-fg-color) r g b / 20%);
+    transition: color .2s ease-in, background-color .2s ease-in;
+
+    &:hover {
+        background-color: rgb(from var(--window-fg-color) r g b / 30%);
+    }
+}
+
+box.dock {
+    border-radius: base.$outside-radius;
+    border: 1px solid #121212;
+    box-shadow: 0px 0px 3px 0px #121212;
+    padding: 4px;
+
+    & > button.window-button {
+        border-radius: base.$inside-radius;
+
+        & > box > box.window-indicator {
+            background-color: var(--window-fg-color);
+            padding: 2px;
+            border-radius: var(--window-radius);
+        }
+    }
+
+    & > button.focused-window-button {
+        & > box > box.window-indicator {
+            padding: 2px 8px;
+        }
+    }
+}
+
+box.notification {
+    background-color: var(--window-bg-color);
+    padding: 6px;
+    border-radius: base.$outside-radius;
+
+    & button {
+        background-color: rgb(from var(--window-fg-color) r g b / 5%);
+
+        &:hover {
+            background-color: rgb(from var(--window-fg-color) r g b / 20%);
+        }
+    }
+
+    & button.notification-close {
+        padding: 2px 6px;
+        border-radius: 1000px;
+    }
+}
+
+box.notification-center {
+    border: 1px solid #121212;
+    box-shadow: 0px 0px 3px 0px #121212;
+    border-radius: var(--window-radius);
+    padding: 8px;
+
+    & scrolledwindow > box {
+        padding: 4px;
+    }
+
+    & box.notification {
+        border: 1px solid #121212;
+        box-shadow: 0px 0px 3px 0px #121212;
+    }
+}
+
+box.notification-popups {
+    background-color: transparent;
+    padding: 8px;
+
+    & > box {
+        background-color: var(--window-bg-color);
+    }
+
+    & box.notification {
+        border: 1px solid #080808;
+        box-shadow: 0px 0px 3px 0px #000;
+    }
+}
+
+box.osd-container {
+    background-color: transparent;
+    padding: 8px;
+
+    & > box {
+        background-color: var(--window-bg-color);
+        padding: 6px;
+        border-radius: base.$outside-radius;
+        border: 1px solid #121212;
+        box-shadow: 0px 0px 3px 0px #121212;
+    }
+}
+
+box.apps-launcher-container {
+    background-color: var(--window-bg-color);
+    padding: 2px;
+    border-radius: base.$outside-radius;
+    border: 1px solid #121212;
+    box-shadow: 0px 0px 3px 0px #121212;
+}
