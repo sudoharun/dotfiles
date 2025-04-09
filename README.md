@@ -1,14 +1,20 @@
-# Hyprland Dotfiles by sudo-harun
+# Hyprland Dotfiles by sudoharun
 
 ⭐ If you like these, please star! ⭐
 
-## <a href="https://github.com/sudo-harun/dotfiles/tree/modernish">Modernish (VERY VERY WIP!!!)</a>
+## <a href="https://github.com/sudoharun/dotfiles/tree/noka">Noka (powered by Ignis)</a>
 
 
-## Desktop bar + notification popup
+### Desktop bar + notification popup
+<img src="./assets/noka1.png" align="center">
+
+## <a href="https://github.com/sudoharun/dotfiles/tree/modernish">Modernish (powered by Astal)</a>
+
+
+### Desktop bar + notification popup
 <img src="./assets/modernish1.png" align="center">
 
-## <a href="https://github.com/sudo-harun/dotfiles/tree/retroesque">Retro-esque: Another Hyprland Config</a>
+## <a href="https://github.com/sudoharun/dotfiles/tree/retroesque">Retro-esque: Another Hyprland Config</a>
 
 
 ### Desktop (All eww)
@@ -22,7 +28,7 @@
 
 
 
-## <a href="https://github.com/sudo-harun/dotfiles/tree/gruvbox">Another Gruvbox Hyprland Config</a>
+## <a href="https://github.com/sudoharun/dotfiles/tree/gruvbox">Another Gruvbox Hyprland Config</a>
 
 
 ### Desktop (bar made with eww)
@@ -42,7 +48,7 @@
 
 
 
-## <a href="https://github.com/sudo-harun/dotfiles/tree/generic">A Generic Hyprland Config</a>
+## <a href="https://github.com/sudoharun/dotfiles/tree/generic">A Generic Hyprland Config</a>
 
 
 ### Desktop (bar made with eww)
