@@ -33,6 +33,7 @@ class OSDWindow(Widget.Window):
         super().__init__(
             namespace=f'osd-window-{monitor}',
             monitor=monitor,
+            layer='overlay',
             anchor=['bottom'],
             kb_mode='none',
             margin_bottom=64,
