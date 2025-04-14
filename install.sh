@@ -134,7 +134,7 @@ if [ ! -f "/usr/bin/yay" ]; then
     rm -r yay
 fi
 
-yay -S rustup
+yay -S --noconfirm rustup
 rustup default stable
 
 yay -S --noconfirm $install_str
