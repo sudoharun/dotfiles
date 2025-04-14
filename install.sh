@@ -36,8 +36,6 @@ dependencies=(
     "wl-clipboard"
     "btop"
     "python"
-    "git"
-    "rustup"
     "dart-sass"
     "waypaper"
     "firefox"
@@ -135,6 +133,9 @@ if [ ! -f "/usr/bin/yay" ]; then
     cd ..
     rm -r yay
 fi
+
+yay -S rustup
+rustup default stable
 
 yay -S --noconfirm $install_str
 yay -Rnsc --noconfirm $(yay -Qdtq)
