@@ -1,7 +1,9 @@
 from ignis.widgets import Widget
 from ignis.services.niri import NiriService
+from ignis.app import IgnisApp
 from ignis.utils import Utils
 
+app = IgnisApp.get_default()
 niri = NiriService.get_default()
 
 class ApplicationButton(Widget.Button):
@@ -29,7 +31,7 @@ class ApplicationButton(Widget.Button):
             css_classes=[
                 'window-button',
                 'focused-window-button'
-                if window.is_focused else '']
+                if window.id == niri.active_window.id else '']
             )
 
         self.id = window.id
@@ -37,26 +39,16 @@ class ApplicationButton(Widget.Button):
     def __on_click(self):
         Utils.exec_sh(f'niri msg action focus-window --id {self.id}')
 
-class DockContainer(Widget.EventBox):
+class ApplicationsContainer(Widget.Box):
     def __init__(self):
         super().__init__(
             hexpand=True,
             vexpand=True,
-            spacing=2,
-            css_classes=['dock'],
-            on_hover_lost=lambda *_: self.on_focus_lost()
+            spacing=2
         )
 
         niri.connect(
             'notify::windows',
-            lambda *_: self.on_any_change()
-        )
-        niri.connect(
-            'notify::active-workspaces',
-            lambda *_: self.on_any_change()
-        )
-        niri.connect(
-            'notify::active-window',
             lambda *_: self.on_any_change()
         )
 
@@ -86,8 +78,34 @@ class DockContainer(Widget.EventBox):
                 )
             ))
 
+class DockContainer(Widget.EventBox):
+    def __init__(self):
+        super().__init__(
+            hexpand=True,
+            vexpand=True,
+            spacing=8,
+            on_hover_lost=lambda *_: self.on_focus_lost(),
+            css_classes=['dock'],
+            child=[
+                ApplicationsContainer(),
+                Widget.Separator(),
+                Widget.Button(
+                    on_click=lambda *_: self.on_apps_launcher_button_clicked(),
+                    child=Widget.Icon(
+                        image='applications-all-symbolic',
+                        pixel_size=32
+                    )
+                )
+            ]
+        )
+
     def on_focus_lost(self):
         self.get_parent().set_visible(False)
+
+    def on_apps_launcher_button_clicked(self):
+        for id in range(Utils.get_n_monitors()):
+            if Utils.get_monitors()[id].get_connector() == niri.active_output:
+                app.toggle_window(f'apps-launcher-{id}')
 
 class Dock(Widget.Window):
     def __init__(self, monitor):
