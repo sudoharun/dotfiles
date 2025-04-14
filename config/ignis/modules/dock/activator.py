@@ -14,11 +14,7 @@ class ActivatorContainer(Widget.EventBox):
         self.parent_namespace = parent_namespace
 
         niri.connect(
-            'notify::active-workspaces',
-            lambda *_: self.adapt_width()
-        )
-        niri.connect(
-            'notify::active-window',
+            'notify::windows',
             lambda *_: self.adapt_width()
         )
         app.get_window(f"dock-{self.parent_namespace[-1]}").connect(
