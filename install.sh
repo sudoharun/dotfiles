@@ -15,7 +15,7 @@ dependencies=(
     "zip"
     "unzip"
     "unrar"
-    "p7zip"
+    "7zip"
     "upower"
     "udisks2"
     "neovim"
@@ -31,7 +31,6 @@ dependencies=(
     "ttf-fantasque-nerd"
     "ttf-iosevka-term"
     "ttf-apple-emoji"
-    "xwayland-satellite"
     "cliphist"
     "wl-clipboard"
     "btop"
@@ -63,7 +62,7 @@ dependencies=(
     "thunar-volman"
     "thunar-archive-plugin"
     "thunar-media-tags-plugin"
-    "xarchiver",
+    "xarchiver"
     "python-rapidfuzz"
 )
 
@@ -94,32 +93,12 @@ optional=(
     "steam"
 )
 
-cd $HOME
-
 for i in ${!optional[@]}; do
     echo "Would you like to install '${optional[i]}'? [Y/n]"
     read answer
     if [[ "$answer" == "n" ]]; then
         unset 'optional[i]'
     fi
-done
-
-install_str=""
-
-for pkg in ${dependencies[@]}; do
-    install_str+="$pkg "
-done
-
-for pkg in ${audio[@]}; do
-    install_str+="$pkg "
-done
-
-for pkg in ${power_management[@]}; do
-    install_str+="$pkg "
-done
-
-for pkg in ${optional[@]}; do
-    install_str+="$pkg "
 done
 
 cd $HOME
@@ -131,13 +110,93 @@ if [ ! -f "/usr/bin/yay" ]; then
     cd yay
     makepkg -si --noconfirm
     cd ..
-    rm -r yay
+    rm -rf yay
 fi
+
+safe_install_list=()
+
+echo "Checking for package conflicts..."
+
+for pkg in ${dependencies[@]}; do
+    if yay -Qi "$pkg" &>/dev/null; then
+        continue
+    fi
+
+    conflicts=$(yay -Si "$pkg" 2>/dev/null | awk -F: '/Conflicts With/ {gsub(/^[ \t]+/, "", $2); print $2}')
+
+    if [[ -n "$conflicts" ]]; then
+        for conflict in $conflicts; do
+            if yay -Qi "$conflict" &>/dev/null; then
+                echo "Removing conflicting package: $conflict"
+                yay -Rnsc --noconfirm "$conflict"
+            fi
+        done
+    fi
+
+    safe_install_list+=("$pkg")
+done
+
+for pkg in ${audio[@]}; do
+    if yay -Qi "$pkg" &>/dev/null; then
+        continue
+    fi
+
+    conflicts=$(yay -Si "$pkg" 2>/dev/null | awk -F: '/Conflicts With/ {gsub(/^[ \t]+/, "", $2); print $2}')
+
+    if [[ -n "$conflicts" ]]; then
+        for conflict in $conflicts; do
+            if yay -Qi "$conflict" &>/dev/null; then
+                echo "Removing conflicting package: $conflict"
+                yay -Rnsc --noconfirm "$conflict"
+            fi
+        done
+    fi
+
+    safe_install_list+=("$pkg")
+done
+
+for pkg in ${power_management[@]}; do
+    if yay -Qi "$pkg" &>/dev/null; then
+        continue
+    fi
+
+    conflicts=$(yay -Si "$pkg" 2>/dev/null | awk -F: '/Conflicts With/ {gsub(/^[ \t]+/, "", $2); print $2}')
+
+    if [[ -n "$conflicts" ]]; then
+        for conflict in $conflicts; do
+            if yay -Qi "$conflict" &>/dev/null; then
+                echo "Removing conflicting package: $conflict"
+                yay -Rnsc --noconfirm "$conflict"
+            fi
+        done
+    fi
+
+    safe_install_list+=("$pkg")
+done
+
+for pkg in ${optional[@]}; do
+    if yay -Qi "$pkg" &>/dev/null; then
+        continue
+    fi
+
+    conflicts=$(yay -Si "$pkg" 2>/dev/null | awk -F: '/Conflicts With/ {gsub(/^[ \t]+/, "", $2); print $2}')
+
+    if [[ -n "$conflicts" ]]; then
+        for conflict in $conflicts; do
+            if yay -Qi "$conflict" &>/dev/null; then
+                echo "Removing conflicting package: $conflict"
+                yay -Rnsc --noconfirm "$conflict"
+            fi
+        done
+    fi
+
+    safe_install_list+=("$pkg")
+done
 
 yay -S --noconfirm rustup
 rustup default stable
 
-yay -S --noconfirm $install_str
+yay -S --noconfirm --needed --removemake "${safe_install_list[@]}"
 yay -Rnsc --noconfirm $(yay -Qdtq)
 yay -Sc --noconfirm
 
