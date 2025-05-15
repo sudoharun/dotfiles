@@ -1,17 +1,11 @@
 from ignis.widgets import Widget
-from ignis.services.network import NetworkService
 from .widgets import (
-    SpeakerButton,
-    BatteryButton,
     Clock,
-    WifiButton,
-    EthernetButton,
     Tray,
     Workspaces,
-    NotificationButton
+    NotificationButton,
+    ControlsButton
 )
-
-network = NetworkService.get_default()
 
 class Container(Widget.CenterBox):
     def __init__(self):
@@ -36,10 +30,7 @@ class Container(Widget.CenterBox):
                 spacing=4,
                 child=[
                     Tray(),
-                    WifiButton(),
-                    EthernetButton(),
-                    SpeakerButton(),
-                    BatteryButton(),
+                    ControlsButton(),
                     NotificationButton()
                 ]
             )

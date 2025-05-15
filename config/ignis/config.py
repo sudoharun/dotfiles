@@ -8,7 +8,8 @@ from modules import (
     Dock,
     DockActivator,
     AppsLauncher,
-    OSDWindow
+    OSDWindow,
+    ControlCenter
 )
 
 scss = str(Path(__file__).parent.resolve() / "styles" / "default.scss")
@@ -17,6 +18,7 @@ app.apply_css(scss)
 
 NotificationCenter()
 NotificationPopups()
+# ControlCenter()
 
 for monitor in range(Utils.get_n_monitors()):
     Bar(monitor)

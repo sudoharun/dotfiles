@@ -40,5 +40,6 @@ class Workspaces(Widget.Box):
     def __init__(self):
         super().__init__(
             vertical=True,
+            spacing=16,
             child=[PerOutputWorkspaces(Utils.get_monitor(id).get_connector()) for id in range(Utils.get_n_monitors())]
         )

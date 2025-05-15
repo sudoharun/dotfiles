@@ -35,7 +35,7 @@ popover {
 }
 
 button, modelbutton, row {
-    padding: 4px 8px;
+    padding: 8px;
 
     &:hover {
         background-color: rgb(from var(--window-fg-color) r g b / 10%);

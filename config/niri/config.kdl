@@ -7,6 +7,7 @@ input {
 
     touchpad {
         tap
+        dwt
     }
 
     mouse { }
@@ -20,6 +21,7 @@ output "eDP-1" {
     scale 1
     transform "normal"
     position x=0 y=0
+    background-color "#00000000"
 }
 
 output "HDMI-A-1" {
@@ -27,6 +29,7 @@ output "HDMI-A-1" {
     scale 1
     transform "normal"
     position x=1920 y=0
+    background-color "#00000000"
 }
 
 layout {
@@ -74,11 +77,11 @@ layout {
     }
 }
 
-spawn-at-startup "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-spawn-at-startup "dbus-update-activation-environment --systemd --all"
+spawn-at-startup "systemctl" "--user" "import-environment" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "--all"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "hypridle"
-spawn-at-startup "ignis" "init"
+spawn-at-startup "sh" "-c" "ignis init & disown"
 spawn-at-startup "waypaper" "--restore"
 
 environment {
@@ -99,7 +102,7 @@ environment {
 
 prefer-no-csd
 
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/Pictures/Screenshots/Screenshot from %d-%m-%Y %H-%M-%S.png"
 
 cursor {
     xcursor-theme "Bibata-Modern-Classic"
@@ -110,9 +113,12 @@ hotkey-overlay {
     skip-at-startup
 }
 
+// For bouncy: spring damping-ratio=0.6 stiffness=600 epsilon=0.0001
+// For normal: spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
+
 animations {
     workspace-switch {
-        spring damping-ratio=0.6 stiffness=600 epsilon=0.0001
+        spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
     }
 
     window-open {
@@ -126,25 +132,38 @@ animations {
     }
 
     horizontal-view-movement {
-        spring damping-ratio=0.6 stiffness=600 epsilon=0.0001
+        spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
     }
 
     window-movement {
-        spring damping-ratio=0.6 stiffness=600 epsilon=0.0001
+        spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
     }
 
     window-resize {
-        spring damping-ratio=0.6 stiffness=600 epsilon=0.0001
+        spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
     }
 
     config-notification-open-close {
-        spring damping-ratio=0.6 stiffness=600 epsilon=0.0001
+        spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
     }
 
     screenshot-ui-open {
         duration-ms 200
         curve "ease-out-quad"
     }
+}
+
+overview {
+    zoom 0.5
+    backdrop-color "#363636"
+    // workspace-shadow {
+    //     off
+    // }
+}
+
+layer-rule {
+    match namespace="swww-daemon"
+    place-within-backdrop true // Set to true for overview background
 }
 
 window-rule {
@@ -163,10 +182,10 @@ window-rule {
     opacity 1.0
 }
 
-window-rule {
-    match app-id="^steam$"
-    geometry-corner-radius 0
-}
+// window-rule {
+//     match app-id="^steam$"
+//     geometry-corner-radius 0
+// }
 
 window-rule {
     match app-id="thunar"
@@ -192,18 +211,21 @@ window-rule {
 }
 
 switch-events {
-    lid-close { spawn "pidof" "hyprlock" "||" "hyprlock"; }
+    lid-close { spawn "pidof" "swaylock" "||" "swaylock"; }
 }
 
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
+    Mod+Tab { toggle-overview; }
 
     Mod+Return { spawn "foot"; }
-    Mod+B { spawn "firefox"; }
-    Mod+Shift+B { spawn "firefox" "--private-window"; }
+    Mod+B { spawn "thorium-browser"; }
+    Mod+Shift+B { spawn "thorium-browser" "--incognito"; }
+    // Mod+B { spawn "firefox"; }
+    // Mod+Shift+B { spawn "firefox" "--private-window"; }
     Mod+R { spawn "sh" "-c" "ignis run-file $HOME/.config/ignis/scripts/open_apps_launcher.py"; }
-    Mod+F { spawn "thunar"; }
-    Super+L { spawn "hyprlock"; }
+    Mod+F { spawn "nautilus"; }
+    Super+L { spawn "swaylock"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05-"; }

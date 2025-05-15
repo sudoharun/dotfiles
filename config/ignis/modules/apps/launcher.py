@@ -9,14 +9,12 @@ from rapidfuzz import fuzz
 
 applications = ApplicationsService.get_default()
 
-class AppEntry(Gtk.ListBoxRow):
+class AppEntry(Widget.ListBoxRow):
     def __init__(self, app):
         super().__init__(
-            css_classes=['apps-entry']
-        )
-        self.app = app
-        self.set_child(
-            Widget.Box(
+            css_classes=['apps-entry'],
+            on_activate=lambda *_: self.app.launch(),
+            child=Widget.Box(
                 spacing=4,
                 child=[
                     Widget.Icon(
@@ -29,10 +27,7 @@ class AppEntry(Gtk.ListBoxRow):
                 ]
             )
         )
-        self.connect(
-            'activate',
-            lambda *_: self.app.launch()
-        )
+        self.app = app
 
 class AppsLauncherContainer(Widget.Box):
     def __init__(self):
@@ -44,14 +39,9 @@ class AppsLauncherContainer(Widget.Box):
         self.search_bar = Widget.Entry(
             placeholder_text='Search applications...',
             primary_icon_name='system-search-symbolic',
-            on_accept=lambda *_: self.activate_search(),
+            on_accept=lambda *_: self.activate_search(True),
             on_change=lambda *_: self.initiate_search(),
             css_classes=['apps-launcher-search-bar']
-        )
-        self.apps_list = Widget.ListBox(
-            activate_on_single_click=False,
-            selection_mode='browse',
-            css_classes=['apps-list']
         )
 
         self.search_bar.event_key_controller = Gtk.EventControllerKey.new()
@@ -59,6 +49,12 @@ class AppsLauncherContainer(Widget.Box):
         self.search_bar.event_key_controller.connect(
             'key-pressed',
             self.search_bar_key_event_handler
+        )
+
+        self.apps_list = Widget.ListBox(
+            activate_on_single_click=False,
+            selection_mode='browse',
+            css_classes=['apps-list']
         )
 
         self.child = [
@@ -100,12 +96,17 @@ class AppsLauncherContainer(Widget.Box):
         self.apps_list.set_sort_func(sort_func)
 
         self.populate_apps_list()
+
         if self.apps_list.get_row_at_index(0):
             self.apps_list.select_row(self.apps_list.get_row_at_index(0))
 
     def populate_apps_list(self):
         for app in applications.apps:
             app_entry = AppEntry(app)
+            app_entry.connect(
+                'activate',
+                lambda *_: self.activate_search()
+            )
             app_entry.event_key_controller = Gtk.EventControllerKey.new()
             app_entry.add_controller(app_entry.event_key_controller)
             app_entry.event_key_controller.connect(
@@ -120,8 +121,8 @@ class AppsLauncherContainer(Widget.Box):
         if self.apps_list.get_row_at_index(0):
             self.apps_list.select_row(self.apps_list.get_row_at_index(0))
 
-    def activate_search(self):
-        if self.apps_list.get_row_at_index(0):
+    def activate_search(self, search=False):
+        if self.apps_list.get_row_at_index(0) and search:
             self.apps_list.get_row_at_index(0).activate()
         self.search_bar.set_text('')
         self.search_bar.grab_focus()
@@ -134,7 +135,7 @@ class AppsLauncherContainer(Widget.Box):
                 self.apps_list.select_row(self.apps_list.get_row_at_index(1))
 
         elif keyval == Gdk.KEY_Return:
-            self.apps_list.get_selected_row().activate()
+            self.activate_search()
 
     def app_entry_key_event_handler(self, widget, keyval, keycode, state):
         if keyval == Gdk.KEY_Up:
@@ -161,5 +162,8 @@ class AppsLauncher(Widget.Window):
             css_classes=['apps-launcher'],
             child=AppsLauncherContainer()
         )
-        self.set_size_request(self.child.apps_list.get_preferred_size()[0].width+100, 400)
+        self.set_size_request(
+            self.child.apps_list.get_preferred_size()[0].width+100,
+            400
+        )
         self.child.search_bar.grab_focus()

@@ -25,9 +25,15 @@ class Tray(Widget.Box):
             menu = None
 
         return Widget.Button(
+            halign='center',
             child=Widget.Box(
+                halign='center',
                 child=[
-                    Widget.Icon(image=item.bind("icon"), pixel_size=18),
+                    Widget.Icon(
+                        halign='center',
+                        image=item.bind("icon"),
+                        pixel_size=18
+                    ),
                     menu,
                 ]
             ),

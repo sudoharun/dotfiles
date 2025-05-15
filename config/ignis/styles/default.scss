@@ -31,6 +31,7 @@ box.workspaces {
 
 button.workspace {
     background-color: transparent;
+    padding: 4px 8px;
 
     &:hover {
         background-color: rgb(from var(--window-fg-color) r g b / 10%);
@@ -52,7 +53,7 @@ box.dock {
     box-shadow: 0px 0px 3px 0px #121212;
     padding: 4px;
 
-    & > button.window-button {
+    & > box > button.window-button {
         border-radius: base.$inside-radius;
 
         & > box > box.window-indicator {
@@ -62,7 +63,7 @@ box.dock {
         }
     }
 
-    & > button.focused-window-button {
+    & > box > button.focused-window-button {
         & > box > box.window-indicator {
             padding: 2px 8px;
         }
@@ -137,4 +138,11 @@ box.apps-launcher-container {
     border-radius: base.$outside-radius;
     border: 1px solid #121212;
     box-shadow: 0px 0px 3px 0px #121212;
+}
+
+
+// Graphical WiFi connector window
+
+window#WifiConnectDialog {
+    all: unset;
 }

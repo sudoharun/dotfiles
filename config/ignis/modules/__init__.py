@@ -3,6 +3,7 @@ from .notifications import NotificationPopups, NotificationCenter
 from .dock import Dock, DockActivator
 from .apps import AppsLauncher
 from .osd import OSDWindow
+from .controls import ControlCenter
 
 __all__ = [
     'Bar',
@@ -11,5 +12,6 @@ __all__ = [
     'Dock',
     'DockActivator',
     'AppsLauncher',
-    'OSDWindow'
+    'OSDWindow',
+    'ControlCenter'
 ]
