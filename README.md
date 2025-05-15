@@ -1,4 +1,4 @@
-# Modernish, a Hyprland config (WIP)
+# Noka, a Niri config powered by Ignis (WIP)
 
 <div align="center">
   <img src="./assets/noka1.png">
@@ -7,13 +7,13 @@
 ## Feature Roadmap
 
 - [x] Bar
-  - [ ] Separate workspace indicators for each monitor
+  - [x] Separate workspace indicators for each monitor
 - [x] Notification Popups
 - [x] Notification Center
 - [x] On Screen Displays
 - [x] App Launcher
 - [ ] Emoji Picker
-- [ ] Controls Center
+- [ ] Controls Center (in progress)
 
 ## Keybindings
 
@@ -26,10 +26,10 @@
 - `Super + Shift + B` = Open Firefox Private Window
 - `Super + Q` = Kill active application
 - `Super + R` = Open application launcher
-- `Super + Tab` = Switch application
+- `Super + W/A/S/D or Arrows` = Switch application
 - `Alt + Escape` = Maximize/unmaximize active application
 - `Super + Escape` = Toggle fullscreen for active application
-- `Super + F` = Toggle floating
+- `Alt + F` = Toggle floating
 - `Super + M` = Exit Niri
 - `Print` = Screenshot functionality for Niri
 
