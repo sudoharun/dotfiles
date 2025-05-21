@@ -190,11 +190,11 @@ class WifiDeviceButton(Widget.Box):
 
     async def reconnect(self, ap):
         await ap.disconnect_from()
-        await ap.connect_to(ap.psk)
+        await ap.connect_to()
 
     async def forget(self, ap):
         await ap.disconnect_from()
-        self.device._device.get_active_connection().get_connection().delete()
+        await ap.forget()
 
 class WifiSettings(Widget.Box):
     def __init__(self):
