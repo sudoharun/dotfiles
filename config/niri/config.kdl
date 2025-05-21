@@ -102,7 +102,8 @@ environment {
 
 prefer-no-csd
 
-screenshot-path "~/Pictures/Screenshots/Screenshot from %d-%m-%Y %H-%M-%S.png"
+// I would have put %d-%m-%Y but %Y-%m-%d sorts better
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 cursor {
     xcursor-theme "Bibata-Modern-Classic"
@@ -187,10 +188,10 @@ window-rule {
 //     geometry-corner-radius 0
 // }
 
-window-rule {
-    match app-id="thunar"
-    default-column-width { proportion 0.6; }
-}
+// window-rule {
+//     match app-id="thunar"
+//     default-column-width { proportion 0.6; }
+// }
 
 window-rule {
     match app-id="thunar" title="File Operation Progress"
@@ -219,12 +220,10 @@ binds {
     Mod+Tab { toggle-overview; }
 
     Mod+Return { spawn "foot"; }
-    Mod+B { spawn "thorium-browser"; }
-    Mod+Shift+B { spawn "thorium-browser" "--incognito"; }
-    // Mod+B { spawn "firefox"; }
-    // Mod+Shift+B { spawn "firefox" "--private-window"; }
+    Mod+B { spawn "firefox"; }
+    Mod+Shift+B { spawn "firefox" "--private-window"; }
     Mod+R { spawn "sh" "-c" "ignis run-file $HOME/.config/ignis/scripts/open_apps_launcher.py"; }
-    Mod+F { spawn "nautilus"; }
+    Mod+F { spawn "thunar"; }
     Super+L { spawn "swaylock"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.05+"; }
