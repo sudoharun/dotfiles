@@ -1,0 +1,120 @@
+@use 'base' as base;
+
+window.apps-launcher {
+    padding: 8px;
+}
+
+window.notifications-popups-window,
+window.notifications-centre-window {
+    padding: 16px;
+}
+
+scrolledwindow.notifications-centre-scroll {
+    padding: 8px;
+    min-height: 300px;
+}
+
+box.notifications-centre-box > box.notification {
+    border: 1px solid #121212;
+    box-shadow: 0px 0px 3px 0px #121212;
+}
+
+box.bar {
+    background-color: var(--window-bg-color);
+    padding: 8px 12px;
+}
+
+box.workspaces, box.window-buttons {
+    background-color: rgb(from var(--window-fg-color) r g b / 5%);
+    padding: 2px;
+    border-radius: base.$inside-radius;
+}
+
+button.system-controls-applet, button.clock-applet {
+    background-color: rgb(from var(--window-fg-color) r g b / 5%);
+    border-radius: base.$inside-radius;
+
+    &:hover {
+        background-color: rgb(from var(--window-fg-color) r g b / 10%);
+    }
+}
+
+button.workspace-button, button.window-button {
+    background-color: transparent;
+
+    &:hover {
+        background-color: rgb(from var(--window-fg-color) r g b / 10%);
+    }
+}
+
+button.active-workspace, button.active-window-button {
+    background-color: rgb(from var(--window-fg-color) r g b / 20%);
+    transition: color .2s ease-in, background-color .2s ease-in;
+
+    &:hover {
+        background-color: rgb(from var(--window-fg-color) r g b / 30%);
+    }
+}
+
+box.notification {
+    background-color: var(--window-bg-color);
+    padding: 6px;
+    border-radius: base.$outside-radius;
+
+    & button {
+        background-color: rgb(from var(--window-fg-color) r g b / 5%);
+
+        &:hover {
+            background-color: rgb(from var(--window-fg-color) r g b / 20%);
+        }
+    }
+
+    & button.notification-close {
+        padding: 2px 6px;
+        border-radius: 1000px;
+    }
+}
+
+window.notifications-centre-window {
+    & > box {
+        background: none;
+    }
+}
+
+box.notifications-popups {
+    background-color: transparent;
+    padding: 8px;
+
+    & > box {
+        background-color: var(--window-bg-color);
+    }
+
+    & box.notification {
+        border: 1px solid #080808;
+        box-shadow: 0px 0px 3px 0px #000;
+    }
+}
+
+window.osd-window > box {
+    background: none;
+
+    & > box.osd {
+        background-color: var(--window-bg-color);
+        padding: 6px;
+        padding-right: 10px;
+        border-radius: base.$outside-radius;
+        box-shadow: 0px 0px 3px 0px #121212;
+    }
+}
+
+box.apps-launcher-container {
+    background-color: var(--window-bg-color);
+    padding: 2px;
+}
+
+
+// Graphical WiFi connector window
+
+window#WifiConnectDialog {
+    all: unset;
+}

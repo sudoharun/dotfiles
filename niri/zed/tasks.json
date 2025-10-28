@@ -1,0 +1,11 @@
+// Static tasks configuration.
+//
+// Example:
+[
+  {
+    "label": "Live Server",
+    "command": "live-server",
+    "use_new_terminal": true,
+    "reveal": "never"
+  }
+]

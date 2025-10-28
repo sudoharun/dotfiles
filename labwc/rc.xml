@@ -1,0 +1,205 @@
+<?xml version="1.0" ?>
+
+<labwc_config>
+
+    <windowSwitcher style="thumbnail" allWorkspaces="no" preview="no">
+    </windowSwitcher>
+
+    <desktops number="4" prefix="" />
+
+    <placement>
+        <policy>automatic</policy>
+    </placement>
+
+    <core>
+        <allowTearing>fullscreen</allowTearing>
+        <adaptiveSync>fullscreen</adaptiveSync>
+    </core>
+
+    <theme>
+        <name>adw-gtk3-dark</name>
+        <cornerRadius>8</cornerRadius>
+        <font name="Rubik" size="10"/>
+    </theme>
+
+    <keyboard>
+
+        <numlock>on<numlock/>
+
+        <!-- Labwc -->
+
+        <keybind key="W-m">
+            <action name="Exit" />
+        </keybind>
+
+        <!-- Workspaces -->
+
+        <keybind key="W-1">
+            <action name="GoToDesktop" to="1" />
+        </keybind>
+
+        <keybind key="W-2">
+            <action name="GoToDesktop" to="2" />
+        </keybind>
+
+        <keybind key="W-3">
+            <action name="GoToDesktop" to="3" />
+        </keybind>
+
+        <keybind key="W-4">
+            <action name="GoToDesktop" to="4" />
+        </keybind>
+
+        <keybind key="W-Left">
+            <action name="GoToDesktop" to="left" wrap="no" />
+        </keybind>
+
+        <keybind key="W-Right">
+            <action name="GoToDesktop" to="right" wrap="no" />
+        </keybind>
+
+        <!-- Windows -->
+
+        <keybind key="W-q">
+            <action name="Close" />
+        </keybind>
+
+        <keybind key="W-Escape">
+            <action name="ToggleFullscreen" />
+        </keybind>
+
+        <keybind key="W-w">
+            <action name="ToggleMaximize" />
+        </keybind>
+
+        <keybind key="W-s">
+            <action name="Iconify" />
+        </keybind>
+
+        <keybind key="A-Tab">
+            <action name="NextWindow" />
+        </keybind>
+
+        <keybind key="A-S-Tab">
+            <action name="PreviousWindow" />
+        </keybind>
+
+        <keybind key="A-1">
+            <action name="SendToDesktop" to="1" follow="no" />
+        </keybind>
+
+        <keybind key="A-2">
+            <action name="SendToDesktop" to="2" follow="no" />
+        </keybind>
+
+        <keybind key="A-3">
+            <action name="SendToDesktop" to="3" follow="no" />
+        </keybind>
+
+        <keybind key="A-4">
+            <action name="SendToDesktop" to="4" follow="no" />
+        </keybind>
+
+        <keybind key="A-Left">
+            <action name="SendToDesktop" to="left" wrap="no" toggle="no" />
+        </keybind>
+
+        <keybind key="A-Right">
+            <action name="SendToDesktop" to="right" wrap="no" toggle="no" />
+        </keybind>
+
+        <!-- Outputs -->
+
+        <keybind key="C-W-Left">
+            <action name="MoveToOutput" direction="left" wrap="no" />
+        </keybind>
+
+        <keybind key="C-W-Right">
+            <action name="MoveToOutput" direction="right" wrap="no" />
+        </keybind>
+
+        <keybind key="C-S-W-Left">
+            <action name="FocusOutput" direction="left" wrap="no" />
+        </keybind>
+
+        <keybind key="C-S-W-Right">
+            <action name="FocusOutput" direction="right" wrap="no" />
+        </keybind>
+
+        <!-- Media -->
+
+        <keybind key="XF86_AudioRaiseVolume">
+            <action name="Execute" command="wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+" />
+        </keybind>
+
+        <keybind key="XF86_AudioLowerVolume">
+            <action name="Execute" command="wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-" />
+        </keybind>
+
+        <keybind key="XF86_AudioMute">
+            <action name="Execute" command="wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle" />
+        </keybind>
+
+        <keybind key="XF86_AudioMicMute">
+            <action name="Execute" command="wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle" />
+        </keybind>
+
+        <keybind key="XF86_AudioPlay">
+            <action name="Execute" command="playerctl play-pause" />
+        </keybind>
+
+        <keybind key="XF86_AudioPause">
+            <action name="Execute" command="playerctl play-pause" />
+        </keybind>
+
+        <keybind key="XF86_AudioNext">
+            <action name="Execute" command="playerctl next" />
+        </keybind>
+
+        <keybind key="XF86_AudioPrev">
+            <action name="Execute" command="playerctl previous" />
+        </keybind>
+
+        <!-- Display -->
+
+        <keybind key="XF86_MonBrightnessUp">
+            <action name="Execute" command="brightnessctl set 10%+" />
+        </keybind>
+
+        <keybind key="XF86_MonBrightnessDown">
+            <action name="Execute" command="brightnessctl set 10%-" />
+        </keybind>
+
+        <!-- Misc -->
+
+        <keybind key="W-Return">
+            <action name="Execute" command="foot" />
+        </keybind>
+
+        <keybind key="W-r">
+            <action name="Execute" command="xfce4-popup-whiskermenu" />
+        </keybind>
+
+        <keybind key="W-b">
+            <action name="Execute" command="firefox" />
+        </keybind>
+
+        <keybind key="W-S-b">
+            <action name="Execute" command="firefox --private-window" />
+        </keybind>
+
+        <keybind key="W-l">
+            <action name="Execute" command="swaylock" />
+        </keybind>
+
+        <keybind key="W-f">
+            <action name="Execute" command="thunar" />
+        </keybind>
+
+    </keyboard>
+
+    <snapping>
+        <range>10</range>
+    </snapping>
+
+</labwc_config>

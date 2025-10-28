@@ -1,0 +1,7 @@
+xfdesktop >/dev/null 2>&1 &
+xfce4-panel >/dev/null 2>&1 &
+xfconf-query -c xfce4-panel -p /force-all-internal -t bool -s true --create >/dev/null 2>&1 &
+nm-applet >/dev/null 2>&1 &
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP >/dev/null 2>&1 &
+dbus-update-activation-environment --systemd --all >/dev/null 2>&1 &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 >/dev/null 2>&1 &
