@@ -180,6 +180,7 @@ window-rule {
 
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    default-floating-position x=32 y=32 relative-to="bottom-left"
     open-floating true
     opacity 1.0
 }
@@ -189,10 +190,17 @@ window-rule {
     opacity 1.0
 }
 
-// window-rule {
-//     match app-id="^steam$"
-//     geometry-corner-radius 0
-// }
+window-rule {
+    match app-id="^steam$"
+    geometry-corner-radius 0
+}
+
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=0 y=0 relative-to="bottom-right"
+    open-focused false
+    opacity 1.0
+}
 
 // window-rule {
 //     match app-id="thunar"
